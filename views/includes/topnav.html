@@ -1,0 +1,58 @@
+<div ng-controller="ViewsCtrl" class="gray-background">
+	<div class="row no-gutters" >
+		<div class="hamburger">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#submenu" aria-controls="submenu" aria-expanded="false" aria-label="Toggle navigation">
+		      <span><i class="fa fa-bars dark-gray"></i></span>
+		    </button>
+		</div>
+	    <div class="col">
+	    	<div class="col-title pt-1"><a href="#!/collection-reporting" class="reg-nav col-line-1" ng-class="{ active: isActive('/collection-reporting')}">Data Collection & Reporting</a></div>
+	    </div>
+	    <div class="col">
+	    	<div class="col-title pt-1"><a href="#!/management-compliance" class="reg-nav col-line-2" ng-class="{ active: isActive('/management-compliance')}">Management & Compliance</a></div>
+		</div>
+		<div class="col">
+			<div class="col-title pt-1"><a href="#!/analysis-evaluation" class="reg-nav col-line-3" ng-class="{ active: isActive('/analysis-evaluation')}">Analysis & Evaluation</a></div>
+		</div>
+		<div class="col">
+			<div class="col-title pt-1"><a href="#!/goals-outcomes" class="reg-nav col-line-4" ng-class="{ active: isActive('/goals-outcomes')}">Goals & Outcomes</a></div>
+		</div>
+		<div class="col">
+			<div class="col-title pt-1"><a href="#!/developers" class="reg-nav col-line-5" ng-class="{ active: isActive('/developers')}">For Developers</a></div>
+		</div>
+	</div>
+	<div class="row no-gutters collapse" id="submenu">
+		<div class="hamburger"></div>
+		<div class="col">
+			<nav class="nav flex-column">
+			  <a class="nav-link col-line-1-sm" href="#">ENERGY STAR Portfolio Manager</a>
+			  <a class="nav-link col-line-1-sm" href="#">Building Energy Audit Template</a>
+			</nav>
+		</div>
+		<div class="col">
+			<nav class="nav flex-column">
+			  <a class="nav-link col-line-2-sm" href="#">SEED Platform</a>
+			</nav>
+		</div>
+		<div class="col">
+			<nav class="nav flex-column">
+			  <a class="nav-link col-line-3-sm" href="#">ComStock & ResStock</a>
+			  <a class="nav-link col-line-3-sm" href="#">BETTER</a>
+			  <a class="nav-link col-line-3-sm" href="#">Building Energy Asset Score</a>
+			</nav>
+		</div>
+		<div class="col">
+			<nav class="nav flex-column">
+			  <a class="nav-link col-line-4-sm" href="#">ComStock & ResStock Outcomes</a>
+			  <a class="nav-link col-line-4-sm" href="#">BETTER Outcomes</a>
+			  <a class="nav-link col-line-4-sm" href="#">Building Energy Asset Score Outcomes</a>
+			</nav>
+		</div>
+		<div class="col">
+			<nav class="nav flex-column">
+			  <a class="nav-link col-line-5-sm" href="#">BuildingSync</a>
+			  <a class="nav-link col-line-5-sm" href="#">3rd Party Tools</a>
+			</nav>
+		</div>
+	</div>
+</div>
