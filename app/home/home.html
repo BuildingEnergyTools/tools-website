@@ -12,7 +12,7 @@
 			<div class="card mb-4 card-width3" ng-show="!cardStatus['pm']"ng-click="toggleCard('pm')">
 			  <div class="card-body" >
 			    <h6 class="card-subtitle mb-2 text-muted">Building Owners, Managers, Inspectors, Consultants, etc.</h6>
-				  <div><img class="card-img" src="../images/energystar-pm.png" alt="EnergyStar Portfolio Manager Logo"></div>
+				  <div><img class="card-img" src="../images/pm-logo.png" alt="EnergyStar Portfolio Manager Logo"></div>
 			  </div>
 			  <div class="card-footer text-muted">Consumption, Energy Star Score</div>
 			</div>
@@ -20,13 +20,13 @@
 				<div class="card-body" ng-click="toggleCard('pm')">
 			    <p class="card-text">Building owners use <strong>ENERGY STAR Portfolio Manager</strong> to report their energy use.  This information reveals how efficiently a building is being operated.</p>
 			    <p class="card-text">Portfolio Manager also generates an ENERGY STAR Score, a number from 0-100 which many cities use to set their performance targets and prioritize buildings for upgrade.</p>
-			    <a href="#!/portfolio-manager" role="button" class="btn btn-type-1">Learn More about Portfolio Manager</a>
+			    <div class="center"><a href="#!/portfolio-manager" role="button" class="btn btn-type-1">Learn more</a></div>
 			  </div>
 			</div>
 			<div class="card card-width card-zindex" ng-show="!cardStatus['at']"ng-click="toggleCard('at')">
 			  <div class="card-body">
 			    <h6 class="card-subtitle mb-2 text-muted">Building Owners, Managers, Inspectors, Consultants, etc.</h6>
-				  <div><img class="card-img" src="../images/audit-template.png" alt="Audit Template Logo"></div>
+				  <div><img class="card-img" src="../images/audit-template-logo.png" alt="Audit Template Logo"></div>
 			  </div>
 			  <div class="card-footer text-muted">Custom Program Templates, ASHRAE Std. 211</div>
 			</div>
@@ -34,12 +34,12 @@
 				<div class="card-body" ng-click="toggleCard('at')">
 			    <p class="card-text"><strong>Audit Template</strong> is an online portal which cities use to collect standardized information &ndash; no more wrestling with Excel files or proprietary formats &ndash; about a building's physical systems and recommended upgrades.</p>
 			    <p class="card-text">Auditors use the mobile-friendly interface to submit data.</p>
-			    <a href="#!/audit-template" role="button" class="btn btn-type-1">Learn More about Audit Template</a>
+			    <div class="center"><a href="#!/audit-template" role="button" class="btn btn-type-1">Learn more</a></div>
 			  </div>
 			</div>
 			<div class="card bsync1" ng-show="!cardStatus['bsync1']">
 				<div class="card-body p-1" ng-click="toggleCard('bsync1')">
-					 <div><img class="bsync-img" src="../images/buildingsync.png" alt="BuildingSync Logo"></div>
+					 <div><img class="bsync-img" src="../images/bldgsync-logo.png" alt="BuildingSync Logo"></div>
 				</div>
 			</div>
 			<div class="card bsync1-flip" ng-show="cardStatus['bsync1']">
@@ -54,7 +54,7 @@
 			<div class="card card-width card-zindex mx-auto" ng-show="!cardStatus['seed']"ng-click="toggleCard('seed')">
 			  <div class="card-body" >
 			    <h6 class="card-subtitle mb-2 text-muted">Program Implementers and Administrators</h6>
-				  <div><img class="card-img" src="../images/seed.png" alt="SEED Logo"></div>
+				  <div><img class="card-img-sm" src="../images/seed-logo.png" alt="SEED Logo"></div>
 			  </div>
 			  <div class="card-footer text-muted">
 			  	<div class="center">Merge Datasets</div>
@@ -79,12 +79,12 @@
 			    	</ul>
 			    </p>
 			    <p class="card-tex"><strong>Because SEED automates so many manual, time-intensive processes, even cities wiht severely limited resources and staff and use SEED to achieve their program goals.</strong></p>
-			    <div class="center"><a href="#!/seed" role="button" class="btn btn-type-2">Learn More about SEED</a></div>
+			    <div class="center"><a href="#!/seed" role="button" class="btn btn-type-2">Learn more</a></div>
 			  </div>
 			</div>
 			<div class="card bsync2" ng-show="!cardStatus['bsync2']">
 				<div class="card-body p-1" ng-click="toggleCard('bsync2')">
-					<img class="bsync-img" src="../images/buildingsync.png" alt="BuildingSync Logo">
+					<img class="bsync-img" src="../images/bldgsync-logo.png" alt="BuildingSync Logo">
 				</div>
 			</div>
 			<div class="card bsync2-flip" ng-show="cardStatus['bsync2']">
@@ -98,7 +98,7 @@
 			<div class="col-title pt-1 pb-2"><a href="#!/analysis-evaluation" class="home-nav">Analysis & Evaluation</a></div>
 			<div class="card card-width2 mx-auto mb-4" ng-show="!cardStatus['csrs']"ng-click="toggleCard('csrs')">
 			  <div class="card-body" >
-				  <div><img class="card-img" src="../images/comstock-resstock.png" alt="ComStock & ResStock Logos"></div>
+				  <div><img class="card-img" src="../images/com-resstock-logos.png" alt="ComStock & ResStock Logos"></div>
 			  </div>
 			</div>
 			<div class="card card-width2 mx-auto mb-4" ng-show="cardStatus['csrs']">
@@ -107,19 +107,19 @@
 			    <p class="card-text">Use the <strong>ResStock</strong> and <strong>ComStock</strong> analysis tools to identify which building stock improvements save the most energy and money.</p>
 			    <p class="card-text">By combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing, these two tools achieve unprecedented granularity and accuracy in modeling the U.S. building stock.
 			    </p>
-			    <div class="center"><a href="#!/comstock-resstock" role="button" class="btn btn-type-3">Learn More</a></div>
+			    <div class="center"><a href="#!/comstock-resstock" role="button" class="btn btn-type-3">Learn more</a></div>
 			  </div>
 			</div>
 
 			<div class="card card-width2 mx-auto mb-4">
 				<div class="card-body" >
-					<div><img class="card-img" src="../images/better.png" alt="BETTER Logo"></div>
+					<div><img class="card-img" src="../images/better_text.png" alt="BETTER Logo"></div>
 				</div>
 			</div>
 				
 			<div class="card card-width2 mx-auto mb-4" ng-show="!cardStatus['as']"ng-click="toggleCard('as')">
 				<div class="card-body" >
-				  <div><img class="card-img" src="../images/asset-score.png" alt="Asset Score Logos"></div>
+				  <div><img class="card-img" src="../images/asset-score-logo.png" alt="Asset Score Logos"></div>
 			  </div>
 			</div>
 			<div class="card card-width2 mx-auto mb-4" ng-show="cardStatus['as']">
@@ -129,15 +129,12 @@
 			    <p class="card-text">Use Asset Score to identify cost-effective energy efficiency measure to help buildings deliver EUI and GHGe metrics for compliance with your city's BEPS policy.
 			    </p>
 			    <p class="card-text">You can even port data over to Asset Score in just one click!</p>
-			    <div class="center"><a href="#!/asset-score" role="button" class="btn btn-type-3">Learn More</a></div>
+			    <div class="center"><a href="#!/asset-score" role="button" class="btn btn-type-3">Learn more</a></div>
 			  </div>
 			</div>
 			<div class="card card-width2 mx-auto mb-4 yellow-border" ng-show="!cardStatus['3p']"ng-click="toggleCard('3p')">
 				<div class="card-body">
-					<div class="row no-gutters">
-				  	<div class="col my-auto pr-2"><img class="card-img" src="../images/3rd-party.png" alt="3rd party tools Logos"></div>
-			 			<div class="col my-auto"><p class="card-text big">3rd party tools</p></div>
-			 		</div>
+				  	<div><img class="card-img" src="../images/third-party-icon-text.png" alt="3rd party tools Logos"></div>
 			  </div>
 			</div>
 			<div class="card card-width mx-auto mb-4" ng-show="cardStatus['3p']">
@@ -154,33 +151,33 @@
 			<div class="col-title pt-1 pb-2"><a href="#!/goals-outcomes" class="home-nav">Goals & Outcomes</a></div>
 
 			<div class="card mb-4">
-				<div class="card-body">
+				<div class="card-body px-2">
 				  <div class="row no-gutters">
-				  	<div class="col my-auto"><img class="card-img" src="../images/g1.png" alt="assess impacts icon"></div>
+				  	<div class="col-4 my-auto pr-3"><img class="card-img" src="../images/com-resstock-outcomes-icon.png" alt="ComStock & ResStock outcomes icon"></div>
 				  	<div class="col my-auto"><p class="card-text">Assess Impacts & Identify New Opportunities</p></div>
 				  </div>
 			  </div>
 			</div>
 			<div class="card mb-4">
-				<div class="card-body">
+				<div class="card-body px-2">
 				  <div class="row no-gutters">
-				  	<div class="col my-auto"><img class="card-img" src="../images/g2.png" alt="identify measures icon"></div>
+				  	<div class="col-4 my-auto pr-3"><img class="card-img" src="../images/better-outcomes-icon.png" alt="BETTER outcomes icon"></div>
 				  	<div class="col my-auto"><p class="card-text">Identify measures and suggest areas for deeper evaluations</p></div>
 				  </div>
 			  </div>
 			</div>
 			<div class="card mb-4">
-				<div class="card-body">
+				<div class="card-body px-2">
 				  <div class="row no-gutters">
-				  	<div class="col my-auto"><img class="card-img" src="../images/g3.png" alt="cost-effective eems icon"></div>
+				  	<div class="col-4 my-auto pr-3"><img class="card-img" src="../images/assetscore-outcomes-icon.png" alt="Asset Score Outcomes icon"></div>
 				  	<div class="col my-auto"><p class="card-text">Cost-effective EEMs Deliver EUI GHGe metrics for compliance</p></div>
 				  </div>
 			  </div>
 			</div>
 			<div class="card mb-2">
-				<div class="card-body">
+				<div class="card-body px-2">
 				  <div class="row no-gutters">
-				  	<div class="col my-auto"><img class="card-img" src="../images/g4.png" alt="customize your workflow icon"></div>
+				  	<div class="col-4 my-auto pr-3"><img class="card-img" src="../images/thirdparty-outcomes-icon.png" alt="third-party outcomes icon"></div>
 				  	<div class="col my-auto"><p class="card-text">Customize your workflow, connect to CRMs and data visualizations</p></div>
 				  </div>
 			  </div>

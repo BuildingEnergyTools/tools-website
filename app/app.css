@@ -30,10 +30,19 @@ body {
 
 @media (min-width: 1200px) { 
   .main-container {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 }
+
+@media (min-width: 1800px) {
+  .main-container {
+    padding-left:15%;
+    padding-right:15%;
+  }
+}
+
+
 
 /* main title */
 .title {
@@ -124,7 +133,7 @@ body {
 
 .btn-type-1 {
 	background-color: #3B88AF;
-	text-transform: uppercase;
+/*	text-transform: uppercase;*/
 	font-weight:normal;
 	color: #fff;
 }
@@ -139,6 +148,25 @@ body {
   margin: auto;
 }
 
+.color-1 {
+  color: #3B88AF;
+}
+
+.color-2 {
+  color: #024880;
+}
+
+.color-3 {
+  color: #478662;
+}
+
+.color-4 {
+  color: #094F58;
+}
+
+.color-5 {
+  color: #F5AF13;
+}
 
 .col-line-1-sm {
 	border-top: 2px solid #3B88AF;
@@ -164,7 +192,7 @@ body {
 
 .btn-type-2 {
 	background-color: #024880;
-	text-transform: uppercase;
+/*	text-transform: uppercase;*/
 	color: #fff;
 }
 
@@ -186,7 +214,7 @@ body {
 
 .btn-type-3 {
 	background-color: #478662;
-	text-transform: uppercase;
+/*	text-transform: uppercase;*/
 	color: #fff;
 }
 
@@ -208,7 +236,7 @@ body {
 
 .btn-type-4 {
 	background-color: #094F58;
-	text-transform: uppercase;
+/*	text-transform: uppercase;*/
 	color: #fff;
 }
 
@@ -230,7 +258,7 @@ body {
 
 .btn-type-5 {
 	background-color: #F5AF13;
-	text-transform: uppercase;
+/*	text-transform: uppercase;*/
 	color: #fff;
 }
 
@@ -255,12 +283,18 @@ body {
 	width:100%;
 }
 
+.card-img-sm {
+  width:80%;
+  padding-left:15%;
+}
+
 .v-divider {
   border-right: 1px solid #ccc;
 }
 
 .h-divider {
-  border-top: 2px solid #ccc;
+  margin-top:30px;
+  border-top: 2px solid #5B5B5B;
   padding-bottom: 20px;
 }
 
@@ -268,18 +302,24 @@ body {
 .subpage-heading {
   color: #000;
   text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
   font-size:18px;
-  font-weight: medium;
+  font-weight: 600;
+  padding-bottom: 20px;
 }
 
 .small-heading {
   color: #000;
   text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
   font-size:16px;
+  padding-bottom:20px;
 }
 
 p {
   font-size: 14px;
+  font-family: 'Roboto', sans-serif;
   color: #5B5B5B;
 }
 
@@ -362,7 +402,7 @@ p {
 }
 
 .card-width3 {
-  width:95%;
+  width:90%;
 }
 
 .card-zindex {
@@ -374,15 +414,39 @@ p {
 }
 .bold {
   font-weight: bold;
+  color: #2E2D2D;
+}
+
+.bold-link {
+  font-weight: bold;
+}
+
+a.bold-link:hover {
+  text-decoration: none;
+  color: inherit;
 }
 
 .footer {
+  font-family: 'Roboto', sans-serif;
   background-color: #eeeeee;
+  padding: 10px 20px;
+}
+
+p.footer {
+  font-family: 'Roboto', sans-serif;
+  color: #0A3446;
+}
+
+p.medium {
+  font-weight: 600;
 }
 
 .footer-dark {
   background-color: #6F8591;
   color: white;
+  font-family: 'Roboto', sans-serif;
+  padding: 0px 10px;
+  font-size: 0.9em;
 }
 
 .white-border {
@@ -391,20 +455,71 @@ p {
 
 #tool-nav a.active5 {
   background-color: #F5AF13;
+  color: white;
 }
 
 #tool-nav a.active4 {
   background-color: #094F58;
+  color: white;
 }
 
 #tool-nav a.active3 {
   background-color: #478662;
+  color: white;
 }
 
 #tool-nav a.active2 {
   background-color: #024880;
+  color: white;
 }
 
 #tool-nav a.active1 {
   background-color: #3B88AF;
+  color: white;
 }
+
+#tool-nav .nav-link {
+  font-size: 14px;
+}
+/*button {
+  margin: 10px 0 0 10px;
+  background: transparent;
+  border: 2px solid orange;
+  padding: 10px 20px;
+  position: relative;
+}
+
+button>div {
+  position: absolute;
+  background: orange;
+  width: 30%;
+  height: 2px;
+  left: 105%;
+  top: 50%;
+}
+
+button>div:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid orange;
+  border-bottom: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  top: -9px;
+  right: calc(100% - 22px);
+}
+button>div:after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid orange;
+    border-radius: 0 0 5px 0;
+    bottom: calc(100% - 2px);
+    left: 50% ;
+    border-top:none;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}*/

@@ -9,9 +9,11 @@
 	  <li class="nav-item">
 	    <a class="nav-link" href="" ng-click="setActive('news')" ng-class="{ active{{navNum}}: subnavIsActive('news')}">News</a>
 	  </li>
+	  <div ng-if="navNum === 5">
 	  <li class="nav-item">
 	    <a class="nav-link" href="" ng-click="setActive('dev')" ng-class="{ active{{navNum}}: subnavIsActive('dev')}">Links for Developers</a>
 	  </li>
+	  </div>
 	   <li class="nav-item">
 	    <a class="nav-link" href="" ng-click="setActive('help')" ng-class="{ active{{navNum}}: subnavIsActive('help')}">Get Help</a>
 	  </li>
