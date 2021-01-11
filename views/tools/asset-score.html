@@ -1,11 +1,24 @@
 <div ng-include="'views/includes/topnav.html'"></div>
 
-
 <div class="row pt-3">
-	<div class="col-6 v-divider">
-		<h3 class="subpage-heading">Asset Score
-		 </h3>
-		<p>... </p>
-	</div>
 
+	<div class="col-3">
+		<div class="mb-4"><img src="../../images/asset-score-logo.png" alt="Asset Score Logo" width="100%"></div>
+		<div ng-include="'views/tools/tool-nav.html'"></div>
+	</div>
+	<div class="col">
+		<div class="" ng-if="subNav === 'home'">
+			<div markdown-it ng-include="'views/tools/markdown/asset-score/home.md'"></div>
+		</div>		
+		<div class="" ng-if="subNav === 'resources'">
+			<div markdown-it ng-include="'views/tools/markdown/asset-score/resources.md'"></div>
+		</div>	
+		<div class="" ng-if="subNav === 'news'">
+			<div markdown-it ng-include="'views/tools/markdown/asset-score/news.md'"></div>
+		</div>
+		<div class="" ng-if="subNav === 'help'">
+			Help section
+		</div>						
+	</div>
+	
 </div>

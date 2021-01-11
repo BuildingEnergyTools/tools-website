@@ -13,7 +13,9 @@ var myapp = angular.module('myApp', [
 myapp.config(['markdownItConverterProvider', function(markdownItConverter) {
   markdownItConverter.config('commonmark', {
     breaks: true,
-    html: true
+    html: true,
+    linkify: true,
+
   });
 }]);
 
@@ -87,10 +89,22 @@ myapp.config(['$locationProvider', '$routeProvider', function($locationProvider,
     toolName: 'ComStock & ResStock',
     navNum: 3
   });
+  $routeProvider.when('/better', {
+    templateUrl: 'views/tools/better.html',
+    controller: 'ToolsCtrl',
+    toolName: 'BETTER',
+    navNum: 3
+  });  
   $routeProvider.when('/asset-score', {
     templateUrl: 'views/tools/asset-score.html',
     controller: 'ToolsCtrl',
     toolName: 'Asset Score',
+    navNum: 3
+  });  
+  $routeProvider.when('/third-party', {
+    templateUrl: 'views/tools/third-party.html',
+    controller: 'ToolsCtrl',
+    toolName: 'Third-Party Tools',
     navNum: 3
   });  
   $routeProvider.when('/buildingsync/:subNav?', {
