@@ -10,6 +10,7 @@ angular.module('myApp.views', ['ngRoute'])
 		if (viewLocation === $location.path()) {
 			$scope.activeVal = true;
 		}
+		
 		if ($route.current.$$route.navNum == 1 && viewLocation === '/collection-reporting'){
 			$scope.activeVal = true;
 		}
@@ -25,13 +26,16 @@ angular.module('myApp.views', ['ngRoute'])
 		if ($route.current.$$route.navNum == 5 && viewLocation === '/developers'){
 			$scope.activeVal = true;
 		} 
-
+		
     return $scope.activeVal;
   };
 
   angular.element(document).ready(function () {
     var myobj = document.getElementById("svg-canvas");
-		myobj.remove();
+    if (!(myobj == null)) {
+    	myobj.remove();
+    }
+		
 	});
 
 }]);
