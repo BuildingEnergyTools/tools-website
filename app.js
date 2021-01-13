@@ -27,7 +27,8 @@ myapp.config(['$locationProvider', '$routeProvider', function($locationProvider,
   // home
   $routeProvider.when('/home', {
     templateUrl: 'home/home.html',
-    controller: 'HomeCtrl'
+    controller: 'HomeCtrl',
+    navNum: 0
   });
 
   // landing pages for each category
