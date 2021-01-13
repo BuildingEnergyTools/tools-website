@@ -26,7 +26,12 @@ angular.module('myApp.views', ['ngRoute'])
 			$scope.activeVal = true;
 		} 
 
-        return $scope.activeVal;
-    };
+    return $scope.activeVal;
+  };
+
+  angular.element(document).ready(function () {
+    var myobj = document.getElementById("svg-canvas");
+		myobj.remove();
+	});
 
 }]);
