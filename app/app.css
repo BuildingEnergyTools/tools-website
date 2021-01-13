@@ -1,29 +1,5 @@
 /* app css stylesheet */
-/*
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
-}*/
 
-/*.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
-  display: inline;
-}
-
-.menu > li + li:before {
-  content: "|";
-  padding-right: 0.3em;
-}
-*/
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
@@ -42,8 +18,6 @@ body {
   }
 }
 
-
-
 /* main title */
 .title {
 	padding: 3px 10px;
@@ -59,6 +33,10 @@ body {
 
 .black {
   color: #000;
+}
+
+.white {
+  color: #fff;
 }
 
 .gray-background {
@@ -279,6 +257,10 @@ body {
   text-align: center;
 }
 
+.card {
+  z-index: 2;
+}
+
 .card-img {
 	width:100%;
 }
@@ -333,7 +315,7 @@ p {
 
 .bsync1 {
   position: relative;
-  top:-100px;
+  top:-200px;
   left: 87%;
   width: 31%;
   border-radius: 20%;
@@ -343,8 +325,8 @@ p {
 
 .bsync1-flip {
   position: relative;
-  top:-100px;
-  left: 87%;
+  top:-200px;
+  left: 70%;
   width: 60%;
   border: 4px solid #F5AF13;
   z-index: 6;
@@ -398,7 +380,7 @@ p {
 }
 
 .card-width2 {
-  width: 75%;
+  width: 70%;
 }
 
 .card-width3 {
@@ -407,6 +389,10 @@ p {
 
 .card-zindex {
   z-index: 5;
+}
+
+.card-margin {
+  margin-bottom: 2.5rem;
 }
 
 .big {
@@ -481,6 +467,16 @@ p.medium {
 #tool-nav .nav-link {
   font-size: 14px;
 }
+
+#arrow {
+    stroke: #ffffff;
+    fill: #ffffff;
+}
+#svg-canvas {
+  z-index: 1;
+}
+
+
 /*button {
   margin: 10px 0 0 10px;
   background: transparent;
