@@ -53,9 +53,14 @@ body {
 }
 
 /* column and button special styles */
+.z-3 {
+  z-index: 10;
+}
+
 .home-nav {
 	color: white;
   text-decoration: none;
+
 }
 .home-nav:hover {
 	color: #EEE;
@@ -473,7 +478,8 @@ p.medium {
     fill: #ffffff;
 }
 #svg-canvas {
-  z-index: 1;
+  z-index: 0;
+  pointer-events: none;
 }
 
 
