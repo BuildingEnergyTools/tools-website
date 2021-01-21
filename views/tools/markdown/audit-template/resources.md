@@ -1,1 +1,12 @@
-Audit Template Resources
+
+- [Introduction to the Audit Template Webinar](https://youtu.be/vtmi1WzA7zQ)
+- [Introduction to the Audit Template Webinar Presentation Slides](https://buildingenergyscore.energy.gov/documents/AuditTemplate_LL87_Webinar_06282018_PresentationSlides.pdf)
+- [Audit Template User Guide](https://help.buildingenergyscore.com/support/solutions/8000051362)
+- [Audit Template Quick Start Guide](https://buildingenergyscore.energy.gov/documents/asset_score_quick_start_guide_audit_template.pdf)
+- [Audit Template PDF Report Example](https://buildingenergyscore.energy.gov/documents/example_audit_data_report.pdf)
+- [Audit Template CSV Report Example](https://buildingenergyscore.energy.gov/templates/audit_data_csv_report_template.xlsx)
+- [Audit Template BuildingSync XML Example – NYC BBL Property](https://buildingenergyscore.energy.gov/documents/example_NYC_audit_report_property_BS_v2.1_100920.xml)
+- [Audit Template BuildingSync XML Example – San Francisco Building](https://buildingenergyscore.energy.gov/documents/example_SF_audit_report_BS_v2.1_100920.xml)
+- [Audit Template to Asset Score Conversion Example](https://buildingenergyscore.energy.gov/documents/example_audit_report_to_asset_score_BS_v2.1_101920.xml)
+- [NYC LL87 Energy Audit Data Collection Tool Webinar](https://buildingenergyscore.energy.gov/videos/AuditTemplate_LL87_Webinar_06282018.mp4)
+- [NYC LL87 Energy Audit Data Collection Tool Webinar Presentation Slides](https://buildingenergyscore.energy.gov/documents/AuditTemplate_LL87_Webinar_06282018_PresentationSlides.pdf)
