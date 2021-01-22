@@ -440,6 +440,11 @@ p {
 p.footer {
   font-family: 'Roboto', sans-serif;
   color: #0A3446;
+  font-size: 0.9em;
+}
+
+p.smaller {
+  font-size: 0.8em;
 }
 
 p.medium {
@@ -608,4 +613,12 @@ h5, h6 {
   text-decoration: none;
   box-shadow: none;
   color: #5B5B5B;
+}
+
+.smaller-img {
+  width: 60%;
+}
+
+.min-height {
+  min-height:130px;
 }
