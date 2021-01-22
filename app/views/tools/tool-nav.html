@@ -1,21 +1,26 @@
 <div id="tool-nav">
 	<ul class="nav flex-column">
 	  <li class="nav-item">
-	    <a class="nav-link" href="" ng-click="setActive('home')" ng-class="{ active{{navNum}}: subnavIsActive('home')}">{{toolName}}</a>
+	    <a class="nav-link" href="" ng-click="setActive('home')" ng-class="{ active{{navNum}}: subnavIsActive('home')}"><span class="mx-3 align-center"><i class="fas fa-info-circle fa-2x"></i></span><span class="align-center">{{toolName}}</span></a>
+	  </li>
+	  <div ng-if="navNum === 3">
+		  <li class="nav-item">
+		  	<a class="nav-link" href="" ng-click="setActive('goals')" ng-class="{ active{{navNum}}:subnavIsActive('goals')}"><span class="mx-3 align-center"><i class="fas fa-bullseye fa-2x"></i></span><span class="align-center">Goals & Outcomes</span></a>
+		  </li>
+	  </div>
+	  <li class="nav-item">
+	    <a class="nav-link" href="" ng-click="setActive('resources')" ng-class="{ active{{navNum}}: subnavIsActive('resources')}"><span class="ml-3 mr-4 align-center"><i class="fas fa-file-alt fa-2x"></i></span><span class="align-center">Resources</span></a>
 	  </li>
 	  <li class="nav-item">
-	    <a class="nav-link" href="" ng-click="setActive('resources')" ng-class="{ active{{navNum}}: subnavIsActive('resources')}">Resources</a>
+	    <a class="nav-link" href="" ng-click="setActive('news')" ng-class="{ active{{navNum}}: subnavIsActive('news')}"><span class="mx-3 align-center"><i class="far fa-newspaper fa-2x"></i></span><span class="align-center">News</span></a>
 	  </li>
+	  <div ng-if="navNum === 5 || toolName === 'Asset Score' || toolName === 'ComStock & ResStock' || toolName === 'BETTER' || toolName === 'SEED'">
 	  <li class="nav-item">
-	    <a class="nav-link" href="" ng-click="setActive('news')" ng-class="{ active{{navNum}}: subnavIsActive('news')}">News</a>
-	  </li>
-	  <div ng-if="navNum === 5">
-	  <li class="nav-item">
-	    <a class="nav-link" href="" ng-click="setActive('dev')" ng-class="{ active{{navNum}}: subnavIsActive('dev')}">Links for Developers</a>
+	    <a class="nav-link" href="" ng-click="setActive('dev')" ng-class="{ active{{navNum}}: subnavIsActive('dev')}"><span class="mx-3 align-center"><i class="fas fa-wrench fa-2x"></i></span><span class="align-center">Links for Developers</span></a>
 	  </li>
 	  </div>
 	   <li class="nav-item">
-	    <a class="nav-link" href="" ng-click="setActive('help')" ng-class="{ active{{navNum}}: subnavIsActive('help')}">Get Help</a>
+	    <a class="nav-link" href="" ng-click="setActive('help')" ng-class="{ active{{navNum}}: subnavIsActive('help')}"><span class="mx-3 align-center"><i class="fas fa-question-circle fa-2x"></i></span><span class="align-center">Get Help</span></a>
 	  </li>
 	</ul>
 </div>
