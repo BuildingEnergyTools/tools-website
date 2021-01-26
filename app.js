@@ -64,54 +64,63 @@ myapp.config(['$locationProvider', '$routeProvider', function($locationProvider,
     templateUrl: 'views/tools/portfolio-manager.html',
     controller: 'ToolsCtrl',
     toolName: 'Portfolio Manager',
+    baseURL: 'portfolio-manager',
     navNum: 1
   });
   $routeProvider.when('/audit-template/:subNav?', {
     templateUrl: 'views/tools/audit-template.html',
     controller: 'ToolsCtrl',
     toolName: 'Audit Template',
+    baseURL: 'audit-template',
     navNum: 1
   });
   $routeProvider.when('/ubid/:subNav?', {
     templateUrl: 'views/tools/ubid.html',
     controller: 'ToolsCtrl',
     toolName: 'UBID',
+    baseURL: 'ubid',
     navNum: 5
   });
   $routeProvider.when('/seed/:subNav?', {
     templateUrl: 'views/tools/seed.html',
     controller: 'ToolsCtrl',
     toolName: 'SEED',
+    baseURL: 'seed',
     navNum: 2
   });
   $routeProvider.when('/comstock-resstock/:subNav?', {
     templateUrl: 'views/tools/comstock-resstock.html',
     controller: 'ToolsCtrl',
     toolName: 'ComStock & ResStock',
+    baseURL: 'comstock-resstock',
     navNum: 3
   });
   $routeProvider.when('/better/:subNav?', {
     templateUrl: 'views/tools/better.html',
     controller: 'ToolsCtrl',
     toolName: 'BETTER',
+    baseURL: 'better',
     navNum: 3
   });  
   $routeProvider.when('/asset-score/:subNav?', {
     templateUrl: 'views/tools/asset-score.html',
     controller: 'ToolsCtrl',
     toolName: 'Asset Score',
+    baseURL: 'asset-score',
     navNum: 3
   });  
   $routeProvider.when('/third-party/:subNav?', {
     templateUrl: 'views/tools/third-party.html',
     controller: 'ToolsCtrl',
     toolName: 'Third-Party Tools',
+    baseURL: 'third-party',
     navNum: 5
   });  
   $routeProvider.when('/buildingsync/:subNav?', {
     templateUrl: 'views/tools/buildingsync.html',
     controller: 'ToolsCtrl',
     toolName: 'BuildingSync',
+    baseURL: 'buildingsync',
     navNum: 5
   });  
  

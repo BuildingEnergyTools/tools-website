@@ -1,6 +1,5 @@
 <div ng-include="'views/includes/topnav.html'"></div>
-
-<div class="row pt-3">
+<div class="row">
 
 	<div class="col-3 v-divider">
 		<div class="mb-4"><img src="../../images/seed-logo-horizontal.png" alt="SEED logo" width="100%"></div>
@@ -104,236 +103,14 @@
 
 			<div id="accordion">
 			  <div class="card">
-			    <div class="card-header" id="heading1">
-			      <h5 class="mb-0">
-			        <button class="btn btn-link panel-header-link" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
-			          <i class="fa px-3 chevron" aria-hidden="true"></i>FAQ
-			      </h5>
-			    </div>
-
-			    <div id="collapse1" class="collapse show" aria-labelledby="headingr1" data-parent="#accordion">
-			      <div class="card-body">
-			      	<div id="accordion2">
-			      		<div class="card">
-							    <div class="card-header col-type-2" id="headingr1">
-							      <h5 class="mb-0">
-							        <button class="btn btn-link panel-header-link2" data-toggle="collapse" data-target="#collapser1" aria-expanded="true" aria-controls="collapser1">
-							          <i class="fa px-3 chevron" aria-hidden="true"></i>Features - Geocoding</button>
-							      </h5>
-							    </div>
-
-							    <div id="collapser1" class="collapse show" aria-labelledby="headingr1" data-parent="#accordion2">
-							      <div class="card-body">
-							      	<h5 class="mb-4">When and how does SEED geocode my data?</h5>
-											
-											<p>SEED will attempt to geocode your data with latitude and longitude values only if the following are true:</p>
-
-											<ol><li>Your organization has a MapQuest API key. You can register for one through MapQuest's website and apply it on your organization settings page.</li>
-											<li>The records being geocoded have address values that can be read by SEED. In your organization column settings page, you can specify which fields and in what order SEED will use to build the full address that will be geocoded by MapQuest.</li>
-											<li>The records being geocoded do not already have latitude and longitude populated. SEED won't override these values, but you can edit and remove these values if you want SEED to attempt to generate them with MapQuest.</li></ol>
-											<p>SEED will make this attempt in the following cases:</p>
-
-											<ul><li>During the file import process, after you've mapped columns, SEED will automatically attempt geocoding on records.</li>
-
-											<li>On either the properties page or the tax lots page, you can select records and use the "Geocode Selected" button under the Actions menu.</li></ul>
-
-											<p>Note: Valid UBID (properties) or ULID (tax lots) values can be parsed to provide a latitude and longitude value. On import, UBID/ULID is used instead of MapQuest if available. On the inventory pages, there's a separate Action menu button to "Decode UBID/ULID for Selected".</p>
-
-											<h5 class="my-4">I just geocoded my data using SEED. How do I review and verify the results?</h5>
-
-											<p>There are multiple ways of verifying geocoding results. The most obvious way is to verify that latitude and longitude fields are populated. Additionally, SEED provides a field called "Geocoding Confidence". This field can provide evidence of how the geocoding went for that record - a value starting with "Low..." indicates that geocoding failed for a record because the address values didn't yield reliable results. Finally, SEED provides an inventory map page that allows you to view where the points are located on a map.</p>
-							      </div>
-							    </div>
-			      		</div>
-			      		<div class="card">
-							    <div class="card-header col-type-2" id="headingr2">
-							      <h5 class="mb-0">
-							        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser2" aria-expanded="true" aria-controls="collapser2">
-							          <i class="fa px-3 chevron" aria-hidden="true"></i>Features - Inventory Management</button>
-							      </h5>
-							    </div>
-
-							    <div id="collapser2" class="collapse" aria-labelledby="headingr2" data-parent="#accordion2">
-							      <div class="card-body">
-							      	<h5 class="mb-4">Mapping, Merging, Matching, Pairing, and Linking - What do each of those mean and how are they related or different from each other?</h5>
-											
-											<p>Different inventory management and analysis features in SEED are based on the relationships between records of different inventory types (properties and tax lots). Those terms help describe these relationships.</p>
-
-											<div class="mx-auto" style="width:60%;"><a href="./views/tools/markdown/seed/img/mapping_diagram.png" target="_blank"><img src="views/tools/markdown/seed/img/mapping_diagram.png" alt="Mapping and Merging Diagram" width="100%" /></a><br/>
-											<div class="ml-4 mb-4 center"><em>click to expand</em></div></div>
-											<ul>
-												<li><strong>Mapping</strong> refers to the process of mapping newly imported data fields to the known database column names in order to create a record.</li>
-												<li><strong>Merging</strong> refers to the act of combining multiple properties (or multiple tax lots) into one record. This can be done manually by users or automatically by SEED and helps avoid duplicate records.</li>
-
-												<li><strong>Matching</strong> refers to whether two or more properties match (or two or more tax lots). A match can only happen if specific fields between records match. Records can be compared within the same cycle (triggering a merge) or across cycles (building a link). The specific fields can be modified for each organization.</li>
-
-												<li><strong>Pairing</strong> refers to the association between properties and tax lots within the same cycle.</li>
-
-												<li><strong>Linking</strong> refers to the association between properties across cycles (or tax lots across cycles) and is useful for analysis.</li>
-											</ul>
-
-											<p>For more details, refer to this <a href="https://github.com/SEED-platform/seed/blob/develop/docs/source/matching.rst" target="_blank" class="color-2">documentation that covers matching, merging, and linking</a>.</p>
-										
-											<h5 class="my-4">The linking feature is new - can I get more details on how it works?</h5>
-
-											<p>Cross-cycle linking, or simply <strong>linking</strong>, allows organizations to analyze uploads of the same property (or tax lot) over time. This is done by matching records in one cycle with records within other cycles. SEED builds these associations automatically during import using matching criteria as specified by the organization. Additionally, this association can be made during a manual edit to record values (especially if the changed value is a matching criteria field).</p>
-
-											<p>For even more details on matching and linking, refer to this <a href="https://github.com/SEED-platform/seed/blob/develop/docs/source/matching.rst#linking-across-cycles" target="_blank" class="color-2">section of the matching, merging, and linking documentation</a>.</p>
-
-											<h5 class="my-4">How does linking interact with paired properties and tax lots?</h5>
-											<p>At the moment, paired property and tax lot relationships are displayed and managed separately from linked relationships. That is, paired records are viewed and managed in a separate area of SEED as linked records.</p>
-							      </div>
-							    </div>
-			      		</div>
-			      		<div class="card">
-							    <div class="card-header col-type-2" id="headingr3">
-							      <h5 class="mb-0">
-							        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser3" aria-expanded="true" aria-controls="collapser3">
-							          <i class="fa px-3 chevron" aria-hidden="true"></i>Features - Miscellaneous</button>
-							      </h5>
-							    </div>
-
-							    <div id="collapser3" class="collapse" aria-labelledby="headingr3" data-parent="#accordion2">
-							      <div class="card-body">
-							      	<h5 class="mb-4">How can I get general information about the capabilities, features, and active development of SEED?</h5>
-											
-											<ul>
-												<li>For a list of new features and fixed capabilities, visit the <a href="https://github.com/SEED-platform/seed/releases" target="_blank" class="color-2">SEED Platform GitHub Releases</a> page.</li>
-
-												<li>Consult the <a href="https://seed-platform.org/references/" target="_blank" class="color-2">Reference Page</a> for publications related to SEED. Additionally, this paper describes the BuildingSync® format which can be used to import data into the SEED Platform:
-
-												<div class="pl-5">DeGraw, Jason, Kristin Field-Macumber, Nicholas Long, and Supriya Goel. 2018. <a href="https://buildingsync.net/documents/DeGraw-ACEEE-BuildingSync-in-Action.pdf" target="_blank" class="color-2">“BuildingSync® in Action : Example Implementations.”</a> In 2018 ACEEE Summer Study on Energy Efficiency in Buildings, 1–12. Pacific Grove, CA.</div>
-												</li>
-												<li>Here are some related projects that are using SEED:
-													<ul>
-														<li><a href="http://psdconsulting.com/openefficiency-platform/" target="_blank" class="color-2">The OpenEfficiency Platform (OEP) Project</a></li>
-														<li><a href="https://aceee.org/files/proceedings/2018/#/paper/event-data/p110" target="_blank" class="color-2">The BayREN Integrated Commercial Retrofits (BRICR) Project</a> and <a href="https://www.energy.gov/sites/prod/files/2018/05/f52/24293_Hooper_050318-900.pdf" target="_blank" class="color-2">BRICR Presentation</a></li>
-														<li><a href="https://www.energy.gov/eere/buildings/energy-data-vault" target="_blank" class="color-2">The Energy Data Vault (EDV) Project</a></li>
-													</ul>
-												</li>
-											</ul>
-											<h5 class="mt-4 mb-4">Do you anticipate any SEED issues if there are irregular data updates for each building? For example, with a point-of-sale benchmarking program, building data would only be updated when a property is sold.</h5>
-
-											<p>There should not be any issues importing data at non-regular times; users frequently do so with ENERGY STAR Portfolio Manager data.</p>
-																					
-							      </div>
-							    </div>
-			      		</div>
-			      		<div class="card">
-							    <div class="card-header col-type-2" id="headingr4">
-							      <h5 class="mb-0">
-							        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser4" aria-expanded="true" aria-controls="collapser4">
-							          <i class="fa px-3 chevron" aria-hidden="true"></i>Getting Help</button>
-							      </h5>
-							    </div>
-
-							    <div id="collapser4" class="collapse" aria-labelledby="headingr4" data-parent="#accordion2">
-							      <div class="card-body">
-							      	<h5 class="mb-4">What resources or support do you provide to jurisdictions interested in using SEED as part of a benchmarking program?</h5>
-											
-											<p>We typically provide technical support as needed and within reason. As the community grows, there are more users able to provide support. It is recommended to use <a href="https://github.com/SEED-platform/seed/issues" target="_blank" class="color-2">GitHub issues</a> to a) view existing feature requests and issues, and b) communicate with various developers.</p>
-
-																					
-							      </div>
-							    </div>
-			      		</div>
-			      		<div class="card">
-							    <div class="card-header col-type-2" id="headingr5">
-							      <h5 class="mb-0">
-							        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser5" aria-expanded="true" aria-controls="collapser5">
-							          <i class="fa px-3 chevron" aria-hidden="true"></i>Hosting</button>
-							      </h5>
-							    </div>
-
-							    <div id="collapser5" class="collapse" aria-labelledby="headingr5" data-parent="#accordion2">
-							      <div class="card-body">
-							      	<h5 class="mb-4">Can the web interface of a self-hosted SEED instance be accessed via a local network, or is internet access required? Can access via local internet be disabled?</h5>
-											
-											<p>Access via public internet would be a function of the self-hosted instance's network configuration. If SEED is hosted on Amazon Web Services, for example, the host can deny access based on CIDR blocks (IP address ranges) in the Amazon Web Services Console. If the application is hosted on user-owned infrastructure, a local firewall can prevent external access. Note that internal access in both cases would still be available (i.e., the web interface would be accessible).</p>
-
-											<h5 class="mb-4">What is the estimated cost to implement and maintain the SEED Platform as part of a benchmarking system?</h5>
-
-											<p>There are three hosting options:</p>
-											<ol>
-												<li>Self-hosting on user-owned hardware</li>	
-												<li>Self-hosting on the cloud (e.g. Amazon, Google Compute)</li>
-												<li>Paying a hosting provider. Several companies offer SEED as a hosted solution:
-													<ul>
-														<li><a href="https://www.clearlyenergy.com/" target="blank" class="color-2">ClearlyEnergy</a></li>
-														<li><a href="https://www.earthadvantage.org/creating-change/home-energy-score.html" target="blank" class="color-2">Earth Advantage</a></li>
-														<li><a href="https://opentech.eco/" target="blank" class="color-2">Open</a></li>
-														<li><a href="http://psdconsulting.com/" target="blank" class="color-2">PSD Consulting</a>.</li>
-													</ul>
-													See the Technical Allies section for more information.
-												</li>
-											</ol>
-											<p>Options (1) and (2) are highly dependent on internal expertise and potential requirements related to sharing outside of a user's organization. Generally, cloud hosting simplifies management of networks, hardware, firewalls, and backups. An example SEED instance hosted in the cloud with staging and production environments costs approximately $1,000 to $1,500 per month for a large instance capable of processing records for an entire region.</p>
-																					
-							      </div>
-							    </div>
-			      		</div>
-			      		<div class="card">
-							    <div class="card-header col-type-2" id="headingr6">
-							      <h5 class="mb-0">
-							        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser6" aria-expanded="true" aria-controls="collapser6">
-							          <i class="fa px-3 chevron" aria-hidden="true"></i>Industry Involvement</button>
-							      </h5>
-							    </div>
-
-							    <div id="collapser6" class="collapse" aria-labelledby="headingr6" data-parent="#accordion2">
-							      <div class="card-body">
-							      	<h5 class="mb-4">Are there any organizations that are developing free and open-source plug-ins for SEED?</h5>
-											
-											<p>You can find more information about organizations contributing to SEED Platform development below:</p>
-											<ul>
-												<li><a href="https://www.energy.gov/eere/buildings/seed-platform-collaborative" target="_blank" class="color-2">SEED Platform Collaborative</a></li>
-												<li><a href="https://github.com/SEED-platform/seed/blob/develop/AUTHORS.md" target="_blank" class="color-2">SEED Platform Contributing Developers</a></li>
-												<li><a href="#heading6" target="_self" class="color-2">SEED Technical Allies</a></li>
-												<li><a href="https://github.com/OpenEfficiencyPlatform/OEP" target="_blank" class="color-2">Open Efficiency Platform</a></li>
-												<li><a href="https://www.energy.gov/sites/prod/files/2018/05/f52/24293_Hooper_050318-900.pdf" target="_blank" class="color-2">BayREN Integrated Commercial Retrofits (BRICR)</a></li>
-												<li><a href="https://www.energy.gov/eere/buildings/energy-data-vault" target="_blank" class="color-2">Energy Data Vault (EDV)</a></li>
-											</ul>
-
-											<h5 class="mb-4">Do any applications use SEED to store and analyze building construction permit applications for energy code compliance?</h5>
-
-											<p>We are not aware of any applications which use SEED to do this, although SEED could be linked to another tool, like SalesForce. We recommend contacting Earth Advantage and Clearly Energy for more details (see the technical allies page).</p>
-																					
-							      </div>
-							    </div>
-			      		</div>
-			      		<div class="card">
-							    <div class="card-header col-type-2" id="headingr7">
-							      <h5 class="mb-0">
-							        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser7" aria-expanded="true" aria-controls="collapser7">
-							          <i class="fa px-3 chevron" aria-hidden="true"></i>Security</button>
-							      </h5>
-							    </div>
-
-							    <div id="collapser7" class="collapse" aria-labelledby="headingr7" data-parent="#accordion2">
-							      <div class="card-body">
-							      	<h5 class="mb-4">Can you suggest any encryption solutions, since the SEED software does not encrypt its database?</h5>
-											
-											<p>We recommend hard drive encryption of the database server as the easiest solution; encrypting locally is more complicated but certainly doable.</p>
-
-											<h5 class="mb-4">How does SEED secure internet data communications?</h5>
-
-											<p>Secure sockets layer (SSL) protocols must be configured on the hosted instance. This requires purchasing and adding certificates to the deployed server, or using a third-party service (e.g. CloudFlare or Cloudfront) to manage the domain name system (DNS) and the SSL certificates.</p>			
-							      </div>
-							    </div>
-			      		</div>
-			      	</div>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
 			    <div class="card-header" id="heading2">
 			      <h5 class="mb-0">
-			        <button class="btn btn-link panel-header-link collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
+			        <button class="btn btn-link panel-header-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="true" aria-controls="collapse2">
 			          <i class="fa px-3 chevron" aria-hidden="true"></i>User Documentation</button>
 			      </h5>
 			    </div>
 
-			    <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordion">
+			    <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">
 			      <div class="card-body">
 			      	<h5>Importing Data</h5>
 							<h6>Importing Meter Data</h6>
@@ -411,143 +188,63 @@
 			      </div>
 			    </div>
 			  </div>
-			  <div class="card">
-			    <div class="card-header" id="heading4">
-			      <h5 class="mb-0">
-			        <button class="btn btn-link panel-header-link collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
-			          <i class="fa px-3 chevron" aria-hidden="true"></i>Known Issues</button>
-			      </h5>
-			    </div>
-
-			    <div id="collapse4" class="collapse" aria-labelledby="heading4" data-parent="#accordion">
-			      <div class="card-body">
-			      	<h5>Data Import</h5>
-							<strong>Things that SEED cannot deal with when importing a file:</strong>
-							<ul>
-								<li>Apostrophes in field names, such as "City's Address" This will cause the program to hang at 45% when import the file</li>
-								<li>Newlines in a string fields, such as in a Portfolio Manager Property Notes field</li>
-							</ul>
-
-							<h5 class="my-4">Mapping</h5>
-							<strong>Long pause before mapping screen comes up</strong>
-							<ul><li>After uploading a data file, when you click on the "Continue to data mapping button", the program takes several seconds for the mapping screen to appear. Be patient, it will eventually appear.</li></ul>
-
-							<strong>Duplicate column names need to be fixed before unchecking the box</strong>
-							<ul><li>When two field names have the same mapping suggestion, the software disables the "Map Your Data" button, even when the checkbox on the left is unchecked. The checkbox is used to toggle whether to include the column in mapping. To enable the button, change the name of the header then uncheck the checkbox.</li></ul>
-
-							<div class="table-width mx-auto">
-							<img src="views/tools/markdown/seed/img/duplicate_red.png" width="80%" alt="image showing 2 fields with the same name and map your data button disabled" />
-							</div>
-							<div class="table-width mx-auto mb-4">
-							<img src="views/tools/markdown/seed/img/duplicate_green.png" width="80%" alt="image showing 2 fields with different names and map your data button enabled">
-							</div>
-
-							<strong>View / Hide Columns not working properly</strong>
-							<ul><li>Clicking the View / Hide Columns button and selecting or deselecting fields to display puts you back in the first Mapping screen and when you click Map your data to get back to the final Mapping screen, the program has not saved your changes to the displayed fields.</li></ul>
-							<a href="https://github.com/SEED-platform/seed/issues/635" target="_blank" class="color-2">See Github Issue # 635</a>
-
-							<h5 class="my-4">Matching</h5>
-							<strong>Number of matches records reported after record matching step is not always accurate</strong>
-							<ul><li>Using the sample data (see Knowledge Base for link to a zip file of sample data), after uploading, mapping and matching the two files (tax assessor building list and Energy Star Portfolio Manager data), the program should find 512 matches (the records in both files should have a 100% match). The program should report this value. However, sometimes the program reports a wrong value, but when viewing the matched records in the next step, the correct number of matches will be displayed</li></ul>
-
-							<div class="table-width mx-auto">
-								<img src="views/tools/markdown/seed/img/512Matches.png" alt="image showing 512 matches" />
-							</div>
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <div class="card-header" id="heading5">
-			      <h5 class="mb-0">
-			        <button class="btn btn-link panel-header-link collapsed" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
-			          <i class="fa px-3 chevron" aria-hidden="true"></i>Release Notes</button>
-			      </h5>
-			    </div>
-
-			    <div id="collapse5" class="collapse" aria-labelledby="heading5" data-parent="#accordion">
-			      <div class="card-body">
-			      	<p>In addition to the <a href="https://github.com/SEED-platform/seed/releases" target="_blank" class="color-2">GitHub release notes</a> page, this page provides more details on the changes made in each version of SEED-Platform by version number.</p>
-
-			      	<ul>
-			      		<li><a href="https://seed-platform.org/release_notes/#version-250" target="_blank" class="color-2">Release Notes v2.5.0</a></li>
-			      		<li><a href="https://seed-platform.org/release_notes/#version-240" target="_blank" class="color-2">Release Notes v2.4.0</a></li>
-			      		<li><a href="https://seed-platform.org/release_notes/#version-200" target="_blank" class="color-2">Release Notes v2.0.0</a></li>
-			      		<li><a href="https://seed-platform.org/release_notes/#version-150" target="_blank" class="color-2">Release Notes v1.5.0</a></li>
-			      	</ul>
-
-			      	<p>If you have any questions about releases or changes to the program, please email <a href="mailto:seed-support@lbl.gov">seed-support@lbl.gov</a></p>
-
-			      </div>
-			    </div>
-			  </div>
-			  <div class="card">
-			    <div class="card-header" id="heading6">
-			      <h5 class="mb-0">
-			        <button class="btn btn-link panel-header-link collapsed" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6">
-			          <i class="fa px-3 chevron" aria-hidden="true"></i>Technical Allies</button>
-			      </h5>
-			    </div>
-
-			    <div id="collapse6" class="collapse" aria-labelledby="heading6" data-parent="#accordion">
-			      <div class="card-body">
-			      	<p>SEED Platform Technical Allies are private companies and other entities that are officially recognized for their significant contributions to the <a href="http://energy.gov/eere/buildings/seed-platform-collaborative" target="_blank" class="color-2">SEED Platform Collaborative</a>. The Technical Ally categories are: Hosting Provider, Software Contributor, and App Developer. More information about these categories and the current qualifying Technical Allies are provided below. Note that Technical Allies must meet the approval criteria annually and execute the SEED Platform trademark <a href="http://seedinfo.lbl.gov/SEED_LBNL_sample_license.pdf" target="_blank" class="color-2">sublicense</a> in order to maintain their official SEED Platform Technical Ally status. The Technical Allies listed below have met all the approval criteria within the last year; click on their logo to find out more about the services they offer.</p>
-
-			      	<h4>Hosting Providers</h4>
-			      	<p>These Technical Allies offer the core functionality of the SEED Platform as a hosted service to end-users. Please see the <a href="https://seed-platform.org/hosting_requirements/" target="_blank" class="color-2">Hosting Provider Requirements</a> for more information about becoming an approved Hosting Provider.</p>
-
-			      	<div class="row mb-4">
-			      		<div class="col-4 mx-auto">
-			      			<img src="views/tools/markdown/seed/img/EA-Logo-Color-400x98.png" alt="earth advantage logo">
-			      			<div class="center">
-				      			Earth Advantage<br/>
-				      			<a href="https://seed-platform.org/technical_ally/earthadvantage.org" target="_blank" class="color-2">earthadvantage.org</a><br/><br/>
-				      			Contact: Erik Cathcart<br/>
-				      			<a href="mailto:ecathcart@earthadvantage.org">ecathcart@earthadvantage.org</a>
-			      			</div>
-			      		</div>
-			      		<div class="col-4 mx-auto">
-			      			<img src="views/tools/markdown/seed/img/ClearlyEnergy.png" alt="clearly energy logo">
-			      			<div class="center">
-			      				Clearly Energy<br/>
-				      			<a href="https://seed-platform.org/technical_ally/www.clearlyenergy.com" target="_blank" class="color-2">www.clearlyenergy.com</a><br/><br/>
-				      			Contact: Veronique Bugnion<br/>
-				      			<a href="mailto:vbugnion@clearlyenergy.com">vbugnion@clearlyenergy.com</a>
-				      		</div>
-			      		</div>
-			      	</div>
-
-			      	<h4>Software Contributors</h4>
-			      	<p>These Technical Allies have added functionality to the core <a href="https://github.com/SEED-platform/seed" target="_blank" class="color-2">SEED Platform repository</a> (note that only contributors that have made significant contributions in the last year are listed below; for a complete list of SEED Platform contributors, please see the Authors page in the SEED Platform source-code repository). Please see the <a href="https://github.com/SEED-platform/seed/blob/develop/.github/CONTRIBUTING.md" target="_blank" class="color-2">SEED Platform Contribution Policy</a> on the SEED Platform source-code repository for more information about becoming an approved Software Contributor.</p>
-
-			      	<div class="row mb-4">
-			      		<div class="col-4 mx-auto">
-			      			<div class="my-2 mx-auto"><img src="views/tools/markdown/seed/img/ClearlyEnergy.png" alt="clearly energy logo"></div>
-			      			<div class="my-2 mx-auto"><img src="views/tools/markdown/seed/img/maalka_logo.png" alt="maalka logo"></div>
-			      			<div class="my-4 pl-5 mx-auto"><img src="views/tools/markdown/seed/img/logo_nrel_c.jpg" alt="NREL logo"></div>
-			      			<div class="my-2 pl-5 mx-auto"><img src="views/tools/markdown/seed/img/psd-logo1.png" alt="PSD logo"></div>
-			      		</div>
-			      		<div class="col-4 mx-auto">
-			      			<div class="my-2 mx-auto"><img src="views/tools/markdown/seed/img/EA-Logo-Color-400x98.png" alt="earth advantage logo"></div>
-			      			<div class="my-2 mx-auto"><img src="views/tools/markdown/seed/img/mi_logo.png" alt="mcquillen interactive logo"></div>
-			      			<div class="my-2 pl-5 mx-auto"><img src="views/tools/markdown/seed/img/ogbs-logo-rough.png" alt="OGBS logo"></div>
-			      		</div>
-			      	</div>
-
-			      	<h4>App Developers</h4>
-			      	<p>These Technical Allies use the SEED Platform application programming interface (API) to offer value-added services using data hosted in SEED Platform. Please see the <a href="https://seed-platform.org/app_developer_requirements/" target="_blank" class="color-2">App Developer Requirements</a> for more information about becoming an approved App Developer.</p>
-
-			      	<p>There are currently no officially approved App Developers for the SEED Platform, but the SEED Team is working on approving several applications.</p>
-
-			      	<div class="center"><img src="views/tools/markdown/seed/img/ClearlyEnergy.png" alt="clearly energy logo"></div>
-
-			      </div>
-			    </div>
-			  </div>
 			</div>
 		</div>	
 		<div class="mt-4" ng-if="subNav === 'news'">
 			<h3 class="mb-4">News</h3>
 			<div markdown-it ng-include="'views/tools/markdown/seed/news.md'"></div>
+		</div>
+		<div class="mt-4" ng-if="subNav === 'allies'">
+			<h3 class="mb-4">Technical Allies</h3>
+			<p>SEED Platform Technical Allies are private companies and other entities that are officially recognized for their significant contributions to the <a href="http://energy.gov/eere/buildings/seed-platform-collaborative" target="_blank" class="color-2">SEED Platform Collaborative</a>. The Technical Ally categories are: Hosting Provider, Software Contributor, and App Developer. More information about these categories and the current qualifying Technical Allies are provided below. Note that Technical Allies must meet the approval criteria annually and execute the SEED Platform trademark <a href="http://seedinfo.lbl.gov/SEED_LBNL_sample_license.pdf" target="_blank" class="color-2">sublicense</a> in order to maintain their official SEED Platform Technical Ally status. The Technical Allies listed below have met all the approval criteria within the last year; click on their logo to find out more about the services they offer.</p>
+
+    	<h4>Hosting Providers</h4>
+    	<p>These Technical Allies offer the core functionality of the SEED Platform as a hosted service to end-users. Please see the <a href="https://seed-platform.org/hosting_requirements/" target="_blank" class="color-2">Hosting Provider Requirements</a> for more information about becoming an approved Hosting Provider.</p>
+
+    	<div class="row mb-4">
+    		<div class="col-4 mx-auto">
+    			<img src="views/tools/markdown/seed/img/EA-Logo-Color-400x98.png" alt="earth advantage logo">
+    			<div class="center">
+      			Earth Advantage<br/>
+      			<a href="https://seed-platform.org/technical_ally/earthadvantage.org" target="_blank" class="color-2">earthadvantage.org</a><br/><br/>
+      			Contact: Erik Cathcart<br/>
+      			<a href="mailto:ecathcart@earthadvantage.org">ecathcart@earthadvantage.org</a>
+    			</div>
+    		</div>
+    		<div class="col-4 mx-auto">
+    			<img src="views/tools/markdown/seed/img/ClearlyEnergy.png" alt="clearly energy logo">
+    			<div class="center">
+    				Clearly Energy<br/>
+      			<a href="https://seed-platform.org/technical_ally/www.clearlyenergy.com" target="_blank" class="color-2">www.clearlyenergy.com</a><br/><br/>
+      			Contact: Veronique Bugnion<br/>
+      			<a href="mailto:vbugnion@clearlyenergy.com">vbugnion@clearlyenergy.com</a>
+      		</div>
+    		</div>
+    	</div>
+
+    	<h4>Software Contributors</h4>
+    	<p>These Technical Allies have added functionality to the core <a href="https://github.com/SEED-platform/seed" target="_blank" class="color-2">SEED Platform repository</a> (note that only contributors that have made significant contributions in the last year are listed below; for a complete list of SEED Platform contributors, please see the Authors page in the SEED Platform source-code repository). Please see the <a href="https://github.com/SEED-platform/seed/blob/develop/.github/CONTRIBUTING.md" target="_blank" class="color-2">SEED Platform Contribution Policy</a> on the SEED Platform source-code repository for more information about becoming an approved Software Contributor.</p>
+
+    	<div class="row mb-4">
+    		<div class="col-4 mx-auto">
+    			<div class="my-2 mx-auto"><img src="views/tools/markdown/seed/img/ClearlyEnergy.png" alt="clearly energy logo"></div>
+    			<div class="my-2 mx-auto"><img src="views/tools/markdown/seed/img/maalka_logo.png" alt="maalka logo"></div>
+    			<div class="my-4 pl-5 mx-auto"><img src="views/tools/markdown/seed/img/logo_nrel_c.jpg" alt="NREL logo"></div>
+    			<div class="my-2 pl-5 mx-auto"><img src="views/tools/markdown/seed/img/psd-logo1.png" alt="PSD logo"></div>
+    		</div>
+    		<div class="col-4 mx-auto">
+    			<div class="my-2 mx-auto"><img src="views/tools/markdown/seed/img/EA-Logo-Color-400x98.png" alt="earth advantage logo"></div>
+    			<div class="my-2 mx-auto"><img src="views/tools/markdown/seed/img/mi_logo.png" alt="mcquillen interactive logo"></div>
+    			<div class="my-2 pl-5 mx-auto"><img src="views/tools/markdown/seed/img/ogbs-logo-rough.png" alt="OGBS logo"></div>
+    		</div>
+    	</div>
+
+    	<h4>App Developers</h4>
+    	<p>These Technical Allies use the SEED Platform application programming interface (API) to offer value-added services using data hosted in SEED Platform. Please see the <a href="https://seed-platform.org/app_developer_requirements/" target="_blank" class="color-2">App Developer Requirements</a> for more information about becoming an approved App Developer.</p>
+
+    	<p>There are currently no officially approved App Developers for the SEED Platform, but the SEED Team is working on approving several applications.</p>
+
+    	<div class="center"><img src="views/tools/markdown/seed/img/ClearlyEnergy.png" alt="clearly energy logo"></div>
 		</div>
 		<div class="mt-4" ng-if="subNav === 'dev'">
 			<h3 class="mb-4">Links for Developers</h3>
@@ -572,9 +269,206 @@
 			<p>There is a <a href="https://groups.google.com/forum/?hl=en#!forum/seed-platform-dev" target="_blank" class="color-2">Google Group</a> for developers to discuss the SEED Platform project. The LBNL team monitors that forum and will respond to inquiries there.</p>
 
 		</div>
+		<div class="mt-4" ng-if="subNav === 'faq'">
+			<h3 class="mb-4">FAQ</h3>
+			<div id="accordion2">
+    		<div class="card">
+			    <div class="card-header col-type-2" id="headingr1">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link panel-header-link2" data-toggle="collapse" data-target="#collapser1" aria-expanded="true" aria-controls="collapser1">
+			          <i class="fa px-3 chevron" aria-hidden="true"></i>Features - Geocoding</button>
+			      </h5>
+			    </div>
+
+			    <div id="collapser1" class="collapse show" aria-labelledby="headingr1" data-parent="#accordion2">
+			      <div class="card-body">
+			      	<h5 class="mb-4">When and how does SEED geocode my data?</h5>
+							
+							<p>SEED will attempt to geocode your data with latitude and longitude values only if the following are true:</p>
+
+							<ol><li>Your organization has a MapQuest API key. You can register for one through MapQuest's website and apply it on your organization settings page.</li>
+							<li>The records being geocoded have address values that can be read by SEED. In your organization column settings page, you can specify which fields and in what order SEED will use to build the full address that will be geocoded by MapQuest.</li>
+							<li>The records being geocoded do not already have latitude and longitude populated. SEED won't override these values, but you can edit and remove these values if you want SEED to attempt to generate them with MapQuest.</li></ol>
+							<p>SEED will make this attempt in the following cases:</p>
+
+							<ul><li>During the file import process, after you've mapped columns, SEED will automatically attempt geocoding on records.</li>
+
+							<li>On either the properties page or the tax lots page, you can select records and use the "Geocode Selected" button under the Actions menu.</li></ul>
+
+							<p>Note: Valid UBID (properties) or ULID (tax lots) values can be parsed to provide a latitude and longitude value. On import, UBID/ULID is used instead of MapQuest if available. On the inventory pages, there's a separate Action menu button to "Decode UBID/ULID for Selected".</p>
+
+							<h5 class="my-4">I just geocoded my data using SEED. How do I review and verify the results?</h5>
+
+							<p>There are multiple ways of verifying geocoding results. The most obvious way is to verify that latitude and longitude fields are populated. Additionally, SEED provides a field called "Geocoding Confidence". This field can provide evidence of how the geocoding went for that record - a value starting with "Low..." indicates that geocoding failed for a record because the address values didn't yield reliable results. Finally, SEED provides an inventory map page that allows you to view where the points are located on a map.</p>
+			      </div>
+			    </div>
+    		</div>
+    		<div class="card">
+			    <div class="card-header col-type-2" id="headingr2">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser2" aria-expanded="true" aria-controls="collapser2">
+			          <i class="fa px-3 chevron" aria-hidden="true"></i>Features - Inventory Management</button>
+			      </h5>
+			    </div>
+
+			    <div id="collapser2" class="collapse" aria-labelledby="headingr2" data-parent="#accordion2">
+			      <div class="card-body">
+			      	<h5 class="mb-4">Mapping, Merging, Matching, Pairing, and Linking - What do each of those mean and how are they related or different from each other?</h5>
+							
+							<p>Different inventory management and analysis features in SEED are based on the relationships between records of different inventory types (properties and tax lots). Those terms help describe these relationships.</p>
+
+							<div class="mx-auto" style="width:60%;"><a href="./views/tools/markdown/seed/img/mapping_diagram.png" target="_blank"><img src="views/tools/markdown/seed/img/mapping_diagram.png" alt="Mapping and Merging Diagram" width="100%" /></a><br/>
+							<div class="ml-4 mb-4 center"><em>click to expand</em></div></div>
+							<ul>
+								<li><strong>Mapping</strong> refers to the process of mapping newly imported data fields to the known database column names in order to create a record.</li>
+								<li><strong>Merging</strong> refers to the act of combining multiple properties (or multiple tax lots) into one record. This can be done manually by users or automatically by SEED and helps avoid duplicate records.</li>
+
+								<li><strong>Matching</strong> refers to whether two or more properties match (or two or more tax lots). A match can only happen if specific fields between records match. Records can be compared within the same cycle (triggering a merge) or across cycles (building a link). The specific fields can be modified for each organization.</li>
+
+								<li><strong>Pairing</strong> refers to the association between properties and tax lots within the same cycle.</li>
+
+								<li><strong>Linking</strong> refers to the association between properties across cycles (or tax lots across cycles) and is useful for analysis.</li>
+							</ul>
+
+							<p>For more details, refer to this <a href="https://github.com/SEED-platform/seed/blob/develop/docs/source/matching.rst" target="_blank" class="color-2">documentation that covers matching, merging, and linking</a>.</p>
+						
+							<h5 class="my-4">The linking feature is new - can I get more details on how it works?</h5>
+
+							<p>Cross-cycle linking, or simply <strong>linking</strong>, allows organizations to analyze uploads of the same property (or tax lot) over time. This is done by matching records in one cycle with records within other cycles. SEED builds these associations automatically during import using matching criteria as specified by the organization. Additionally, this association can be made during a manual edit to record values (especially if the changed value is a matching criteria field).</p>
+
+							<p>For even more details on matching and linking, refer to this <a href="https://github.com/SEED-platform/seed/blob/develop/docs/source/matching.rst#linking-across-cycles" target="_blank" class="color-2">section of the matching, merging, and linking documentation</a>.</p>
+
+							<h5 class="my-4">How does linking interact with paired properties and tax lots?</h5>
+							<p>At the moment, paired property and tax lot relationships are displayed and managed separately from linked relationships. That is, paired records are viewed and managed in a separate area of SEED as linked records.</p>
+			      </div>
+			    </div>
+    		</div>
+    		<div class="card">
+			    <div class="card-header col-type-2" id="headingr3">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser3" aria-expanded="true" aria-controls="collapser3">
+			          <i class="fa px-3 chevron" aria-hidden="true"></i>Features - Miscellaneous</button>
+			      </h5>
+			    </div>
+
+			    <div id="collapser3" class="collapse" aria-labelledby="headingr3" data-parent="#accordion2">
+			      <div class="card-body">
+			      	<h5 class="mb-4">How can I get general information about the capabilities, features, and active development of SEED?</h5>
+							
+							<ul>
+								<li>For a list of new features and fixed capabilities, visit the <a href="https://github.com/SEED-platform/seed/releases" target="_blank" class="color-2">SEED Platform GitHub Releases</a> page.</li>
+
+								<li>Consult the <a href="https://seed-platform.org/references/" target="_blank" class="color-2">Reference Page</a> for publications related to SEED. Additionally, this paper describes the BuildingSync® format which can be used to import data into the SEED Platform:
+
+								<div class="pl-5">DeGraw, Jason, Kristin Field-Macumber, Nicholas Long, and Supriya Goel. 2018. <a href="https://buildingsync.net/documents/DeGraw-ACEEE-BuildingSync-in-Action.pdf" target="_blank" class="color-2">“BuildingSync® in Action : Example Implementations.”</a> In 2018 ACEEE Summer Study on Energy Efficiency in Buildings, 1–12. Pacific Grove, CA.</div>
+								</li>
+								<li>Here are some related projects that are using SEED:
+									<ul>
+										<li><a href="http://psdconsulting.com/openefficiency-platform/" target="_blank" class="color-2">The OpenEfficiency Platform (OEP) Project</a></li>
+										<li><a href="https://aceee.org/files/proceedings/2018/#/paper/event-data/p110" target="_blank" class="color-2">The BayREN Integrated Commercial Retrofits (BRICR) Project</a> and <a href="https://www.energy.gov/sites/prod/files/2018/05/f52/24293_Hooper_050318-900.pdf" target="_blank" class="color-2">BRICR Presentation</a></li>
+										<li><a href="https://www.energy.gov/eere/buildings/energy-data-vault" target="_blank" class="color-2">The Energy Data Vault (EDV) Project</a></li>
+									</ul>
+								</li>
+							</ul>
+							<h5 class="mt-4 mb-4">Do you anticipate any SEED issues if there are irregular data updates for each building? For example, with a point-of-sale benchmarking program, building data would only be updated when a property is sold.</h5>
+
+							<p>There should not be any issues importing data at non-regular times; users frequently do so with ENERGY STAR Portfolio Manager data.</p>
+																	
+			      </div>
+			    </div>
+    		</div>
+    		<div class="card">
+			    <div class="card-header col-type-2" id="headingr5">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser5" aria-expanded="true" aria-controls="collapser5">
+			          <i class="fa px-3 chevron" aria-hidden="true"></i>Hosting</button>
+			      </h5>
+			    </div>
+
+			    <div id="collapser5" class="collapse" aria-labelledby="headingr5" data-parent="#accordion2">
+			      <div class="card-body">
+			      	<h5 class="mb-4">Can the web interface of a self-hosted SEED instance be accessed via a local network, or is internet access required? Can access via local internet be disabled?</h5>
+							
+							<p>Access via public internet would be a function of the self-hosted instance's network configuration. If SEED is hosted on Amazon Web Services, for example, the host can deny access based on CIDR blocks (IP address ranges) in the Amazon Web Services Console. If the application is hosted on user-owned infrastructure, a local firewall can prevent external access. Note that internal access in both cases would still be available (i.e., the web interface would be accessible).</p>
+
+							<h5 class="mb-4">What is the estimated cost to implement and maintain the SEED Platform as part of a benchmarking system?</h5>
+
+							<p>There are three hosting options:</p>
+							<ol>
+								<li>Self-hosting on user-owned hardware</li>	
+								<li>Self-hosting on the cloud (e.g. Amazon, Google Compute)</li>
+								<li>Paying a hosting provider. Several companies offer SEED as a hosted solution:
+									<ul>
+										<li><a href="https://www.clearlyenergy.com/" target="blank" class="color-2">ClearlyEnergy</a></li>
+										<li><a href="https://www.earthadvantage.org/creating-change/home-energy-score.html" target="blank" class="color-2">Earth Advantage</a></li>
+										<li><a href="https://opentech.eco/" target="blank" class="color-2">Open</a></li>
+										<li><a href="http://psdconsulting.com/" target="blank" class="color-2">PSD Consulting</a>.</li>
+									</ul>
+									See the Technical Allies section for more information.
+								</li>
+							</ol>
+							<p>Options (1) and (2) are highly dependent on internal expertise and potential requirements related to sharing outside of a user's organization. Generally, cloud hosting simplifies management of networks, hardware, firewalls, and backups. An example SEED instance hosted in the cloud with staging and production environments costs approximately $1,000 to $1,500 per month for a large instance capable of processing records for an entire region.</p>
+																	
+			      </div>
+			    </div>
+    		</div>
+    		<div class="card">
+			    <div class="card-header col-type-2" id="headingr6">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser6" aria-expanded="true" aria-controls="collapser6">
+			          <i class="fa px-3 chevron" aria-hidden="true"></i>Industry Involvement</button>
+			      </h5>
+			    </div>
+
+			    <div id="collapser6" class="collapse" aria-labelledby="headingr6" data-parent="#accordion2">
+			      <div class="card-body">
+			      	<h5 class="mb-4">Are there any organizations that are developing free and open-source plug-ins for SEED?</h5>
+							
+							<p>You can find more information about organizations contributing to SEED Platform development below:</p>
+							<ul>
+								<li><a href="https://www.energy.gov/eere/buildings/seed-platform-collaborative" target="_blank" class="color-2">SEED Platform Collaborative</a></li>
+								<li><a href="https://github.com/SEED-platform/seed/blob/develop/AUTHORS.md" target="_blank" class="color-2">SEED Platform Contributing Developers</a></li>
+								<li><a href="#heading6" target="_self" class="color-2">SEED Technical Allies</a></li>
+								<li><a href="https://github.com/OpenEfficiencyPlatform/OEP" target="_blank" class="color-2">Open Efficiency Platform</a></li>
+								<li><a href="https://www.energy.gov/sites/prod/files/2018/05/f52/24293_Hooper_050318-900.pdf" target="_blank" class="color-2">BayREN Integrated Commercial Retrofits (BRICR)</a></li>
+								<li><a href="https://www.energy.gov/eere/buildings/energy-data-vault" target="_blank" class="color-2">Energy Data Vault (EDV)</a></li>
+							</ul>
+
+							<h5 class="mb-4">Do any applications use SEED to store and analyze building construction permit applications for energy code compliance?</h5>
+
+							<p>We are not aware of any applications which use SEED to do this, although SEED could be linked to another tool, like SalesForce. We recommend contacting Earth Advantage and Clearly Energy for more details (see the technical allies page).</p>
+																	
+			      </div>
+			    </div>
+    		</div>
+    		<div class="card">
+			    <div class="card-header col-type-2" id="headingr7">
+			      <h5 class="mb-0">
+			        <button class="btn btn-link panel-header-link2 collapsed" data-toggle="collapse" data-target="#collapser7" aria-expanded="true" aria-controls="collapser7">
+			          <i class="fa px-3 chevron" aria-hidden="true"></i>Security</button>
+			      </h5>
+			    </div>
+
+			    <div id="collapser7" class="collapse" aria-labelledby="headingr7" data-parent="#accordion2">
+			      <div class="card-body">
+			      	<h5 class="mb-4">Can you suggest any encryption solutions, since the SEED software does not encrypt its database?</h5>
+							
+							<p>We recommend hard drive encryption of the database server as the easiest solution; encrypting locally is more complicated but certainly doable.</p>
+
+							<h5 class="mb-4">How does SEED secure internet data communications?</h5>
+
+							<p>Secure sockets layer (SSL) protocols must be configured on the hosted instance. This requires purchasing and adding certificates to the deployed server, or using a third-party service (e.g. CloudFlare or Cloudfront) to manage the domain name system (DNS) and the SSL certificates.</p>			
+			      </div>
+			    </div>
+    		</div>
+    	</div>
+		</div>	
 		<div class="mt-4" ng-if="subNav === 'help'">
 			<h3 class="mb-4">Get Help</h3>
-			<p>Visit the Data Tools Help Desk [link forthcoming] or email placeholder@email.com for help getting started with or using the SEED Platform.  </p>
+
+			<p>We typically provide technical support as needed and within reason. As the community grows, there are more users able to provide support. It is recommended to use <a href="https://github.com/SEED-platform/seed/issues" target="_blank" class="color-2">GitHub issues</a> to a) view existing feature requests and issues, and b) communicate with various developers.</p>
+
+			<p>Visit the Data Tools Help Desk for additional help getting started with or using the SEED Platform.</p>
 		</div>						
 	</div>
 </div>

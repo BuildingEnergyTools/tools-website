@@ -19,6 +19,7 @@ angular.module('myApp.tools', ['ngRoute'])
     // set these for nav from routes
     $scope.toolName = $route.current.$$route.toolName;
     $scope.navNum = $route.current.$$route.navNum;
+    $scope.baseURL = $route.current.$$route.baseURL;
     
     $scope.subnavIsActive = function (name) {
     	return name === $scope.subNav;
