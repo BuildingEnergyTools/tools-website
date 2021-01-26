@@ -60,13 +60,13 @@ angular.module('myApp.home', ['ngRoute'])
 		var seedRect = seedElem.getBoundingClientRect();
 
 		var g4x = g4Rect.left + (g4Rect.width / 2);
-		var g4y1 = g4Rect.bottom + 10;
+		var g4y1 = g4Rect.bottom + 30;
 		var g4y2 = seedRect.top + (seedRect.height / 2);
 		var seedx = seedRect.right;
 
 		// arrow from g4 back to under seed
 		$scope.drawLine(g4x, g4y1, g4x, g4y2, "white", false);
-		$scope.drawLine(g4x + 2, g4y2, seedx, g4y2, "white", true);
+		$scope.drawLine(g4x + 2, g4y1, seedx, g4y1, "white", true);
 
 		var usx = seedRect.left + (seedRect.width / 2);
 		var usy1 = seedRect.top - 10;
