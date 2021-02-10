@@ -70,11 +70,13 @@
       }
 
       div {
+        min-width: 48px;
         position: relative;
 
         img {
           height: 16px;
-          min-width: 48px;
+          margin: 0 auto;
+          max-width: 20px;
           z-index: 1;
         }
 
