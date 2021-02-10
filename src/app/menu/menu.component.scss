@@ -1,0 +1,121 @@
+@import "theme";
+
+:host {
+  font-family: $robotoCondensed;
+  user-select: none;
+
+  > div {
+    display: flex;
+  }
+}
+
+@each $color in $colors {
+  $i: index($colors, $color);
+  .category:nth-of-type(#{$i}) {
+    &:hover {
+      background-color: transparentize($color, $hoverOpacity);
+    }
+
+    &::before {
+      border-top: 4px solid $color;
+    }
+  }
+
+  .child-row > section:nth-of-type(#{$i}) > div {
+    &.active {
+      background: $color;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    &:not(.active):hover {
+      background-color: transparentize($color, $hoverOpacity);
+    }
+
+    &::before {
+      border-top: 2px solid $color;
+    }
+  }
+}
+
+.top-row {
+  background-color: $gray;
+  min-height: 40px;
+  text-transform: uppercase;
+
+  > .category {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-top: 4px;
+    position: relative;
+    text-align: center;
+
+    &:first-child {
+      margin-left: $pad;
+    }
+
+    &:last-child {
+      margin-right: $pad;
+    }
+
+    &::before {
+      content: '';
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    &.active {
+      font-weight: bold;
+
+      &::before {
+        border-top-width: 8px;
+        top: -4px;
+      }
+    }
+  }
+}
+
+.child-row {
+  background-color: $gray;
+  font-size: 11px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 250ms ease-out;
+
+  > section {
+    > div {
+      color: #444;
+      cursor: pointer;
+      padding: 4px 4px 0;
+      position: relative;
+
+      a, a:visited {
+        color: #444;
+      }
+
+      &::before {
+        content: '';
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+
+    &:first-child {
+      margin-left: $pad;
+    }
+
+    &:last-child {
+      margin-right: $pad;
+    }
+  }
+}
+
+.opened .child-row {
+  max-height: 100%;
+}

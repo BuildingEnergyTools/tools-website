@@ -1,0 +1,9 @@
+@import "theme";
+
+:host {
+  display: flex;
+  flex-direction: column !important;
+  max-width: $maxWidth;
+  min-height: 100%;
+  margin: 0 auto;
+}

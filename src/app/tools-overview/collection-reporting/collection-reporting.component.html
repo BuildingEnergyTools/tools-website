@@ -1,0 +1,27 @@
+<app-tools-overview>
+  <div slot="left">
+    <h3>Data Collection & Reporting</h3>
+    <p>Collecting building audit and energy consumption data is the first step in a building performance policy. Explore the tools on the right to learn more how they work together to make data collection & reporting easy, and how you can deploy them in your workflows.</p>
+  </div>
+  <div slot="right" fxLayout="column">
+    <div fxLayout="row">
+      <div fxFlex="0 1 30" class="logo">
+        <a href="https://www.energystar.gov/buildings/facility-owners-and-managers/existing-buildings/use-portfolio-manager" target="_blank">
+          <img src="assets/images/pm-logo.svg" alt="EnergyStar Portfolio Manager Logo">
+        </a>
+      </div>
+      <div class="description">
+        <p>ENERGY STAR Portfolio Manager is used by building owners to report their energy use. This information reveals how efficiently a building is being operated. <a href="https://www.energystar.gov/buildings/facility-owners-and-managers/existing-buildings/use-portfolio-manager" target="_blank">Learn more <i class="fas fa-external-link-alt"></i>.</a></p>
+      </div>
+    </div>
+
+    <div fxLayout="row">
+      <div class="logo">
+        <img src="assets/images/audit-template-logo.svg" alt="Building Energy Audit Template Logo" routerLink="/audit-template">
+      </div>
+      <div class="description">
+        <p>The Building Energy Audit Template is a free, web-based tool used to collect, store and report building energy audit data. Audit data reveals the potential performance of a building based on its physical assets and equipment. <a routerLink="/audit-template">Learn more.</a></p>
+      </div>
+    </div>
+  </div>
+</app-tools-overview>

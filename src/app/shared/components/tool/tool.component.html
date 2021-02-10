@@ -1,0 +1,19 @@
+<div fxLayout="row">
+  <div [fxFlex]="25" class="nav">
+    <div class="logo">
+      <ng-content select="[slot=logo]"></ng-content>
+    </div>
+    <nav>
+      <div *ngFor="let navItem of navItems" [routerLink]="navItem.route" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <i *ngIf="navItem.icon" [ngClass]="[navItem.icon, navItem.fontAwesome || 'fas']"></i>
+        <div *ngIf="navItem.image">
+          <img [src]="navItem.image">
+        </div>
+        {{ navItem.title }}
+      </div>
+    </nav>
+  </div>
+  <div [fxFlex]="75" class="body">
+    <router-outlet></router-outlet>
+  </div>
+</div>
