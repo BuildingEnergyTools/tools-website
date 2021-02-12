@@ -6,7 +6,7 @@ import { HammerModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
 import { OverlayscrollbarsModule } from 'overlayscrollbars-ngx';
-import { MaterialModule } from '../material.module';
+import { MaterialModule } from './modules/material.module';
 import { ToolComponent } from './components/tool/tool.component';
 
 @NgModule({
