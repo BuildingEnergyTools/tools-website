@@ -1,0 +1,56 @@
+<div fxLayout="row">
+  <div fxFlex="25"><div class="col-line-1"></div><div class="col-line-white"></div></div>
+  <div fxFlex="25"><div class="col-line-2"></div></div>
+  <div fxFlex="25"><div class="col-line-3"></div></div>
+  <div fxFlex="25"><div class="col-line-4"></div></div>
+</div>
+<div fxLayout="row">
+  <section fxFlex="25" class="col-pad col-type-1">
+    <div class="col-title pt-1 pb-2" fxLayoutAlign="center center">
+      <a [routerLink]="['collection-reporting']" class="home-nav">Data Collection & Reporting</a>
+    </div>
+    <div fxLayoutAlign="center">
+    <mat-card class="card-width3" id="pm" *ngIf="!cardStatus['pm']" (click)="toggleCard('pm')">
+      <mat-card-content>
+        <mat-card-subtitle><h6 class="pad-bot-10">Building Owners, Managers, Inspectors, Consultants, etc.</h6></mat-card-subtitle>
+        <div><img class="card-img" src="assets/images/pm-logo.svg" alt="EnergyStar Portfolio Manager Logo"></div>
+      </mat-card-content>
+      <mat-card-footer>
+        <div class="card-footer text-muted">Consumption, Energy Star Score</div>
+      </mat-card-footer>
+    </mat-card>
+    <mat-card fxLayoutAlign="center center" class="card-width3" id="pm2" *ngIf="cardStatus['pm']" (click)="toggleCard('pm')">
+      <mat-card-content>
+        <p>Building owners use <strong>ENERGY STAR Portfolio Manager</strong> to report their energy use.  This information reveals how efficiently a building is being operated.</p>
+        <p>Portfolio Manager also generates an ENERGY STAR Score, a number from 0-100 which many cities use to set their performance targets and prioritize buildings for upgrade.</p>
+        <div fxLayoutAlign="center center">
+          <a class="btn-type-1" href="https://www.energystar.gov/buildings/facility-owners-and-managers/existing-buildings/use-portfolio-manager" mat-raised-button target="_blank" role="button">Learn more <span class="ml-2 align-center"><i class="fas fa-external-link-alt"></i></span></a>
+        </div>
+      </mat-card-content>
+    </mat-card>
+    </div>
+
+
+
+  </section>
+  <section fxFlex="25" class="col-pad col-type-2">
+    <div class="col-title pt-1 pb-2" fxLayoutAlign="center center">
+      <a [routerLink]="['management-compliance']" class="home-nav">Management & Compliance</a>
+    </div>
+    <div fixLayout="center">
+
+    </div>
+  </section>
+  <section fxFlex="25" class="col-pad col-type-3">
+    <div class="col-title pt-1 pb-2" fxLayoutAlign="center center">
+      <a [routerLink]="['analysis-evaluation']" class="home-nav">Analysis & Evaluation</a>
+    </div>
+  </section>
+  <section fxFlex="25" class="col-pad col-type-4">
+    <div class="col-title pt-1 pb-2" fxLayoutAlign="center center">
+      <a [routerLink]="['goals-outcomes']" class="home-nav">Goals & Outcomes</a>
+    </div>
+  </section>
+
+
+</div>
