@@ -15,6 +15,7 @@ import { DevelopersComponent } from './tools-overview/developers/developers.comp
 import { GoalsOutcomesComponent } from './tools-overview/goals-outcomes/goals-outcomes.component';
 import { ManagementComplianceComponent } from './tools-overview/management-compliance/management-compliance.component';
 import { ToolsOverviewComponent } from './tools-overview/tools-overview.component';
+import { GraphicComponent } from './home/graphic/graphic.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ToolsOverviewComponent } from './tools-overview/tools-overview.componen
     HomeComponent,
     ManagementComplianceComponent,
     MenuComponent,
-    ToolsOverviewComponent
+    ToolsOverviewComponent,
+    GraphicComponent
   ],
   imports: [
     AppRoutingModule,

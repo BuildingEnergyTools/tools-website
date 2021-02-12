@@ -26,9 +26,13 @@
     padding: 12px $pad 0;
 
     &:first-child {
-      border-right: 1px solid;
+      // border-right: 1px solid;
       font-size: 18px;
       line-height: 22px;
     }
   }
+}
+
+.top-text {
+  margin: 20px 20px;
 }

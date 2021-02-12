@@ -12,7 +12,7 @@ import { appTitle, Constants } from '@shared/classes/constants';
 export class AppComponent {
 
   constructor(
-    private router: Router,
+    public router: Router,
     private titleService: TitleService
   ) {
     this.router.events.subscribe(event => {

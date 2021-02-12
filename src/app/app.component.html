@@ -1,5 +1,5 @@
 <app-header></app-header>
-<app-menu></app-menu>
+<app-menu *ngIf="router.url !== '/'"></app-menu>
 <main fxFlex="grow">
   <router-outlet></router-outlet>
 </main>
