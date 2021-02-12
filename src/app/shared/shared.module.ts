@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { HammerModule } from '@angular/platform-browser';
@@ -17,6 +17,7 @@ import { ToolComponent } from './components/tool/tool.component';
     CommonModule,
     FlexLayoutModule,
     HammerModule,
+    HttpClientModule,
     MarkdownModule.forRoot({loader: HttpClient}),
     MaterialModule,
     OverlayscrollbarsModule,
@@ -25,6 +26,7 @@ import { ToolComponent } from './components/tool/tool.component';
   exports: [
     FlexLayoutModule,
     HammerModule,
+    MarkdownModule,
     MaterialModule,
     ToolComponent
   ]
