@@ -9,14 +9,18 @@
   padding-right: 5%;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  h1 {
+    cursor: pointer;
+  }
 }
 
-h1 {
+h2 {
   color: #616161;
-  cursor: pointer;
   font-size: 22px;
   font-weight: normal;
   margin: 0;
   padding: 4px $pad;
   text-transform: uppercase;
+  font-family: 'Roboto Condensed', sans-serif;
 }

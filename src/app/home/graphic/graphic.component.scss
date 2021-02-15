@@ -17,6 +17,11 @@
 .color-5 {
   color: #F5AF13;
 }
+
+.white {
+  color: #fff;
+}
+
 .col-line-1 {
   border-top: 4px solid #3B88AF;
   width:80%;
@@ -42,6 +47,20 @@
 }
 .btn-type-1 {
 	background: #3B88AF;
+	color: #fff;
+}
+.btn-type-2 {
+	background-color: #024880;
+	color: #fff;
+}
+
+.btn-type-3 {
+	background-color: #478662;
+	color: #fff;
+}
+
+.btn-type-5 {
+	background-color: #F5AF13;
 	color: #fff;
 }
 
@@ -87,12 +106,29 @@
 	text-decoration: none;
 }
 
-.card-width3 {
+.card-width70 {
+  width: 70%;
+}
+
+.card-width90 {
   width:90%;
 }
 
 .card-img {
 	width:100%;
+}
+
+.card-margin {
+  margin-bottom: 3.5rem;
+}
+
+.card-img-sm {
+  width:80%;
+  padding-left:15%;
+}
+
+.card-zindex {
+  z-index: 5;
 }
 
 .card-footer {
@@ -106,6 +142,48 @@
 
 .text-muted {
   color: #6c757d !important;
+}
+
+.bsync1 {
+  position: relative;
+  top:-200px;
+  left: 42%;
+  width: 31%;
+  border-radius: 20%;
+  border: 4px solid #F5AF13;
+  z-index: 3;
+}
+
+.bsync1-flip {
+  position: relative;
+  top:-200px;
+  left: 60%;
+  width: 60%;
+  border: 4px solid #F5AF13;
+  z-index: 6;
+}
+
+.bsync2 {
+  position: relative;
+  top:-175px;
+  left: 50%;
+  width: 25%;
+  border-radius: 20%;
+  border: 4px solid #F5AF13;
+  z-index: 3;
+}
+
+.bsync2-flip {
+  position: relative;
+  top:-250px;
+  left: 65%;
+  width: 60%;
+  border: 4px solid #F5AF13;
+  z-index: 3;
+}
+
+.bsync-img {
+  width:100%;
 }
 
 /* BOOTSTRAP5 margin and padding classes */
