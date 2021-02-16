@@ -13,6 +13,7 @@ export class Constants {
     '/comstock-resstock': 'ComStock & ResStock',
     '/better': 'BETTER',
     '/asset-score': 'Asset Score',
+    '/bpd': 'Building Performance Database',
     '/analyze': 'Goals & Outcomes',
     '/target': 'Goals & Outcomes',
     '/compliance': 'Goals & Outcomes',

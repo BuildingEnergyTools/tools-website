@@ -52,6 +52,9 @@ export class MenuComponent {
       }, {
         title: 'Building Energy Asset Score',
         route: '/asset-score'
+      }, {
+        title: 'Building Performance Database',
+        route: '/bpd'
       }]
     }, {
       title: 'Goals & Outcomes',

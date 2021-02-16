@@ -26,6 +26,7 @@ export class ToolComponent {
       case '/comstock-resstock':
       case '/better':
       case '/asset-score':
+      case '/bpd':
         this.color = 3;
         break;
       case '/goals':

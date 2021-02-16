@@ -35,6 +35,9 @@ const routes: Routes = [{
   path: 'asset-score',
   loadChildren: () => import(/* webpackChunkName: "asset-score" */ './tool/asset-score/asset-score.module').then(m => m.AssetScoreModule)
 }, {
+  path: 'bpd',
+  loadChildren: () => import(/* webpackChunkName: "bpd" */ './tool/bpd/bpd.module').then(m => m.BpdModule)
+}, {
   path: 'goals-outcomes',
   component: GoalsOutcomesComponent
 }, {

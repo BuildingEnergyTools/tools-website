@@ -23,6 +23,13 @@
   }
 
   &::ng-deep {
+    .mat-h3 {
+      font-size:1.25em;
+    }
+    
+    .mat-h5 {
+      font-size: 1.1em;
+    }
 
     a {
       color: #024880;
