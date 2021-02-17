@@ -44,7 +44,7 @@
 					<p class="card-text"><strong>Audit Template</strong> is an online portal which cities use to collect standardized information &ndash; no more wrestling with Excel files or proprietary formats &ndash; about a building's physical systems and recommended upgrades.</p>
 					<p class="card-text">Auditors use the mobile-friendly interface to submit data.</p>
           <div fxLayoutAlign="center center">
-            <a href="#!/audit-template" mat-raised-button role="button" class="btn btn-type-1">Learn more</a>
+            <a [routerLink]="['audit-template']" mat-raised-button role="button" class="btn btn-type-1">Learn more</a>
           </div>
 				</mat-card-content>
       </mat-card>
@@ -141,7 +141,7 @@
 			</mat-card>
 			<mat-card class="card-width70 mx-auto mb-4" id="csrs2" *ngIf="cardStatus['csrs']">
 				<mat-card-content (click)="toggleCard('csrs')">
-					<div class="card-title">Find Big Improvements with Big Data</div>
+					<mat-card-subtitle>Find Big Improvements with Big Data</mat-card-subtitle>
 					<p class="card-text">Use the <strong>ResStock</strong> and <strong>ComStock</strong> analysis tools to identify which building stock improvements save the most energy and money.</p>
 					<p class="card-text">By combining large public and private data sources, statistical sampling, detailed sub-hourly building simulations, and high-performance computing, these two tools achieve unprecedented granularity and accuracy in modeling the U.S. building stock.
 					</p>
@@ -185,7 +185,7 @@
 			</mat-card>
 			<mat-card class="card-width70 mx-auto mb-4" id="3p2" *ngIf="cardStatus['3p']">
 				<mat-card-content (click)="toggleCard('3p')">
-					<div class="card-title">Leverage Other Tools</div>
+					<mat-card-subtitle>Leverage Other Tools</mat-card-subtitle>
 					<p class="card-text">Whether you want to notify building owners of their compliance using Customer Relationship Management (CRM) programs, pipe data into a public dashboard, access data from the DOE Building Performance Database (BPD), or take advantage of other tools, there's a way to do it.
 					</p>
 					<p class="card-text">Application Programming Interfaces (APIs) can make ready use of the BuildingSync file format used by Audit Template, SEED, and Asset Score.
@@ -199,17 +199,17 @@
       <a [routerLink]="['goals-outcomes']" class="home-nav">Goals & Outcomes</a>
     </div>
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-width90 card-margin" id="g1">
+      <mat-card class="card-width90 card-margin" id="g1" [routerLink]="['goals/analyze']">
 				<mat-card-content class="px-2">
 					<div fxLayout="row" class="no-gutters">
 						<div FxFlex="33%" class="my-auto pr-3"><img class="card-img" src="assets/images/com-resstock-outcomes-icon.svg" alt="ComStock & ResStock outcomes icon"></div>
 						<div class="my-auto"><p class="card-text">Assess Impacts & Identify New Opportunities</p></div>
 					</div>
 				</mat-card-content>
-			</mat-card>
+      </mat-card>
     </div>
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-width90 card-margin" id="g2">
+      <mat-card class="card-width90 card-margin" id="g2" [routerLink]="['goals/target']">
         <mat-card-content class="px-2">
           <div fxLayout="row" class="no-gutters">
             <div FxFlex="33%" class="my-auto pr-3"><img class="card-img" src="assets/images/better-outcomes-icon.svg" alt="BETTER outcomes icon"></div>
@@ -219,7 +219,7 @@
       </mat-card>
     </div>
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-width90 card-margin" id="g3">
+      <mat-card class="card-width90 card-margin" id="g3" [routerLink]="['goals/compliance']">
         <mat-card-content class="px-2">
           <div fxLayout="row" class="no-gutters">
             <div FxFlex="33%" class="my-auto pr-3"><img class="card-img-sm" src="assets/images/assetscore-outcomes-icon.svg" alt="Asset Score Outcomes icon"></div>
@@ -229,7 +229,7 @@
       </mat-card>
     </div>
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-width90 mb-2" id="g4">
+      <mat-card class="card-width90 mb-2" id="g4" [routerLink]="['goals/customize']">
         <mat-card-content class="px-2">
           <div fxLayout="row" class="no-gutters">
             <div FxFlex="33%" class="my-auto pr-3"><img class="card-img" src="assets/images/thirdparty-outcomes-icon.svg" alt="third-party outcomes icon"></div>
