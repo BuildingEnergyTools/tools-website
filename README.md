@@ -10,9 +10,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Build and Deploy
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build --prod=true --outputPath=docs` to build the project. The build artifacts will be stored in the `docs/` directory. Use the `--prod` flag for a production build.
+The website is hosted from the `docs` folder on the main branch.  To deploy, build the docs folder, commit, and merge the PR into the main branch.
 
 ## Running unit tests
 
