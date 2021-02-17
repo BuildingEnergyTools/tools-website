@@ -8,12 +8,17 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Generating top-level modules
+e.g. To generate the top-level seed module run `ng generate module --module app --routing --route seed seed` from the root directory to generate a module with routing for child pages.
+
+### Generating child pages
+Change directories to the module where you want to create the component, e.g. `cd src/app/seed`
+
+Run `ng generate component home --skip-tests` to generate a child component inside a specific module (or shorthand `ng g c home --skip-tests`).
 
 ## Build and Deploy
 
-Run `ng build --prod=true --outputPath=docs` to build the project. The build artifacts will be stored in the `docs/` directory. Use the `--prod` flag for a production build.
-The website is hosted from the `docs` folder on the main branch.  To deploy, build the docs folder, commit, and merge the PR into the main branch.
+Run `ng deploy` to build the project and push the build to the `gh-pages` branch on GitHub. The build artifacts will be stored in the `dist/` directory.
 
 ## Running unit tests
 
