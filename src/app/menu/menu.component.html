@@ -1,0 +1,23 @@
+<div [ngClass]="{'opened': opened}">
+  <div fxFlex>
+    <div fxLayout="row" fxLayoutGap="32px" class="top-row">
+      <!--<button mat-icon-button (click)="opened = !opened">
+        <mat-icon>{{ opened ? 'menu_open' : 'menu' }}</mat-icon>
+      </button>-->
+      <ng-container *ngFor="let navItem of navItems">
+        <div [routerLink]="navItem.route" [fxFlex]="flexWidth" class="category" [ngClass]="{'active': isParentActive(navItem)}">{{ navItem.title }}</div>
+      </ng-container>
+    </div>
+    <div fxLayout="row" fxLayoutGap="32px" class="child-row">
+      <!--<div fxFlex="40px"></div>-->
+      <section *ngFor="let navItem of navItems" [fxFlex]="flexWidth">
+        <ng-container *ngFor="let child of navItem.children">
+          <div *ngIf="!child.external" [routerLink]="child.route" routerLinkActive="active">{{ child.title }}</div>
+          <div *ngIf="child.external">
+            <a [attr.href]="child.route" target="_blank">{{ child.title }} <i class="fas fa-external-link-alt"></i></a>
+          </div>
+        </ng-container>
+      </section>
+    </div>
+  </div>
+</div>

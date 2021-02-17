@@ -1,0 +1,46 @@
+@import "theme";
+
+:host {
+  background-color: $gray;
+}
+
+strong {
+  font-weight: 500;
+  padding: 14px $pad;
+}
+
+.descriptions > div {
+  font-size: 11px;
+  padding: 14px $pad 8px;
+
+  &:not(:last-child) {
+    border-right: 3px solid #fff;
+  }
+}
+
+section {
+  padding: 0 $pad;
+
+  > div {
+    padding-bottom: 25%; // 4/1 aspect ratio
+    position: relative;
+
+    > img {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+  &:not(:last-child) {
+    border-right: 3px solid #fff;
+  }
+}
+
+.contact {
+  background-color: $blueGray;
+  color: #fff;
+  height: 21px;
+  padding: 0 $pad;
+}

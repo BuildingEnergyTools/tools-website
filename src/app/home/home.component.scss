@@ -1,0 +1,43 @@
+@import "theme";
+
+.developer-banner {
+  background-color: $orange;
+  font-family: $robotoCondensed;
+  font-size: 16px;
+  font-weight: bold;
+  height: 22px;
+  position: relative;
+  text-transform: uppercase;
+
+  &::after {
+    background-color: $orange;
+    content: '';
+    height: 4px;
+    position: absolute;
+    bottom: -7px;
+    width: 184px;
+  }
+}
+
+.developer {
+  padding: 20px 0;
+
+  > div {
+    padding: 12px $pad 0;
+
+    &:first-child {
+      // border-right: 1px solid;
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+
+}
+
+.dev-link {
+  color: black;
+}
+
+.top-text {
+  margin: 10px 20px;
+}

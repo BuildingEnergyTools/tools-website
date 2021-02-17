@@ -1,0 +1,8 @@
+<div fxLayout="row">
+  <div [fxFlex]="100 / 3" class="summary">
+    <ng-content select="[slot=left]"></ng-content>
+  </div>
+  <div [fxFlex]="200 / 3" class="details">
+    <ng-content select="[slot=right]"></ng-content>
+  </div>
+</div>

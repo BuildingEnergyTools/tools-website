@@ -1,0 +1,23 @@
+@import "~overlayscrollbars/css/OverlayScrollbars.css";
+@import "theme";
+
+* {
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}

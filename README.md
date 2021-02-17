@@ -1,40 +1,27 @@
-# Building Energy Data Tools Website
+# Building Energy Tools
 
-This site in implemented with [AngularJS](https://angularjs.org/).
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
 
+## Development server
 
-### Prerequisites
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+## Code scaffolding
 
-Angular requires [Node.js](https://nodejs.org/) and npm package manager.
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-### Install Dependencies
+## Build
 
-Clone the repo and run the following command from the root of the repo.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-```
-npm install
-```
+## Running unit tests
 
-This will install dependencies and also copy the relevant files into the `app/lib` directory.
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+## Running end-to-end tests
 
-### Run the Application
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-Start the development web server with the following command. The site will then be available at `localhost:8000`.
+## Further help
 
-
-## Updating dependencies
-
-Use the following command to update dependencies.
-
-```
-npm run update-deps
-```
-To add new dependencies, add them to package.json and rerun `npm install`.
-
-
-### Deploying to Production
-
-The static pages are contained in the `app/` directory. Pushing the contents of this directory to github-pages should be all it takes to deploy the website.
-
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

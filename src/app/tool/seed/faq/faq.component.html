@@ -1,0 +1,151 @@
+<h2 class="mat-h2">FAQ</h2>
+<mat-expansion-panel class="mb-1">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Features - Geocoding
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <h4 class="mat-h4 mb-4">When and how does SEED geocode my data?</h4>
+
+  <p>SEED will attempt to geocode your data with latitude and longitude values only if the following are true:</p>
+
+  <ol><li>Your organization has a MapQuest API key. You can register for one through MapQuest's website and apply it on your organization settings page.</li>
+  <li>The records being geocoded have address values that can be read by SEED. In your organization column settings page, you can specify which fields and in what order SEED will use to build the full address that will be geocoded by MapQuest.</li>
+  <li>The records being geocoded do not already have latitude and longitude populated. SEED won't override these values, but you can edit and remove these values if you want SEED to attempt to generate them with MapQuest.</li></ol>
+  <p>SEED will make this attempt in the following cases:</p>
+
+  <ul><li>During the file import process, after you've mapped columns, SEED will automatically attempt geocoding on records.</li>
+
+  <li>On either the properties page or the tax lots page, you can select records and use the "Geocode Selected" button under the Actions menu.</li></ul>
+
+  <p>Note: Valid UBID (properties) or ULID (tax lots) values can be parsed to provide a latitude and longitude value. On import, UBID/ULID is used instead of MapQuest if available. On the inventory pages, there's a separate Action menu button to "Decode UBID/ULID for Selected".</p>
+
+  <h4 class="mat-h4 my-4">I just geocoded my data using SEED. How do I review and verify the results?</h4>
+
+  <p>There are multiple ways of verifying geocoding results. The most obvious way is to verify that latitude and longitude fields are populated. Additionally, SEED provides a field called "Geocoding Confidence". This field can provide evidence of how the geocoding went for that record - a value starting with "Low..." indicates that geocoding failed for a record because the address values didn't yield reliable results. Finally, SEED provides an inventory map page that allows you to view where the points are located on a map.</p>
+</mat-expansion-panel>
+<mat-expansion-panel class="mb-1">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Features - Inventory Management
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <h4 class="mat-h4 mb-4">Mapping, Merging, Matching, Pairing, and Linking - What do each of those mean and how are they related or different from each other?</h4>
+        
+  <p>Different inventory management and analysis features in SEED are based on the relationships between records of different inventory types (properties and tax lots). Those terms help describe these relationships.</p>
+
+  <div class="mx-auto" style="width:60%;"><a href="assets/md/seed/img/mapping_diagram.png" target="_blank"><img src="assets/md/seed/img/mapping_diagram.png" alt="Mapping and Merging Diagram" width="100%" /></a><br/>
+  <div class="ml-4 mb-4 center"><em>click to expand</em></div></div>
+  <ul>
+    <li><strong>Mapping</strong> refers to the process of mapping newly imported data fields to the known database column names in order to create a record.</li>
+    <li><strong>Merging</strong> refers to the act of combining multiple properties (or multiple tax lots) into one record. This can be done manually by users or automatically by SEED and helps avoid duplicate records.</li>
+
+    <li><strong>Matching</strong> refers to whether two or more properties match (or two or more tax lots). A match can only happen if specific fields between records match. Records can be compared within the same cycle (triggering a merge) or across cycles (building a link). The specific fields can be modified for each organization.</li>
+
+    <li><strong>Pairing</strong> refers to the association between properties and tax lots within the same cycle.</li>
+
+    <li><strong>Linking</strong> refers to the association between properties across cycles (or tax lots across cycles) and is useful for analysis.</li>
+  </ul>
+
+  <p>For more details, refer to this <a href="https://github.com/SEED-platform/seed/blob/develop/docs/source/matching.rst" target="_blank" class="color-2">documentation that covers matching, merging, and linking</a>.</p>
+
+  <h4 class="mat-h4 my-4">The linking feature is new - can I get more details on how it works?</h4>
+
+  <p>Cross-cycle linking, or simply <strong>linking</strong>, allows organizations to analyze uploads of the same property (or tax lot) over time. This is done by matching records in one cycle with records within other cycles. SEED builds these associations automatically during import using matching criteria as specified by the organization. Additionally, this association can be made during a manual edit to record values (especially if the changed value is a matching criteria field).</p>
+
+  <p>For even more details on matching and linking, refer to this <a href="https://github.com/SEED-platform/seed/blob/develop/docs/source/matching.rst#linking-across-cycles" target="_blank" class="color-2">section of the matching, merging, and linking documentation</a>.</p>
+
+  <h4 class="mat-h4 my-4">How does linking interact with paired properties and tax lots?</h4>
+  <p>At the moment, paired property and tax lot relationships are displayed and managed separately from linked relationships. That is, paired records are viewed and managed in a separate area of SEED as linked records.</p>
+
+</mat-expansion-panel>
+<mat-expansion-panel class="mb-1">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Features - Miscellaneous
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <h4 class="mat-h4 mb-4">How can I get general information about the capabilities, features, and active development of SEED?</h4>
+      
+  <ul>
+    <li>For a list of new features and fixed capabilities, visit the <a href="https://github.com/SEED-platform/seed/releases" target="_blank" class="color-2">SEED Platform GitHub Releases</a> page.</li>
+
+    <li>Consult the <a href="https://seed-platform.org/references/" target="_blank" class="color-2">Reference Page</a> for publications related to SEED. Additionally, this paper describes the BuildingSync® format which can be used to import data into the SEED Platform:
+
+    <div class="pl-5">DeGraw, Jason, Kristin Field-Macumber, Nicholas Long, and Supriya Goel. 2018. <a href="https://buildingsync.net/documents/DeGraw-ACEEE-BuildingSync-in-Action.pdf" target="_blank" class="color-2">“BuildingSync® in Action : Example Implementations.”</a> In 2018 ACEEE Summer Study on Energy Efficiency in Buildings, 1–12. Pacific Grove, CA.</div>
+    </li>
+    <li>Here are some related projects that are using SEED:
+      <ul>
+        <li><a href="http://psdconsulting.com/openefficiency-platform/" target="_blank" class="color-2">The OpenEfficiency Platform (OEP) Project</a></li>
+        <li><a href="https://aceee.org/files/proceedings/2018/#/paper/event-data/p110" target="_blank" class="color-2">The BayREN Integrated Commercial Retrofits (BRICR) Project</a> and <a href="https://www.energy.gov/sites/prod/files/2018/05/f52/24293_Hooper_050318-900.pdf" target="_blank" class="color-2">BRICR Presentation</a></li>
+        <li><a href="https://www.energy.gov/eere/buildings/energy-data-vault" target="_blank" class="color-2">The Energy Data Vault (EDV) Project</a></li>
+      </ul>
+    </li>
+  </ul>
+  <h4 class="mat-h4 mt-4 mb-4">Do you anticipate any SEED issues if there are irregular data updates for each building? For example, with a point-of-sale benchmarking program, building data would only be updated when a property is sold.</h4>
+
+  <p>There should not be any issues importing data at non-regular times; users frequently do so with ENERGY STAR Portfolio Manager data.</p>
+</mat-expansion-panel>
+<mat-expansion-panel class="mb-1">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Hosting
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <h4 class="mat-h4 mb-4">Can the web interface of a self-hosted SEED instance be accessed via a local network, or is internet access required? Can access via local internet be disabled?</h4>
+      
+  <p>Access via public internet would be a function of the self-hosted instance's network configuration. If SEED is hosted on Amazon Web Services, for example, the host can deny access based on CIDR blocks (IP address ranges) in the Amazon Web Services Console. If the application is hosted on user-owned infrastructure, a local firewall can prevent external access. Note that internal access in both cases would still be available (i.e., the web interface would be accessible).</p>
+
+  <h4 class="mat-h4 mb-4">What is the estimated cost to implement and maintain the SEED Platform as part of a benchmarking system?</h4>
+
+  <p>There are three hosting options:</p>
+  <ol>
+    <li>Self-hosting on user-owned hardware</li>	
+    <li>Self-hosting on the cloud (e.g. Amazon, Google Compute)</li>
+    <li>Paying a hosting provider. Several companies offer SEED as a hosted solution:
+      <ul>
+        <li><a href="https://www.clearlyenergy.com/" target="blank" class="color-2">ClearlyEnergy</a></li>
+        <li><a href="https://www.earthadvantage.org/creating-change/home-energy-score.html" target="blank" class="color-2">Earth Advantage</a></li>
+        <li><a href="https://opentech.eco/" target="blank" class="color-2">Open</a></li>
+        <li><a href="http://psdconsulting.com/" target="blank" class="color-2">PSD Consulting</a>.</li>
+      </ul>
+      See the Technical Allies section for more information.
+    </li>
+  </ol>
+  <p>Options (1) and (2) are highly dependent on internal expertise and potential requirements related to sharing outside of a user's organization. Generally, cloud hosting simplifies management of networks, hardware, firewalls, and backups. An example SEED instance hosted in the cloud with staging and production environments costs approximately $1,000 to $1,500 per month for a large instance capable of processing records for an entire region.</p>
+         
+</mat-expansion-panel>
+<mat-expansion-panel class="mb-1">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Industry Involvement
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <h4 class="mat-h4 mb-4">Are there any organizations that are developing free and open-source plug-ins for SEED?</h4>
+  
+  <p>You can find more information about organizations contributing to SEED Platform development below:</p>
+  <ul>
+    <li><a href="https://www.energy.gov/eere/buildings/seed-platform-collaborative" target="_blank" class="color-2">SEED Platform Collaborative</a></li>
+    <li><a href="https://github.com/SEED-platform/seed/blob/develop/AUTHORS.md" target="_blank" class="color-2">SEED Platform Contributing Developers</a></li>
+    <li><a href="#heading6" target="_self" class="color-2">SEED Technical Allies</a></li>
+    <li><a href="https://github.com/OpenEfficiencyPlatform/OEP" target="_blank" class="color-2">Open Efficiency Platform</a></li>
+    <li><a href="https://www.energy.gov/sites/prod/files/2018/05/f52/24293_Hooper_050318-900.pdf" target="_blank" class="color-2">BayREN Integrated Commercial Retrofits (BRICR)</a></li>
+    <li><a href="https://www.energy.gov/eere/buildings/energy-data-vault" target="_blank" class="color-2">Energy Data Vault (EDV)</a></li>
+  </ul>
+
+  <h4 class="mat-h4 mb-4">Do any applications use SEED to store and analyze building construction permit applications for energy code compliance?</h4>
+
+  <p>We are not aware of any applications which use SEED to do this, although SEED could be linked to another tool, like SalesForce. We recommend contacting Earth Advantage and Clearly Energy for more details (see the technical allies page).</p>
+</mat-expansion-panel>
+<mat-expansion-panel class="mb-1">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Security
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+  <h4 class="mat-h4 mb-4">Can you suggest any encryption solutions, since the SEED software does not encrypt its database?</h4>
+  <p>We recommend hard drive encryption of the database server as the easiest solution; encrypting locally is more complicated but certainly doable.</p>
+
+  <h4 class="mat-h4 mb-4">How does SEED secure internet data communications?</h4>
+  <p>Secure sockets layer (SSL) protocols must be configured on the hosted instance. This requires purchasing and adding certificates to the deployed server, or using a third-party service (e.g. CloudFlare or Cloudfront) to manage the domain name system (DNS) and the SSL certificates.</p>			
+</mat-expansion-panel>                   
