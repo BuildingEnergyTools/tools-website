@@ -199,17 +199,17 @@
       <a [routerLink]="['goals-outcomes']" class="home-nav">Goals & Outcomes</a>
     </div>
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-width90 card-margin" id="g1">
+      <mat-card class="card-width90 card-margin" id="g1" [routerLink]="['goals/analyze']">
 				<mat-card-content class="px-2">
 					<div fxLayout="row" class="no-gutters">
 						<div FxFlex="33%" class="my-auto pr-3"><img class="card-img" src="assets/images/com-resstock-outcomes-icon.svg" alt="ComStock & ResStock outcomes icon"></div>
 						<div class="my-auto"><p class="card-text">Assess Impacts & Identify New Opportunities</p></div>
 					</div>
 				</mat-card-content>
-			</mat-card>
+      </mat-card>
     </div>
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-width90 card-margin" id="g2">
+      <mat-card class="card-width90 card-margin" id="g2" [routerLink]="['goals/target']">
         <mat-card-content class="px-2">
           <div fxLayout="row" class="no-gutters">
             <div FxFlex="33%" class="my-auto pr-3"><img class="card-img" src="assets/images/better-outcomes-icon.svg" alt="BETTER outcomes icon"></div>
@@ -219,7 +219,7 @@
       </mat-card>
     </div>
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-width90 card-margin" id="g3">
+      <mat-card class="card-width90 card-margin" id="g3" [routerLink]="['goals/compliance']">
         <mat-card-content class="px-2">
           <div fxLayout="row" class="no-gutters">
             <div FxFlex="33%" class="my-auto pr-3"><img class="card-img-sm" src="assets/images/assetscore-outcomes-icon.svg" alt="Asset Score Outcomes icon"></div>
@@ -229,7 +229,7 @@
       </mat-card>
     </div>
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-width90 mb-2" id="g4">
+      <mat-card class="card-width90 mb-2" id="g4" [routerLink]="['goals/customize']">
         <mat-card-content class="px-2">
           <div fxLayout="row" class="no-gutters">
             <div FxFlex="33%" class="my-auto pr-3"><img class="card-img" src="assets/images/thirdparty-outcomes-icon.svg" alt="third-party outcomes icon"></div>
