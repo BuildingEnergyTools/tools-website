@@ -31,6 +31,10 @@
       font-size: 1.1em;
     }
 
+    .mat-h6 {
+      font-size: 1em;
+    }
+
     a {
       color: #024880;
       font-weight: bold;
@@ -77,25 +81,29 @@
       font-weight: bold;
     }
 
-  //   .mat-row:nth-child(even){
-  //     background-color: white;
-  //   }
-          
-  //  .mat-row:nth-child(odd){
-  //     background-color: #ccc;
-  //   }
+    .card-img {
+      width:100%;
+    }
 
-  //   .mat-header-row {
-  //     border-bottom: 1px solid black;
-  //   }
-
-  //   .mat-header-cell {
-  //     border-bottom: 1px solid black;
-  //     text-align: left;
-  //     font-size: 1.1em;
-  //     color: black;
-  //     padding: 10px;
-  //   }
+    .img-g1 {
+      width:55%;
+      padding-left:20px;
+    }
+    
+    .img-g2 {
+      width: 50%;
+    
+    }
+    
+    .img-g3 {
+      width: 45%;
+      padding-left: 30px;
+    }
+    
+    .img-g4 {
+      width: 50%;
+      padding-left: 20px;
+    }
 
     table {
       border-collapse: collapse;
