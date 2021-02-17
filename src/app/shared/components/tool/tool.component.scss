@@ -36,6 +36,10 @@
       font-weight: bold;
     }
 
+    a.not-bold {
+      font-weight: normal;
+    }
+
     .color-1 {
       color: #3B88AF;
     }
@@ -71,6 +75,224 @@
     
     .bold-link {
       font-weight: bold;
+    }
+
+  //   .mat-row:nth-child(even){
+  //     background-color: white;
+  //   }
+          
+  //  .mat-row:nth-child(odd){
+  //     background-color: #ccc;
+  //   }
+
+  //   .mat-header-row {
+  //     border-bottom: 1px solid black;
+  //   }
+
+  //   .mat-header-cell {
+  //     border-bottom: 1px solid black;
+  //     text-align: left;
+  //     font-size: 1.1em;
+  //     color: black;
+  //     padding: 10px;
+  //   }
+
+    table {
+      border-collapse: collapse;
+    }
+    
+    th {
+      text-align: inherit;
+      text-align: -webkit-match-parent;
+    }
+    
+    table {
+      width: 100%;
+      margin-bottom: 1rem;
+      color: #212529;
+    }
+    
+    .table th,
+    .table td {
+      padding: 0.75rem;
+      vertical-align: top;
+      border-top: 1px solid #dee2e6;
+    }
+    
+    .table thead th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #dee2e6;
+    }
+    
+    .table tbody + tbody {
+      border-top: 2px solid #dee2e6;
+    }
+    
+    .table-sm th,
+    .table-sm td {
+      padding: 0.3rem;
+    }
+    
+    .table-bordered {
+      border: 1px solid #dee2e6;
+    }
+    
+    .table-bordered th,
+    .table-bordered td {
+      border: 1px solid #dee2e6;
+    }
+    
+    .table-bordered thead th,
+    .table-bordered thead td {
+      border-bottom-width: 2px;
+    }
+    
+    .table-borderless th,
+    .table-borderless td,
+    .table-borderless thead th,
+    .table-borderless tbody + tbody {
+      border: 0;
+    }
+    
+    .table-striped tbody tr:nth-of-type(odd) {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
+    
+    .table-hover tbody tr:hover {
+      color: #212529;
+      background-color: rgba(0, 0, 0, 0.075);
+    }
+    
+    .table-primary,
+    .table-primary > th,
+    .table-primary > td {
+      background-color: #b8daff;
+    }
+    
+    .table-primary th,
+    .table-primary td,
+    .table-primary thead th,
+    .table-primary tbody + tbody {
+      border-color: #7abaff;
+    }
+    
+    .table-hover .table-primary:hover {
+      background-color: #9fcdff;
+    }
+    
+    .table-hover .table-primary:hover > td,
+    .table-hover .table-primary:hover > th {
+      background-color: #9fcdff;
+    }
+    
+    
+    .table-light,
+    .table-light > th,
+    .table-light > td {
+      background-color: #fdfdfe;
+    }
+    
+    .table-light th,
+    .table-light td,
+    .table-light thead th,
+    .table-light tbody + tbody {
+      border-color: #fbfcfc;
+    }
+    
+    .table-hover .table-light:hover {
+      background-color: #ececf6;
+    }
+    
+    .table-hover .table-light:hover > td,
+    .table-hover .table-light:hover > th {
+      background-color: #ececf6;
+    }
+    
+    .table-active,
+    .table-active > th,
+    .table-active > td {
+      background-color: rgba(0, 0, 0, 0.075);
+    }
+    
+    .table-hover .table-active:hover {
+      background-color: rgba(0, 0, 0, 0.075);
+    }
+    
+    .table-hover .table-active:hover > td,
+    .table-hover .table-active:hover > th {
+      background-color: rgba(0, 0, 0, 0.075);
+    }
+    
+    .table .thead-dark th {
+      color: #fff;
+      background-color: #343a40;
+      border-color: #454d55;
+    }
+    
+    .table .thead-light th {
+      color: #495057;
+      background-color: #e9ecef;
+      border-color: #dee2e6;
+    }
+    
+    
+    @media (max-width: 575.98px) {
+      .table-responsive-sm {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .table-responsive-sm > .table-bordered {
+        border: 0;
+      }
+    }
+    
+    @media (max-width: 767.98px) {
+      .table-responsive-md {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .table-responsive-md > .table-bordered {
+        border: 0;
+      }
+    }
+    
+    @media (max-width: 991.98px) {
+      .table-responsive-lg {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .table-responsive-lg > .table-bordered {
+        border: 0;
+      }
+    }
+    
+    @media (max-width: 1199.98px) {
+      .table-responsive-xl {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .table-responsive-xl > .table-bordered {
+        border: 0;
+      }
+    }
+    
+    .table-responsive {
+      display: block;
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    .table-responsive > .table-bordered {
+      border: 0;
     }
     
     a.bold-link:hover {

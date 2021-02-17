@@ -82,6 +82,9 @@ export class MenuComponent {
         title: 'UBID',
         route: '/ubid'
       }, {
+        title: 'BEDES',
+        route: '/bedes'
+      }, {
         title: '3rd Party Tools',
         route: '/third-party'
       }]

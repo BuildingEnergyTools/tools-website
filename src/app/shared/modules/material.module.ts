@@ -5,6 +5,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   exports: [
@@ -37,7 +38,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     // MatProgressBarModule,
     // MatProgressSpinnerModule,
     // MatRadioModule,
-    MatRippleModule
+    MatRippleModule,
     // MatSelectModule,
     // MatSidenavModule,
     // MatSliderModule,
@@ -45,7 +46,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
     // MatSnackBarModule,
     // MatSortModule,
     // MatStepperModule,
-    // MatTableModule,
+    MatTableModule,
     // MatTabsModule,
     // MatToolbarModule,
     // MatTooltipModule,

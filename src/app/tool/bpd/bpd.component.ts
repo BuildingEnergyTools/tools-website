@@ -11,15 +11,15 @@ export class BpdComponent {
     route: '/bpd'
   }, {
     title: 'About the Data',
-    icon: 'fa-bullseye',
+    icon: 'fa-database',
     route: 'data'
   },{
     title: 'Privacy & Security',
-    icon: 'fa-bullseye',
+    icon: 'fa-lock',
     route: 'security'
   },{
     title: 'Contribute Your Data',
-    icon: 'fa-bullseye',
+    icon: 'fa-share',
     route: 'contribute'
   }, {
     title: 'Resources',

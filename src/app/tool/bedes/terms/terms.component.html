@@ -1,0 +1,330 @@
+<h2 class="mat-h2 mb-4">Common Composite Terms</h2>
+
+<p>Many application term mappings require the use of multiple BEDES atomic terms to specify a mapping.  These cases are referred to as Composite Term mappings, where two or more BEDES terms are used to qualify a primary term so that it explicitly matches the application term.</p>
+
+<p>For example, to match an application term intended to capture the annual electricity savings of a measure, you could just use the generic "Resource Savings" atomic BEDES term. However, this would fail to explicitly identify the intent to focus on electricity. It might also be desirable to explicitly differentiate between annual and monthly savings. This can be specified with a composite BEDES term of "Annual Electricity Resource Savings" consisting of the following BEDES atomic terms</p>
+
+<div class="my-3">
+Interval Frequency = Annual<br/>
+Resource = Electricity<br/>
+Resource Savings = [value]
+</div>
+
+<p>See the <a href="https://docs.google.com/document/d/1wvkugBc5UZ4v6mhjFCDoaqOmZreJ3hrcJDcp36tClmQ/edit#heading=h.1araki8oh4y5">BEDES Mapping Procedure</a> for more information.</p>
+
+<p>The BEDES <a href="https://bedes.lbl.gov/sites/default/files/technicaldocs/BEDES-composite-terms-examples_1.xlsx">Example Composite Terms</a> downloadable spreadsheet lists over 1000 example composite terms that have been developed for various application mappings and may be a useful resource for mapping your application terms.</p>
+
+<p>Listed below are examples of composite terms and how they are constituted using BEDES terms.</p>
+
+<table class="table table-striped mt-3">
+  <thead>
+    <tr>
+      <th>Composite Term</th>
+      <th>BEDES Terms</th>
+      <th>Unit of Measure</th>
+      <th></th>     
+    </tr>
+  </thead>
+  <tbody>
+   <tr>
+     <td>
+     Absorption Chiller Capacity          </td>
+           <td>
+     Cooling Type = Absorption Chiller<BR>Capacity = [volume]          </td>
+           <td>
+     cooling tons          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Annual Heating AFUE Efficiency Value          </td>
+           <td>
+     Efficiency Qualifier = Annual heating<BR>Efficiency Metric Qualifier = AFUE<BR>Efficiency Value = [value]          </td>
+           <td>
+     None          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Annual Onsite Renewable Electricity Resource Value          </td>
+           <td>
+     Interval Frequency = Annual<BR>Resource Boundary = Onsite<BR>Resource Generation = Renewable<BR>Resource = Electricity<BR>Resource Value = [value]          </td>
+           <td>
+     kWh          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Annual Photovoltaic Exported Electricity Resource Value          </td>
+           <td>
+     Interval Frequency = Annual<BR>Energy Generation Technology = Photovoltaic<BR>Resource Generation = Exported<BR>Resource = Electricity<BR>Resource Value = [value]          </td>
+           <td>
+     kWh          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Annual Site Energy Resource Intensity          </td>
+           <td>
+     Interval Frequency = Annual<BR>Resource Boundary = Site<BR>Resource = Energy<BR>Resource Intensity = [value]          </td>
+           <td>
+     kBtu/ft2          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Annual Source Energy Resource Intensity          </td>
+           <td>
+     Interval Frequency = Annual<BR>Resource Boundary = Source<BR>Resource = Energy<BR>Resource Intensity = [value]          </td>
+           <td>
+     kBtu/ft2          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Annual Weather Normalized Heating Resource Value          </td>
+           <td>
+     Interval Frequency = Annual<BR>Normalization = Weather normalized<BR>End Use = Heating<BR>Resource Value = [value]          </td>
+           <td>
+     kBtu          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Audit Complied Compliance Status Date          </td>
+           <td>
+     Action Category = Audit<BR>Compliance Status = Complied<BR>Compliance Status Date = [value]          </td>
+           <td>
+     YYYY-MM-DD          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Baseline Annual Energy Resource Intensity          </td>
+           <td>
+     Temporal Status = Baseline<BR>Interval Frequency = Annual<BR>Resource = Energy<BR>Resource Intensity = [value]          </td>
+           <td>
+     kBtu/ft2          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Building Footprint Area          </td>
+           <td>
+     Premises Level = Building<BR>Floor Area Qualifier = Footprint<BR>Area = [value]          </td>
+           <td>
+     ft2          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Chiller Plant Commissioning Cost          </td>
+           <td>
+     Technology Category = Chiller plant<BR>Action Category = Commissioning<BR>Cost = [value]          </td>
+           <td>
+     $          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Completed Construction Status Date          </td>
+           <td>
+     Construction Status = Completed<BR>Construction Status Date = [value]          </td>
+           <td>
+     YYYY          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Conditioned Building Volume          </td>
+           <td>
+     Conditioning Status = Conditioned<BR>Premises Level = Building<BR>Volume = [value]          </td>
+           <td>
+     ft3          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Cooled Gross Area          </td>
+           <td>
+     Conditioning Status = Cooled<BR>Floor Area Qualifier = Gross<BR>Area = [value]          </td>
+           <td>
+     ft2          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Created Date          </td>
+           <td>
+     Date Status = Created<BR>Date = [value]          </td>
+           <td>
+     YYYY-MM-DD          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Direct Annual CO2e Emissions Value          </td>
+           <td>
+     Emission Boundary = Direct<BR>Interval Frequency = Annual<BR>Emission Gas Type = CO2e<BR>Emissions Value = [value]          </td>
+           <td>
+     kgCO2e          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Electricity Demand Rate Charge Value          </td>
+           <td>
+     Resource = Electricity<BR>Rate Designation = Demand<BR>Rate Charge Value = [value]          </td>
+           <td>
+     $/kW          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Electricity Demand Tier Maximum          </td>
+           <td>
+     Resource = Electricity<BR>Rate Designation = Demand<BR>Tier Maximum = [value]          </td>
+           <td>
+     kW          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Energy Auditor Credential          </td>
+           <td>
+     Contact Label = Energy Auditor<BR>Credential = [value]          </td>
+           <td>
+     None          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Exterior Shading System          </td>
+           <td>
+     Location = Exterior<BR>Shading System = [value]          </td>
+           <td>
+     None          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Floor Quantity          </td>
+           <td>
+     Spatial Unit Type = Floor<BR>Quantity = [value]          </td>
+           <td>
+     None          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Gross Area          </td>
+           <td>
+     Floor Area Qualifier = Gross<BR>Area = [value]          </td>
+           <td>
+     ft2          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Gross Floor Area          </td>
+           <td>
+     Floor Area Qualifier = Gross<BR>Opaque Surface = Floor<BR>Area = [value]          </td>
+           <td>
+     ft2          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Ground Floor Bedroom Quantity          </td>
+           <td>
+     Location = Ground floor<BR>Spatial Unit Type = Bedroom<BR>Quantity = [value]          </td>
+           <td>
+     None          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Heating Capacity          </td>
+           <td>
+     HVAC Category = Heating<BR>Capacity = [value]          </td>
+           <td>
+     Btu/hr          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Package Estimated Energy Cost Savings          </td>
+           <td>
+     Reporting Level = Package<BR>Derivation Method = Estimated<BR> Resource = Energy<BR>Cost Savings = [value]          </td>
+           <td>
+     $          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Pre Retrofit Watts Per Lamp Consumption Rate          </td>
+           <td>
+     Temporal Status = Pre retrofit<BR>Consumption Rate Type = Watts per lamp<BR>Consumption Rate = [value]          </td>
+           <td>
+     W          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Primary Occupancy Classification          </td>
+           <td>
+     Premises Level = Primary<BR>Occupancy Classification = [value]          </td>
+           <td>
+     None          </td>
+           <td>
+               </td>
+       </tr>
+   <tr>
+           <td>
+     Thermal Zone Area          </td>
+           <td>
+     Spatial Unit Type = Thermal zone<BR>Area = [value]          </td>
+           <td>
+     ft2          </td>
+           <td>
+               </td>
+       </tr>
+   <tr  class="even views-row-last">
+           <td>
+     Water Meter Quantity          </td>
+           <td>
+     Resource = Water<BR>Control Technology = Meter<BR>Quantity = [value]          </td>
+           <td>
+     None          </td>
+           <td>
+               </td>
+       </tr>
+</tbody>
+</table>

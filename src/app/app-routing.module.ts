@@ -53,6 +53,9 @@ const routes: Routes = [{
   path: 'ubid',
   loadChildren: () => import(/* webpackChunkName: "ubid" */ './tool/ubid/ubid.module').then(m => m.UbidModule)
 }, {
+  path: 'bedes',
+  loadChildren: () => import(/* webpackChunkName: "bedes" */ './tool/bedes/bedes.module').then(m => m.BedesModule)
+}, {
   path: 'third-party',
   loadChildren: () => import(/* webpackChunkName: "third-party" */ './tool/third-party/third-party.module').then(m => m.ThirdPartyModule)
 }, {
