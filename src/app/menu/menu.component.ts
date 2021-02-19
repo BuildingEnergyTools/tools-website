@@ -58,7 +58,7 @@ export class MenuComponent {
       }]
     }, {
       title: 'Goals & Outcomes',
-      route: '/goals-outcomes',
+      route: '/goals',
       children: [{
         title: 'Analyze Building Stock',
         route: '/goals/analyze'
@@ -84,6 +84,9 @@ export class MenuComponent {
       }, {
         title: 'BEDES',
         route: '/bedes'
+      }, {
+        title: 'Open Efficiency Platform',
+        route: '/oep'
       }, {
         title: '3rd Party Tools',
         route: '/third-party'

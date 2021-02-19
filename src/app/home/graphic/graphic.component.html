@@ -152,11 +152,23 @@
 			</mat-card>
     </div>
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-width70 mx-auto mb-4" id="better">
+      <mat-card class="card-width70 mx-auto mb-4" id="better" *ngIf="!cardStatus['better']" (click)="toggleCard('better')">
 				<mat-card-content>
 					<div fxLayoutAlign="center center"><img class="card-img" src="assets/images/better-logo.svg" alt="BETTER Logo"></div>
         </mat-card-content>
 			</mat-card>
+      <mat-card class="card-width70 mx-auto mb-4" id="better2" *ngIf="cardStatus['better']" (click)="toggleCard('better')">
+        <mat-card-content>
+          <mat-card-subtitle>Target Buildings & Tailor Measures</mat-card-subtitle>
+          <p class="card-text">The BETTER tool converts readily-available monthly energy consumption data (like that collected by ENERGY STAR Portfolio Manager and shared with SEED) into specific, cost-effective recommendations for energy efficiency upgrade measures. </p>
+          <p class="card-text">It allows the precise targeting of efficiency improvements in one or many buildings.
+          </p>
+          <p class="card-text">BETTER doesn’t replace an audit, but it does provide a preliminary estimate of the size and make-up of potential energy efficiency projects. </p>
+          <div fxLayoutAlign="center center">
+            <a [routerLink]="['better']" mat-raised-button role="button" class="btn btn-type-3">Learn more</a>
+          </div>
+        </mat-card-content>
+      </mat-card>
     </div>
     <div fxLayoutAlign="space-around">
       <mat-card class="card-width70 mx-auto mb-4" id="as" *ngIf="!cardStatus['as']" (click)="toggleCard('as')">
@@ -168,7 +180,7 @@
 				<mat-card-content>
 					<mat-card-subtitle>Get Cost-Effective</mat-card-subtitle>
 					<p class="card-text">The <strong>Asset Score</strong> tool assesses the energy efficiency of a building's physical systems and produces an Energy Asset Score Report.</p>
-					<p class="card-text">Use Asset Score to identify cost-effective energy efficiency measure to help buildings deliver EUI and GHGe metrics for compliance with your city's BEPS policy.
+					<p class="card-text">Use Asset Score to identify cost-effective energy efficiency measure to help buildings deliver EUI and GHGe metrics for compliance with your city's BPS policy.
 					</p>
 					<p class="card-text">You can even port data over to Asset Score in just one click!</p>
 					<div fxLayoutAlign="center center">
@@ -196,7 +208,7 @@
   </div>
   <div fxFlex="25" class="col-pad col-type-4">
     <div class="col-title pt-1 pb-2" fxLayoutAlign="center center">
-      <a [routerLink]="['goals-outcomes']" class="home-nav">Goals & Outcomes</a>
+      <a [routerLink]="['goals']" class="home-nav">Goals & Outcomes</a>
     </div>
     <div fxLayoutAlign="space-around">
       <mat-card class="card-width90 card-margin" id="g1" [routerLink]="['goals/analyze']">
