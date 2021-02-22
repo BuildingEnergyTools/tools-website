@@ -49,8 +49,14 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
   }
 
   toggleCard(card: Card): void {
-    console.log('toggle');
-    this.cardStatus[card] = !this.cardStatus[card];
+    if (this.cardStatus[card]) {
+      this.cardStatus[card] = false;
+    } else {
+      cards.forEach(currentCard => {
+        this.cardStatus[currentCard] = card === currentCard;
+      });
+    }
+
     setTimeout(() => this._updateArrows());
   }
 
@@ -211,7 +217,7 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
       this.elements.g4,
       LeaderLine.pointAnchor(this.elements['under-seed'], {
         x: '100%',
-        y: '100%'
+        y: '93%'
       }),
       Object.assign({}, options, {
         startSocket: 'bottom',
