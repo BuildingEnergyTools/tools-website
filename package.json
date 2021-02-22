@@ -26,8 +26,6 @@
     "@fortawesome/fontawesome-free": "~5.15.2",
     "leader-line": "^1.0.5",
     "ngx-markdown": "^11.0.1",
-    "overlayscrollbars": "~1.13.1",
-    "overlayscrollbars-ngx": "~0.2.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"

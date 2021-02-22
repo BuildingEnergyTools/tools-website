@@ -10,6 +10,7 @@
 }
 
 .mat-card-content {
+  cursor: pointer;
   margin-bottom: 0;
 }
 
@@ -64,7 +65,7 @@
 }
 
 $colPad: 30;
-$colBsyncPad: 120;
+$colBsyncPad: 110;
 
 .col-type-1 {
   background-color: #3B88AF;
@@ -112,8 +113,8 @@ $colBsyncPad: 120;
   }
 
   #under-seed {
-    margin-left: $colBsyncPad + px;
-    margin-right: $colBsyncPad + px;
+    margin-left: $colBsyncPad / 3 + px;
+    margin-right: $colBsyncPad / 3 + px;
     text-align: center;
   }
 }
@@ -205,44 +206,31 @@ $colBsyncPad: 120;
 $bsyncWidth: 100px;
 $bsyncExpandedWidth: 160px;
 
-.bsync1 {
+.bsync1, .bsync2 {
   position: relative;
-  top: -200px;
   left: 50%;
   border-radius: 18px;
   border: 4px solid $orange;
   margin: 0 auto !important;
   width: auto !important;
-  z-index: 3;
+  z-index: 6;
+
+  &.bsync1 {
+    top: -200px;
+  }
+  &.bsync2 {
+    top: -175px;
+  }
 
   .mat-card-content {
+    line-height: 0;
     max-width: $bsyncWidth;
   }
 }
 
-.bsync1-flip {
+.bsync1-flip, .bsync2-flip {
   .mat-card-content {
-    max-width: $bsyncExpandedWidth;
-  }
-}
-
-.bsync2 {
-  position: relative;
-  top: -175px;
-  left: 50%;
-  border-radius: 18px;
-  border: 4px solid $orange;
-  margin: 0 auto !important;
-  width: auto !important;
-  z-index: 3;
-
-  .mat-card-content {
-    max-width: $bsyncWidth;
-  }
-}
-
-.bsync2-flip {
-  .mat-card-content {
+    line-height: normal;
     max-width: $bsyncExpandedWidth;
   }
 }
