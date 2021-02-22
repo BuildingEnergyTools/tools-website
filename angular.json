@@ -39,6 +39,7 @@
               ]
             },
             "scripts": [
+              "./node_modules/leader-line/leader-line.min.js",
               "./node_modules/marked/lib/marked.js"
             ]
           },
@@ -113,6 +114,7 @@
               ]
             },
             "scripts": [
+              "./node_modules/leader-line/leader-line.min.js",
               "./node_modules/marked/lib/marked.js"
             ]
           }

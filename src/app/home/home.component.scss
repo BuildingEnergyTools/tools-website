@@ -9,6 +9,10 @@
   position: relative;
   text-transform: uppercase;
 
+  > div {
+    width: 100%;
+  }
+
   &::after {
     background-color: $orange;
     content: '';

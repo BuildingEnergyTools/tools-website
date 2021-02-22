@@ -8,11 +8,15 @@
 
 </div>
 <app-graphic></app-graphic>
-<div class="developer-banner" fxLayoutAlign="center center">
+<div class="developer-banner" fxLayout="column" fxLayoutAlign="center center">
+  <div fxLayout="row">
+    <div id="devBsync1" [fxFlex]="sharedService.colSize[1]" [fxFlexOffset]="sharedService.colSize[0]"></div>
+    <div id="devBsync2"></div>
+  </div>
   <a [routerLink]="['developers']" class="dev-link">FOR DEVELOPERS</a></div>
 <div fxLayout="row" class="developer">
   <div fxFlex="100">
-  
+
     <h2 class="mat-h2 mb-4">Audit Data Standardization: The Foundation of a Building Performance Policy</h2>
 
     <p>A critical element of any building performance standard is the collection of standardized building energy audit data. Ideally, organizations will use a single, consistent way to collect audit data, such as the Audit Template. This is Tier 3, the highest level of data standardization. Tier 3 maximizes the value, persistence, usability, and transportability of audit data. We recommend this pathway for organizations who are committed to the most ambitious goals, or to those in the early stages of launching a building performance standard and who have no pre-existing commitments to other tools or systems.</p>
