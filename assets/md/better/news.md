@@ -32,3 +32,5 @@ The data entry template is updated. The new template adds more energy units whic
 Alpha version of BETTER is live!
 
 - [Johnson Controls Announces Technology Initiative to Introduce Open-source Software For Targeting Commercial And Public Building Retrofits](https://www.johnsoncontrols.com/media-center/news/press-releases/2019/01/15/open-source-software-for-targeting-commercial-and-public-building-retrofits) - January 15, 2019
+
+For more news, visit [https://better.lbl.gov/news/](https://better.lbl.gov/news/). 
