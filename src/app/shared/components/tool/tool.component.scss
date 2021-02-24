@@ -81,6 +81,17 @@
       font-weight: bold;
       color: #2E2D2D;
     }
+
+    .smaller-text {
+      font-size: 0.8em;
+    }
+
+    .blue-callout {
+      background-color: #024880;
+      color: white;
+      padding: 20px;
+      margin-left: 100px;
+    }
     
     .bold-link {
       font-weight: bold;
@@ -198,7 +209,6 @@
       background-color: #9fcdff;
     }
     
-    
     .table-light,
     .table-light > th,
     .table-light > td {
@@ -247,7 +257,6 @@
       background-color: #e9ecef;
       border-color: #dee2e6;
     }
-    
     
     @media (max-width: 575.98px) {
       .table-responsive-sm {
