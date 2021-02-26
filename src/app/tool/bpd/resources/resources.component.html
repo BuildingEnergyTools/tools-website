@@ -1,129 +1,22 @@
-<h2 class="mat-h2 mb-4">Resources</h2>
+<h2 class="mat-h2 mb-4">FAQ</h2>
 
-<p>The following documents are available to help you understand and use the Building Performance Database:</p>
+<h5 class="mat-h5 mb-0">Does the BPD have time series data?</h5>
+<p class="mb-4">We aggregate all data to annual intervals.</p>
 
-<mat-expansion-panel class="mb-1">
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      FAQ
-    </mat-panel-title>
-  </mat-expansion-panel-header>
+<h5 class="mat-h5 mb-0">Does the BPD allow pre- and post-retrofit analysis of the same buildings?</h5>
+<p class="mb-4">In general, no. It’s possible that some building’s data were measured both before and after a retrofit, but we are typically not provided with data indicating when retrofits were performed.</p>
 
-  <h4 class="mat-h4 mb-4">GENERAL</h4>
-  <ul>
-    <li><a href="bpd/resources#g1">What is the purpose of the BPD?</a></li>
-    <li><a href="bpd/resources#g2">What building energy performance data is included in the BPD?</a></li>
-  </ul>
+<h5 class="mat-h5 mb-0">Is the BPD data weather normalized?</h5>
+<p class="mb-4">No. It contains only measured data.</p>
 
-  <h4 class="mat-h4 mb-4">ACCESS INFORMATION</h4>
-  <ul>
-    <li><a href="bpd/resources#a1">How can I access the database?</a></li>
-    <li><a href="bpd/resources#a2">How can I contribute data to the BPD?</a></li>
-  </ul>
+<h5 class="mat-h5 mb-0">How can you be sure there aren’t two records about the same building in the BPD?</h5>
+<p class="mb-4">We run an analysis on all combinations of buildings that checks similarity of building characteristics and removes any duplicates that are found. In cases of missing data, we assume records match unless we can prove that they are different.</p>
 
-  <h4 class="mat-h4 mb-4">DATABASE AND ANALYSIS INFORMATION</h4>
-  <ul>
-    <li><a href="bpd/resources#d1">What kinds of buildings does the BPD have?</a></li>
-    <li><a href="bpd/resources#d2">What are the data sources that populate the BPD?</a></li>
-    <li><a href="bpd/resources#d3">Does the BPD have time series data?</a></li>
-    <li><a href="bpd/resources#d4">How do you ensure that the data from these multiple sources is consistent and valid?</a></li>
-    <li><a href="bpd/resources#d5">What data format does the BPD utilize?</a></li>
-    <li><a href="bpd/resources#d6">Why are there no buildings in my zip code?</a></li>
-    <li><a href="bpd/resources#d7">I ran the same query twice and received different results. Is this an error?</a></li>
-    <li><a href="bpd/resources#d8">Can I export the results?</a></li>
-    <li><a href="bpd/resources#d9">Does the BPD conduct pre- and post-retrofit analysis of the same buildings?</a></li>
-    <li><a href="bpd/resources#d10">Is the BPD Weather Normalized?</a></li>
-    <li><a href="bpd/resources#d11">How can you make sure there aren't two records about the same building in the BPD?</a></li>
-  </ul>
+<h5 class="mat-h5 mb-0">How does the BPD relate to ENERGY STAR Portfolio Manager?</h5>
+<p class="mb-4">The BPD and Portfolio Manager are complementary. Portfolio Manager is a benchmarking and tracking tool that collects information on your building in order to generate a whole-building energy-efficiency score. The BPD allows users to explore the relationship between energy performance and physical and operational characteristics of many similar buildings in order to identify and evaluate efficiency opportunities. In fact, the BPD contains data on all of the buildings in Portfolio Manager that have been engineer-verified.</p>
 
-  <h4 class="mat-h4 mb-4">RELATIONSHIP TO OTHER FEDERAL GOVERNMENT EFFORTS</h4>
-  <ul>
-    <li><a href="bpd/resources#r1">How does the BPD relate to ENERGY STAR Portfolio Manager?</a></li>
-    <li><a href="bpd/resources#r2">How does the BPD relate to CBECS and RECS?</a></li>
-    <li><a href="bpd/resources#r3">How does the BPD relate to the GreenButton initiative?</a></li>
-  </ul>
-  <h4 class="mat-h4 mb-4">DATA PRIVACY AND SECURITY</h4>
-  <ul>
-    <li><a href="bpd/resources#s1">Can I access individual records?</a></li>
-    <li><a href="bpd/resources#s2">Does the BPD include personally identifiable information (PII)?</a></li>
-    <li><a href="bpd/resources#s3">How does the BPD handle data privacy?</a></li>
-    <li><a href="bpd/resources#s4">How does the BPD handle data security?</a></li>
-  </ul>
+<h5 class="mat-h5 mb-0">How does the BPD relate to CBECS and RECS?</h5>
+<p class="mb-4">The BPD serves a complementary function to the Energy Information Administration’s Commercial Buildings Energy Consumption Survey (CBECS) and Residential Energy Consumption Survey (RECS). CBECS and RECS are statistically valid samples of the national commercial and residential building stocks, and are two of the data sources for the BPD. See our comparison of the BPD and CBECS <a href="https://buildings.lbl.gov/sites/default/files/is-the-bpd-nationally-representative.pdf" target="_blank" class="color-3">here</a>.</p>
 
-  <h4 class="mat-h4 mb-4">GENERAL</h4>
-
-  <h5 class="mat-h5" id="g1">What is the purpose of the DOE Buildings Performance Database?</h5>
-  <p>The BPD provides access to empirical data on the actual energy performance and physical and operational characteristics of commercial and residential buildings. The database was developed to stimulate investment in energy-efficiency retrofit projects and services.</p>
-  <h5 class="mat-h5" id="g2">What building energy performance data is included in the BPD?</h5>
-  <p>All records in the database include a minimum of one year of the building's energy usage, location, climate zone, building classification (residential or commercial), type (office, retail, etc), and floor area. Some records also contain age, operational characteristics (such as types of activities and associated floor areas, operating hours, and number of occupants) and/or asset information (such as lighting type and controls, air distribution configuration, heating and cooling equipment types, etc, wall, roof and window characteristics, etc).</p>
-
-  <h4 class="mat-h4 mb-4">ACCESS INFORMATION</h4>
-
-  <h5 class="mat-h5" id="a1">How can I access the database?</h5>
-  <p>The database is available to the public and can be accessed <a class="color-3 bold-link" href="https://www.energy.gov/eere/buildings/building-performance-database-bpd" target="_blank">here</a>.</p>
-  <h5 class="mat-h5" id="a2">How can I contribute data to the BPD?</h5>
-  <p>The BPD is a crowd-sourcing effort that depends on the participation of the energy-efficiency industry to succeed. If you are interested in contributing a dataset to the database or have other recommended sources, please contact <a class="color-3 bold-link" href="mailto:BPD@ee.doe.gov">BPD@ee.doe.gov</a>. Files can be sent in any electronic format and should be marked "PROPRIETARY." Once it is received, LBNL cleans and formats the dataset for upload into the BPD. Data contributors can request a copy of their cleansed and formatted dataset.</p>
-  <p>The BPD is seeking datasets of >50 records that include, at a minimum, one year of the building's energy usage, location at the zip code level, building classification (residential or commercial), type (office, retail, etc), and floor area. Additional fields that are useful are: age, operational characteristics (such as types of activities and associated floor areas, operating hours, and number of occupants) and/or asset information (such as lighting type and controls, air distribution configuration, heating and cooling equipment types, wall, roof and window characteristics, etc). The BPD accepts smaller datasets if they contain richer information.</p>
-  <p>Learn more on the <a href="https://www.energy.gov/eere/buildings/contributing-data" class="color-3 bold-link">BPD Contributing Data</a> page.</p>
-
-  <h4 class="mat-h4 mb-4">DATABASE AND ANALYSIS INFORMATION</h4>
-
-  <h5 class="mat-h5" id="d1">What kinds of buildings does the BPD have?</h5>
-  <p>The BPD has data on all types of commercial and residential buildings, but not campuses or industrial buildings. While there is not currently sufficient information to conduct analysis for some building types, it will become possible as the dataset grows.</p>
-  <h5 class="mat-h5" id="d2">What are the data sources that populate the BPD?</h5>
-  <p>The BPD conducts ongoing outreach to public and private partners to contribute data, and new datasets are being added on a regular basis. Data contributors include dozens of federal, state and local governments, energy-efficiency programs, real estate owners, and product and service providers. Note that records are anonymized in the BPD, and their source is not distinguishable in the platform.</p>
-  <h5 class="mat-h5" id="d3">Does the BPD have time series data?</h5>
-  <p>All of the buildings have at least one year of energy consumption data – as either an annual total, monthly, daily or interval. In the future, it will be possible to add more years or greater granularity of consumption data for buildings that are already in the database.</p>
-  <h5 class="mat-h5" id="d4">How do you ensure that the data from these multiple sources is consistent and valid?</h5>
-  <p>There are two processes used to ensure consistent and valid data within the BPD. The data transformation process converts source data into a consistent format in the BPD. Data cleansing and validation procedures are then used to identify potentially suspect data, including in and out of range checks, statistical outliers, invalid values, etc.</p>
-  <p>Real data is messy and has collection and entry errors, but the BPD team is continually improving upon its data cleansing and error checking methodologies. As the dataset grows it will also become possible to filter the data to only view records that were professionally validated. Please contact us if you are interested in more detailed information about our data formatting and cleansing procedures.</p>
-  <h5 class="mat-h5" id="d5">What data format does the BPD utilize?</h5>
-  <p>The <a href="https://www.energy.gov/eere/buildings/building-energy-data-exchange-specification-bedes" class="color-3 bold-link">Building Energy Data Exchange Specification</a> is a data format designed to support analysis of the measured energy performance of commercial and residential buildings, with fields for building characteristics, efficiency measures and energy use. The BEDES defines and describes these data fields and their relationships. The DOE is currently in the process of refining the BEDES for more widespread use. If you are interested in more information, please visit the <a href="https://www.energy.gov/eere/buildings/building-energy-data-exchange-specification-bedes" class="color-3 bold-link" target="_blank">BEDES website</a> or <a class="color-3 bold-link" href="mailto:bpd@ee.doe.gov">contact us</a>.</p>
-  <h5 class="mat-h5" id="d6">Why are there no buildings in my zip code?</h5>
-  <p>While the BPD has hundreds of thousands of buildings, there are still some zip codes for which no data are available. The BPD will include buildings in additional zip codes as further data are imported. If you know of any building performance data sources for your zip-code, please contact <a class="color-3 bold-link" href="mailto:BPD@ee.doe.gov">BPD@ee.doe.gov</a>.</p>
-  <h5 class="mat-h5" id="d7">I ran the same query twice and received different results. Is this an error?</h5>
-  <p>The database is updated when new data is available. If the number of records from your latest query is greater than the number of records from you initial query then more data has been added to the database. This will serve to increase the accuracy of your search.</p>
-  <h5 class="mat-h5" id="d8">Can I export the results?</h5>
-  <p>The table allows users to generate and export characteristics of the peer group categorized by state or facility type. The table shows the building count, median EUI (kBtu/ft2), median floor area, median year built, and median hours occupied.</p>
-  <h5 class="mat-h5" id="d9">Does the BPD allow pre- and post-retrofit analysis of the same buildings?</h5>
-  <p>The BPD does not rely on pre- and post- retrofit data of the same buildings. The large sample set enables comparison of the energy performance distribution of two sets of buildings that differ in one variable, such as the type of boiler. By comparing a group of single-family homes with boilers to a similar set of single-family homes that have heat pumps, the database can demonstrate the likely savings from an equipment change.</p>
-  <p>It is possible that this type of comparisons could include pre and post information for the same buildings. Each record in the BPD is a snapshot of a specific building, its characteristics and at least a year of energy consumption data. If a change is made in the building, it is entered as a new record with new characteristics and associated consumption. As the dataset grows, the BPD will add filters to look at buildings for which there are pre/post information or multi-year data.</p>
-  <h5 class="mat-h5" id="d10">Is the BPD Weather Normalized?</h5>
-  <p>As a design principle, the raw BPD dataset includes empirical information that is not manipulated in any way.</p>
-  <h5 class="mat-h5" id="d11">How can you make sure there aren't two records about the same building in the BPD?</h5>
-  <p>The BPD runs analysis to identify duplicates and ensure the same building isn't recorded twice. Duplicate records are identified by searching for records that have the same size, SF and EUI in the same zip code. But there is still a small chance that a building could be in the BPD twice if the records are inconsistent enough that the checks don't catch them. Real data is messy and has collection and entry errors, but the BPD team is continually improving upon its data cleansing and error checking methodologies.</p>
-  <p>Note that each record in BPD in a snapshot of a specific building and its characteristics that are associated with at least a year of consumption data. So if a change is made in the building, it is entered as a new record with new characteristics and associated consumption</p>
-
-  <h4 class="mat-h4 mb-4">RELATIONSHIP TO OTHER FEDERAL GOVERNMENT EFFORTS</h4>
-
-  <h5 class="mat-h5" id="r1">How does the BPD relate to ENERGY STAR Portfolio Manager?</h5>
-  <p>BPD and Portfolio Manager are complementary. Portfolio Manager is a benchmarking and tracking tool that collects information on your building in order to generate a whole-building energy-efficiency score. The BPD allows users to explore the relationship between energy performance and physical and operational characteristics of many similar buildings in order to identify and evaluate efficiency opportunities. In fact, the BPD contains data on all of the buildings in Portfolio Manager that have been engineer-verified.</p>
-  <h5 class="mat-h5" id="r2">How does the BPD relate to CBECS and RECS?</h5>
-  <p>The BPD serves a complementary function to Energy Information Administration's Commercial Buildings Energy Consumption Survey (CBECS) and Residential Energy Consumption Survey (RECS). CBECS and RECS are statistically valid samples of the national commercial and residential building stocks, and are in fact two of the data sources for the BPD.</p>
-  <p>The BPD is intended to be an actuarial database (like what insurance companies use) that contains the critical mass of records needed for users to examine the performance of similar buildings, while analyzing and controlling for many factors. Because the BPD is collecting real data from a large number of sources in order to achieve scale quickly, it will never be a perfectly statistically valid sample. CBECS and RECS have many fewer buildings than the BPD, and the survey takes much longer to collect. As a result, CBECS or RECS may only have one record of a specific building type in a particular geographic area. By contrast, BPD users will be able to get a good sense of how certain types of buildings in specific local markets perform.</p>
-  <h5 class="mat-h5" id="r3">How does the BPD relate to the Green Button initiative?</h5>
-  <p>The Green Button initiative is an industry-led effort that responds to a White House initiative to provide utility customers, such as building owners and managers and major tenants, with easy and secure access to their energy usage information in a standardized electronic format. Using Green Button Download My Data, customers are able to securely download their own detailed energy usage with a simple click of a literal "Green Button" on electric utilities' websites. The BPD is able to accept Green Button data but the minimum data requirements for the BPD include additional fields as well, such as square footage and building age.</p>
-
-  <h4 class="mat-h4 mb-4">DATA PRIVACY AND SECURITY</h4>
-
-  <h5 class="mat-h5" id="s1">Can I access individual records?</h5>
-  <p>The BPD does not provide access to raw data – it serves as an interface to analyze the dataset. Data can only be analyzed in aggregate through the BPD interface. The BPD analyses will never return a small enough number of records that it reveals information that could be used to identify a building.</p>
-  <h5 class="mat-h5" id="s2">Does the BPD include personally identifiable information (PII)?</h5>
-  <p>The BPD does not contain any personally identifiable information such as building owners and occupants, street address, owner, etc. The BPD team internally assigns a unique building identifier to each record in order to update the source datasets with new information, but these identifiers cannot be accessed by BPD users.</p>
-  <h5 class="mat-h5" id="s3">How does the BPD handle data privacy?</h5>
-  <p>Individual building records or source datasets will not be released publicly. Any data file that is submitted and marked as "proprietary data" is protected by law from release under the Freedom of Information Act. Even data that are obtained from public sources without restrictions are treated according to the BPD's stringent use and privacy rules, and therefore cannot be distinguished from other records in the database or provided to outside entities. For a copy of our privacy terms, please <a class="color-3 bold-link" href="mailto:bpd@ee.doe.gov">contact us</a>.</p>
-  <h5 class="mat-h5" id="s4">How does the BPD handle data security?</h5>
-  <p>The BPD Databases security policies align with DOE policies and Information Security best-practices. The BPD employs 2048-bit Secure Sockets Layer (SSL) certificates and 256 bit encryption of data. If you would like more detailed information on our data security policies, please visit the <a class="color-3 bold-link" href="https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/security">BPD Developers' Security page</a> or <a class="color-3 bold-link" href="mailto:bpd@ee.doe.gov">contact us</a>.</p>
-</mat-expansion-panel>
-<mat-expansion-panel class="mb-1">
-  <mat-expansion-panel-header>
-    <mat-panel-title>
-      Other Resources
-    </mat-panel-title>
-  </mat-expansion-panel-header>
-  <ul>
-    <li><a href="https://bpd.lbl.gov/" class="color-3 bold-link">The BPD Web Interface</a></li>
-    <li><a href="https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/glossary" class="color-3 bold-link">BPD Glossary</a></li>
-    <li><a href="https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/examples" class="color-3 bold-link">BPD Filtering Examples</a></li>
-  </ul>
-</mat-expansion-panel>
+<h5 class="mat-h5 mb-0">How does the BPD relate to the Green Button initiative?</h5>
+<p class="mb-4">The Green Button initiative is an industry-led effort that responds to a White House initiative to provide utility customers, such as building owners and managers and major tenants, with easy and secure access to their energy usage information in a standardized electronic format. The BPD is able to accept Green Button data but the minimum data requirements for the BPD include additional fields as well, such as floor area and building age.</p>
