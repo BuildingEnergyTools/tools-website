@@ -1,4 +1,4 @@
-<div fxLayout="row">
+<!-- <div fxLayout="row">
   <div [fxFlex]="sharedService.colSize[0]">
     <div class="col-line-1"></div>
     <div class="col-line-white"></div>
@@ -12,23 +12,19 @@
   <div [fxFlex]="sharedService.colSize[3]">
     <div class="col-line-4"></div>
   </div>
-</div>
+</div> -->
 
-<div fxLayout="row">
-  <div [fxFlex]="sharedService.colSize[0]" fxLayout="column" class="col-pad col-type-1">
-    <div class="col-title py-2" fxLayoutAlign="center center">
+<div fxLayout="row" fxFlex="80" fxFlexOffset="10">
+  <div [fxFlex]="sharedService.colSize[0]" fxLayout="column" class="col-pad col-type-1 pt-4">
+    <!-- <div class="col-title py-2 mb-4" fxLayoutAlign="center center">
       <a routerLink="collection-reporting" class="home-nav">Data Collection & Reporting</a>
-    </div>
+    </div> -->
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4" id="pm" (click)="toggleCard('pm')">
+      <mat-card class="mb-4 p-5" id="pm" (click)="toggleCard('pm')" [ngStyle]="{border: hovers['g1']==true || hovers['g2'] == true ? '5px solid #f5af13;' : '0px solid white'}">
         <mat-card-content [hidden]="cardStatus.pm">
-          <mat-card-subtitle><h6 class="pad-bot-10">Building Owners, Managers, Inspectors, Consultants, etc.</h6></mat-card-subtitle>
-          <div><img class="card-img" src="assets/images/pm-logo.svg" alt="EnergyStar Portfolio Manager Logo"></div>
+          <div><img class="card-img-2" src="assets/images/pm-logo.svg" alt="EnergyStar Portfolio Manager Logo"></div>
         </mat-card-content>
-        <mat-card-footer [hidden]="cardStatus.pm">
-          <div class="card-footer text-muted">Consumption, Energy Star Score</div>
-        </mat-card-footer>
 
         <mat-card-content [hidden]="!cardStatus.pm">
           <p>Building owners use <strong>ENERGY STAR Portfolio Manager</strong> to report their energy use. This information reveals how efficiently a building is being operated.</p>
@@ -42,14 +38,10 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-zindex" id="at" (click)="toggleCard('at')">
+      <mat-card class="card-zindex" id="at" (click)="toggleCard('at')" [ngStyle]="{border: hovers['g3']==true || hovers['g4'] == true ? '5px solid #f5af13;' : '0px solid white'}">
         <mat-card-content [hidden]="cardStatus.at">
-          <mat-card-subtitle><h6 class="pad-bot-10">Building Owners, Managers, Inspectors, Consultants, etc.</h6></mat-card-subtitle>
           <div><img class="card-img" src="assets/images/audit-template-logo.svg" alt="Audit Template Logo"></div>
         </mat-card-content>
-        <mat-card-footer [hidden]="cardStatus.at">
-          <div class="card-footer text-muted">Custom Program Templates, ASHRAE Std. 211</div>
-        </mat-card-footer>
 
         <mat-card-content [hidden]="!cardStatus.at">
           <p class="card-text"><strong>Audit Template</strong> is an online portal which cities use to collect standardized information &ndash; no more wrestling with Excel files or proprietary formats &ndash; about a building's physical systems and recommended upgrades.</p>
@@ -60,34 +52,16 @@
         </mat-card-content>
       </mat-card>
     </div>
-
-    <div fxLayoutAlign="space-around">
-      <mat-card id="bsync1" class="bsync1" [ngClass]="{'bsync1-flip': cardStatus.bsync1}" (click)="toggleCard('bsync1')">
-        <mat-card-content [hidden]="cardStatus.bsync1">
-          <div fxLayoutAlign="center center">
-            <img class="bsync-img" src="assets/images/bldgsync-logo.svg" alt="BuildingSync Logo">
-          </div>
-        </mat-card-content>
-
-        <mat-card-content [hidden]="!cardStatus.bsync1">
-          <p class="card-text">BuildingSync XML is a language used to describe buildings in a way that computers can understand. (In technical terms, it's an XML schema built on top of DOE's Building Energy Data Exchange Specification library.)</p>
-          <div fxLayoutAlign="center center">
-            <a routerLink="building-sync" mat-raised-button role="button" class="btn btn-type-5" (click)="$event.stopPropagation()">Learn more</a>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
   </div>
 
-  <div [fxFlex]="sharedService.colSize[1]" fxLayout="column" class="col-pad col-type-2">
-    <div class="col-title py-2" fxLayoutAlign="center center">
+  <div [fxFlex]="sharedService.colSize[1]" fxLayout="column" class="col-pad col-type-2  pt-4">
+   <!--  <div class="col-title py-2 mb-4" fxLayoutAlign="center center">
       <a routerLink="management-compliance" class="home-nav">Management & Compliance</a>
-    </div>
+    </div> -->
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-zindex" id="seed" (click)="toggleCard('seed')">
+      <mat-card class="card-zindex pt-5" id="seed" (click)="toggleCard('seed')" [ngStyle]="{border: hovers['g1']==true || hovers['g2']==true || hovers['g3']==true || hovers['g4']==true ? '5px solid #f5af13;' : '0px solid white'}">
         <mat-card-content [hidden]="cardStatus.seed">
-          <mat-card-subtitle><h6 class="mb-2 text-muted">Program Implementers and Administrators</h6></mat-card-subtitle>
           <div class="card-img-sm"><img src="assets/images/seed-logo.svg" alt="SEED Logo"></div>
         </mat-card-content>
         <mat-card-footer [hidden]="cardStatus.seed">
@@ -98,7 +72,7 @@
             <div>Share Data w/ 3rd Parties</div>
             <div>Track Progress</div>
           </div>
-        </mat-card-footer>
+        </mat-card-footer> 
 
         <mat-card-content [hidden]="!cardStatus.seed">
           <p class="card-text">The <strong>SEED Platform</strong> is a central database for city BEPS data. It merges information from Portfolio Manager, Audit Template, and other city datasets in one place, behind one intuitive interface.</p>
@@ -119,36 +93,15 @@
         </mat-card-content>
       </mat-card>
     </div>
-
-    <div fxFlex fxLayoutAlign="center start">
-      <mat-card class="card bsync2" id="bsync2" [ngClass]="{'bsync2-flip': cardStatus.bsync2}" (click)="toggleCard('bsync2')">
-        <mat-card-content [hidden]="cardStatus.bsync2">
-          <img class="bsync-img" src="assets/images/bldgsync-logo.svg" alt="BuildingSync Logo">
-        </mat-card-content>
-
-        <mat-card-content class="p-1" [hidden]="!cardStatus.bsync2">
-          <p class="card-text">BuildingSync XML is a language used to describe buildings in a way that computers can understand. (In technical terms, it's an XML schema built on top of DOE's Building Energy Data Exchange Specification library.)</p>
-          <div fxLayoutAlign="center center">
-            <a routerLink="building-sync" mat-raised-button role="button" class="btn btn-type-5" (click)="$event.stopPropagation()">Learn more</a>
-          </div>
-        </mat-card-content>
-      </mat-card>
-    </div>
-
-    <div id="under-seed" class="white">
-      <div fxLayoutAlign="center">Aggregate Results &sdot; Assess Performance &sdot;</div>
-      <div fxLayoutAlign="center">Determine Compliance &sdot;</div>
-      <div fxLayoutAlign="center">Reset Goals for new Program Cycle</div>
-    </div>
   </div>
 
-  <div [fxFlex]="sharedService.colSize[2]" fxLayout="column" class="col-pad col-type-3">
-    <div class="col-title py-2" fxLayoutAlign="center center">
+  <div [fxFlex]="sharedService.colSize[2]" fxLayout="column" class="col-pad col-type-3 pt-4">
+    <!-- <div class="col-title py-2 mb-4" fxLayoutAlign="center center">
       <a routerLink="analysis-evaluation" class="home-nav">Analysis & Evaluation</a>
-    </div>
+    </div> -->
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4" id="csrs" (click)="toggleCard('csrs')">
+      <mat-card class="mb-4" id="csrs" (click)="toggleCard('csrs')" [ngStyle]="{border: hovers['g1']==true  ? '5px solid #f5af13;' : '0px solid white'}">
         <mat-card-content [hidden]="cardStatus.csrs">
           <div><img class="card-img" src="assets/images/com-resstock-logos.svg" alt="ComStock & ResStock Logos"></div>
         </mat-card-content>
@@ -165,9 +118,9 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4" id="better" (click)="toggleCard('better')">
+      <mat-card class="mb-4" id="better" (click)="toggleCard('better')" [ngStyle]="{border: hovers['g2']==true  ? '5px solid #f5af13;' : '0px solid white'}">
         <mat-card-content [hidden]="cardStatus.better">
-          <div fxLayoutAlign="center center"><img class="card-img" src="assets/images/better-logo.svg" alt="BETTER Logo"></div>
+          <div fxLayoutAlign="center center"><img class="card-img-better" src="assets/images/better-logo.svg" alt="BETTER Logo"></div>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus.better">
@@ -183,9 +136,9 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4" id="as" (click)="toggleCard('as')">
+      <mat-card class="mb-4" id="as" (click)="toggleCard('as')" [ngStyle]="{border: hovers['g3']==true  ? '5px solid #f5af13;' : '0px solid white'}">
         <mat-card-content [hidden]="cardStatus.as">
-          <div fxLayoutAlign="center center"><img class="card-img" src="assets/images/asset-score-logo.svg" alt="Asset Score Logo"></div>
+          <div fxLayoutAlign="center center"><img class="card-img-as" src="assets/images/asset-score-logo.svg" alt="Asset Score Logo"></div>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus.as">
@@ -200,7 +153,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4 yellow-border" id="3p" (click)="toggleCard('3p')">
+      <mat-card class="mb-4" id="3p" (click)="toggleCard('3p')" [ngStyle]="{border: hovers['g4']==true  ? '5px solid #f5af13;' : '0px solid white'}">
         <mat-card-content [hidden]="cardStatus['3p']">
           <div fxLayoutAlign="center center"><img class="card-img" src="assets/images/third-party-icon-text.svg" alt="3rd party tools Logos"></div>
         </mat-card-content>
@@ -218,16 +171,16 @@
     </div>
   </div>
 
-  <div [fxFlex]="sharedService.colSize[3]" fxLayout="column" class="col-pad col-type-4">
-    <div class="col-title py-2" fxLayoutAlign="center center">
+  <div [fxFlex]="sharedService.colSize[3]" fxLayout="column" class="col-pad col-type-4 pt-4">
+    <!-- <div class="col-title py-2 mb-4" fxLayoutAlign="center center">
       <a routerLink="goals" class="home-nav">Goals & Outcomes</a>
-    </div>
+    </div> -->
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-5" id="g1" routerLink="goals/analyze">
-        <mat-card-content>
-          <div fxLayout="row" class="no-gutters">
-            <div [fxFlex]="100 / 3" class="my-auto pr-3"><img class="card-img" src="assets/images/com-resstock-outcomes-icon.svg" alt="ComStock & ResStock outcomes icon"></div>
+      <mat-card class="mb-4 py-4 pr-5 pl-3" id="g1" routerLink="goals/analyze" (mouseenter) ="mouseEnter('g1') "  (mouseleave) ="mouseLeave('g1')" [ngStyle]="{border: hovers['g1']==true  ? '5px solid #f5af13;' : '0px solid white'}"   matTooltip="Use the ComStock and ResStock tools to gain high-level insights into energy use of the building stock in a particular geographic area (down to the county resolution). Understand your area’s building stock performance and characteristics and analyze the scenarios of interest to you -- including the feasibility and savings potential of a building performance standard." matTooltipPosition="after">
+        <mat-card-content >
+          <div fxLayout="row">
+            <div [fxFlex]="50" class="my-auto pr-4"><img class="card-img" src="assets/images/com-resstock-outcomes-icon.svg" alt="ComStock & ResStock outcomes icon"></div>
             <div><p class="card-text m-auto">Assess Impacts & Identify New Opportunities</p></div>
           </div>
         </mat-card-content>
@@ -235,10 +188,10 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-5" id="g2" routerLink="goals/target">
+      <mat-card class="mb-4 py-4 pr-5 pl-3" id="g2" routerLink="goals/target" (mouseenter) ="mouseEnter('g2') "  (mouseleave) ="mouseLeave('g2')" [ngStyle]="{border: hovers['g2']==true  ? '5px solid #f5af13;' : '0px solid white'}" matTooltip="Use ENERGY STAR Portfolio Manager to collect energy use data for buildings of interest. Portfolio Manager’s auto-generated Excel reports can be uploaded directly into BETTER. Within BETTER, you can assess your buildings’ performance to target efficiency measures in those buildings with the highest savings potential first. (In the near future, BETTER will be able to communicate directly with Asset Score, Audit Template, and the SEED Platform via BuildingSync; this capability is under development.)" matTooltipPosition="after">
         <mat-card-content>
-          <div fxLayout="row" class="no-gutters">
-            <div [fxFlex]="100 / 3" class="my-auto pr-3"><img class="card-img" src="assets/images/better-outcomes-icon.svg" alt="BETTER outcomes icon"></div>
+          <div fxLayout="row">
+            <div [fxFlex]="50" class="my-auto pr-4"><img class="card-img" src="assets/images/better-outcomes-icon.svg" alt="BETTER outcomes icon"></div>
             <div><p class="card-text m-auto">Identify Measures and Suggest Areas for Deeper Evaluations</p></div>
           </div>
         </mat-card-content>
@@ -246,10 +199,10 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-5" id="g3" routerLink="goals/compliance">
+      <mat-card class="mb-4 py-4 pr-5 pl-3" id="g3" routerLink="goals/compliance" (mouseenter) ="mouseEnter('g3') "  (mouseleave) ="mouseLeave('g3')" [ngStyle]="{border: hovers['g3']==true  ? '5px solid #f5af13;' : '0px solid white'}" matTooltip="Use the Asset Score tool to identify a compliance pathway for any buildings which don’t meet your program’s performance criteria. After entering audit data into Audit Template, you can create an Asset Score report with one click. This report will include a customized, prioritized list of cost-effective upgrade recommendations which can be shared with building owners." matTooltipPosition="after">
         <mat-card-content>
-          <div fxLayout="row" class="no-gutters">
-            <div [fxFlex]="100 / 3" class="card-img-sm my-auto pr-3"><img src="assets/images/assetscore-outcomes-icon.svg" alt="Asset Score Outcomes icon"></div>
+          <div fxLayout="row">
+            <div [fxFlex]="50" class="card-img-sm my-auto pr-3"><img src="assets/images/assetscore-outcomes-icon.svg" alt="Asset Score Outcomes icon"></div>
             <div><p class="card-text m-auto">Bring Buildings into Compliance with EUI and GHGe Requirements</p></div>
           </div>
         </mat-card-content>
@@ -257,10 +210,10 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-2" id="g4" routerLink="goals/customize">
+      <mat-card class="mb-2 py-4 pr-5 pl-3" id="g4" routerLink="goals/customize" (mouseenter) ="mouseEnter('g4') "  (mouseleave) ="mouseLeave('g4')" [ngStyle]="{border: hovers['g4']==true  ? '5px solid #f5af13;' : '0px solid white'}" matTooltip="Because many of the building energy data tools are compatible with the BuildingSync file format and include application programming interfaces (APIs), you can integrate other applications from DOE or third parties into your BPS workflow." matTooltipPosition="after">
         <mat-card-content>
           <div fxLayout="row" class="no-gutters">
-            <div [fxFlex]="100 / 3" class="my-auto pr-3"><img class="card-img" src="assets/images/thirdparty-outcomes-icon.svg" alt="third-party outcomes icon"></div>
+            <div [fxFlex]="50" class="my-auto pr-3"><img class="card-img" src="assets/images/thirdparty-outcomes-icon.svg" alt="third-party outcomes icon"></div>
             <div><p class="card-text m-auto">Customize Your Workflow with CRM, Data Visualizations, and More</p></div>
           </div>
         </mat-card-content>

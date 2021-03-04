@@ -64,15 +64,16 @@
   text-align: center;
 }
 
-$colPad: 30;
+$colPad: 40;
 $colBsyncPad: 110;
+$hoverColor: #7ab0cc;
 
 .col-type-1 {
   background-color: #3B88AF;
 
   .mat-card {
     margin-left: $colPad + px;
-    margin-right: $colBsyncPad + px;
+    margin-right: $colPad + px;
     width: 100%;
   }
 }
@@ -106,10 +107,11 @@ $colBsyncPad: 110;
 .col-type-2 {
   background-color: #024880;
 
+  
   .mat-card {
-    margin-left: $colBsyncPad + px;
-    margin-right: $colBsyncPad + px;
-    width: 100%;
+    margin-left: $colPad + px;
+    margin-right: $colPad + px;
+    width: 80%;
   }
 
   #under-seed {
@@ -117,6 +119,7 @@ $colBsyncPad: 110;
     margin-right: $colBsyncPad / 3 + px;
     text-align: center;
   }
+ 
 }
 
 .col-line-3 {
@@ -128,11 +131,13 @@ $colBsyncPad: 110;
 .col-type-3 {
   background-color: #478662;
 
+  
   .mat-card {
-    margin-left: $colBsyncPad + px;
-    margin-right: $colPad + px;
-    width: 100%;
+    margin-left: $colPad + px;
+    margin-right: $colPad + px; 
+    width:80%;
   }
+
 }
 
 .col-line-4 {
@@ -146,8 +151,8 @@ $colBsyncPad: 110;
 
   .mat-card {
     font-family: $robotoCondensed;
-    margin-left: $colPad + px;
-    margin-right: $colPad + px;
+    margin-left: ($colPad) + px;
+    margin-right: ($colPad) + px; 
     width: 100%;
   }
 }
@@ -173,8 +178,20 @@ $colBsyncPad: 110;
   width: 100%;
 }
 
+.card-img-2 {
+  width: 110%;
+}
+
 .card-margin {
   margin-bottom: 3.5rem;
+}
+
+.card-img-as {
+  width: 80%;
+}
+
+.card-img-better {
+  width: 90%;
 }
 
 .card-img-sm {
@@ -248,6 +265,11 @@ $bsyncExpandedWidth: 160px;
 
 .bsync-img {
   width: 100%;
+}
+
+.py-big {
+  padding-top:  4rem;
+  padding-bottom: 4rem;
 }
 
 /* BOOTSTRAP5 margin and padding classes */

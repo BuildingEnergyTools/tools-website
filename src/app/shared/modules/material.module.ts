@@ -6,6 +6,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   exports: [
@@ -49,7 +50,7 @@ import { MatTableModule } from '@angular/material/table';
     MatTableModule,
     // MatTabsModule,
     // MatToolbarModule,
-    // MatTooltipModule,
+    MatTooltipModule,
     // MatTreeModule,
     // OverlayModule,
     // PortalModule,

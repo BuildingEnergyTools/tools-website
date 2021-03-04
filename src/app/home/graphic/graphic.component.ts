@@ -5,8 +5,10 @@ import 'leader-line';
 
 declare let LeaderLine: any;
 
-const cards = ['pm', 'at', 'seed', 'csrs', 'better', 'as', '3p', 'bsync1', 'bsync2'] as const;
+const cards = ['pm', 'at', 'seed', 'csrs', 'better', 'as', '3p'] as const;
+const goals = ['g1', 'g2', 'g3', 'g4'] as const;
 type Card = typeof cards[number];
+type Goal = typeof goals[number];
 
 @Component({
   selector: 'app-graphic',
@@ -16,7 +18,9 @@ type Card = typeof cards[number];
 export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
   @ViewChild('svg') svg: ElementRef<SVGElement>;
   cardStatus: { [key in Card]?: boolean } = {};
-  elements: { [key in Card | 'g1' | 'g2' | 'g3' | 'g4' | 'under-seed' | 'devBsync1' | 'devBsync2']?: HTMLElement } = {};
+  elements: { [key in Card | 'g1' | 'g2' | 'g3' | 'g4' | 'seed']?: HTMLElement } = {};
+  hovers: { [key in Goal]?: boolean } = {};
+  hoverColor: string = '#7ab0cc';
 
   private _arrows: any[] = [];
 
@@ -60,8 +64,16 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
     setTimeout(() => this._updateArrows());
   }
 
+  mouseEnter(div: string){
+    this.hovers[div] = true;
+  }
+
+  mouseLeave(div : string): void {
+    this.hovers[div] = false;
+  }
+
   ngAfterViewInit(): void {
-    [...cards, 'g1', 'g2', 'g3', 'g4', 'under-seed', 'devBsync1', 'devBsync2'].forEach(card => {
+    [...cards, 'g1', 'g2', 'g3', 'g4'].forEach(card => {
       this.elements[card] = this.document.getElementById(card);
     });
 
@@ -71,51 +83,19 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
       endPlugSize: 2,
       endSocket: 'left',
       endSocketGravity: 0,
-      path: 'grid',
+      path: 'line',
       size: 3,
       startSocket: 'right',
       startSocketGravity: 0
     };
 
-    // For Developers
-    this._arrows.push(new LeaderLine(
-      LeaderLine.pointAnchor(this.elements.devBsync1, {
-        x: 0,
-        y: 'auto'
-      }),
-      this.elements.bsync1,
-      Object.assign({}, options, {
-        color: '#f5af13',
-        endPlug: 'behind',
-        endSocket: 'bottom',
-        path: 'straight',
-        size: 4,
-        startSocket: 'top'
-      })
-    ));
-
-    this._arrows.push(new LeaderLine(
-      LeaderLine.pointAnchor(this.elements.devBsync2, {
-        x: 0,
-        y: 'auto'
-      }),
-      this.elements.bsync2,
-      Object.assign({}, options, {
-        color: '#f5af13',
-        endPlug: 'behind',
-        endSocket: 'bottom',
-        path: 'straight',
-        size: 4,
-        startSocket: 'top'
-      })
-    ));
 
     // pm -> seed
     this._arrows.push(new LeaderLine(
       this.elements.pm,
       LeaderLine.pointAnchor(this.elements.seed, {
         x: '0%',
-        y: '12.5%'
+        y: '16%'
       }),
       options
     ));
@@ -124,7 +104,7 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
     this._arrows.push(new LeaderLine(
       LeaderLine.pointAnchor(this.elements.seed, {
         x: '100%',
-        y: '12.5%'
+        y: '16%'
       }),
       this.elements.csrs,
       options
@@ -134,19 +114,25 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
     this._arrows.push(new LeaderLine(
       LeaderLine.pointAnchor(this.elements.seed, {
         x: '100%',
-        y: '37.5%'
+        y: '44%'
       }),
-      this.elements.better,
+      LeaderLine.pointAnchor(this.elements.better, {
+        x: '0%',
+        y: '26%',
+      }),
       options
     ));
 
-    // seed -> bsync2
+    // seed -> as
     this._arrows.push(new LeaderLine(
       LeaderLine.pointAnchor(this.elements.seed, {
         x: '100%',
-        y: '62.5%'
+        y: '75%'
       }),
-      this.elements.bsync2,
+      LeaderLine.pointAnchor(this.elements.as, {
+        x: '0%',
+        y: '15%'
+      }),
       options
     ));
 
@@ -160,47 +146,45 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
       options
     ));
 
-    // at -> bsync1
+    // at -> seed
     this._arrows.push(new LeaderLine(
       this.elements.at,
-      this.elements.bsync1,
-      options
-    ));
-
-    // bsync1 -> seed
-    this._arrows.push(new LeaderLine(
-      this.elements.bsync1,
-      LeaderLine.pointAnchor(this.elements.seed, {
+       LeaderLine.pointAnchor(this.elements.seed, {
         x: '0%',
-        y: '62.5%'
+        y: '55%'
       }),
-      options
-    ));
-
-    // bsync2 -> as
-    this._arrows.push(new LeaderLine(
-      this.elements.bsync2,
-      this.elements.as,
       options
     ));
 
     // csrs -> g1
     this._arrows.push(new LeaderLine(
-      this.elements.csrs,
-      this.elements.g1,
+      LeaderLine.pointAnchor(this.elements.csrs, {
+        x: '100%',
+        y: '43%'
+      }),
+      LeaderLine.pointAnchor(this.elements.g1, { 
+        x: '0%',
+        y: '54%'
+      }),
       options
     ));
 
     // better -> g2
     this._arrows.push(new LeaderLine(
-      this.elements.better,
+      LeaderLine.pointAnchor(this.elements.better, {
+        x: '100%',
+        y: '28%'
+      }),
       this.elements.g2,
       options
     ));
 
     // as -> g3
     this._arrows.push(new LeaderLine(
-      this.elements.as,
+      LeaderLine.pointAnchor(this.elements.as, {
+        x: '100%',
+        y: '25%'
+      }),
       this.elements.g3,
       options
     ));
@@ -208,32 +192,13 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
     // 3p -> g4
     this._arrows.push(new LeaderLine(
       this.elements['3p'],
-      this.elements.g4,
+      LeaderLine.pointAnchor(this.elements.g4, {
+        x: '0%',
+        y: '70%'
+      }),
       options
     ));
 
-    // g4 -> under-seed
-    this._arrows.push(new LeaderLine(
-      this.elements.g4,
-      LeaderLine.pointAnchor(this.elements['under-seed'], {
-        x: '100%',
-        y: '93%'
-      }),
-      Object.assign({}, options, {
-        startSocket: 'bottom',
-        endSocket: 'right'
-      })
-    ));
-
-    // under-seed -> seed
-    this._arrows.push(new LeaderLine(
-      this.elements['under-seed'],
-      this.elements.seed,
-      Object.assign({}, options, {
-        startSocket: 'top',
-        endSocket: 'bottom'
-      })
-    ));
   }
 
   private _updateArrowRef = () => this._updateArrows();
