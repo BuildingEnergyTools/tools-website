@@ -26,6 +26,11 @@ export class SeedComponent {
     icon: 'fa-question-circle',
     route: 'faq'
   }, {
+    title: 'News',
+    icon: 'fa-newspaper',
+    fontAwesome: 'far',
+    route: 'news'
+  }, {
     title: 'Get Help',
     icon: 'fa-comments',
     route: 'help'
