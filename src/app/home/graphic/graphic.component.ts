@@ -72,7 +72,10 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
     this.hovers[div] = false;
   }
 
+
   ngAfterViewInit(): void {
+   
+    /*
     [...cards, 'g1', 'g2', 'g3', 'g4'].forEach(card => {
       this.elements[card] = this.document.getElementById(card);
     });
@@ -198,8 +201,10 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
       }),
       options
     ));
+    */
 
   }
+
 
   private _updateArrowRef = () => this._updateArrows();
 

@@ -1,25 +1,16 @@
-<!-- <div fxLayout="row">
-  <div [fxFlex]="sharedService.colSize[0]">
-    <div class="col-line-1"></div>
-    <div class="col-line-white"></div>
-  </div>
-  <div [fxFlex]="sharedService.colSize[1]">
-    <div class="col-line-2"></div>
-  </div>
-  <div [fxFlex]="sharedService.colSize[2]">
-    <div class="col-line-3"></div>
-  </div>
-  <div [fxFlex]="sharedService.colSize[3]">
-    <div class="col-line-4"></div>
-  </div>
-</div> -->
 
-<div fxLayout="row" fxFlex="80" fxFlexOffset="10">
-  <div [fxFlex]="sharedService.colSize[0]" fxLayout="column" class="col-pad col-type-1 pt-4">
+<div fxLayout="row" fxFlex="80%" fxFlexOffset="10%">
+  <div [fxFlex]="sharedService.colSize[0]" fxLayout="column" class="col-pad col-type-1">
     <!-- <div class="col-title py-2 mb-4" fxLayoutAlign="center center">
       <a routerLink="collection-reporting" class="home-nav">Data Collection & Reporting</a>
     </div> -->
-
+    <div class="col-bkgnd-1">
+      <div class="header1">
+        <h3 class="header">DATA COLLECTION & REPORTING</h3>
+        <div class="arrow arrow1"><img src="assets/images/title-arrow.svg" alt="arrow"></div>
+      </div>
+    </div>
+   
     <div fxLayoutAlign="space-around">
       <mat-card class="mb-4 p-5" id="pm" (click)="toggleCard('pm')" [ngStyle]="{border: hovers['g1']==true || hovers['g2'] == true ? '5px solid #f5af13;' : '0px solid white'}">
         <mat-card-content [hidden]="cardStatus.pm">
@@ -54,10 +45,14 @@
     </div>
   </div>
 
-  <div [fxFlex]="sharedService.colSize[1]" fxLayout="column" class="col-pad col-type-2  pt-4">
-   <!--  <div class="col-title py-2 mb-4" fxLayoutAlign="center center">
-      <a routerLink="management-compliance" class="home-nav">Management & Compliance</a>
-    </div> -->
+  <div [fxFlex]="sharedService.colSize[1]" fxLayout="column" class="col-pad col-type-2">
+    <div class="col-bkgnd-2">
+      <div class="header2">
+        <h3 class="header ">MANAGEMENT & COMPLIANCE</h3>
+        <div class="arrow arrow2"><img src="assets/images/title-arrow.svg" alt="arrow"></div>
+      </div>
+    </div>
+   
 
     <div fxLayoutAlign="space-around">
       <mat-card class="card-zindex pt-5" id="seed" (click)="toggleCard('seed')" [ngStyle]="{border: hovers['g1']==true || hovers['g2']==true || hovers['g3']==true || hovers['g4']==true ? '5px solid #f5af13;' : '0px solid white'}">
@@ -95,11 +90,14 @@
     </div>
   </div>
 
-  <div [fxFlex]="sharedService.colSize[2]" fxLayout="column" class="col-pad col-type-3 pt-4">
-    <!-- <div class="col-title py-2 mb-4" fxLayoutAlign="center center">
-      <a routerLink="analysis-evaluation" class="home-nav">Analysis & Evaluation</a>
-    </div> -->
-
+  <div [fxFlex]="sharedService.colSize[2]" fxLayout="column" class="col-pad col-type-3">
+    <div class="col-bkgnd-3">
+      <div class="header3">
+        <h3 class="header">ANALYSIS & EVALUATION</h3>
+        <div class="arrow arrow3"><img src="assets/images/title-arrow.svg" alt="arrow"></div>
+      </div>
+    </div>
+    
     <div fxLayoutAlign="space-around">
       <mat-card class="mb-4" id="csrs" (click)="toggleCard('csrs')" [ngStyle]="{border: hovers['g1']==true  ? '5px solid #f5af13;' : '0px solid white'}">
         <mat-card-content [hidden]="cardStatus.csrs">
@@ -171,10 +169,10 @@
     </div>
   </div>
 
-  <div [fxFlex]="sharedService.colSize[3]" fxLayout="column" class="col-pad col-type-4 pt-4">
-    <!-- <div class="col-title py-2 mb-4" fxLayoutAlign="center center">
-      <a routerLink="goals" class="home-nav">Goals & Outcomes</a>
-    </div> -->
+  <div [fxFlex]="sharedService.colSize[3]" fxLayout="column" class="col-pad col-type-4">
+    <div class="col-bkgnd-4">
+      <h3 class="header header4">GOALS & OUTCOMES</h3>
+    </div>
 
     <div fxLayoutAlign="space-around">
       <mat-card class="mb-4 py-4 pr-5 pl-3" id="g1" routerLink="goals/analyze" (mouseenter) ="mouseEnter('g1') "  (mouseleave) ="mouseLeave('g1')" [ngStyle]="{border: hovers['g1']==true  ? '5px solid #f5af13;' : '0px solid white'}"   matTooltip="Use the ComStock and ResStock tools to gain high-level insights into energy use of the building stock in a particular geographic area (down to the county resolution). Understand your area’s building stock performance and characteristics and analyze the scenarios of interest to you -- including the feasibility and savings potential of a building performance standard." matTooltipPosition="after">

@@ -2,16 +2,28 @@
 
 .top-header {
   background-color: #094F58;
-  font-family: 'Roboto Condensed', sans-serif;
+  background-image: url("../../assets/images/datatools_header.jpg");
+  font-family: 'Roboto', sans-serif;
   color: white;
-  padding: 4px $pad;
+  padding: 4px $pad*2;
+  min-height:100px;
+  display: flex;
+  text-transform: uppercase;
+  margin-bottom: 3px;
 
   h1 {
     cursor: pointer;
     margin-bottom: 0px;
     font-family: 'Roboto', sans-serif;
-    font-weight: normal;
-    font-size: 22px;
+    font-weight:400;
+    font-size: 24px;
+    padding-left:4rem;
+    align-self: flex-end;
+  }
+
+  .title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:400;
   }
 }
 
