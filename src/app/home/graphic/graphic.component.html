@@ -1,5 +1,5 @@
 
-<div fxLayout="row" fxFlex="80%" fxFlexOffset="10%">
+<div fxLayout="row" fxFlex="100%" fxFlexOffset="0%">
   <div [fxFlex]="sharedService.colSize[0]" fxLayout="column" class="col-pad col-type-1">
     <!-- <div class="col-title py-2 mb-4" fxLayoutAlign="center center">
       <a routerLink="collection-reporting" class="home-nav">Data Collection & Reporting</a>
@@ -151,7 +151,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4" id="3p" (click)="toggleCard('3p')" [ngStyle]="{border: hovers['g4']==true  ? '5px solid #f5af13;' : '0px solid white'}">
+      <mat-card id="3p" (click)="toggleCard('3p')" [ngStyle]="{border: hovers['g4']==true  ? '5px solid #f5af13;' : '0px solid white'}">
         <mat-card-content [hidden]="cardStatus['3p']">
           <div fxLayoutAlign="center center"><img class="card-img" src="assets/images/third-party-icon-text.svg" alt="3rd party tools Logos"></div>
         </mat-card-content>
