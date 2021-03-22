@@ -50,6 +50,10 @@ a {
 
 .top-text {
   margin: 10px 20px;
+
+  p {
+  font-size: 1.1rem;
+  }
 }
 
 .interactive-map {
@@ -75,7 +79,7 @@ a {
   }
 
   p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: normal;
     padding-bottom: 0px;
     margin: 0px;
@@ -86,15 +90,16 @@ a {
   width:100%; 
   padding-left: 10%;
   padding-right: 10%;
-  margin: 0px;
+  margin: 10px 0px 0px;
   min-height: 200px;
 }
 
 .standardize {
-  background: url("../../assets/images/get-started-data-image.jpg");
-  padding: 2.5rem 1rem;
-  background-size: auto;
+  background: url("../../assets/images/get-started-box.jpg");
+  padding: 1rem 1rem;
+  background-size: 100% 100%;
   cursor:pointer;
+  height: 200px;
 
   h3 {
     color: white;
@@ -111,10 +116,12 @@ a {
 }
 
 .explore-tools {
-  background: url("../../assets/images/analysis-image-box.jpg");
-  padding: 2.5rem 1rem;
+  background: url("../../assets/images/analysis-box.jpg");
+  padding: 1rem 1rem;
+  margin-left: 10px;
   background-size: auto;
   cursor:pointer;
+  height: 200px;
 
   h3 {
     color: white;
@@ -132,9 +139,11 @@ a {
 
 .dev {
   background: $orange;
-  padding: 2.5rem 1rem;
+  padding: 1rem 1rem;
+  margin-left: 10px;
   background-size: auto;
   cursor:pointer;
+  height: 200px;
 
   h3 {
     color: white;
@@ -150,8 +159,9 @@ a {
   }
 }
 
-.flashcard {
-  color: white;
+.box-arrow {
+  margin-left: 20px;
+  width: 5rem;
 }
 
 .explore {
