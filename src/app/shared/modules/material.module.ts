@@ -7,6 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   exports: [
@@ -26,7 +27,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     // MatCheckboxModule,
     // MatChipsModule,
     // MatDatepickerModule,
-    // MatDialogModule,
+    MatDialogModule,
     // MatDividerModule,
     MatExpansionModule,
     // MatGridListModule,

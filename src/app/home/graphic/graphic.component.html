@@ -5,14 +5,14 @@
       <a routerLink="collection-reporting" class="home-nav">Data Collection & Reporting</a>
     </div> -->
     <div class="col-bkgnd-1">
-      <div class="header1">
-        <h3 class="header">DATA COLLECTION & REPORTING</h3>
+      <div class="header header1">
         <div class="arrow arrow1"><img src="assets/images/title-arrow.svg" alt="arrow"></div>
       </div>
     </div>
+    <h3 class="col-heading">DATA COLLECTION & REPORTING</h3>
    
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4 p-5" id="pm" (click)="toggleCard('pm')" [ngStyle]="{border: hovers['g1']==true || hovers['g2'] == true ? '5px solid #f5af13;' : '0px solid white'}">
+      <mat-card class="mb-4 p-5" id="pm" (click)="toggleCard('pm')" [ngStyle]="{background: hovers['g3']==true || hovers['g4'] == true ? '#a7afb2;' : '#fff;'}">
         <mat-card-content [hidden]="cardStatus.pm">
           <div><img class="card-img-2" src="assets/images/pm-logo.svg" alt="EnergyStar Portfolio Manager Logo"></div>
         </mat-card-content>
@@ -29,7 +29,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-zindex" id="at" (click)="toggleCard('at')" [ngStyle]="{border: hovers['g3']==true || hovers['g4'] == true ? '5px solid #f5af13;' : '0px solid white'}">
+      <mat-card class="card-zindex" id="at" (click)="toggleCard('at')" [ngStyle]="{background: hovers['g1']==true || hovers['g2'] == true ? '#a7afb2;' : 'white'}">
         <mat-card-content [hidden]="cardStatus.at">
           <div><img class="card-img" src="assets/images/audit-template-logo.svg" alt="Audit Template Logo"></div>
         </mat-card-content>
@@ -47,15 +47,15 @@
 
   <div [fxFlex]="sharedService.colSize[1]" fxLayout="column" class="col-pad col-type-2">
     <div class="col-bkgnd-2">
-      <div class="header2">
-        <h3 class="header ">MANAGEMENT & COMPLIANCE</h3>
+      <div class="header header2">
         <div class="arrow arrow2"><img src="assets/images/title-arrow.svg" alt="arrow"></div>
       </div>
     </div>
+    <h3 class="col-heading">MANAGEMENT & COMPLIANCE</h3>
    
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="card-zindex pt-5" id="seed" (click)="toggleCard('seed')" [ngStyle]="{border: hovers['g1']==true || hovers['g2']==true || hovers['g3']==true || hovers['g4']==true ? '5px solid #f5af13;' : '0px solid white'}">
+      <mat-card class="card-zindex pt-5" id="seed" (click)="openDialog()">
         <mat-card-content [hidden]="cardStatus.seed">
           <div class="card-img-sm"><img src="assets/images/seed-logo.svg" alt="SEED Logo"></div>
         </mat-card-content>
@@ -99,7 +99,7 @@
     </div>
     
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4" id="csrs" (click)="toggleCard('csrs')" [ngStyle]="{border: hovers['g1']==true  ? '5px solid #f5af13;' : '0px solid white'}">
+      <mat-card class="mb-2" id="csrs" (click)="toggleCard('csrs')" [ngStyle]="{background: hovers['g2']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}">
         <mat-card-content [hidden]="cardStatus.csrs">
           <div><img class="card-img" src="assets/images/com-resstock-logos.svg" alt="ComStock & ResStock Logos"></div>
         </mat-card-content>
@@ -116,7 +116,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4" id="better" (click)="toggleCard('better')" [ngStyle]="{border: hovers['g2']==true  ? '5px solid #f5af13;' : '0px solid white'}">
+      <mat-card class="mb-2" id="better" (click)="toggleCard('better')"[ngStyle]="{background: hovers['g1']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}">
         <mat-card-content [hidden]="cardStatus.better">
           <div fxLayoutAlign="center center"><img class="card-img-better" src="assets/images/better-logo.svg" alt="BETTER Logo"></div>
         </mat-card-content>
@@ -134,7 +134,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4" id="as" (click)="toggleCard('as')" [ngStyle]="{border: hovers['g3']==true  ? '5px solid #f5af13;' : '0px solid white'}">
+      <mat-card class="mb-2" id="as" (click)="toggleCard('as')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}">
         <mat-card-content [hidden]="cardStatus.as">
           <div fxLayoutAlign="center center"><img class="card-img-as" src="assets/images/asset-score-logo.svg" alt="Asset Score Logo"></div>
         </mat-card-content>
@@ -151,7 +151,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card id="3p" (click)="toggleCard('3p')" [ngStyle]="{border: hovers['g4']==true  ? '5px solid #f5af13;' : '0px solid white'}">
+      <mat-card id="3p" (click)="toggleCard('3p')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g3'] == true ? '#a7afb2;' : 'white'}">
         <mat-card-content [hidden]="cardStatus['3p']">
           <div fxLayoutAlign="center center"><img class="card-img" src="assets/images/third-party-icon-text.svg" alt="3rd party tools Logos"></div>
         </mat-card-content>
@@ -175,7 +175,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4 py-4 pr-5 pl-3" id="g1" routerLink="goals/analyze" (mouseenter) ="mouseEnter('g1') "  (mouseleave) ="mouseLeave('g1')" [ngStyle]="{border: hovers['g1']==true  ? '5px solid #f5af13;' : '0px solid white'}"   matTooltip="Use the ComStock and ResStock tools to gain high-level insights into energy use of the building stock in a particular geographic area (down to the county resolution). Understand your area’s building stock performance and characteristics and analyze the scenarios of interest to you -- including the feasibility and savings potential of a building performance standard." matTooltipPosition="after">
+      <mat-card class="mb-2 py-4 pr-5 pl-3" id="g1" routerLink="goals/analyze" (mouseenter) ="mouseEnter('g1') "  (mouseleave) ="mouseLeave('g1')" [ngStyle]="{background: hovers['g2']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" matTooltip="Use the ComStock and ResStock tools to gain high-level insights into energy use of the building stock in a particular geographic area (down to the county resolution). Understand your area’s building stock performance and characteristics and analyze the scenarios of interest to you -- including the feasibility and savings potential of a building performance standard." matTooltipPosition="after">
         <mat-card-content >
           <div fxLayout="row">
             <div [fxFlex]="50" class="my-auto pr-4"><img class="card-img" src="assets/images/com-resstock-outcomes-icon.svg" alt="ComStock & ResStock outcomes icon"></div>
@@ -186,7 +186,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4 py-4 pr-5 pl-3" id="g2" routerLink="goals/target" (mouseenter) ="mouseEnter('g2') "  (mouseleave) ="mouseLeave('g2')" [ngStyle]="{border: hovers['g2']==true  ? '5px solid #f5af13;' : '0px solid white'}" matTooltip="Use ENERGY STAR Portfolio Manager to collect energy use data for buildings of interest. Portfolio Manager’s auto-generated Excel reports can be uploaded directly into BETTER. Within BETTER, you can assess your buildings’ performance to target efficiency measures in those buildings with the highest savings potential first. (In the near future, BETTER will be able to communicate directly with Asset Score, Audit Template, and the SEED Platform via BuildingSync; this capability is under development.)" matTooltipPosition="after">
+      <mat-card class="mb-2 py-4 pr-5 pl-3" id="g2" routerLink="goals/target" (mouseenter) ="mouseEnter('g2') "  (mouseleave) ="mouseLeave('g2')" [ngStyle]="{background: hovers['g1']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" matTooltip="Use ENERGY STAR Portfolio Manager to collect energy use data for buildings of interest. Portfolio Manager’s auto-generated Excel reports can be uploaded directly into BETTER. Within BETTER, you can assess your buildings’ performance to target efficiency measures in those buildings with the highest savings potential first. (In the near future, BETTER will be able to communicate directly with Asset Score, Audit Template, and the SEED Platform via BuildingSync; this capability is under development.)" matTooltipPosition="after">
         <mat-card-content>
           <div fxLayout="row">
             <div [fxFlex]="50" class="my-auto pr-4"><img class="card-img" src="assets/images/better-outcomes-icon.svg" alt="BETTER outcomes icon"></div>
@@ -197,7 +197,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-4 py-4 pr-5 pl-3" id="g3" routerLink="goals/compliance" (mouseenter) ="mouseEnter('g3') "  (mouseleave) ="mouseLeave('g3')" [ngStyle]="{border: hovers['g3']==true  ? '5px solid #f5af13;' : '0px solid white'}" matTooltip="Use the Asset Score tool to identify a compliance pathway for any buildings which don’t meet your program’s performance criteria. After entering audit data into Audit Template, you can create an Asset Score report with one click. This report will include a customized, prioritized list of cost-effective upgrade recommendations which can be shared with building owners." matTooltipPosition="after">
+      <mat-card class="mb-2 py-4 pr-5 pl-3" id="g3" routerLink="goals/compliance" (mouseenter) ="mouseEnter('g3') "  (mouseleave) ="mouseLeave('g3')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" matTooltip="Use the Asset Score tool to identify a compliance pathway for any buildings which don’t meet your program’s performance criteria. After entering audit data into Audit Template, you can create an Asset Score report with one click. This report will include a customized, prioritized list of cost-effective upgrade recommendations which can be shared with building owners." matTooltipPosition="after">
         <mat-card-content>
           <div fxLayout="row">
             <div [fxFlex]="50" class="card-img-sm my-auto pr-3"><img src="assets/images/assetscore-outcomes-icon.svg" alt="Asset Score Outcomes icon"></div>
@@ -208,7 +208,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-2 py-4 pr-5 pl-3" id="g4" routerLink="goals/customize" (mouseenter) ="mouseEnter('g4') "  (mouseleave) ="mouseLeave('g4')" [ngStyle]="{border: hovers['g4']==true  ? '5px solid #f5af13;' : '0px solid white'}" matTooltip="Because many of the building energy data tools are compatible with the BuildingSync file format and include application programming interfaces (APIs), you can integrate other applications from DOE or third parties into your BPS workflow." matTooltipPosition="after">
+      <mat-card class="mb-2 py-4 pr-5 pl-3" id="g4" routerLink="goals/customize" (mouseenter) ="mouseEnter('g4') "  (mouseleave) ="mouseLeave('g4')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g3'] == true ? '#a7afb2;' : 'white'}" matTooltip="Because many of the building energy data tools are compatible with the BuildingSync file format and include application programming interfaces (APIs), you can integrate other applications from DOE or third parties into your BPS workflow." matTooltipPosition="after">
         <mat-card-content>
           <div fxLayout="row" class="no-gutters">
             <div [fxFlex]="50" class="my-auto pr-3"><img class="card-img" src="assets/images/thirdparty-outcomes-icon.svg" alt="third-party outcomes icon"></div>

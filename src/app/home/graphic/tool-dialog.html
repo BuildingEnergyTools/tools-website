@@ -1,0 +1,57 @@
+<style>
+
+	.btn {  	
+		box-sizing: border-box;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    -webkit-tap-highlight-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-decoration: none;
+    vertical-align: baseline;
+    text-align: center;
+    margin: 0;
+    min-width: 64px;
+    line-height: 36px;
+    padding: 0 16px;
+    border-radius: 4px;
+    overflow: visible;
+    transform: translate3d(0, 0, 0);
+    transition: background 400ms cubic-bezier(0.25, 0.8, 0.25, 1),box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+	.btn-type-2 {
+  	background-color: #024880;
+  	color: #fff;
+  	margin-left: 20px;
+	}
+
+</style>
+
+<h1 mat-dialog-title>SEED</h1>
+<div class="mat-dialog-content"> 
+	<p class="card-text">The <strong>SEED Platform</strong> is a central database for city BEPS data. It merges information from Portfolio Manager, Audit Template, and other city datasets in one place, behind one intuitive interface.</p>
+  <p class="card-text">With just a few clicks, your city can:</p>
+  <ul>
+    <li>Merge datasets</li>
+    <li>Assess the completeness of audit reports</li>
+    <li>Perform automated quality assurance</li>
+    <li>Share data with third parties</li>
+    <li>Track the progress fo BEPS compliance</li>
+    <li>Leverage DOE's analysis & evaluation tools to identify upgrade opportunities within buildings and across the city's building stock, assess the performance of the BEPS program, and set program cycle goals.</li>
+    <li>Share data with CRM systems & dashboards</li>
+  </ul>
+  <p class="card-tex"><strong>Because SEED automates so many manual, time-intensive processes, even cities with severely limited resources and staff and use SEED to achieve their program goals.</strong></p>
+</div>
+<div class="mat-dialog-actions">
+  <div fxLayoutAlign="center center">
+  	<button mat-button (click)="onNoClick()" class="btn">Close</button>
+  	<button mat-button (click)="onLearnMore()" class="btn btn-type-2" cdkFocusInitial>Learn More</button>
+  </div>
+</div>

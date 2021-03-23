@@ -1,7 +1,9 @@
 import { DOCUMENT } from '@angular/common';
+import {Router} from '@angular/router';
 import { AfterViewInit, Component, ElementRef, HostListener, Inject, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { SharedService } from '@shared/services/shared.service';
 import 'leader-line';
+import {MatDialog, MatDialogRef} from '@angular/material/dialog';
 
 declare let LeaderLine: any;
 
@@ -13,7 +15,8 @@ type Goal = typeof goals[number];
 @Component({
   selector: 'app-graphic',
   templateUrl: './graphic.component.html',
-  styleUrls: ['./graphic.component.scss']
+  styleUrls: ['./graphic.component.scss'],
+  
 })
 export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
   @ViewChild('svg') svg: ElementRef<SVGElement>;
@@ -26,6 +29,7 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
 
   constructor(
     public sharedService: SharedService,
+    public dialog: MatDialog,
     @Inject(DOCUMENT) private document
   ) {
   }
@@ -63,6 +67,11 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
 
     setTimeout(() => this._updateArrows());
   }
+
+  openDialog() {
+    const dialogRef = this.dialog.open(ToolDialog);
+  }
+
 
   mouseEnter(div: string){
     this.hovers[div] = true;
@@ -211,4 +220,26 @@ export class GraphicComponent implements AfterViewInit, OnDestroy, OnInit {
   private _updateArrows(): void {
     this._arrows.forEach(arrow => arrow.position());
   }
+}
+
+@Component({
+  selector: 'tool-dialog',
+  templateUrl: 'tool-dialog.html',
+  providers: [Location]
+})
+export class ToolDialog {
+  constructor (
+    public dialogRef: MatDialogRef<ToolDialog>,
+    public router: Router,
+  ) {}
+
+  onNoClick(): void {
+    this.dialogRef.close();
+  }
+
+  onLearnMore(): void {
+  this.dialogRef.close();
+  this.router.navigateByUrl('/seed');
+  }
+
 }

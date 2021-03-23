@@ -43,14 +43,13 @@
 }
 
 .header {
-  padding:10px 10px 0px 10px;
+  padding:5px 10px 0px 10px;
   align-self: flex-end;
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  max-height: 50px;
+  padding-top: 50px;
+  height: 60px;
   text-transform: uppercase;
   text-align: center;
 
@@ -60,38 +59,51 @@
   position: relative;
 }
 
+.col-heading {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 .arrow {
   width: 3.5rem;
   position: absolute;
 }
 
-.arrow1, .arrow2, .arrow3 {
-  top: 0.45rem;
+.arrow1 {
+  left: 17rem;
+  top: 3.7rem;
+}
+
+.arrow2, .arrow3 {
+  top: 2.8rem;
   left: 17rem;
 }
 
 .col-bkgnd-1 {
   background: url("../../../assets/images/diagram-images-data-collection.jpg");
   width:100%;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 5px 0px;
 }
 
 .col-bkgnd-2 {
   background: url("../../../assets/images/diagram-header-manag-compli.jpg");
   width:100%;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 5px 0px;
 }
 
 .col-bkgnd-3 {
   background: url("../../../assets/images/diagram-header-analysis.jpg");
   width:100%;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 5px 0px;
 }
 
 .col-bkgnd-4 {
   background: url("../../../assets/images/diagram-header-outcomes.jpg");
   width:100%;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 5px 0px;
 }
 .col-line-1 {
   border-top: 4px solid #3B88AF;
