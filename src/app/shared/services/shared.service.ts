@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class SharedService {
-  readonly colSize = [25, 25, 25, 25];
+  readonly colSize = [32.9, 32.9, 32.8];
 
   constructor() { }
 }

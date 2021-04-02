@@ -1,5 +1,7 @@
 @import "theme";
 
+$colPad: 40;
+
 .developer-banner {
   background-color: $orange;
   font-family: $robotoCondensed;
@@ -48,11 +50,13 @@ a {
   color: black;
 }
 
-.top-text {
-  margin: 10px 20px;
+.home-intro-text {
+  margin: 1rem 0 0.5rem 0;
+  background: url("../../assets/images/text-background.jpg");
+  background-size: cover;
 
   p {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -62,7 +66,7 @@ a {
 }
 
 .interactive-map-div {
-  border-radius: 10px 10px 0px 0px;
+  /*border-radius: 10px 10px 0px 0px;*/
   background-color: #4D4D4D;
   padding: 8px 10px 0px 10px;
   color: white;

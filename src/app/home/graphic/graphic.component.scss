@@ -9,6 +9,11 @@
   }
 }
 
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
 .mat-card-content {
   cursor: pointer;
   margin-bottom: 0;
@@ -52,6 +57,7 @@
   height: 60px;
   text-transform: uppercase;
   text-align: center;
+  opacity: 1;
 
 }
 
@@ -83,28 +89,94 @@
 }
 
 .col-bkgnd-1 {
-  background: url("../../../assets/images/diagram-images-data-collection.jpg");
-  width:100%;
   margin: 0px 0px 5px 0px;
+  position: relative; 
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.col-bkgnd-1::before {    
+  content: "";
+  background-image: url("../../../assets/images/diagram-images-data-collection.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.50;
 }
 
 .col-bkgnd-2 {
-  background: url("../../../assets/images/diagram-header-manag-compli.jpg");
-  width:100%;
   margin: 0px 0px 5px 0px;
+  position: relative; 
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-bkgnd-2::before {    
+  content: "";
+  background-image: url("../../../assets/images/diagram-header-manag-compli.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
 }
 
 .col-bkgnd-3 {
-  background: url("../../../assets/images/diagram-header-analysis.jpg");
-  width:100%;
   margin: 0px 0px 5px 0px;
+  position: relative; 
+  height: 6vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-bkgnd-3::before {    
+  content: "";
+  background-image: url("../../../assets/images/diagram-header-analysis.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
 }
 
 .col-bkgnd-4 {
-  background: url("../../../assets/images/diagram-header-outcomes.jpg");
-  width:100%;
   margin: 0px 0px 5px 0px;
+  position: relative; 
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.col-bkgnd-4::before {    
+  content: "";
+  background-image: url("../../../assets/images/outcomes-header-background.jpg");
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
+
+
 .col-line-1 {
   border-top: 4px solid #3B88AF;
   width: calc(100% - 70px);
@@ -213,9 +285,9 @@ $hoverColor: #7ab0cc;
 
   .mat-card {
     font-family: $robotoCondensed;
-    margin-left: ($colPad) + px;
-    margin-right: ($colPad) + px; 
-    width: 100%;
+    margin-left: 15px;
+    margin-right: 14px; 
+    /*width: 100%;*/
   }
 }
 
@@ -264,8 +336,45 @@ $hoverColor: #7ab0cc;
   }
 }
 
+.card-img-g1 {
+  text-align: center;
+
+  img {
+    width: 75%;
+  }
+}
+
+.card-img-g2 {
+  text-align: center;
+
+  img {
+    width: 85%;
+  }
+}
+
+.card-img-g3 {
+  text-align: center;
+
+  img {
+    width: 50%;
+  }
+}
+
+.card-img-g4 {
+  text-align: center;
+
+  img {
+    padding-top: 10px;
+    width: 80%;
+  }
+}
+
 .card-zindex {
   z-index: 5;
+}
+
+#g1, #g2, #g3, #g4 {
+  height: 120px;
 }
 
 .card-footer {
@@ -761,4 +870,8 @@ $bsyncExpandedWidth: 160px;
 .ml-auto,
 .mx-auto {
   margin-left: auto !important;
+}
+
+.pt-10 {
+  padding-top: 6rem !important;
 }
