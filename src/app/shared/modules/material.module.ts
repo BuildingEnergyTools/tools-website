@@ -5,6 +5,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatExpansionModule } from '@angular/material/expansion';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
@@ -30,7 +31,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatDialogModule,
     // MatDividerModule,
     MatExpansionModule,
-    // MatGridListModule,
+    MatGridListModule,
     MatIconModule,
     // MatInputModule,
     // MatListModule,
