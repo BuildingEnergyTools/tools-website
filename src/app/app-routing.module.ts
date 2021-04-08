@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { DataStandardizationComponent } from './tools-overview/data-standardization/data-standardization.component';
 import { AnalysisEvaluationComponent } from './tools-overview/analysis-evaluation/analysis-evaluation.component';
 import { CollectionReportingComponent } from './tools-overview/collection-reporting/collection-reporting.component';
 import { DevelopersComponent } from './tools-overview/developers/developers.component';
@@ -10,6 +11,9 @@ import { ManagementComplianceComponent } from './tools-overview/management-compl
 const routes: Routes = [{
   path: '',
   component: HomeComponent
+}, {
+  path: 'data-standardization',
+  component: DataStandardizationComponent
 }, {
   path: 'collection-reporting',
   component: CollectionReportingComponent

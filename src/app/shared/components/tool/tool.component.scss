@@ -17,6 +17,7 @@
   line-height: 23px;
   padding: $pad;
   position: relative;
+  font-size: 1rem;
 
   &::ng-deep > div {
     width: 100%;
@@ -33,6 +34,19 @@
 
     .mat-h6 {
       font-size: 1em;
+    }
+
+    p, ul, ol {
+      font-size: 1.1rem;
+    }
+    
+    table {
+      font-size: 1rem;
+    }
+
+    .mat-expansion-panel-header-title {
+      font-size: 1.1rem;
+      font-weight: bold;
     }
 
     a {
@@ -64,6 +78,11 @@
       color: #F5AF13;
     } 
 
+    .btn-type-1 {
+      background-color: #3B88AF;
+      color: #fff;
+    }
+
     .btn-type-3 {
       background-color: #478662;
       color: #fff;
@@ -91,6 +110,11 @@
       color: white;
       padding: 20px;
       margin-left: 100px;
+    }
+
+    .callout {
+      width:40%;
+      margin: 20px auto;
     }
     
     .bold-link {
