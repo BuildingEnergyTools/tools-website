@@ -48,7 +48,7 @@
 }
 
 .header {
-  padding:5px 10px 0px 10px;
+  padding:5px 10px 30px 10px;
   align-self: flex-end;
   font-size: 1rem;
   font-weight: 500;
@@ -312,6 +312,17 @@ $hoverColor: #7ab0cc;
   width: 100%;
 }
 
+.card-img-3p {
+  width: 50%;
+}
+
+.text-3p {
+  font-size: 1.6rem;
+  vertical-align: center;
+  padding-top:5px;
+  color: #454444;
+}
+
 .card-img-2 {
   width: 110%;
 }
@@ -320,12 +331,25 @@ $hoverColor: #7ab0cc;
   margin-bottom: 3.5rem;
 }
 
+.img-ctr {
+  text-align: center;
+}
+
+.card-img-csrs {
+  width: 65%;
+}
+
 .card-img-as {
+  width: 60%;
+}
+
+.card-img-at {
   width: 80%;
 }
 
 .card-img-better {
-  width: 90%;
+  width: 75%;
+  padding-bottom: 5px;
 }
 
 .card-img-sm {
