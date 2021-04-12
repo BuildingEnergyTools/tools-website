@@ -48,16 +48,17 @@
 }
 
 .header {
-  padding:5px 10px 30px 10px;
-  align-self: flex-end;
+  padding:5px 10px 5px 10px;
+  align-self: flex-center;
   font-size: 1rem;
   font-weight: 500;
   color: white;
-  padding-top: 50px;
   height: 60px;
   text-transform: uppercase;
   text-align: center;
   opacity: 1;
+  padding-top: 1.7rem;
+  vertical-align: middle;
 
 }
 
@@ -91,7 +92,7 @@
 .col-bkgnd-1 {
   margin: 0px 0px 5px 0px;
   position: relative; 
-  height: 6vh;
+  height: 5vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -112,7 +113,7 @@
 .col-bkgnd-2 {
   margin: 0px 0px 5px 0px;
   position: relative; 
-  height: 6vh;
+  height:5vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -134,7 +135,7 @@
 .col-bkgnd-3 {
   margin: 0px 0px 5px 0px;
   position: relative; 
-  height: 6vh;
+  height: 5vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -175,7 +176,11 @@
   opacity: 0.75;
 }
 
-
+.sm-spc {
+  margin-bottom: 0.5rem !important;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}
 
 .col-line-1 {
   border-top: 4px solid #3B88AF;
@@ -184,7 +189,7 @@
 }
 
 .col-pad {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .col-line-white {
@@ -313,11 +318,11 @@ $hoverColor: #7ab0cc;
 }
 
 .card-img-3p {
-  width: 50%;
+  width: 45%;
 }
 
 .text-3p {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   vertical-align: center;
   padding-top:5px;
   color: #454444;

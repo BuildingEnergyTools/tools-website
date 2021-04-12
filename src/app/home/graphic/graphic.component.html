@@ -1,7 +1,9 @@
 <div fxLayout="row wrap" fxFlex="100%" fxFlexOffset="0%">
   <div class="col-type-4" fxLayout="column" fxFlex="100%">
     <div class="col-bkgnd-4">
-      <h3 class="header header4">GOALS & OUTCOMES</h3>
+      <div class="header4">
+        <h3 class="header">GOALS & OUTCOMES</h3>
+      </div>
     </div>
     <div fxLayout="row" class="mb-2">
   
@@ -66,7 +68,7 @@
       </div>
     </div>
    
-    <div fxLayoutAlign="space-around" class="pt-5">
+    <div fxLayoutAlign="space-around" class="pt-2">
       <mat-card class="mb-4 p-5" id="pm" (click)="toggleCard('pm')" [ngStyle]="{background: hovers['g3']==true || hovers['g4'] == true ? '#a7afb2;' : '#fff;'}">
         <mat-card-content [hidden]="cardStatus.pm">
           <div><img class="card-img-2" src="assets/images/pm-logo.svg" alt="EnergyStar Portfolio Manager Logo"></div>
@@ -107,7 +109,7 @@
       </div>
     </div>
     
-    <div fxLayoutAlign="space-around" class="pt-5">
+    <div fxLayoutAlign="space-around" class="pt-2">
       <mat-card class="card-zindex pt-5" id="seed" (click)="toggleCard('seed')">
         <mat-card-content [hidden]="cardStatus.seed">
           <div class="card-img-sm"><img src="assets/images/seed-logo.svg" alt="SEED Logo"></div>
@@ -142,7 +144,7 @@
     </div>
     
     <div fxLayoutAlign="space-around" class="pt-2">
-      <mat-card class="mb-2" id="csrs" (click)="toggleCard('csrs')" [ngStyle]="{background: hovers['g2']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}">
+      <mat-card class="mb-2" id="csrs" (click)="toggleCard('csrs')" [ngStyle]="{background: hovers['g2']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" class="sm-spc">
         <mat-card-content [hidden]="cardStatus.csrs">
           <div class="px-auto img-ctr"><img class="card-img-csrs" src="assets/images/com-resstock-logos.svg" alt="ComStock & ResStock Logos"></div>
         </mat-card-content>
@@ -159,7 +161,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-2" id="better" (click)="toggleCard('better')"[ngStyle]="{background: hovers['g1']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}">
+      <mat-card class="mb-2" id="better" (click)="toggleCard('better')"[ngStyle]="{background: hovers['g1']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" class="sm-spc">
         <mat-card-content [hidden]="cardStatus.better">
           <div fxLayoutAlign="center center"><img class="card-img-better" src="assets/images/better-logo.svg" alt="BETTER Logo"></div>
         </mat-card-content>
@@ -177,7 +179,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card class="mb-2" id="as" (click)="toggleCard('as')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}">
+      <mat-card class="mb-2" id="as" (click)="toggleCard('as')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" class="sm-spc">
         <mat-card-content [hidden]="cardStatus.as">
           <div fxLayoutAlign="center center"><img class="card-img-as" src="assets/images/asset-score-logo.svg" alt="Asset Score Logo"></div>
         </mat-card-content>
@@ -194,7 +196,7 @@
     </div>
 
     <div fxLayoutAlign="space-around">
-      <mat-card id="3p" (click)="toggleCard('3p')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g3'] == true ? '#a7afb2;' : 'white'}">
+      <mat-card id="3p" (click)="toggleCard('3p')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g3'] == true ? '#a7afb2;' : 'white'}" class="sm-spc">
         <mat-card-content [hidden]="cardStatus['3p']">
           <div fxFlex="25%"><img class="card-img-3p" src="assets/images/third-party-icon-only.svg" alt="3rd party tools Logos"></div><div fxFlex="75%" class="text-3p">3rd Party Tools</div>
         </mat-card-content>

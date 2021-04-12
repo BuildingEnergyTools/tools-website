@@ -32,6 +32,9 @@ export class MenuComponent {
       }, {
         title: 'Building Energy Audit Template',
         route: '/audit-template'
+      }, {
+        title: 'Data Standardization',
+        route: '/data-standardization'
       }]
     }, {
       title: 'Management & Compliance',
