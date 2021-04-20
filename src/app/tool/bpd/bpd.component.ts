@@ -22,9 +22,9 @@ export class BpdComponent {
     icon: 'fa-share',
     route: 'contribute'
   }, {
-    title: 'Resources',
+    title: 'FAQ',
     icon: 'fa-file-alt',
-    route: 'resources'
+    route: 'faq'
   }, {
     title: 'News',
     icon: 'fa-newspaper',

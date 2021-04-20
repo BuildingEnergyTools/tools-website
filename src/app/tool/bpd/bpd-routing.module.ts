@@ -26,7 +26,7 @@ const routes: Routes = [{
     path: 'contribute',
     component: ContributeComponent
   }, {
-    path: 'resources',
+    path: 'faq',
     component: ResourcesComponent
   }, {
     path: 'news',

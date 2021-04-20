@@ -1,5 +1,8 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "c8f4551a-8a73-46db-b902-a5c3aa527807"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
@@ -17,8 +20,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "baseHref": "/tools-website/",
-            "outputPath": "dist/tools-website",
+            "baseHref": "/",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,7 +29,8 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/CNAME"
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
@@ -39,6 +43,7 @@
               ]
             },
             "scripts": [
+              "./node_modules/leader-line/leader-line.min.js",
               "./node_modules/marked/lib/marked.js"
             ]
           },
@@ -66,7 +71,7 @@
                 {
                   "type": "anyComponentStyle",
                   "maximumWarning": "6kb",
-                  "maximumError": "18kb"
+                  "maximumError": "20kb"
                 }
               ]
             }
@@ -113,6 +118,7 @@
               ]
             },
             "scripts": [
+              "./node_modules/leader-line/leader-line.min.js",
               "./node_modules/marked/lib/marked.js"
             ]
           }
@@ -141,6 +147,10 @@
               "devServerTarget": "tools-website:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }

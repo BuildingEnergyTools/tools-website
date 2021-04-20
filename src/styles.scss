@@ -1,4 +1,3 @@
-@import "~overlayscrollbars/css/OverlayScrollbars.css";
 @import "theme";
 
 * {
@@ -7,6 +6,10 @@
   &:focus {
     outline: none;
   }
+}
+
+html {
+  overflow-y: scroll;
 }
 
 html, body {

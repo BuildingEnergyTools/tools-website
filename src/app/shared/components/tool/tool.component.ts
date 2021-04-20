@@ -35,6 +35,7 @@ export class ToolComponent {
       case '/building-sync':
       case '/ubid':
       case '/bedes':  
+      case '/oep':
       case '/third-party':
         this.color = 5;
         break;

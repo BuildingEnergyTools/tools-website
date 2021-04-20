@@ -1,5 +1,7 @@
 @import "theme";
 
+$colPad: 40;
+
 .developer-banner {
   background-color: $orange;
   font-family: $robotoCondensed;
@@ -9,6 +11,11 @@
   position: relative;
   text-transform: uppercase;
 
+  > div {
+    width: 100%;
+  }
+
+  /*
   &::after {
     background-color: $orange;
     content: '';
@@ -17,6 +24,11 @@
     bottom: -7px;
     width: 184px;
   }
+  */
+}
+
+a {
+  color: #024880;
 }
 
 .developer {
@@ -38,6 +50,144 @@
   color: black;
 }
 
-.top-text {
-  margin: 10px 20px;
+.home-intro-text {
+  margin: 1rem 0 0.5rem 0;
+  background: url("../../assets/images/text-background.jpg");
+  background-size: cover;
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+.home-intro-text2 {
+  margin: 0.25rem 0 0.25rem 0;
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.interactive-map {
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.interactive-map-div {
+  /*border-radius: 10px 10px 0px 0px;*/
+  background-color: #4D4D4D;
+  padding: 8px 10px 0px 10px;
+  color: white;
+  margin-bottom:10px;
+  display: flex;
+  width: 100%;
+  margin-left: 0%;
+
+  h2 {
+    font-weight: 400;
+    font-family: $robotoCondensed;
+    font-size: 1.3rem;
+    margin-top: 5px;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: normal;
+    padding-bottom: 0px;
+    margin: 0px;
+  }
+}
+
+.bottom-boxes {
+  width:100%; 
+  padding-left: 0%;
+  padding-right: 0%;
+  margin: 10px 0px 0px;
+  min-height: 200px;
+}
+
+.standardize {
+  background: url("../../assets/images/get-started-box.jpg");
+  padding: 1rem 1rem;
+  background-size: 100% 100%;
+  cursor:pointer;
+  height: 200px;
+
+  h3 {
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 10px;
+    padding-left: 4rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.explore-tools {
+  background: url("../../assets/images/analysis-box.jpg");
+  padding: 1rem 1rem;
+  margin-left: 10px;
+  background-size: auto;
+  cursor:pointer;
+  height: 200px;
+
+  h3 {
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 10px;
+    padding-left: 4rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.dev {
+  background: $orange;
+  padding: 1rem 1rem;
+  margin-left: 10px;
+  background-size: auto;
+  cursor:pointer;
+  height: 200px;
+
+  h3 {
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 10px;
+    padding-left: 2rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.box-arrow {
+  margin-left: 20px;
+  width: 5rem;
+}
+
+.explore {
+  background-color: #EEEEEE;
+  padding: 10px 0px 5px 0px;
+  text-align: center;
+}
+
+.left-side {
+  border-right: 2px solid #ccc;
+  padding-right: 20px;
+  margin-bottom: 10px;
+}
+
+.top-side {
+  margin-top: 10px;
 }

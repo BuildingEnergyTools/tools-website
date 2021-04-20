@@ -5,7 +5,6 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { HammerModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { MarkdownModule } from 'ngx-markdown';
-import { OverlayscrollbarsModule } from 'overlayscrollbars-ngx';
 import { MaterialModule } from './modules/material.module';
 import { ToolComponent } from './components/tool/tool.component';
 
@@ -20,7 +19,6 @@ import { ToolComponent } from './components/tool/tool.component';
     HttpClientModule,
     MarkdownModule.forRoot({loader: HttpClient}),
     MaterialModule,
-    OverlayscrollbarsModule,
     RouterModule
   ],
   exports: [
