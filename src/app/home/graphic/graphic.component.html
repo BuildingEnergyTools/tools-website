@@ -10,10 +10,10 @@
       <div fxFlex="25%">
         <div fxLayoutAlign="space-around">
           <mat-card class="mb-2 py-4 pr-1 pl-1" id="g1" routerLink="goals/analyze" (mouseenter) ="mouseEnter('g1') "  (mouseleave) ="mouseLeave('g1')" [ngStyle]="{background: hovers['g2']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" >
-            <mat-card-content >
+            <mat-card-content>
               <div fxLayout="row">
-                <div [fxFlex]="50" class="my-auto pr-4 card-img-g1"><img src="assets/images/com-resstock-outcomes-icon.svg" alt="ComStock & ResStock outcomes icon"></div>
-                <div><p class="card-text m-auto">Assess Impacts & Identify New Opportunities</p></div>
+                <div [fxFlex]="40" class="my-auto pr-4 card-img-g1"><img src="assets/images/com-resstock-outcomes-icon.svg" alt="ComStock & ResStock outcomes icon"></div>
+                <div class="my-auto"><p class="card-text m-auto pr-3">Assess Impacts and Identify New Opportunities</p></div>
               </div>
             </mat-card-content>
           </mat-card>
@@ -23,9 +23,9 @@
         <div fxLayoutAlign="space-around">
           <mat-card class="mb-2 py-4 pr-1 pl-1" id="g2" routerLink="goals/target" (mouseenter) ="mouseEnter('g2') "  (mouseleave) ="mouseLeave('g2')" [ngStyle]="{background: hovers['g1']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" >
             <mat-card-content>
-              <div fxLayout="row">
-                <div [fxFlex]="50" class="my-auto pr-4 card-img-g2"><img src="assets/images/better-outcomes-icon.svg" alt="BETTER outcomes icon"></div>
-                <div><p class="card-text m-auto">Identify Measures and Suggest Areas for Deeper Evaluations</p></div>
+              <div fxLayout="row" class="no-gutters">
+                <div [fxFlex]="40" class="my-auto pr-4 card-img-g2"><img src="assets/images/better-outcomes-icon.svg" alt="BETTER outcomes icon"></div>
+                <div class="my-auto"><p class="card-text m-auto">Identify Measures and Suggest Areas for Deeper Evaluations</p></div>
               </div>
             </mat-card-content>
           </mat-card>
@@ -35,9 +35,9 @@
         <div fxLayoutAlign="space-around">
           <mat-card class="mb-2 py-4 pr-1 pl-1" id="g3" routerLink="goals/compliance" (mouseenter) ="mouseEnter('g3')"  (mouseleave) ="mouseLeave('g3')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" >
             <mat-card-content>
-              <div fxLayout="row">
-                <div [fxFlex]="50" class="card-img-g3 my-auto pr-1"><img src="assets/images/assetscore-outcomes-icon.svg" alt="Asset Score Outcomes icon"></div>
-                <div><p class="card-text m-auto">Bring Buildings into Compliance with EUI and GHGe Requirements</p></div>
+              <div fxLayout="row" class="no-gutters">
+                <div [fxFlex]="40" class="card-img-g3 my-auto pr-1"><img src="assets/images/assetscore-outcomes-icon.svg" alt="Asset Score Outcomes icon"></div>
+                <div class="my-auto"><p class="card-text m-auto">Bring Buildings into Compliance with EUI and GHGe Requirements</p></div>
               </div>
             </mat-card-content>
           </mat-card>
@@ -48,8 +48,8 @@
           <mat-card class="mb-2 py-4 pr-1 pl-1" id="g4" routerLink="goals/customize" (mouseenter) ="mouseEnter('g4') "  (mouseleave) ="mouseLeave('g4')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g3'] == true ? '#a7afb2;' : 'white'}">
             <mat-card-content>
               <div fxLayout="row" class="no-gutters">
-                <div [fxFlex]="50" class="my-auto pr-3 card-img-g4"><img src="assets/images/thirdparty-outcomes-icon.svg" alt="third-party outcomes icon"></div>
-                <div><p class="card-text m-auto">Customize Your Workflow with CRM, Data Visualizations, and More</p></div>
+                <div [fxFlex]="30" class="my-auto pr-3 card-img-g4"><img src="assets/images/thirdparty-outcomes-icon.svg" alt="third-party outcomes icon"></div>
+                <div class="my-auto"><p class="card-text m-auto">Customize Your Workflow with CRM, Data Visualizations, and More</p></div>
               </div>
             </mat-card-content>
           </mat-card>
@@ -69,14 +69,14 @@
     </div>
    
     <div fxLayoutAlign="space-around" class="pt-2">
-      <mat-card class="mb-4 p-5" id="pm" (click)="toggleCard('pm')" [ngStyle]="{background: hovers['g3']==true || hovers['g4'] == true ? '#a7afb2;' : '#fff;'}">
+      <mat-card class="mb-4" id="pm" (click)="toggleCard('pm')" [ngStyle]="{background: hovers['g3']==true || hovers['g4'] == true ? '#a7afb2;' : '#fff;'}">
         <mat-card-content [hidden]="cardStatus.pm">
-          <div><img class="card-img-2" src="assets/images/pm-logo.svg" alt="EnergyStar Portfolio Manager Logo"></div>
+          <div class="p-4"><img class="card-img-2" src="assets/images/pm-logo.svg" alt="EnergyStar Portfolio Manager Logo"></div>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus.pm">
-          <p>Building owners use <strong>ENERGY STAR Portfolio Manager</strong> to report their energy use. This information reveals how efficiently a building is being operated.</p>
-          <p>Portfolio Manager also generates an ENERGY STAR Score, a number from 0-100 which many cities use to set their performance targets and prioritize buildings for upgrade.</p>
+          <p class="card-text">Building owners use <strong>ENERGY STAR Portfolio Manager</strong> to report their energy use. This information reveals how efficiently a building is being operated.</p>
+          <p class="card-text">Portfolio Manager also generates an ENERGY STAR Score, a number from 0-100 which many cities use to set their performance targets and prioritize buildings for upgrade.</p>
           <div fxLayoutAlign="center center">
             <a class="btn-type-1" href="https://www.energystar.gov/buildings/facility-owners-and-managers/existing-buildings/use-portfolio-manager" mat-raised-button target="_blank" role="button" (click)="$event.stopPropagation()">Learn more <span class="ml-2 align-center"><i
               class="fas fa-external-link-alt"></i></span></a>
@@ -146,7 +146,7 @@
     <div fxLayoutAlign="space-around" class="pt-2">
       <mat-card class="mb-2" id="csrs" (click)="toggleCard('csrs')" [ngStyle]="{background: hovers['g2']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" class="sm-spc">
         <mat-card-content [hidden]="cardStatus.csrs">
-          <div class="px-auto img-ctr"><img class="card-img-csrs" src="assets/images/com-resstock-logos.svg" alt="ComStock & ResStock Logos"></div>
+          <div class="pl-6 pt-1"><img class="card-img-csrs" src="assets/images/com-resstock-logos.svg" alt="ComStock & ResStock Logos"></div>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus.csrs">
@@ -163,7 +163,7 @@
     <div fxLayoutAlign="space-around">
       <mat-card class="mb-2" id="better" (click)="toggleCard('better')"[ngStyle]="{background: hovers['g1']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" class="sm-spc">
         <mat-card-content [hidden]="cardStatus.better">
-          <div fxLayoutAlign="center center"><img class="card-img-better" src="assets/images/better-logo.svg" alt="BETTER Logo"></div>
+          <div class="pl-6"><img class="card-img-better" src="assets/images/better-logo.svg" alt="BETTER Logo"></div>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus.better">
@@ -181,7 +181,7 @@
     <div fxLayoutAlign="space-around">
       <mat-card class="mb-2" id="as" (click)="toggleCard('as')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" class="sm-spc">
         <mat-card-content [hidden]="cardStatus.as">
-          <div fxLayoutAlign="center center"><img class="card-img-as" src="assets/images/asset-score-logo.svg" alt="Asset Score Logo"></div>
+          <div class="pl-6"><img class="card-img-as" src="assets/images/asset-score-logo.svg" alt="Asset Score Logo"></div>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus.as">
@@ -198,7 +198,9 @@
     <div fxLayoutAlign="space-around">
       <mat-card id="3p" (click)="toggleCard('3p')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g3'] == true ? '#a7afb2;' : 'white'}" class="sm-spc">
         <mat-card-content [hidden]="cardStatus['3p']">
-          <div fxFlex="25%"><img class="card-img-3p" src="assets/images/third-party-icon-only.svg" alt="3rd party tools Logos"></div><div fxFlex="75%" class="text-3p">3rd Party Tools</div>
+          <div class="pl-6">
+          <div fxFlex="15%" class="mt-1"><img class="card-img-3p" src="assets/images/third-party-icon-only.svg" alt="3rd party tools Logos"></div><div fxFlex="70%" class="text-3p my-auto">3rd Party Tools</div>
+          </div>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus['3p']">
