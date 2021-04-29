@@ -14,7 +14,7 @@ jobs:
         run: |
           npm install
           npm install -g @angular/cli > /dev/null
-          ng build
+          ./node_modules/@angular/cli/bin/ng build
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@4.1.1
