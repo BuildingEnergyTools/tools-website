@@ -318,13 +318,12 @@ $hoverColor: #7ab0cc;
 }
 
 .card-img-3p {
-  width: 45%;
+  width: 70%;
 }
 
 .text-3p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   vertical-align: center;
-  padding-top:5px;
   color: #454444;
 }
 
@@ -345,7 +344,7 @@ $hoverColor: #7ab0cc;
 }
 
 .card-img-as {
-  width: 60%;
+  width: 70%;
 }
 
 .card-img-at {
@@ -369,7 +368,7 @@ $hoverColor: #7ab0cc;
   text-align: center;
 
   img {
-    width: 75%;
+    width: 55%;
   }
 }
 
@@ -377,7 +376,7 @@ $hoverColor: #7ab0cc;
   text-align: center;
 
   img {
-    width: 85%;
+    width:65%;
   }
 }
 
@@ -385,7 +384,7 @@ $hoverColor: #7ab0cc;
   text-align: center;
 
   img {
-    width: 50%;
+    width: 40%;
   }
 }
 
@@ -755,6 +754,12 @@ $bsyncExpandedWidth: 160px;
 .pl-5,
 .px-5 {
   padding-left: 3rem !important;
+}
+
+
+.pl-6,
+.px-6 {
+  padding-left: 3.5rem !important;
 }
 
 .m-n1 {
