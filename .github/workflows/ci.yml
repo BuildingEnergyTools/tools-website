@@ -14,5 +14,5 @@ jobs:
       - name: Install and Build
         run: |
           npm install
-          npm install -g @angular/cli > /dev/null
-          ng build
+          npm install @angular/cli > /dev/null
+          ./node_modules/@angular/cli/bin/ng build
