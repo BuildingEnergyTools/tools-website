@@ -267,7 +267,7 @@ class HomeComponent {
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
 HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 58, vars: 0, consts: [[1, "callout"], [1, "btn-type-3", "p-3"], [1, "pl-5"], ["fxLayout", "row"], ["fxFlex", "60"], [1, "bold"], ["routerLink", "../seed", 1, "color-3"], ["routerLink", "../building-sync", 1, "color-3"], ["href", "https://better.lbl.gov/", "target", "_blank", 1, "color-3"], ["href", "https://youtu.be/-TkndH828mE", "target", "_blank", 1, "color-3"], ["href", "https://better.lbl.gov/how_it_works/", "target", "_blank", 1, "color-3"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "The Building Efficiency Targeting Tool for Energy Retrofits (BETTER) reveals the energy performance of buildings and building portfolios. Use it to identify cost-saving improvements and target individual buildings and building systems for audits.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "The Building Efficiency Targeting Tool for Energy Retrofits (BETTER) identifies cost-saving energy and emissions reductions in buildings and portfolios, without site visits or complex modeling. Use it to identify immediate cost-saving operational and technological improvements and target buildings and systems for more in-depth audits and analysis.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 1);
@@ -369,9 +369,7 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ResourcesComponent", function() { return ResourcesComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-/* harmony import */ var _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/flex-layout/flex */ "XiUz");
-/* harmony import */ var ngx_markdown__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ngx-markdown */ "lR5k");
-
+/* harmony import */ var ngx_markdown__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ngx-markdown */ "lR5k");
 
 
 class ResourcesComponent {
@@ -379,7 +377,7 @@ class ResourcesComponent {
     }
 }
 ResourcesComponent.ɵfac = function ResourcesComponent_Factory(t) { return new (t || ResourcesComponent)(); };
-ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ResourcesComponent, selectors: [["ng-component"]], decls: 26, vars: 0, consts: [[1, "mat-h2", "mb-4"], [1, "mat-h3", "color-3"], ["href", "https://github.com/LBNL-JCI-ICF/better", "target", "_blank", 1, "color-3"], ["fxLayout", "row"], ["fxFlex", "50", "fxLayoutGap", "20px", "fxLayoutAlign", "center center"], ["href", "https://better.lbl.gov/news/", "target", "_blank", 1, "color-3"], ["src", "assets/md/better/resources.md"]], template: function ResourcesComponent_Template(rf, ctx) { if (rf & 1) {
+ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ResourcesComponent, selectors: [["ng-component"]], decls: 24, vars: 0, consts: [[1, "mat-h2", "mb-4"], [1, "mat-h3", "color-3"], ["href", "https://github.com/LBNL-JCI-ICF/better", "target", "_blank", 1, "color-3"], ["href", "https://better.lbl.gov/news/", "target", "_blank", 1, "color-3"], ["src", "assets/md/better/resources.md"]], template: function ResourcesComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Resources");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -396,29 +394,25 @@ ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "h3", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Who is Using BETTER?");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "section", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "BETTER is used by federal, state, and municipal government agencies, including the National Aeronautics and Space Administration (NASA) \u2013 Goddard Space Flight Center and the Department of Energy and Environment in the District of Columbia; school districts; energy service companies, including Johnson Controls; multinational corporations; investors and lenders, like Citi; and non-profit organizations, such as World Resources Institute (WRI). For more on pilot projects, visit ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "a", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "better.lbl.gov/news/");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "BETTER is used by federal, state, and municipal government agencies, including the National Aeronautics and Space Administration (NASA) \u2013 Goddard Space Flight Center and the Department of Energy and Environment in the District of Columbia; school districts; energy service companies, including Johnson Controls; multinational corporations; investors and lenders, like Citi; and non-profit organizations, such as World Resources Institute (WRI). For more on pilot projects, visit ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "better.lbl.gov/news/");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, ".");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, ".");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "h3", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Interoperability");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "BETTER can be used in combination with the U.S. Environmental Protection Agency ENERGY STAR\u00AE PortfolioManager\u00AE and the U.S. Department of Energy (DOE) Building Energy Asset Score to conduct multilayered analysis on buildings to deliver ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "both");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "h3", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Interoperability");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, " superior structural performance and operational energy performance. Currently, BETTER can input data from ENERGY STAR\u00AE PortfolioManager\u00AE, and a BuildingSync\u00AE file read/write capability is being added to facilitate data and analytics transfer between BETTER and Asset Score, Audit Template, and the Standard Energy Efficiency Data (SEED)TM Platform.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "BETTER can be used in combination with the U.S. Environmental Protection Agency ENERGY STAR\u00AE PortfolioManager\u00AE and the U.S. Department of Energy (DOE) Building Energy Asset Score to conduct multilayered analysis on buildings to deliver ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "both");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](24, " superior structural performance and operational energy performance. Currently, BETTER can input data from ENERGY STAR\u00AE PortfolioManager\u00AE, and a BuildingSync\u00AE file read/write capability is being added to facilitate data and analytics transfer between BETTER and Asset Score, Audit Template, and the Standard Energy Efficiency Data (SEED)TM Platform.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "markdown", 6);
-    } }, directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultFlexDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutGapDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutAlignDirective"], ngx_markdown__WEBPACK_IMPORTED_MODULE_2__["MarkdownComponent"]], encapsulation: 2 });
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "markdown", 4);
+    } }, directives: [ngx_markdown__WEBPACK_IMPORTED_MODULE_1__["MarkdownComponent"]], encapsulation: 2 });
 
 
 /***/ }),
