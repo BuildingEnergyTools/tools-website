@@ -23,7 +23,7 @@ export class BpdComponent {
     route: 'contribute'
   }, {
     title: 'FAQ',
-    icon: 'fa-file-alt',
+    icon: 'fa-question-circle',
     route: 'faq'
   }, {
     title: 'News',
