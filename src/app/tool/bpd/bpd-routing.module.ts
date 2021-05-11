@@ -4,7 +4,7 @@ import { BpdComponent } from './bpd.component';
 import { DevComponent } from './dev/dev.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
-import { NewsComponent } from './news/news.component';
+import { ResourcesComponent } from './resources/resources.component';
 import { FaqComponent } from './faq/faq.component';
 import { DataComponent } from './data/data.component';
 import { ContributeComponent } from './contribute/contribute.component';
@@ -29,8 +29,8 @@ const routes: Routes = [{
     path: 'faq',
     component: FaqComponent
   }, {
-    path: 'news',
-    component: NewsComponent
+    path: 'resources',
+    component: ResourcesComponent
   }, {
     path: 'dev',
     component: DevComponent

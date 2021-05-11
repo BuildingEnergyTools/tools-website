@@ -10,7 +10,7 @@ import { SecurityComponent } from './security/security.component';
 import { ContributeComponent } from './contribute/contribute.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
-import { NewsComponent } from './news/news.component';
+import { ResourcesComponent } from './resources/resources.component';
 import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
@@ -22,7 +22,7 @@ import { FaqComponent } from './faq/faq.component';
     DevComponent,
     HelpComponent,
     HomeComponent,
-    NewsComponent,
+    ResourcesComponent,
     FaqComponent
   ],
   imports: [
