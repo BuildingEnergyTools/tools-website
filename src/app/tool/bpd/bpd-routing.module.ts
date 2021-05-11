@@ -5,7 +5,7 @@ import { DevComponent } from './dev/dev.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
-import { ResourcesComponent } from './resources/resources.component';
+import { FaqComponent } from './faq/faq.component';
 import { DataComponent } from './data/data.component';
 import { ContributeComponent } from './contribute/contribute.component';
 import { SecurityComponent } from './security/security.component';
@@ -27,7 +27,7 @@ const routes: Routes = [{
     component: ContributeComponent
   }, {
     path: 'faq',
-    component: ResourcesComponent
+    component: FaqComponent
   }, {
     path: 'news',
     component: NewsComponent
