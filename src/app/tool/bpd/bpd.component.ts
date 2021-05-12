@@ -23,13 +23,12 @@ export class BpdComponent {
     route: 'contribute'
   }, {
     title: 'FAQ',
-    icon: 'fa-file-alt',
+    icon: 'fa-question-circle',
     route: 'faq'
   }, {
-    title: 'News',
-    icon: 'fa-newspaper',
-    fontAwesome: 'far',
-    route: 'news'
+    title: 'Resources',
+    icon: 'fa-file-alt',
+    route: 'resources'
   }, {
     title: 'Links for Developers',
     icon: 'fa-wrench',
