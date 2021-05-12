@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+      - nrel
+      - lbnl
+      - pnnl
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -16,8 +19,18 @@ jobs:
           npm install @angular/cli > /dev/null
           ./node_modules/@angular/cli/bin/ng build
 
-      - name: Deploy
+      - name: Deploy Main Site
         uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: github.ref == 'refs/heads/main'
         with:
           branch: gh-pages
           folder: dist
+
+      - name: Deploy NREL
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: github.ref == 'refs/heads/nrel'
+        with:
+          repository-name: BuildingEnergyTools/tools-website-nrel
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.DEPLOY_STAGING_KEY }}
