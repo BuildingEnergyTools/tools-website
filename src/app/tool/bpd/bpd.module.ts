@@ -10,8 +10,8 @@ import { SecurityComponent } from './security/security.component';
 import { ContributeComponent } from './contribute/contribute.component';
 import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
-import { NewsComponent } from './news/news.component';
 import { ResourcesComponent } from './resources/resources.component';
+import { FaqComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,8 @@ import { ResourcesComponent } from './resources/resources.component';
     DevComponent,
     HelpComponent,
     HomeComponent,
-    NewsComponent,
-    ResourcesComponent
+    ResourcesComponent,
+    FaqComponent
   ],
   imports: [
     BpdRoutingModule,
