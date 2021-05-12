@@ -34,3 +34,21 @@ jobs:
           branch: gh-pages
           folder: dist
           token: ${{ secrets.DEPLOY_STAGING_KEY }}
+
+      - name: Deploy LBNL
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: github.ref == 'refs/heads/lbnl'
+        with:
+          repository-name: BuildingEnergyTools/tools-website-lbnl
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.DEPLOY_STAGING_KEY }}
+
+      - name: Deploy PNNL
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        if: github.ref == 'refs/heads/pnnl'
+        with:
+          repository-name: BuildingEnergyTools/tools-website-pnnl
+          branch: gh-pages
+          folder: dist
+          token: ${{ secrets.DEPLOY_STAGING_KEY }}

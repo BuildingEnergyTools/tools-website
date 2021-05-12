@@ -23,10 +23,13 @@ national lab. Click on the links below to be directed to this for you:
 * [Update LBNL with Develop](https://github.com/BuildingEnergyTools/tools-website/compare/lbnl...develop)
 * [Update NREL with Develop](https://github.com/BuildingEnergyTools/tools-website/compare/nrel...develop)
 
-We are working on deploying the staging branches to a subdomain of the website to allow for users to check the website before merging
-to develop.
+There are 3 staging sites (one for each laboratory). The respective lab branches will automatically be built and deployed upon pushing
+to this lab's branch to this repository (pnnl, lbnl, nrel). The sites are located here:
 
-We are also working on the automated `main` -> `gh-pages` deployment.
+* [PNNL Staging Site](https://staging-pnnl.buildingenergytools.org)
+* [LBNL Staging Site](https://staging-lbnl.buildingenergytools.org)
+* [NREL Staging Site](https://staging-nrel.buildingenergytools.org)
+
 
 ## Advanced Workflow
 
