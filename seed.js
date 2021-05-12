@@ -690,7 +690,7 @@ ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](186, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](187, "04/20/2020. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](187, "04/20/2020. LBNL. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](188, "a", 33);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](189, "Introduction to SEED presentation");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

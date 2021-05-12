@@ -116,13 +116,12 @@ class BpdComponent {
                 route: 'contribute'
             }, {
                 title: 'FAQ',
-                icon: 'fa-file-alt',
+                icon: 'fa-question-circle',
                 route: 'faq'
             }, {
-                title: 'News',
-                icon: 'fa-newspaper',
-                fontAwesome: 'far',
-                route: 'news'
+                title: 'Resources',
+                icon: 'fa-file-alt',
+                route: 'resources'
             }, {
                 title: 'Links for Developers',
                 icon: 'fa-wrench',
@@ -163,12 +162,12 @@ class DevComponent {
     }
 }
 DevComponent.ɵfac = function DevComponent_Factory(t) { return new (t || DevComponent)(); };
-DevComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DevComponent, selectors: [["ng-component"]], decls: 33, vars: 0, consts: [[1, "mat-h2", "mb-4"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/access", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/api-fields", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/api-functions", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/glossary", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/examples", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://www.energy.gov/eere/buildings/downloads/buildings-performance-database-recommended-data-fields", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://www.energy.gov/eere/buildings/downloads/data-preparation-process-buildings-performance-database", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://www.energy.gov/eere/buildings/downloads/bpd-security", "target", "_blank", 1, "color-3", "bold-link"]], template: function DevComponent_Template(rf, ctx) { if (rf & 1) {
+DevComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DevComponent, selectors: [["ng-component"]], decls: 23, vars: 0, consts: [[1, "mat-h2", "mb-4"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/access", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/api-fields", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/api-functions", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/examples", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/security", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/home/glossary", "target", "_blank", 1, "color-3", "bold-link"]], template: function DevComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Links for Developers");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "The BPD features an application programming interface, which enables external software tools to run analytical queries on the dataset and incorporate the results into their own products. Browse the resources below to learn more. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "The BPD features an application programming interface, which enables external software tools to run analytical queries on the dataset and incorporate the results into their own products. Browse the resources below to learn more.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](5, "li");
@@ -178,43 +177,27 @@ DevComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCompo
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "List of API Fields");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "List of Fields");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "a", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "List of API Functions");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "List of Functions");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "a", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "BPD Glossary");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "Filtering Examples");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "a", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "BPD Filtering Examples");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Security");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "a", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Details on the Building Energy Data Exchange Specification (BEDES)");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, ", which is used to structure the back-end data in BPD.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "a", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "BPD Priority Fields List");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "a", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "BPD Data Preparation Process");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "a", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "BPD Security");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "a", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, "Glossary");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -242,7 +225,7 @@ class DataComponent {
     }
 }
 DataComponent.ɵfac = function DataComponent_Factory(t) { return new (t || DataComponent)(); };
-DataComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DataComponent, selectors: [["ng-component"]], decls: 25, vars: 0, consts: [[1, "mat-h2", "mb-4"], ["href", "https://bpd.lbl.gov/developers", "target", "_blank", 1, "color-3"], ["routerLink", "bedes", 1, "color-3"], ["href", "https://buildings.lbl.gov/sites/default/files/data-preparation-process-for-the-bpd.pdf", "target", "_blank", 1, "color-3"], ["href", "https://buildings.lbl.gov/sites/default/files/is-the-bpd-nationally-representative.pdf", "target", "_blank", 1, "color-3"], ["href", "https://buildings.lbl.gov/cbs/bpd#bpd-contact", "target", "_blank", 1, "color-3"]], template: function DataComponent_Template(rf, ctx) { if (rf & 1) {
+DataComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DataComponent, selectors: [["ng-component"]], decls: 25, vars: 0, consts: [[1, "mat-h2", "mb-4"], ["href", "https://sites.google.com/a/lbl.gov/bpd-api-documentation/", "target", "_blank", 1, "color-3"], ["routerLink", "../../bedes", 1, "color-3"], ["href", "https://buildings.lbl.gov/sites/default/files/data-preparation-process-for-the-bpd.pdf", "target", "_blank", 1, "color-3"], ["href", "https://buildings.lbl.gov/sites/default/files/is-the-bpd-nationally-representative.pdf", "target", "_blank", 1, "color-3"], ["href", "https://buildings.lbl.gov/cbs/bpd#bpd-contact", "target", "_blank", 1, "color-3"]], template: function DataComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "About the Data");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -283,6 +266,78 @@ DataComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
 
 /***/ }),
 
+/***/ "F3pZ":
+/*!***********************************************!*\
+  !*** ./src/app/tool/bpd/faq/faq.component.ts ***!
+  \***********************************************/
+/*! exports provided: FaqComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FaqComponent", function() { return FaqComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
+
+class FaqComponent {
+    constructor() {
+    }
+}
+FaqComponent.ɵfac = function FaqComponent_Factory(t) { return new (t || FaqComponent)(); };
+FaqComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: FaqComponent, selectors: [["ng-component"]], decls: 33, vars: 0, consts: [[1, "mat-h2", "mb-4"], [1, "mat-h5", "mb-0"], [1, "mb-4"], ["href", "https://buildings.lbl.gov/sites/default/files/is-the-bpd-nationally-representative.pdf", "target", "_blank", 1, "color-3"]], template: function FaqComponent_Template(rf, ctx) { if (rf & 1) {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "FAQ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h5", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Does the BPD have time series data?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "We aggregate all data to annual intervals.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "h5", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Does the BPD allow pre- and post-retrofit analysis of the same buildings?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "In general, no. It\u2019s possible that some building\u2019s data were measured both before and after a retrofit, but we are typically not provided with data indicating when retrofits were performed.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "h5", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Is the BPD data weather normalized?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "No. It contains only measured data.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "h5", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "How can you be sure there aren\u2019t two records about the same building in the BPD?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "We run an analysis on all combinations of buildings that checks similarity of building characteristics and removes any duplicates that are found. In cases of missing data, we assume records match unless we can prove that they are different.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "h5", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "How does the BPD relate to ENERGY STAR Portfolio Manager?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "The BPD and Portfolio Manager are complementary. Portfolio Manager is a benchmarking and tracking tool that collects information on your building in order to generate a whole-building energy-efficiency score. The BPD allows users to explore the relationship between energy performance and physical and operational characteristics of many similar buildings in order to identify and evaluate efficiency opportunities. In fact, the BPD contains data on all of the buildings in Portfolio Manager that have been engineer-verified.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "h5", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "How does the BPD relate to CBECS and RECS?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "The BPD serves a complementary function to the Energy Information Administration\u2019s Commercial Buildings Energy Consumption Survey (CBECS) and Residential Energy Consumption Survey (RECS). CBECS and RECS are statistically valid samples of the national commercial and residential building stocks, and are two of the data sources for the BPD. See our comparison of the BPD and CBECS ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "a", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "here");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, ".");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "h5", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "How does the BPD relate to the Green Button initiative?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "The Green Button initiative is an industry-led effort that responds to a White House initiative to provide utility customers, such as building owners and managers and major tenants, with easy and secure access to their energy usage information in a standardized electronic format. The BPD is able to accept Green Button data but the minimum data requirements for the BPD include additional fields as well, such as floor area and building age.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    } }, encapsulation: 2 });
+
+
+/***/ }),
+
 /***/ "FvR6":
 /*!************************************************!*\
   !*** ./src/app/tool/bpd/bpd-routing.module.ts ***!
@@ -298,8 +353,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dev/dev.component */ "7DEF");
 /* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./help/help.component */ "T29B");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "/5Jc");
-/* harmony import */ var _news_news_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./news/news.component */ "ORoP");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./resources/resources.component */ "mPn0");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./resources/resources.component */ "mPn0");
+/* harmony import */ var _faq_faq_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./faq/faq.component */ "F3pZ");
 /* harmony import */ var _data_data_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./data/data.component */ "EXVF");
 /* harmony import */ var _contribute_contribute_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./contribute/contribute.component */ "Vkj3");
 /* harmony import */ var _security_security_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./security/security.component */ "SQtP");
@@ -333,10 +388,10 @@ const routes = [{
                 component: _contribute_contribute_component__WEBPACK_IMPORTED_MODULE_8__["ContributeComponent"]
             }, {
                 path: 'faq',
-                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__["ResourcesComponent"]
+                component: _faq_faq_component__WEBPACK_IMPORTED_MODULE_6__["FaqComponent"]
             }, {
-                path: 'news',
-                component: _news_news_component__WEBPACK_IMPORTED_MODULE_5__["NewsComponent"]
+                path: 'resources',
+                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_5__["ResourcesComponent"]
             }, {
                 path: 'dev',
                 component: _dev_dev_component__WEBPACK_IMPORTED_MODULE_2__["DevComponent"]
@@ -374,8 +429,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _contribute_contribute_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./contribute/contribute.component */ "Vkj3");
 /* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./help/help.component */ "T29B");
 /* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home/home.component */ "/5Jc");
-/* harmony import */ var _news_news_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./news/news.component */ "ORoP");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./resources/resources.component */ "mPn0");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./resources/resources.component */ "mPn0");
+/* harmony import */ var _faq_faq_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./faq/faq.component */ "F3pZ");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
@@ -405,88 +460,10 @@ BpdModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_12__["ɵɵdefineInjecto
         _dev_dev_component__WEBPACK_IMPORTED_MODULE_4__["DevComponent"],
         _help_help_component__WEBPACK_IMPORTED_MODULE_8__["HelpComponent"],
         _home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"],
-        _news_news_component__WEBPACK_IMPORTED_MODULE_10__["NewsComponent"],
-        _resources_resources_component__WEBPACK_IMPORTED_MODULE_11__["ResourcesComponent"]], imports: [_bpd_routing_module__WEBPACK_IMPORTED_MODULE_2__["BpdRoutingModule"],
+        _resources_resources_component__WEBPACK_IMPORTED_MODULE_10__["ResourcesComponent"],
+        _faq_faq_component__WEBPACK_IMPORTED_MODULE_11__["FaqComponent"]], imports: [_bpd_routing_module__WEBPACK_IMPORTED_MODULE_2__["BpdRoutingModule"],
         _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]] }); })();
-
-
-/***/ }),
-
-/***/ "ORoP":
-/*!*************************************************!*\
-  !*** ./src/app/tool/bpd/news/news.component.ts ***!
-  \*************************************************/
-/*! exports provided: NewsComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NewsComponent", function() { return NewsComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
-class NewsComponent {
-    constructor() {
-    }
-}
-NewsComponent.ɵfac = function NewsComponent_Factory(t) { return new (t || NewsComponent)(); };
-NewsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: NewsComponent, selectors: [["ng-component"]], decls: 33, vars: 0, consts: [[1, "mat-h2", "mb-4"], ["href", "http://aceee.org/files/proceedings/2014/data/papers/11-312.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "http://www.nxtbook.com/nxtbooks/ashrae/ashraejournal_201607/#/40", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/bpd-overview.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/big-data-for-building-energy-performance.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/big-data-analytics-in-the-building-industry.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/getting-real-with-energy-data.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/is-the-bpd-nationally-representative.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/data-preparation-process-for-the-bpd.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/a-regression-based-approach-to-estimating-retrofit-savings-using-the-bpd.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/bpd-privacy-terms.pdf", "target", "_blank", 1, "color-3", "bold-link"]], template: function NewsComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "News & Publications");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "ul");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "a", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "Getting Real with Energy Data: Using the Buildings Performance Database to Support Data-Driven Analyses and Decision-Making");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "a", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Big Data Analytics in the Buildings Industry");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "BPD Overview");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 4);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Big data for building energy performance");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "a", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Big data analytics in the building industry");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "a", 6);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "Getting real with energy data");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "a", 7);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "Is the BPD nationally representative?");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "a", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "BPD data preparation process");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](28, "a", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](29, "A regression-based approach to estimating retrofit savings");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](30, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "a", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "BPD Privacy Terms");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, encapsulation: 2 });
 
 
 /***/ }),
@@ -581,7 +558,7 @@ ContributeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "BPD aims to be a seminal resource that informs and supports decision-making and investment across the energy efficiency landscape. But the value of the BPD depends on the quantity and depth of data it contains. More data will enable analysis of more retrofit measures, building types and locations, expand the uses and applications, and continue to increase the value and quality of the BPD.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "We are continually looking for data contributions, and new datasets are being added regularly. To date, we have received data contributions from dozens of exemplary industry leaders including Federal agencies, state and local governments, energy efficiency programs, real estate owners and private businesses. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "We are continually looking for data contributions, and new datasets are being added regularly. To date, we have received data contributions from dozens of exemplary industry leaders including Federal agencies, state and local governments, energy efficiency programs, real estate owners and private businesses.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "If you are interested in contributing data, please contact us.");
@@ -591,7 +568,7 @@ ContributeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefi
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "BPD privacy terms");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, ". ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, ".");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } }, encapsulation: 2 });
 
@@ -615,55 +592,51 @@ class ResourcesComponent {
     }
 }
 ResourcesComponent.ɵfac = function ResourcesComponent_Factory(t) { return new (t || ResourcesComponent)(); };
-ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ResourcesComponent, selectors: [["ng-component"]], decls: 33, vars: 0, consts: [[1, "mat-h2", "mb-4"], [1, "mat-h5", "mb-0"], [1, "mb-4"], ["href", "https://buildings.lbl.gov/sites/default/files/is-the-bpd-nationally-representative.pdf", "target", "_blank", 1, "color-3"]], template: function ResourcesComponent_Template(rf, ctx) { if (rf & 1) {
+ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ResourcesComponent, selectors: [["ng-component"]], decls: 27, vars: 0, consts: [[1, "mat-h2", "mb-4"], ["href", "https://buildings.lbl.gov/sites/default/files/bpd-overview.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/big-data-for-building-energy-performance.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/big-data-analytics-in-the-building-industry.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/getting-real-with-energy-data.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/is-the-bpd-nationally-representative.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/data-preparation-process-for-the-bpd.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/a-regression-based-approach-to-estimating-retrofit-savings-using-the-bpd.pdf", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://buildings.lbl.gov/sites/default/files/bpd-privacy-terms.pdf", "target", "_blank", 1, "color-3", "bold-link"]], template: function ResourcesComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "FAQ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Resources");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "h5", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Does the BPD have time series data?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "ul");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "a", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "BPD Overview");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "We aggregate all data to annual intervals.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "h5", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "Does the BPD allow pre- and post-retrofit analysis of the same buildings?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "a", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Big data for building energy performance");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "p", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "In general, no. It\u2019s possible that some building\u2019s data were measured both before and after a retrofit, but we are typically not provided with data indicating when retrofits were performed.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "h5", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Is the BPD data weather normalized?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Big data analytics in the building industry");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "p", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, "No. It contains only measured data.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "h5", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "How can you be sure there aren\u2019t two records about the same building in the BPD?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "Getting real with energy data");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "p", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "We run an analysis on all combinations of buildings that checks similarity of building characteristics and removes any duplicates that are found. In cases of missing data, we assume records match unless we can prove that they are different.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "h5", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "How does the BPD relate to ENERGY STAR Portfolio Manager?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "a", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Is the BPD nationally representative?");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "p", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "The BPD and Portfolio Manager are complementary. Portfolio Manager is a benchmarking and tracking tool that collects information on your building in order to generate a whole-building energy-efficiency score. The BPD allows users to explore the relationship between energy performance and physical and operational characteristics of many similar buildings in order to identify and evaluate efficiency opportunities. In fact, the BPD contains data on all of the buildings in Portfolio Manager that have been engineer-verified.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "h5", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "How does the BPD relate to CBECS and RECS?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](19, "a", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](20, "BPD data preparation process");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "p", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "The BPD serves a complementary function to the Energy Information Administration\u2019s Commercial Buildings Energy Consumption Survey (CBECS) and Residential Energy Consumption Survey (RECS). CBECS and RECS are statistically valid samples of the national commercial and residential building stocks, and are two of the data sources for the BPD. See our comparison of the BPD and CBECS ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "a", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](27, "here");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, ".");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "a", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "A regression-based approach to estimating retrofit savings");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "h5", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "How does the BPD relate to the Green Button initiative?");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "p", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "The Green Button initiative is an industry-led effort that responds to a White House initiative to provide utility customers, such as building owners and managers and major tenants, with easy and secure access to their energy usage information in a standardized electronic format. The BPD is able to accept Green Button data but the minimum data requirements for the BPD include additional fields as well, such as floor area and building age.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "a", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "BPD Privacy Terms");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } }, encapsulation: 2 });
 
