@@ -18,10 +18,6 @@ export class BedesComponent {
     icon: 'fa-window-restore',
     route: 'related'
   },{
-    title: 'Technical Documentation',
-    icon: 'fa-laptop-code',
-    route: 'documentation'
-  },{
     title: 'Resources',
     icon: 'fa-file-alt',
     route: 'resources'
