@@ -5,7 +5,6 @@ import { SharedModule } from '@shared/shared.module';
 import { BedesRoutingModule } from './bedes-routing.module';
 import { BedesComponent } from './bedes.component';
 import { RelatedComponent } from './related/related.component';
-import { TermsComponent } from './terms/terms.component';
 import { FaqComponent } from './faq/faq.component';
 import { DocumentationComponent } from './documentation/documentation.component';
 import { HelpComponent } from './help/help.component';
@@ -18,7 +17,6 @@ import { ResourcesComponent } from './resources/resources.component';
     BedesComponent,
     RelatedComponent,
     DocumentationComponent,
-    TermsComponent,
     FaqComponent,
     HelpComponent,
     HomeComponent,

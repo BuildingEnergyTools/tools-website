@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { RelatedComponent } from './related/related.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { DocumentationComponent } from './documentation/documentation.component';
-import { TermsComponent } from './terms/terms.component';
 import { FaqComponent } from './faq/faq.component';
 
 const routes: Routes = [{
@@ -25,9 +24,6 @@ const routes: Routes = [{
   },{
     path: 'documentation',
     component: DocumentationComponent
-  },{
-    path: 'terms',
-    component: TermsComponent
   }, {
     path: 'resources',
     component: ResourcesComponent
