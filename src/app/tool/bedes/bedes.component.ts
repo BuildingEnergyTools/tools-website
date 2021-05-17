@@ -9,7 +9,7 @@ export class BedesComponent {
     title: 'BEDES',
     icon: 'fa-info-circle',
     route: '/bedes'
-  }, {
+  },{
     title: 'BEDES Compliance',
     icon: 'fa-check-circle',
     route: 'compliance'
@@ -18,18 +18,10 @@ export class BedesComponent {
     icon: 'fa-window-restore',
     route: 'related'
   },{
-    title: 'Technical Documentation',
-    icon: 'fa-laptop-code',
-    route: 'documentation'
-  },{
-    title: 'Common Composite Terms',
-    icon: 'fa-book',
-    route: 'terms'
-  }, {
     title: 'Resources',
     icon: 'fa-file-alt',
     route: 'resources'
-  }, {
+  },{
     title: 'FAQ',
     icon: 'fa-question-circle',
     route: 'faq'
