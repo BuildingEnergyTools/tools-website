@@ -6,6 +6,8 @@ on:
       - nrel
       - lbnl
       - pnnl
+      - feat/push-to-s3
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -26,6 +28,16 @@ jobs:
           branch: gh-pages
           folder: dist
 
+      - name: Deploy S3 NREL
+        uses: shallwefootball/s3-upload-action@master
+        # if: github.ref == 'refs/heads/main'
+        with:
+          aws_key_id: ${{ secrets.AWS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          aws_bucket: ${{ secrets.AWS_BUCKET }}
+          source_dir: dist
+          destination_dir: main
+
       - name: Deploy NREL
         uses: JamesIves/github-pages-deploy-action@4.1.1
         if: github.ref == 'refs/heads/nrel'
@@ -34,6 +46,8 @@ jobs:
           branch: gh-pages
           folder: dist
           token: ${{ secrets.DEPLOY_STAGING_KEY }}
+
+
 
       - name: Deploy LBNL
         uses: JamesIves/github-pages-deploy-action@4.1.1
@@ -52,3 +66,5 @@ jobs:
           branch: gh-pages
           folder: dist
           token: ${{ secrets.DEPLOY_STAGING_KEY }}
+
+
