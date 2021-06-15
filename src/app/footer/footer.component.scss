@@ -44,3 +44,17 @@ section {
   height: 21px;
   padding: 0 $pad;
 }
+
+.small-footer-img {
+  margin: 10px;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  section {
+    > div {
+      padding: 10px;
+      border-bottom: 1px solid #fff;
+    }
+  }
+}
