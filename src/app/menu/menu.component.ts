@@ -18,6 +18,7 @@ interface NavItem {
 })
 export class MenuComponent {
   opened = false;
+  show_small_menu = false;
   readonly navItems: NavItem[];
   readonly flexWidth: number;
 
@@ -105,6 +106,14 @@ export class MenuComponent {
 
   @HostListener('mouseleave') onMouseLeave(): void {
     this.opened = false;
+  }
+
+  toggle(): void {
+    this.show_small_menu = !this.show_small_menu;
+  }
+
+  getMenuStatus(): boolean {
+    return this.show_small_menu;
   }
 
   isParentActive(navItem: NavItem): boolean {

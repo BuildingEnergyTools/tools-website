@@ -335,6 +335,17 @@ $hoverColor: #7ab0cc;
   margin-bottom: 3.5rem;
 }
 
+.card-text {
+  font-size:0.9rem;
+}
+
+.col-styles {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  padding-bottom: 10px;
+}
+
+
 .img-ctr {
   text-align: center;
 }
@@ -402,7 +413,7 @@ $hoverColor: #7ab0cc;
 }
 
 #g1, #g2, #g3, #g4 {
-  height: 120px;
+  height: 9.5vh;
 }
 
 .card-footer {
@@ -469,6 +480,70 @@ $bsyncExpandedWidth: 160px;
 .py-big {
   padding-top:  4rem;
   padding-bottom: 4rem;
+}
+
+.goals-card-pad {
+  margin-bottom: 1vw;
+  padding: 1vw 1vw;
+}
+
+.pm-card {
+  margin-bottom: 1.5rem;
+}
+
+.at-pad {
+  padding-top: 3rem;
+}
+
+seed-pad {
+  padding-bottom: 10px;
+}
+
+.pr-vp-4,
+{
+  padding-right: calc(1vw + 0.5rem) !important;
+}
+
+.pr-vp-3,
+{
+  padding-right: calc(1vw + 0.25rem) !important;
+}
+
+@media screen and (max-width: 500px) {
+  .card-text {
+    font-size:1.4rem; 
+  }
+  .mat-card-content {
+    padding:5px;
+  }
+
+  .col-styles {
+    margin-top: 0.5rem;
+    margin-right: 0;
+    padding-bottom: 5px;
+  }
+
+  .pm-card {
+    margin-bottom: 10px;
+  }
+
+  .at-pad {
+    padding-top: 10px !important;
+  }
+  seed-pad {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .pm-card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .at-pad {
+    padding-top: 10px !important;
+  }
 }
 
 /* BOOTSTRAP5 margin and padding classes */
