@@ -1,5 +1,5 @@
-<div fxLayout="row">
-  <div [fxFlex]="25" class="nav">
+<div fxLayout.gt-xs="row" fxLayout.xs="column">
+  <div [fxFlex.gt-xs]="25" [fxFlex.xs]="100" class="nav">
     <div class="logo">
       <ng-content select="[slot=logo]"></ng-content>
     </div>
@@ -13,7 +13,7 @@
       </div>
     </nav>
   </div>
-  <div [fxFlex]="75" class="body">
+  <div [fxFlex.gt-xs]="75" [fxFlex.xs]="100" class="body">
     <router-outlet></router-outlet>
   </div>
 </div>

@@ -898,3 +898,12 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .nav {
+    .logo {
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
