@@ -191,3 +191,42 @@ a {
 .top-side {
   margin-top: 10px;
 }
+
+@media screen and (max-width: 500px) {
+  .explore-tools {
+    margin: 10px 0;
+  }
+  .dev {
+    margin-left: 0px;
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+  .explore-tools {
+    h3 {
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media screen and (min-width:501px) and (max-width: 800px) {
+  .standardize {
+    h3 {
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+    }
+  }
+  .dev {
+    h3 {
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+    }
+  }
+  .explore-tools {
+    h3 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+    }
+  }
+}
+

@@ -1,5 +1,5 @@
-<div fxLayout="row">
-  <div fxFlex="25"><div class="pl-4"><h6 class="mat-h6">Customize</h6></div><img class="card-img img-g4" src="assets/images/thirdparty-outcomes-icon.svg" alt="Third Party Tools"></div>
+<div fxLayout.gt-xs="row" fxLayout.xs="column">
+  <div fxFlex="25" [ngClass.xs]="'mb-4'"><div class="pl-4"><h6 class="mat-h6">Customize</h6></div><img class="card-img img-g4" src="assets/images/thirdparty-outcomes-icon.svg" alt="Third Party Tools"></div>
   <div fxFlex="70">
     <p>It's easy to combine DOE's building energy tools with other applications like Salesforce or the many proprietary and open-source applications available. Visit the <a [routerLink]="['/developers']" class="color-4 bold-link">For Developers</a> page to learn more about customizing your workflows. </p>
   </div>

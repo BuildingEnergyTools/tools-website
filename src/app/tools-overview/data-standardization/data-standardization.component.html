@@ -7,8 +7,8 @@
   <p> Keeping your building data with common terms or in a common format makes it much easier to collect, store, analyze, visualize, and share with partners to reach your programmatic goals. Start with BEDES to standardize your terms or field names, BuildingSync to give some structure to your data, or consider using Audit Template for full end-to-end standardization of your building asset and performance data. Standardizing your data saves time, money, and headache over the lifetime of your program. Use the navigator below to learn more about each tier of data standardization.</p>
 </div>
 
-	<img src="assets/images/arrow-good-better.png" alt="arrow left to right from good to best">
-	<div fxLayout="row" fxLayoutAlign="space-between stretch" class="mt-2">
+	<img src="assets/images/arrow-good-better.png" alt="arrow left to right from good to best" [ngClass.xs]="'small-fit'" [ngClass.sm]="'small-fit'">
+	<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between stretch" class="mt-2">
 		<div fxFlex="33%">
 			<mat-card class="card-good mr-2" id="good" (click)="toggleCard('good')">
         <mat-card-content [hidden]="cardStatus.good">
