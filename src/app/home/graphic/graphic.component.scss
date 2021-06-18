@@ -509,7 +509,7 @@ seed-pad {
   padding-right: calc(1vw + 0.25rem) !important;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 599px) {
   .card-text {
     font-size:1.4rem; 
   }
@@ -532,6 +532,19 @@ seed-pad {
   }
   seed-pad {
     margin-bottom: 20px;
+  }
+  #g1, #g2, #g3, #g4 {
+    height: unset;
+    max-width: 80vw;
+    min-width: 80vw;
+  }
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  #g1, #g2, #g3, #g4 {
+    padding-top: 2vw;
   }
 }
 
