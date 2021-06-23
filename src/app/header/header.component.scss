@@ -38,3 +38,25 @@ h2 {
   text-transform: uppercase;
   font-family: 'Roboto Condensed', sans-serif;
 }
+
+@media screen and (max-width: 599px) {
+  .top-header {
+    h1 {
+      padding-left: 4rem;
+      margin-top: 15px;
+    }
+  }
+  
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .top-header {
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    h1 {
+      padding-left: 3rem;
+      padding-top: 3px;
+    }
+  }
+}

@@ -5,50 +5,50 @@
         <h3 class="header">GOALS & OUTCOMES</h3>
       </div>
     </div>
-    <div fxLayout="row" class="mb-2">
+    <div fxLayout="row" fxLayout.xs="column" class="mb-2">
   
-      <div fxFlex="25%">
-        <div fxLayoutAlign="space-around">
-          <mat-card class="mb-2 py-4 pr-1 pl-1" id="g1" routerLink="goals/analyze" (mouseenter) ="mouseEnter('g1') "  (mouseleave) ="mouseLeave('g1')" [ngStyle]="{background: hovers['g2']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" >
+      <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign.xs="space-evenly stretch">
+        <div fxLayoutAlign="space-around" fxLayoutAlign.xs="space-evenly stretch" >
+          <mat-card class="goals-card-pad" id="g1" routerLink="goals/analyze" (mouseenter) ="mouseEnter('g1') "  (mouseleave) ="mouseLeave('g1')" [ngStyle]="{background: hovers['g2']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" >
             <mat-card-content>
-              <div fxLayout="row">
-                <div [fxFlex]="40" class="my-auto pr-4 card-img-g1"><img src="assets/images/com-resstock-outcomes-icon.svg" alt="ComStock & ResStock outcomes icon"></div>
-                <div class="my-auto"><p class="card-text m-auto pr-3">Assess Impacts and Identify New Opportunities</p></div>
+              <div fxLayout="row" >
+                <div [fxFlex]="40" [fxHide.xs]="true" [fxHide.sm]="true" class="my-auto pr-4 card-img-g1"><img src="assets/images/com-resstock-outcomes-icon.svg" alt="ComStock & ResStock outcomes icon"></div>
+                <div class="my-auto"><p class="card-text m-auto pr-vp-3">Assess Impacts and Identify New Opportunities</p></div>
               </div>
             </mat-card-content>
           </mat-card>
         </div>
       </div>
-      <div fxFlex="25%">
-        <div fxLayoutAlign="space-around">
-          <mat-card class="mb-2 py-4 pr-1 pl-1" id="g2" routerLink="goals/target" (mouseenter) ="mouseEnter('g2') "  (mouseleave) ="mouseLeave('g2')" [ngStyle]="{background: hovers['g1']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" >
+      <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign.xs="space-evenly stretch">
+        <div fxLayoutAlign="space-around" fxLayoutAlign.xs="space-evenly stretch">
+          <mat-card class="goals-card-pad" id="g2" routerLink="goals/target" (mouseenter) ="mouseEnter('g2') "  (mouseleave) ="mouseLeave('g2')" [ngStyle]="{background: hovers['g1']== true || hovers['g3'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" >
             <mat-card-content>
               <div fxLayout="row" class="no-gutters">
-                <div [fxFlex]="40" class="my-auto pr-4 card-img-g2"><img src="assets/images/better-outcomes-icon.svg" alt="BETTER outcomes icon"></div>
+                <div [fxFlex]="40" [fxHide.xs]="true" [fxHide.sm]="true" class="my-auto pr-4 card-img-g2"><img src="assets/images/better-outcomes-icon.svg" alt="BETTER outcomes icon"></div>
                 <div class="my-auto"><p class="card-text m-auto">Identify Measures and Suggest Areas for Deeper Evaluations</p></div>
               </div>
             </mat-card-content>
           </mat-card>
         </div>
       </div>
-      <div fxFlex="25%">
-        <div fxLayoutAlign="space-around">
-          <mat-card class="mb-2 py-4 pr-1 pl-1" id="g3" routerLink="goals/compliance" (mouseenter) ="mouseEnter('g3')"  (mouseleave) ="mouseLeave('g3')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" >
+      <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign.xs="space-evenly stretch">
+        <div fxLayoutAlign="space-around" fxLayoutAlign.xs="space-evenly stretch">
+          <mat-card class="goals-card-pad" id="g3" routerLink="goals/compliance" (mouseenter) ="mouseEnter('g3')"  (mouseleave) ="mouseLeave('g3')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g4'] == true ? '#a7afb2;' : 'white'}" >
             <mat-card-content>
               <div fxLayout="row" class="no-gutters">
-                <div [fxFlex]="40" class="card-img-g3 my-auto pr-1"><img src="assets/images/assetscore-outcomes-icon.svg" alt="Asset Score Outcomes icon"></div>
+                <div [fxFlex]="40" [fxHide.xs]="true" [fxHide.sm]="true" class="card-img-g3 my-auto pr-1"><img src="assets/images/assetscore-outcomes-icon.svg" alt="Asset Score Outcomes icon"></div>
                 <div class="my-auto"><p class="card-text m-auto">Bring Buildings into Compliance with EUI and GHGe Requirements</p></div>
               </div>
             </mat-card-content>
           </mat-card>
         </div>
       </div>
-      <div fxFlex="25%">
-        <div fxLayoutAlign="space-around">
-          <mat-card class="mb-2 py-4 pr-1 pl-1" id="g4" routerLink="goals/customize" (mouseenter) ="mouseEnter('g4') "  (mouseleave) ="mouseLeave('g4')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g3'] == true ? '#a7afb2;' : 'white'}">
+      <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign.xs="space-evenly stretch">
+        <div fxLayoutAlign="space-around" fxLayoutAlign.xs="space-evenly stretch">
+          <mat-card class="goals-card-pad" id="g4" routerLink="goals/customize" (mouseenter) ="mouseEnter('g4') "  (mouseleave) ="mouseLeave('g4')" [ngStyle]="{background: hovers['g1']== true || hovers['g2'] == true || hovers['g3'] == true ? '#a7afb2;' : 'white'}">
             <mat-card-content>
               <div fxLayout="row" class="no-gutters">
-                <div [fxFlex]="30" class="my-auto pr-3 card-img-g4"><img src="assets/images/thirdparty-outcomes-icon.svg" alt="third-party outcomes icon"></div>
+                <div [fxFlex]="30" [fxHide.xs]="true" [fxHide.sm]="true" class="my-auto pr-3 card-img-g4"><img src="assets/images/thirdparty-outcomes-icon.svg" alt="third-party outcomes icon"></div>
                 <div class="my-auto"><p class="card-text m-auto">Customize Your Workflow with CRM, Data Visualizations, and More</p></div>
               </div>
             </mat-card-content>
@@ -58,7 +58,7 @@
     </div>
   </div>
 
-  <div [fxFlex]="sharedService.colSize[0]" fxLayout="column" class="mt-2 mr-2 col-pad col-type-1">
+  <div [fxFlex]="sharedService.colSize[0]" fxFlex.xs="100%" fxFlex.sm="32%" fxLayout="column" class="col-styles col-type-1">
     <!-- <div class="col-title py-2 mb-4" fxLayoutAlign="center center">
       <a routerLink="collection-reporting" class="home-nav">Data Collection & Reporting</a>
     </div> -->
@@ -69,7 +69,7 @@
     </div>
    
     <div fxLayoutAlign="space-around" class="pt-2">
-      <mat-card class="mb-4" id="pm" (click)="toggleCard('pm')" [ngStyle]="{background: hovers['g3']==true || hovers['g4'] == true ? '#a7afb2;' : '#fff;'}">
+      <mat-card class="pm-card" id="pm" (click)="toggleCard('pm')" [ngStyle]="{background: hovers['g3']==true || hovers['g4'] == true ? '#a7afb2;' : '#fff;'}">
         <mat-card-content [hidden]="cardStatus.pm">
           <div class="p-4"><img class="card-img-2" src="assets/images/pm-logo.svg" alt="EnergyStar Portfolio Manager Logo"></div>
         </mat-card-content>
@@ -85,7 +85,7 @@
       </mat-card>
     </div>
 
-    <div fxLayoutAlign="space-around" class="pt-5">
+    <div fxLayoutAlign="space-around" class="at-pad">
       <mat-card class="card-zindex" id="at" (click)="toggleCard('at')" [ngStyle]="{background: hovers['g1']==true || hovers['g2'] == true ? '#a7afb2;' : 'white'}">
         <mat-card-content [hidden]="cardStatus.at">
           <div class="img-ctr"><img class="card-img-at" src="assets/images/audit-template-logo.svg" alt="Audit Template Logo"></div>
@@ -102,14 +102,14 @@
     </div>
   </div>
 
-  <div [fxFlex]="sharedService.colSize[1]" fxLayout="column" class="mt-2 mr-2 col-pad col-type-2">
+  <div [fxFlex]="sharedService.colSize[1]" fxFlex.xs="100%" fxLayout="column" class="col-styles col-type-2">
     <div class="col-bkgnd-2">
       <div class="header2">
         <h3 class="header">MANAGEMENT & COMPLIANCE</h3>
       </div>
     </div>
     
-    <div fxLayoutAlign="space-around" class="pt-2">
+    <div fxLayoutAlign="space-around" class="seed-pad">
       <mat-card class="card-zindex pt-5" id="seed" (click)="toggleCard('seed')">
         <mat-card-content [hidden]="cardStatus.seed">
           <div class="card-img-sm"><img src="assets/images/seed-logo.svg" alt="SEED Logo"></div>
@@ -136,7 +136,7 @@
     </div>
   </div>
 
-  <div [fxFlex]="sharedService.colSize[2]" fxLayout="column" class="mt-2 col-pad col-type-3">
+  <div [fxFlex]="sharedService.colSize[2]" fxFlex.xs="100%" fxLayout="column" class="mt-2 col-pad col-type-3">
     <div class="col-bkgnd-3">
       <div class="header3">
         <h3 class="header">ANALYSIS & EVALUATION</h3>

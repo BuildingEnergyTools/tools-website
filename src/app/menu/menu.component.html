@@ -1,15 +1,26 @@
+<div fxHide fxShow.xs="true">
+  <div class="small-menu-div" fxFlex="100%">
+    <div fxLayout="row" class="small-menu" fxFlex="100%">
+      <a mat-raised-button role="button" fxFlex="100%" class="small-menu" (click)="toggle()">Menu</a>
+    </div>
+  </div>
+</div>
+<div fxHide fxShow.xs="{{show_small_menu?'true':'false'}}">
+  <div fxFlex="100%" fxLayout="column">
+    <ng-container *ngFor="let navItem of navItems"  >
+      <div [routerLink]="navItem.route" [fxFlex]="flexWidth" fxLayoutAlign="space-evenly stretch" class="category-item-small">{{ navItem.title }}</div>
+    </ng-container>
+  </div>
+</div>
+
 <div [ngClass]="{'opened': opened}">
-  <div fxFlex>
+  <div fxFlex fxShow="true" fxHide.xs>
     <div fxLayout="row" fxLayoutGap="32px" class="top-row">
-      <!--<button mat-icon-button (click)="opened = !opened">
-        <mat-icon>{{ opened ? 'menu_open' : 'menu' }}</mat-icon>
-      </button>-->
       <ng-container *ngFor="let navItem of navItems">
         <div [routerLink]="navItem.route" [fxFlex]="flexWidth" class="category" [ngClass]="{'active': isParentActive(navItem)}">{{ navItem.title }}</div>
       </ng-container>
     </div>
     <div fxLayout="row" fxLayoutGap="32px" class="child-row">
-      <!--<div fxFlex="40px"></div>-->
       <section *ngFor="let navItem of navItems" [fxFlex]="flexWidth">
         <ng-container *ngFor="let child of navItem.children">
           <div *ngIf="!child.external" [routerLink]="child.route" routerLinkActive="active">{{ child.title }}</div>
