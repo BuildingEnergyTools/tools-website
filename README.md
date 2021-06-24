@@ -48,3 +48,11 @@ npm install
 ng serve
 ```
 Navigate to the URL that is printed to the screen. Typically `http://localhost:4200/`.
+
+To manually sync the website with the S3 bucket, configure permissions for using aws cli and run.
+
+```bash
+ng build
+aws s3 sync dist s3://nrel-btodatatools-web-prod-bucket
+```
+
