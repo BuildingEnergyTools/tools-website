@@ -48,7 +48,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 34, vars: 0, consts: [["fxLayout", "row"], ["fxFlex", "60"], [1, "bold"], ["href", "https://github.com/pnnl/buildingid", "target", "_blank", 1, "color-2"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 34, vars: 0, consts: [["fxLayout", "row"], ["fxFlex", "60", "fxFlex", "90"], [1, "bold"], ["href", "https://github.com/pnnl/buildingid", "target", "_blank", 1, "color-2"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Does your organization have a \"natural key\" to unlock the power of its building-related data? Natural keys \u2014 like a VIN or Social Security number \u2014 are based on real-world attributes. Datasets with natural keys are much more powerful and require much less staff time to manage.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

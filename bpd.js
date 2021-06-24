@@ -19,7 +19,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 37, vars: 0, consts: [[1, "callout"], [1, "btn-type-3", "p-3"], [1, "pl-5"], ["fxLayout", "row"], ["fxFlex", "60"], [1, "bold"], ["href", "https://bpd.lbl.gov/", "target", "_blank", 1, "color-3"], ["href", "https://betterbuildingssolutioncenter.energy.gov/videos/introduction-building-performance-database-bpd", "target", "_blank", 1, "color-3"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 37, vars: 0, consts: [[1, "callout"], [1, "btn-type-3", "p-3"], [1, "pl-5"], ["fxLayout", "row"], ["fxFlex", "60", "fxFlex", "90"], [1, "bold"], ["href", "https://bpd.lbl.gov/", "target", "_blank", 1, "color-3"], ["href", "https://betterbuildingssolutioncenter.energy.gov/videos/introduction-building-performance-database-bpd", "target", "_blank", 1, "color-3"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Would you like to see how a building stacks up against real-world peers? The Building Performance Database (BPD) features measured performance data for over 1 million U.S. buildings \u2014 the largest public collection of such information available.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();

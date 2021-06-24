@@ -268,7 +268,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 43, vars: 0, consts: [["routerLink", "../seed", 1, "color-2"], ["fxLayout", "row"], ["fxFlex", "60"], [1, "bold"], ["href", "https://psdconsulting.com/oep-documents/SFE-Case-Study.pdf", "target", "_blank", 1, "color-2"], ["href", "https://github.com/OpenEfficiencyPlatform/OEP", "target", "_blank", 1, "color-2"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 43, vars: 0, consts: [["routerLink", "../seed", 1, "color-2"], ["fxLayout", "row"], ["fxFlex", "60", "fxFlex", "90"], [1, "bold"], ["href", "https://psdconsulting.com/oep-documents/SFE-Case-Study.pdf", "target", "_blank", 1, "color-2"], ["href", "https://github.com/OpenEfficiencyPlatform/OEP", "target", "_blank", 1, "color-2"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "The OpenEfficiency Platform (OEP) is an easy way to share ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "a", 0);

@@ -192,7 +192,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 41, vars: 0, consts: [["routerLink", "../data-standardization", 1, "color-2"], ["fxLayout", "row"], ["fxFlex", "60"], [1, "bold"], ["href", "https://bedes.lbl.gov/bedes-online", "target", "_blank", 1, "color-2"], ["href", "https://bedes-manager.lbl.gov/home/login", "target", "_blank", 1, "color-2"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 41, vars: 0, consts: [["routerLink", "../data-standardization", 1, "color-2"], ["fxLayout", "row"], ["fxFlex", "60", "fxFlex", "90"], [1, "bold"], ["href", "https://bedes.lbl.gov/bedes-online", "target", "_blank", 1, "color-2"], ["href", "https://bedes-manager.lbl.gov/home/login", "target", "_blank", 1, "color-2"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Ambiguous terms are a constant problem for any organization that collects data from multiple sources. If several energy auditors each have their own definition of \"gross floor area,\" for example, it's very difficult to combine their submissions in a single dataset.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
