@@ -38,6 +38,29 @@
   }
 }
 
+.small-menu-div {
+  background-color: #3b88af;
+  width:100%;
+  display: flex;
+}
+
+.small-menu {
+  background-color: #3b88af; 
+  color: white;
+}
+
+/*.category-small {
+  margin:10px;
+  background-color: #3b88af; 
+  color: white;
+}*/
+
+.category-item-small {
+  padding:10px;
+  background-color: #3b88af; 
+  color: white;
+}
+
 .top-row {
   background-color: $gray;
   min-height: 40px;

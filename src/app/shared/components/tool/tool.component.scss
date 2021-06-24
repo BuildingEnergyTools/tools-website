@@ -138,7 +138,12 @@
       width:40%;
       margin: 20px auto;
     }
-    
+    @media screen and (max-width: 599px) {
+      .callout {
+        width:90%;
+      }
+    }
+
     .bold-link {
       font-weight: bold;
     }
@@ -828,6 +833,11 @@
         text-align: center;
         top: 0;
       }
+      h3 {
+        font-size: 18px;
+        font-weight: 500;
+        text-transform: uppercase;
+      }
     }
   }
 
@@ -890,6 +900,22 @@
     position: absolute;
     right: 0;
     top: $pad;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .nav {
+    .logo {
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+
+      ::ng-deep {
+        > img, > div {
+        position: unset;
+
+        }
+      }
+    }
   }
 }
 
