@@ -542,7 +542,8 @@ seed-pad {
     font-size: 0.95rem;
   }
 }
-@media screen and (min-width: 800px) {
+
+@media screen and (min-width: 800px) and (max-width: 1600px) {
   #g1, #g2, #g3, #g4 {
     padding-top: 2vw;
   }
@@ -556,6 +557,13 @@ seed-pad {
 
   .at-pad {
     padding-top: 10px !important;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+
+  #g1, #g2, #g3, #g4 {
+    padding-top: 1vw;
   }
 }
 
