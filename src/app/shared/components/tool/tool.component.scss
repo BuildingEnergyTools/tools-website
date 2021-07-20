@@ -11,13 +11,18 @@
   }
 }
 
+.bpt {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
 .nav, .body {
   display: flex;
   flex-direction: column;
   line-height: 23px;
   padding: $pad;
   position: relative;
-  font-size: 1rem;
+  /*font-size: 1rem;*/
 
   &::ng-deep > div {
     width: 100%;
@@ -35,11 +40,7 @@
     .mat-h6 {
       font-size: 1em;
     }
-
-    p, ul, ol {
-      font-size: 1.1rem;
-    }
-    
+  
     table {
       font-size: 1rem;
     }
@@ -57,7 +58,6 @@
     }
 
     .mat-expansion-panel-header-title {
-      font-size: 1.1rem;
       font-weight: bold;
     }
 
@@ -820,7 +820,7 @@
         align-items: center;
         bottom: 0;
         display: flex;
-        font-family: $robotoCondensed;
+        /*font-family: $robotoCondensed;*/
         font-size: 32px;
         justify-content: center;
         left: 0;
@@ -849,7 +849,7 @@
       align-items: center;
       cursor: pointer;
       display: flex;
-      font-family: $robotoCondensed;
+      /*font-family: $robotoCondensed;*/
       min-height: 32px;
       user-select: none;
 

@@ -1,8 +1,15 @@
+@import "theme";
+
 :host {
 
   &::ng-deep [hidden] {
     display: none;
   }
+}
+
+.bpt {
+  max-width: $maxWidth;
+  margin: 0 auto;
 }
 
 .mt-5,

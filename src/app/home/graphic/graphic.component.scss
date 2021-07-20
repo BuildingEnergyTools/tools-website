@@ -50,7 +50,6 @@
 .header {
   padding:5px 10px 5px 10px;
   align-self: flex-center;
-  font-size: 1rem;
   font-weight: 500;
   color: white;
   height: 60px;
@@ -289,7 +288,7 @@ $hoverColor: #7ab0cc;
   background-color: #094F58;
 
   .mat-card {
-    font-family: $robotoCondensed;
+    /*font-family: $robotoCondensed;*/
     margin-left: 15px;
     margin-right: 14px; 
     /*width: 100%;*/
@@ -336,7 +335,7 @@ $hoverColor: #7ab0cc;
 }
 
 .card-text {
-  font-size:0.9rem;
+  /*font-size:1.3rem;*/
 }
 
 .col-styles {
@@ -539,13 +538,13 @@ seed-pad {
     min-width: 80vw;
   }
   .card-text {
-    font-size: 0.95rem;
+    /*font-size: 0.95rem;*/
   }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1600px) {
   #g1, #g2, #g3, #g4 {
-    padding-top: 2vw;
+    /*padding-top: 2vw;*/
   }
 }
 

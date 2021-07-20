@@ -2,9 +2,15 @@
 
 $colPad: 40;
 
+.bpt {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
 .developer-banner {
   background-color: $orange;
-  font-family: $robotoCondensed;
+  /*font-family: $robotoCondensed;*/
+  font-family: 'Karla', sans-serif;
   font-size: 16px;
   font-weight: bold;
   height: 22px;
@@ -55,22 +61,15 @@ a {
   background: url("../../assets/images/text-background.jpg");
   background-size: cover;
 
-  p {
-    font-size: 1.1rem;
-  }
 }
 
 .home-intro-text2 {
   margin: 0.25rem 0 0.25rem 0;
-
-  p {
-    font-size: 1rem;
-  }
 }
 
 .interactive-map {
   margin-bottom: 0px;
-  font-size: 18px;
+  /*font-size: 18px;*/
 }
 
 .interactive-map-div {
@@ -85,13 +84,13 @@ a {
 
   h2 {
     font-weight: 400;
-    font-family: $robotoCondensed;
-    font-size: 1.3rem;
+    /*font-family: $robotoCondensed;*/
     margin-top: 5px;
+    color: white;
   }
 
   p {
-    font-size: 1rem;
+    /*font-size: 1rem;*/
     font-weight: normal;
     padding-bottom: 0px;
     margin: 0px;
