@@ -107,6 +107,7 @@ a {
 
 .standardize {
   background: url("../../assets/images/get-started-box.jpg");
+  background-color:black;
   padding: 1rem 1rem;
   background-size: 100% 100%;
   cursor:pointer;
@@ -128,6 +129,7 @@ a {
 
 .explore-tools {
   background: url("../../assets/images/analysis-box.jpg");
+  background-color: black;
   padding: 1rem 1rem;
   margin-left: 10px;
   background-size: auto;
@@ -149,7 +151,7 @@ a {
 }
 
 .dev {
-  background: $orange;
+  background: #054980;
   padding: 1rem 1rem;
   margin-left: 10px;
   background-size: auto;

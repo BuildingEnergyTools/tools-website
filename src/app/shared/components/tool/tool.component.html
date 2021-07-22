@@ -7,7 +7,7 @@
       <div *ngFor="let navItem of navItems" [routerLink]="navItem.route" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <i *ngIf="navItem.icon" [ngClass]="[navItem.icon, navItem.fontAwesome || 'fas']"></i>
         <div *ngIf="navItem.image">
-          <img [src]="navItem.image">
+          <img [src]="navItem.image" alt="{{navItem.alt}}">
         </div>
         {{ navItem.title }}
       </div>
