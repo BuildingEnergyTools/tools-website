@@ -1,4 +1,4 @@
-<div fxHide fxShow.xs="true">
+<div class="bpt" fxHide fxShow.xs="true">
   <div class="small-menu-div" fxFlex="100%">
     <div fxLayout="row" class="small-menu" fxFlex="100%">
       <a mat-raised-button role="button" fxFlex="100%" class="small-menu" (click)="toggle()">Menu</a>
@@ -13,7 +13,7 @@
   </div>
 </div>
 
-<div [ngClass]="{'opened': opened}">
+<div class="bpt" [ngClass]="{'opened': opened}">
   <div fxFlex fxShow="true" fxHide.xs>
     <div fxLayout="row" fxLayoutGap="32px" class="top-row">
       <ng-container *ngFor="let navItem of navItems">

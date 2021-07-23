@@ -1,5 +1,10 @@
 @import "theme";
 
+.bpt {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
 .summary, .details {
   display: flex;
   font-size: 16px;

@@ -1,8 +1,19 @@
+@import "theme";
+
 :host {
 
   &::ng-deep [hidden] {
     display: none;
   }
+}
+
+.white-text {
+  color: #fff;
+}
+
+.bpt {
+  max-width: $maxWidth;
+  margin: 0 auto;
 }
 
 .mt-5,
