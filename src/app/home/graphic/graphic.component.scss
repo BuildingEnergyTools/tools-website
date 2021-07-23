@@ -414,7 +414,7 @@ $hoverColor: #7ab0cc;
 }
 
 #g1, #g2, #g3, #g4 {
-  height: 9.5vh;
+  height: 12vh;
 }
 
 .card-footer {
@@ -485,7 +485,7 @@ $bsyncExpandedWidth: 160px;
 
 .goals-card-pad {
   margin-bottom: 1vw;
-  padding: 1vw 1vw;
+  /*padding: 1vw 1vw;*/
 }
 
 .pm-card {
@@ -514,6 +514,11 @@ seed-pad {
   .card-text {
     font-size:1.4rem; 
   }
+
+  .mat-card {
+    padding:5px;
+  }
+
   .mat-card-content {
     padding:5px;
   }
@@ -544,9 +549,26 @@ seed-pad {
   }
 }
 
+@media screen and (min-width: 599px) and (max-width: 799px) {
+  #g1, #g2, #g3, #g4 {
+    height: 20vh;
+  }
+}
+
+
 @media screen and (min-width: 800px) and (max-width: 1600px) {
   #g1, #g2, #g3, #g4 {
     /*padding-top: 2vw;*/
+    height: 12vh;
+  }
+
+  .mat-card {
+    padding:5px;
+  }
+  @media screen and (max-height: 630px){
+    #g1, #g2, #g3, #g4 {
+      height: 20vh;
+    }
   }
 }
 
@@ -564,7 +586,17 @@ seed-pad {
 @media screen and (min-width: 1600px) {
 
   #g1, #g2, #g3, #g4 {
-    padding-top: 1vw;
+    padding-top: 20px;
+  }
+
+   .mat-card-content {
+    padding-top:1vh;
+  }
+
+  @media screen and (max-height: 630px){
+    #g1, #g2, #g3, #g4 {
+      height: 18vh;
+    }
   }
 }
 
