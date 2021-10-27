@@ -1,4 +1,4 @@
-<div fxLayout.gt-xs="row" fxLayout.xs="column">
+<div class="bpt" fxLayout.gt-xs="row" fxLayout.xs="column">
   <div [fxFlex.gt-xs]="25" [fxFlex.xs]="100" class="nav">
     <div class="logo">
       <ng-content select="[slot=logo]"></ng-content>
@@ -7,7 +7,7 @@
       <div *ngFor="let navItem of navItems" [routerLink]="navItem.route" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
         <i *ngIf="navItem.icon" [ngClass]="[navItem.icon, navItem.fontAwesome || 'fas']"></i>
         <div *ngIf="navItem.image">
-          <img [src]="navItem.image">
+          <img [src]="navItem.image" alt="{{navItem.alt}}">
         </div>
         {{ navItem.title }}
       </div>

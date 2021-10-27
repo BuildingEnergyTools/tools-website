@@ -1,4 +1,4 @@
-export const appTitle = 'Building Performance Tools';
+export const appTitle = 'Building Data Tools';
 
 export class Constants {
   static readonly titles = {
