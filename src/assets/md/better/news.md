@@ -2,7 +2,7 @@
 - [Data Tool Gets BETTER Results, Gaining Accolades for Innovation](https://www.icf.com/insights/culture/better-data-tool-rd100-award) - December 10, 2020
 
 - [BETTER wins the 2020 R&D 100 Award](https://www.rdworldonline.com/rd-100-award-winners-announced-in-process-prototyping-and-software-services-categories/) - October 1, 2020
-The R&D 100 Awards have served as the most prestigious innovation awards program for the past 58 years, honoring great R&D pioneers and their revolutionary ideas in science and technology. BETTER won the award in the Software/Service category. Click [here](https://www.rdworldonline.com/rd-100-award-winners-announced-in-process-prototyping-and-software-services-categories/) for more.
+The R&D 100 Awards have served as the most prestigious innovation awards program for the past 58 years, honoring great R&D pioneers and their revolutionary ideas in science and technology. BETTER won the award in the Software/Service category.
 
 - BETTER is featured in [Energy Efficiency Magazine: Special Edition on Energy Efficiency and Economic Recovery](https://www.energyefficiencymagazine.com/) - September 23, 2020
 See our article, "Building Back BETTER with Remote, Rapid Energy Retrofit Analysis," on page 53 of the September 2020 issue of Energy Efficiency Magazine where we discuss how, in this unprecedented time of a global pandemic, BETTER’s analysis can be completed without on-site audits or inspections, enabling energy efficiency workers to continue to plan and develop building retrofit and retro-commissioning projects. This can help preserve jobs during a time when hundreds of thousands of U.S. energy efficiency workers have been left unemployed because of COVID-19.

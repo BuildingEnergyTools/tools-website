@@ -11,13 +11,18 @@
   }
 }
 
+.bpt {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
 .nav, .body {
   display: flex;
   flex-direction: column;
   line-height: 23px;
   padding: $pad;
   position: relative;
-  font-size: 1rem;
+  /*font-size: 1rem;*/
 
   &::ng-deep > div {
     width: 100%;
@@ -36,14 +41,6 @@
       font-size: 1em;
     }
 
-    p, ul, ol {
-      font-size: 1.1rem;
-    }
-    
-    table {
-      font-size: 1rem;
-    }
-
     .logoimg-3p {
       width:80%;
     }
@@ -57,7 +54,6 @@
     }
 
     .mat-expansion-panel-header-title {
-      font-size: 1.1rem;
       font-weight: bold;
     }
 
@@ -71,7 +67,7 @@
     }
 
     .color-1 {
-      color: #3B88AF;
+      color: #0174a1;
     }
     
     .color-2 {
@@ -79,7 +75,7 @@
     }
     
     .color-3 {
-      color: #478662;
+      color: #355F46;
     }
     
     .color-4 {
@@ -91,7 +87,7 @@
     } 
 
     .btn-type-1 {
-      background-color: #3B88AF;
+      background-color: #0174a1;
       color: #fff;
     }
 
@@ -101,7 +97,7 @@
     }
 
     .btn-type-3 {
-      background-color: #478662;
+      background-color: #355F46;
       color: #fff;
     }
 
@@ -820,7 +816,7 @@
         align-items: center;
         bottom: 0;
         display: flex;
-        font-family: $robotoCondensed;
+        /*font-family: $robotoCondensed;*/
         font-size: 32px;
         justify-content: center;
         left: 0;
@@ -849,7 +845,7 @@
       align-items: center;
       cursor: pointer;
       display: flex;
-      font-family: $robotoCondensed;
+      /*font-family: $robotoCondensed;*/
       min-height: 32px;
       user-select: none;
 

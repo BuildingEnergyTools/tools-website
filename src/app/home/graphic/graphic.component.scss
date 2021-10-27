@@ -50,7 +50,6 @@
 .header {
   padding:5px 10px 5px 10px;
   align-self: flex-center;
-  font-size: 1rem;
   font-weight: 500;
   color: white;
   height: 60px;
@@ -91,6 +90,7 @@
 
 .col-bkgnd-1 {
   margin: 0px 0px 5px 0px;
+  background-color: black;
   position: relative; 
   height: 5vh;
   width: 100%;
@@ -107,7 +107,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.50;
+  opacity: 0.80;
 }
 
 .col-bkgnd-2 {
@@ -135,6 +135,7 @@
 .col-bkgnd-3 {
   margin: 0px 0px 5px 0px;
   position: relative; 
+  background-color: black;
   height: 5vh;
   width: 100%;
   display: flex;
@@ -209,7 +210,7 @@ $colBsyncPad: 110;
 $hoverColor: #7ab0cc;
 
 .col-type-1 {
-  background-color: #3B88AF;
+  background-color: #0174a1;
 
   .mat-card {
     margin-left: $colPad + px;
@@ -219,7 +220,7 @@ $hoverColor: #7ab0cc;
 }
 
 .btn-type-1 {
-  background: #3B88AF;
+  background: #0174a1;
   color: #fff;
 }
 
@@ -289,7 +290,7 @@ $hoverColor: #7ab0cc;
   background-color: #094F58;
 
   .mat-card {
-    font-family: $robotoCondensed;
+    /*font-family: $robotoCondensed;*/
     margin-left: 15px;
     margin-right: 14px; 
     /*width: 100%;*/
@@ -336,7 +337,7 @@ $hoverColor: #7ab0cc;
 }
 
 .card-text {
-  font-size:0.9rem;
+  /*font-size:1.3rem;*/
 }
 
 .col-styles {
@@ -413,7 +414,7 @@ $hoverColor: #7ab0cc;
 }
 
 #g1, #g2, #g3, #g4 {
-  height: 9.5vh;
+  height: 12vh;
 }
 
 .card-footer {
@@ -484,7 +485,7 @@ $bsyncExpandedWidth: 160px;
 
 .goals-card-pad {
   margin-bottom: 1vw;
-  padding: 1vw 1vw;
+  /*padding: 1vw 1vw;*/
 }
 
 .pm-card {
@@ -513,6 +514,11 @@ seed-pad {
   .card-text {
     font-size:1.4rem; 
   }
+
+  .mat-card {
+    padding:5px;
+  }
+
   .mat-card-content {
     padding:5px;
   }
@@ -539,13 +545,30 @@ seed-pad {
     min-width: 80vw;
   }
   .card-text {
-    font-size: 0.95rem;
+    /*font-size: 0.95rem;*/
   }
 }
 
+@media screen and (min-width: 599px) and (max-width: 799px) {
+  #g1, #g2, #g3, #g4 {
+    height: 20vh;
+  }
+}
+
+
 @media screen and (min-width: 800px) and (max-width: 1600px) {
   #g1, #g2, #g3, #g4 {
-    padding-top: 2vw;
+    /*padding-top: 2vw;*/
+    height: 12vh;
+  }
+
+  .mat-card {
+    padding:5px;
+  }
+  @media screen and (max-height: 630px){
+    #g1, #g2, #g3, #g4 {
+      height: 20vh;
+    }
   }
 }
 
@@ -563,7 +586,17 @@ seed-pad {
 @media screen and (min-width: 1600px) {
 
   #g1, #g2, #g3, #g4 {
-    padding-top: 1vw;
+    padding-top: 20px;
+  }
+
+   .mat-card-content {
+    padding-top:1vh;
+  }
+
+  @media screen and (max-height: 630px){
+    #g1, #g2, #g3, #g4 {
+      height: 18vh;
+    }
   }
 }
 

@@ -6,5 +6,6 @@ export type NavItem = {
 } | {
   route: string;
   image: string;
+  alt: string;
   title: string;
 };
