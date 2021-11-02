@@ -127,11 +127,11 @@ class TargetComponent {
     }
 }
 TargetComponent.ɵfac = function TargetComponent_Factory(t) { return new (t || TargetComponent)(); };
-TargetComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TargetComponent, selectors: [["ng-component"]], decls: 11, vars: 1, consts: [["fxLayout.gt-xs", "row", "fxLayout.xs", "column"], ["fxFlex", "25", 3, "ngClass.xs"], [1, "pl-4", "pr-4"], [1, "mat-h6"], ["src", "assets/images/better-outcomes-icon.svg", "alt", "BETTER Logo", 1, "card-img", "img-g2"], ["fxFlex", "70"], ["src", "assets/images/better_outcome_pathway-01.png", "width", "100%"]], template: function TargetComponent_Template(rf, ctx) { if (rf & 1) {
+TargetComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: TargetComponent, selectors: [["ng-component"]], decls: 11, vars: 1, consts: [["fxLayout.gt-xs", "row", "fxLayout.xs", "column"], ["fxFlex", "25", 3, "ngClass.xs"], [1, "pl-4", "pr-4"], [1, "mat-h6"], ["src", "assets/images/better-outcomes-icon.svg", "alt", "", 1, "card-img", "img-g2"], ["fxFlex", "70"], ["src", "assets/images/better_outcome_pathway-01.png", "width", "100%", "alt", "use BETTER to target efficiency upgrade areas"]], template: function TargetComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h6", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h4", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Target Efficiency Upgrade Areas");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -175,11 +175,11 @@ class ComplianceComponent {
     }
 }
 ComplianceComponent.ɵfac = function ComplianceComponent_Factory(t) { return new (t || ComplianceComponent)(); };
-ComplianceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ComplianceComponent, selectors: [["ng-component"]], decls: 13, vars: 1, consts: [["fxLayout.gt-xs", "row", "fxLayout.xs", "column"], ["fxFlex", "25", 3, "ngClass.xs"], [1, "pl-4"], [1, "mat-h6"], ["src", "assets/images/assetscore-outcomes-icon.svg", "alt", "Asset Score Logo", 1, "card-img", "img-g3"], ["fxFlex", "70"], ["src", "assets/images/asset-score-outcome_pathway-01.png", "width", "100%"]], template: function ComplianceComponent_Template(rf, ctx) { if (rf & 1) {
+ComplianceComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ComplianceComponent, selectors: [["ng-component"]], decls: 13, vars: 1, consts: [["fxLayout.gt-xs", "row", "fxLayout.xs", "column"], ["fxFlex", "25", 3, "ngClass.xs"], [1, "pl-4"], [1, "mat-h6"], ["src", "assets/images/assetscore-outcomes-icon.svg", "alt", "", 1, "card-img", "img-g3"], ["fxFlex", "70"], ["src", "assets/images/asset-score-outcome_pathway-01.png", "width", "100%", "alt", "Use asset score to achieve compliance"]], template: function ComplianceComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h6", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h4", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Achieve Compliance");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -226,11 +226,11 @@ class AnalyzeComponent {
     }
 }
 AnalyzeComponent.ɵfac = function AnalyzeComponent_Factory(t) { return new (t || AnalyzeComponent)(); };
-AnalyzeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AnalyzeComponent, selectors: [["ng-component"]], decls: 11, vars: 1, consts: [["fxLayout.gt-xs", "row", "fxLayout.xs", "column"], ["fxFlex", "25", 3, "ngClass.xs"], [1, "pl-4"], [1, "mat-h6"], ["src", "assets/images/com-resstock-outcomes-icon.svg", 1, "card-img", "img-g1"], ["fxFlex", "70"], ["src", "assets/images/comstock_outcome_pathway-01.png", "width", "100%"]], template: function AnalyzeComponent_Template(rf, ctx) { if (rf & 1) {
+AnalyzeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AnalyzeComponent, selectors: [["ng-component"]], decls: 11, vars: 1, consts: [["fxLayout.gt-xs", "row", "fxLayout.xs", "column"], ["fxFlex", "25", 3, "ngClass.xs"], [1, "pl-4"], [1, "mat-h6"], ["src", "assets/images/com-resstock-outcomes-icon.svg", "alt", "", 1, "card-img", "img-g1"], ["fxFlex", "70"], ["src", "assets/images/comstock_outcome_pathway-01.png", "width", "100%", "alt", "Use ComStock and ResStock to analyze the building stock"]], template: function AnalyzeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h6", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h4", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Analyze Building Stock");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -301,11 +301,11 @@ class CustomizeComponent {
     }
 }
 CustomizeComponent.ɵfac = function CustomizeComponent_Factory(t) { return new (t || CustomizeComponent)(); };
-CustomizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CustomizeComponent, selectors: [["ng-component"]], decls: 12, vars: 3, consts: [["fxLayout.gt-xs", "row", "fxLayout.xs", "column"], ["fxFlex", "25", 3, "ngClass.xs"], [1, "pl-4"], [1, "mat-h6"], ["src", "assets/images/thirdparty-outcomes-icon.svg", "alt", "Third Party Tools", 1, "card-img", "img-g4"], ["fxFlex", "70"], [1, "color-4", "bold-link", 3, "routerLink"]], template: function CustomizeComponent_Template(rf, ctx) { if (rf & 1) {
+CustomizeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: CustomizeComponent, selectors: [["ng-component"]], decls: 12, vars: 3, consts: [["fxLayout.gt-xs", "row", "fxLayout.xs", "column"], ["fxFlex", "25", 3, "ngClass.xs"], [1, "pl-4"], [1, "mat-h6"], ["src", "assets/images/thirdparty-outcomes-icon.svg", "alt", "", 1, "card-img", "img-g4"], ["fxFlex", "70"], [1, "color-4", "bold-link", 3, "routerLink"]], template: function CustomizeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h6", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "h4", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4, "Customize");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -354,18 +354,22 @@ class GoalsComponent {
             }, {
                 title: 'Analyze Building Stock',
                 image: 'assets/images/com-resstock-outcomes-icon.svg',
+                alt: '',
                 route: 'analyze'
             }, {
                 title: 'Target Efficiency Upgrade Areas',
                 image: 'assets/images/better-outcomes-icon.svg',
+                alt: '',
                 route: 'target'
             }, {
                 title: 'Achieve Compliance',
                 image: 'assets/images/assetscore-outcomes-icon.svg',
+                alt: '',
                 route: 'compliance'
             }, {
                 title: 'Customize Your Workflow',
                 image: 'assets/images/thirdparty-outcomes-icon.svg',
+                alt: '',
                 route: 'customize'
             }];
     }

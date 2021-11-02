@@ -19,7 +19,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 66, vars: 0, consts: [[1, "mb-4"], [1, "mat-h3"], ["fxLayout", "row", "fxLayout.xs", "column"], ["fxFlex", "30%", "fxLayoutAlign", "center center"], ["src", "assets/images/Audette-Logo.png", "alt", "Audette Logo", 1, "logoimg-3p"], ["fxFlex", "70%"], ["href", "https://www.audette.io/", "target", "_blank"], [1, "ml-1", "align-center"], [1, "fas", "fa-external-link-alt"], ["src", "assets/images/beam-logo.png", "alt", "BEAM Logo", 1, "logoimg-3p"], ["href", "https://neep.org/building-energy-codes-and-benchmarking/beam-building-energy-analysis-manager", "target", "_blank"], ["src", "assets/images/gbr-logo.png", "alt", "Green Building Registry Logo", 1, "logoimg-3p2"], ["href", "https://us.greenbuildingregistry.com/", "target", "_blank"], ["href", "https://opentech.eco/products/grid/", "target", "_blank"], ["src", "assets/images/opentech-logo.png", "alt", "Open Tech Logo", 1, "logoimg-3p"], ["href", "https://opentech.eco/products/shift/", "target", "_blank"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 66, vars: 0, consts: [[1, "mb-4"], [1, "mat-h3"], ["fxLayout", "row", "fxLayout.xs", "column"], ["fxFlex", "30%", "fxLayoutAlign", "center center"], ["src", "assets/images/Audette-Logo.png", "alt", "Audette Logo", 1, "logoimg-3p"], ["fxFlex", "70%"], ["href", "https://www.audette.io/", "target", "_blank"], [1, "ml-1", "align-center"], [1, "fas", "fa-external-link-alt"], ["src", "assets/images/beam-logo.png", "alt", "BEAM Logo", 1, "logoimg-3p"], ["href", "https://neep.org/building-energy-codes-and-benchmarking/beam-building-energy-analysis-manager", "target", "_blank"], ["src", "assets/images/gbr-logo.png", "alt", "Green Building Registry Logo", 1, "logoimg-3p2"], ["href", "https://us.greenbuildingregistry.com/", "target", "_blank"], ["src", "assets/images/opentech-logo.png", "alt", "Green Building Registry Logo", 1, "logoimg-3p"], ["href", "https://opentech.eco/products/grid/", "target", "_blank"], ["src", "assets/images/opentech-logo.png", "alt", "Open Tech Logo", 1, "logoimg-3p"], ["href", "https://opentech.eco/products/shift/", "target", "_blank"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Take your capabilities even further by combining DOE data tools with complementary solutions from the private sector.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -88,11 +88,11 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "img", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "img", 13);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "div", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "p", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "a", 13);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](48, "a", 14);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, "GRID ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "span", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](51, "i", 8);
@@ -107,12 +107,12 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "div", 2);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "div", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](57, "img", 14);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](57, "img", 15);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "div", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "p", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, "The building components market is shifting. OPEN\u2019s ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "a", 15);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "a", 16);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](62, "Shift ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "span", 7);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](64, "i", 8);

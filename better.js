@@ -265,7 +265,7 @@ class HomeComponent {
     }
 }
 HomeComponent.ɵfac = function HomeComponent_Factory(t) { return new (t || HomeComponent)(); };
-HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 58, vars: 0, consts: [[1, "callout"], [1, "btn-type-3", "p-3"], [1, "pl-5"], ["fxLayout", "row"], ["fxFlex", "60", "fxFlex", "90"], [1, "bold"], ["routerLink", "../seed", 1, "color-3"], ["routerLink", "../building-sync", 1, "color-3"], ["href", "https://better.lbl.gov/", "target", "_blank", 1, "color-3"], ["href", "https://youtu.be/-TkndH828mE", "target", "_blank", 1, "color-3"], ["href", "https://better.lbl.gov/how_it_works/", "target", "_blank", 1, "color-3"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
+HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HomeComponent, selectors: [["ng-component"]], decls: 64, vars: 0, consts: [[1, "callout"], [1, "btn-type-3", "p-3"], [1, "pl-5"], ["fxLayout", "row"], ["fxFlex", "60", "fxFlex", "90"], [1, "bold"], ["routerLink", "../seed", 1, "color-3"], ["routerLink", "../building-sync", 1, "color-3"], ["href", "https://better.lbl.gov/", "target", "_blank", 1, "color-3"], [1, "ml-1", "align-center"], [1, "fas", "fa-external-link-alt"], ["href", "https://youtu.be/-TkndH828mE", "target", "_blank", 1, "color-3"], ["href", "https://better.lbl.gov/how_it_works/", "target", "_blank", 1, "color-3"]], template: function HomeComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "The Building Efficiency Targeting Tool for Energy Retrofits (BETTER) identifies cost-saving energy and emissions reductions in buildings and portfolios, without site visits or complex modeling. Use it to identify immediate cost-saving operational and technological improvements and target buildings and systems for more in-depth audits and analysis.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -338,20 +338,29 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](45, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "Get started by visiting the ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "a", 8);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, "BETTER web application");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, "BETTER web application ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "span", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](50, "i", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](49, ". ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](50, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, "To learn more, view the ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "a", 9);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, "Introduction to BETTER");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](51, ". ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](54, " presentation, explore the additional resources on the ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "a", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](56, "How it Works");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](53, "To learn more, view the ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "a", 11);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](55, "Introduction to BETTER ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](56, "span", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](57, "i", 10);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, " page, or contact BTODataTools@ee.doe.gov. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](58, " presentation, explore the additional resources on the ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](59, "a", 12);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](60, "How it Works ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "span", 9);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](62, "i", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](63, " page, or contact BTODataTools@ee.doe.gov. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } }, directives: [_angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultLayoutDirective"], _angular_flex_layout_flex__WEBPACK_IMPORTED_MODULE_1__["DefaultFlexDirective"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["RouterLinkWithHref"]], encapsulation: 2 });
 
@@ -377,7 +386,7 @@ class ResourcesComponent {
     }
 }
 ResourcesComponent.ɵfac = function ResourcesComponent_Factory(t) { return new (t || ResourcesComponent)(); };
-ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ResourcesComponent, selectors: [["ng-component"]], decls: 24, vars: 0, consts: [[1, "mat-h2", "mb-4"], [1, "mat-h3", "color-3"], ["href", "https://github.com/LBNL-JCI-ICF/better", "target", "_blank", 1, "color-3"], ["href", "https://better.lbl.gov/news/", "target", "_blank", 1, "color-3"], ["src", "assets/md/better/resources.md"]], template: function ResourcesComponent_Template(rf, ctx) { if (rf & 1) {
+ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ResourcesComponent, selectors: [["ng-component"]], decls: 28, vars: 0, consts: [[1, "mat-h2", "mb-4"], [1, "mat-h3", "color-3"], ["href", "https://github.com/LBNL-JCI-ICF/better", "target", "_blank", 1, "color-3"], [1, "ml-1", "align-center"], [1, "fas", "fa-external-link-alt"], ["href", "https://better.lbl.gov/news/", "target", "_blank", 1, "color-3"], ["src", "assets/md/better/resources.md"]], template: function ResourcesComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Resources");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -387,31 +396,37 @@ ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "BETTER utilizes an open-source, data-driven ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "a", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "analytical engine");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](7, "analytical engine ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](9, "i", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " and user-friendly web interface to automatically analyze a building's monthly energy usage in response to weather conditions. With minimal data inputs, the tool benchmarks a building's electric and fossil energy usage against peers; quantifies energy, cost and greenhouse gas (GHG) reduction potentials at the building and portfolio levels; and recommends energy efficiency measures to decarbonize and electrify buildings and portfolios.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "h3", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Who is Using BETTER?");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " and user-friendly web interface to automatically analyze a building's monthly energy usage in response to weather conditions. With minimal data inputs, the tool benchmarks a building's electric and fossil energy usage against peers; quantifies energy, cost and greenhouse gas (GHG) reduction potentials at the building and portfolio levels; and recommends energy efficiency measures to decarbonize and electrify buildings and portfolios.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "BETTER is used by federal, state, and municipal government agencies, including the National Aeronautics and Space Administration (NASA) \u2013 Goddard Space Flight Center and the Department of Energy and Environment in the District of Columbia; school districts; energy service companies, including Johnson Controls; multinational corporations; investors and lenders, like Citi; and non-profit organizations, such as World Resources Institute (WRI). For more on pilot projects, visit ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "a", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "better.lbl.gov/news/");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "h3", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Who is Using BETTER?");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, ".");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](13, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, "BETTER is used by federal, state, and municipal government agencies, including the National Aeronautics and Space Administration (NASA) \u2013 Goddard Space Flight Center and the Department of Energy and Environment in the District of Columbia; school districts; energy service companies, including Johnson Controls; multinational corporations; investors and lenders, like Citi; and non-profit organizations, such as World Resources Institute (WRI). For more on pilot projects, visit ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "a", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "better.lbl.gov/news/ ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "i", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "h3", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Interoperability");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "BETTER can be used in combination with the U.S. Environmental Protection Agency ENERGY STAR\u00AE PortfolioManager\u00AE and the U.S. Department of Energy (DOE) Building Energy Asset Score to conduct multilayered analysis on buildings to deliver ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "strong");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "both");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, ".");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](22, " superior structural performance and operational energy performance. Currently, BETTER can input data from ENERGY STAR\u00AE PortfolioManager\u00AE, and a BuildingSync\u00AE file read/write capability is being added to facilitate data and analytics transfer between BETTER and Asset Score, Audit Template, and the Standard Energy Efficiency Data (SEED)TM Platform.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "h3", 1);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, "Interoperability");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "markdown", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](22, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](23, "BETTER can be used in combination with the U.S. Environmental Protection Agency ENERGY STAR\u00AE PortfolioManager\u00AE and the U.S. Department of Energy (DOE) Building Energy Asset Score to conduct multilayered analysis on buildings to deliver ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "strong");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](25, "both");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, " superior structural performance and operational energy performance. Currently, BETTER can input data from ENERGY STAR\u00AE PortfolioManager\u00AE, and a BuildingSync\u00AE file read/write capability is being added to facilitate data and analytics transfer between BETTER and Asset Score, Audit Template, and the Standard Energy Efficiency Data (SEED)TM Platform.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "markdown", 6);
     } }, directives: [ngx_markdown__WEBPACK_IMPORTED_MODULE_1__["MarkdownComponent"]], encapsulation: 2 });
 
 
@@ -490,26 +505,35 @@ class DevComponent {
     }
 }
 DevComponent.ɵfac = function DevComponent_Factory(t) { return new (t || DevComponent)(); };
-DevComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DevComponent, selectors: [["ng-component"]], decls: 14, vars: 0, consts: [[1, "mat-h2", "mb-4"], ["href", "http://www.github.com/LBNL-JCI-ICF/better", "target", "_blank", 1, "color-3", "bold-link"], ["href", "https://better.lbl.gov/api/", "target", "_blank", 1, "color-3", "bold-link"]], template: function DevComponent_Template(rf, ctx) { if (rf & 1) {
+DevComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: DevComponent, selectors: [["ng-component"]], decls: 20, vars: 0, consts: [[1, "mat-h2", "mb-4"], ["href", "http://www.github.com/LBNL-JCI-ICF/better", "target", "_blank", 1, "color-3", "bold-link"], [1, "ml-1", "align-center"], [1, "fas", "fa-external-link-alt"], ["href", "https://better.lbl.gov/api/", "target", "_blank", 1, "color-3", "bold-link"]], template: function DevComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Links for Developers");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "ul");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "a", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "BETTER GitHub repository");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "BETTER GitHub repository ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "span", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "i", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, ". BETTER\u2019s modular, cross-platform analytical engine can be adopted, redeveloped, and redistributed freely under an open-source license, allowing users to incorporate BETTER\u2019s analytical capabilities into their own software platforms and tools. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "li");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](8, "a", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](9, "Application Programming Interface (API)");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, ". BETTER\u2019s modular, cross-platform analytical engine can be adopted, redeveloped, and redistributed freely under an open-source license, allowing users to incorporate BETTER\u2019s analytical capabilities into their own software platforms and tools. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, ". BETTER\u2019s API allows developers to utilize BETTER's analytical capabilities from their own software platform without using the BETTER web-interface. Currently, the API is a Remote Procedure Call (PRC), which accepts JSON encoded HTTP request, runs the analyses, and returns the results in a JSON encoded HTTP response. Visit the BETTER\u2019s ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "a", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "API web page");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](10, "a", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](11, "Application Programming Interface (API) ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "span", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "i", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](13, " to get started.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](14, ". BETTER\u2019s API allows developers to utilize BETTER's analytical capabilities from their own software platform without using the BETTER web-interface. Currently, the API is a Remote Procedure Call (PRC), which accepts JSON encoded HTTP request, runs the analyses, and returns the results in a JSON encoded HTTP response. Visit the BETTER\u2019s ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "a", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](16, "API web page ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "span", 2);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](18, "i", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " to get started.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     } }, encapsulation: 2 });
