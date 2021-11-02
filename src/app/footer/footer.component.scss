@@ -1,6 +1,6 @@
 @import "theme";
 
-:host {
+footer2 {
   background-color: $gray;
 }
 
@@ -16,6 +16,15 @@ strong {
   &:not(:last-child) {
     border-right: 3px solid #fff;
   }
+}
+
+.bpt {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.fa-lg {
+  padding-top: 8px;
 }
 
 section {
@@ -57,4 +66,49 @@ section {
       border-bottom: 1px solid #fff;
     }
   }
+}
+
+footer {
+  padding-top:30px;
+  background-color:white;
+  font-family: 'Karla', sans-serif;
+}
+
+.footer-top .container .row {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.footer-top .container .row .col-md-3 p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 2rem;
+}
+
+ul.menu li a {
+  font-family: 'Karla', sans-serif;
+  font-size: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.footer-bottom {
+  padding: 4rem 8rem;
+}
+
+.footer-bottom .container {
+  padding-left: 25px;
+}
+
+.footer-top .container .row .col-md-3 p.office {
+  line-height: 1.2em;
+  margin-bottom: 1.5rem;
+}
+
+.footer-top .container .row .col-md-3 p.footer-header {
+  margin-bottom: 1em;
+  font-weight: bold;
 }
