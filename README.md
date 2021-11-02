@@ -1,5 +1,8 @@
 # Building Energy Tools Website
 
+[![CI](https://github.com/BuildingEnergyTools/tools-website/actions/workflows/ci.yml/badge.svg)](https://github.com/BuildingEnergyTools/tools-website/actions/workflows/ci.yml)
+[![Deploy](https://github.com/BuildingEnergyTools/tools-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/BuildingEnergyTools/tools-website/actions/workflows/deploy.yml)
+
 This project was generated with the Angular CLI. For more information on developing with Angular see the README 
 in the [doc folder](doc). The purpose of this README is to document the basic workflows of getting started. 
 
