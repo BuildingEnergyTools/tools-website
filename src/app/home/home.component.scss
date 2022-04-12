@@ -127,6 +127,28 @@ a {
   }
 }
 
+.help {
+  background: rgb(71, 134, 98);
+  padding: 1rem 1rem;
+  margin-left: 10px;
+  background-size: 100% 100%;
+  cursor:pointer;
+  height: 200px;
+
+  h3 {
+    color: white;
+    font-size: 1.8rem;
+    padding-top: 10px;
+    padding-left: 4rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 3rem;
+
+    a {
+      color: white;
+    }
+  }
+}
+
 .explore-tools {
   background: url("../../assets/images/analysis-box.jpg");
   background-color: black;

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { HelpDeskComponent } from './tools-overview/help-desk/help-desk.component';
 import { DataStandardizationComponent } from './tools-overview/data-standardization/data-standardization.component';
 import { AnalysisEvaluationComponent } from './tools-overview/analysis-evaluation/analysis-evaluation.component';
 import { CollectionReportingComponent } from './tools-overview/collection-reporting/collection-reporting.component';
@@ -14,6 +15,9 @@ const routes: Routes = [{
 }, {
   path: 'data-standardization',
   component: DataStandardizationComponent
+}, {
+  path: 'help-desk',
+  component: HelpDeskComponent
 }, {
   path: 'collection-reporting',
   component: CollectionReportingComponent
