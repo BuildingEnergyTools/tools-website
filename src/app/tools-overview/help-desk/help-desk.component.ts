@@ -6,6 +6,8 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./help-desk.component.scss']
 })
 export class HelpDeskComponent {
+  status = "UNSUBMITTED";
+
   helpForm = new FormGroup({
     firstName: new FormControl('', [Validators.required]),
     lastName: new FormControl('', [Validators.required]),
@@ -15,4 +17,17 @@ export class HelpDeskComponent {
   });
 
   tools: string[] = ['ComStock and ResStock', 'BETTER', 'Asset Score', 'Building Performance Database (BPD)'];
+
+  submit = function () {
+    this.helpForm.markAllAsTouched();
+    if (!this.helpForm.valid) {
+      return
+    }
+
+    this.status = "PROCESSING";
+
+    setTimeout(() => {
+      this.status = "SUBMITTED";
+    }, 2000);
+  }
 }
