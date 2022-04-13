@@ -9,6 +9,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatTableModule } from '@angular/material/table';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   exports: [
@@ -40,7 +45,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     // MatPaginatorModule,
     // MatProgressBarModule,
     // MatProgressSpinnerModule,
-    // MatRadioModule,
+    MatRadioModule,
     MatRippleModule,
     // MatSelectModule,
     // MatSidenavModule,
@@ -57,6 +62,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     // OverlayModule,
     // PortalModule,
     // ScrollingModule
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MaterialModule {

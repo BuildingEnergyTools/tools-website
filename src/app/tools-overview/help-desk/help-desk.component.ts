@@ -1,8 +1,5 @@
 import { Component} from '@angular/core';
-import { SharedService } from '@shared/services/shared.service';
-
-const cards = ['good', 'better', 'best'] as const;
-type Card = typeof cards[number];
+import {FormControl, FormGroup, Validators} from '@angular/forms';
 
 @Component({
   templateUrl: './help-desk.component.html',
@@ -10,20 +7,12 @@ type Card = typeof cards[number];
 })
 export class HelpDeskComponent {
 	
-	cardStatus: { [key in Card]?: boolean } = {};
-  constructor(
-    public sharedService: SharedService ) {
-  }
+  firstNameFormControl = new FormControl('', [Validators.required]);
+  lastNameFormControl = new FormControl('', [Validators.required]);
+  emailFormControl = new FormControl('', [Validators.required, Validators.email]);
 
-  toggleCard(card: Card): void {
-  	
-    if (this.cardStatus[card]) {
-      this.cardStatus[card] = false;
-    } else {
-      this.cardStatus[card] = true;
-      //cards.forEach(currentCard => {
-      //  this.cardStatus[currentCard] = card === currentCard;
-      //});
-    }
-  }
+  selectedTool: string;
+  tools: string[] = ['ComStock and ResStock', 'BETTER', 'Asset Score', 'Building Performance Database (BPD)'];
+
+  questionFormControl = new FormControl('', [Validators.required]);
 }
