@@ -67,7 +67,10 @@
         </div>
       </div>
 
-      <button mat-raised-button type="submit" (click)="submit()">Submit</button>
+      <re-captcha (resolved)="resolved($event)" siteKey="6Lcub80fAAAAAGtDrxldrdrlanCQ0m5kOMmsAt5f"></re-captcha>
+      <button mat-raised-button color="primary" class="submit" [disabled]="!captchaResolved" type="submit"
+        (click)="submit()">Submit</button>
+
     </form>
   </div>
 

@@ -19,6 +19,7 @@ import { GoalsOutcomesComponent } from './tools-overview/goals-outcomes/goals-ou
 import { HelpDeskComponent } from './tools-overview/help-desk/help-desk.component';
 import { ManagementComplianceComponent } from './tools-overview/management-compliance/management-compliance.component';
 import { ToolsOverviewComponent } from './tools-overview/tools-overview.component';
+import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,8 @@ import { ToolsOverviewComponent } from './tools-overview/tools-overview.componen
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
     SharedModule
   ],
   bootstrap: [AppComponent]
