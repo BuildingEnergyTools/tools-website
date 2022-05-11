@@ -10,22 +10,17 @@ export class HelpDeskComponent {
   status: 'UNSUBMITTED' | 'PROCESSING' | 'SENT' | 'ERRORED' = 'UNSUBMITTED';
 
   helpForm = new FormGroup({
-    firstName: new FormControl('', [Validators.required]),
-    lastName: new FormControl('', [Validators.required]),
+    firstName: new FormControl('', Validators.required),
+    lastName: new FormControl('', Validators.required),
     email: new FormControl('', [Validators.required, Validators.email]),
-    question: new FormControl('', [Validators.required]),
-    tool: new FormControl('', [Validators.required])
+    question: new FormControl('', Validators.required),
+    tool: new FormControl('', Validators.required),
+    recaptcha: new FormControl(null, Validators.required)
   });
 
   tools: string[] = ['ComStock and ResStock', 'BETTER', 'Asset Score', 'Building Performance Database (BPD)'];
 
-  captchaResolved = false;
-
   constructor(private http: HttpClient) {
-  }
-
-  resolved(captchaResponse: string): void {
-    this.captchaResolved = true;
   }
 
   submit(): void {

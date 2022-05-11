@@ -67,8 +67,8 @@
         </div>
       </div>
 
-      <re-captcha (resolved)="resolved($event)" siteKey="6Lcub80fAAAAAGtDrxldrdrlanCQ0m5kOMmsAt5f"></re-captcha>
-      <button mat-raised-button color="primary" class="submit" [disabled]="!captchaResolved" type="submit"
+      <re-captcha formControlName="recaptcha" siteKey="6Lcub80fAAAAAGtDrxldrdrlanCQ0m5kOMmsAt5f"></re-captcha>
+      <button mat-raised-button color="primary" class="submit" [disabled]="helpForm.invalid" type="submit"
         (click)="submit()">Submit</button>
 
     </form>
