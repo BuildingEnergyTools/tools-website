@@ -1,29 +1,31 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { ReCaptchaV3Service } from 'ng-recaptcha';
-import * as $ from "jquery";
 
 @Component({
   templateUrl: './help-desk.component.html',
   styleUrls: ['./help-desk.component.scss']
 })
 export class HelpDeskComponent {
-  status = "UNSUBMITTED";
+  status: 'UNSUBMITTED' | 'PROCESSING' | 'SENT' | 'ERRORED' = 'UNSUBMITTED';
 
   helpForm = new FormGroup({
     firstName: new FormControl('', [Validators.required]),
     lastName: new FormControl('', [Validators.required]),
     email: new FormControl('', [Validators.required, Validators.email]),
     question: new FormControl('', [Validators.required]),
-    tool: new FormControl('', [Validators.required]),
+    tool: new FormControl('', [Validators.required])
   });
 
   tools: string[] = ['ComStock and ResStock', 'BETTER', 'Asset Score', 'Building Performance Database (BPD)'];
 
-
   captchaResolved = false;
+
+  constructor(private http: HttpClient) {
+  }
+
   resolved(captchaResponse: string): void {
-    this.captchaResolved = true
+    this.captchaResolved = true;
   }
 
   submit(): void {
@@ -35,24 +37,14 @@ export class HelpDeskComponent {
     this.status = 'PROCESSING';
 
     const url = 'https://uyq1jkey4k.execute-api.us-west-2.amazonaws.com/stage';
-    $.ajax({
-      type: 'POST',
-      url,
-      contentType: 'application/json',
-      // crossDomain: true, // remove in production environments
-      dataType: 'json',
-      // dataType: 'jsonp', // use JSONP for done() callback to work locally
-      data: JSON.stringify({
-        first_name: $('#first_name').val(),
-        last_name: $('#last_name').val(),
-        email: $('#email').val(),
-        questions: $('#questions').val(),
-        tool: $('input[name=tool]:checked').val()
-      })
-    }).done(result => {
-      this.status = 'SENT';
-    }).fail((jqXHR, textStatus, error) => {
-      this.status = 'ERRORED';
-    });
+    this.http.post(url, {
+      first_name: this.helpForm.get('firstName').value,
+      last_name: this.helpForm.get('lastName').value,
+      email: this.helpForm.get('email').value,
+      questions: this.helpForm.get('question').value,
+      tool: this.helpForm.get('tool').value
+    }).toPromise()
+      .then(() => this.status = 'SENT')
+      .catch(() => this.status = 'ERRORED');
   }
 }

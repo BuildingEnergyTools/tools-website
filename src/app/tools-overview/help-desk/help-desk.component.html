@@ -1,5 +1,5 @@
 <div class="bpt">
-  <div class="m-3" *ngIf="status == 'UNSUBMITTED'">
+  <div class="m-3" *ngIf="status === 'UNSUBMITTED'">
     <div id=header>
       <h2>Help Desk</h2>
       <p>Submit technical questions about building energy codes, REScheck or COMcheck projects, or BECP website content.
@@ -75,15 +75,15 @@
     <div id="form-response"></div>
   </div>
 
-  <div class="m-3" *ngIf="status == 'PROCESSING'">
+  <div class="m-3" *ngIf="status === 'PROCESSING'">
     <mat-spinner></mat-spinner>
   </div>
 
-  <div class="m-3" *ngIf="status == 'SENT'">
+  <div class="m-3" *ngIf="status === 'SENT'">
     <h2>Your Question has been submitted.</h2>
   </div>
 
-  <div class="m-3" *ngIf="status == 'ERRORED'">
+  <div class="m-3" *ngIf="status === 'ERRORED'">
     <h2>There has been an error. Please try again.</h2>
   </div>
 </div>
