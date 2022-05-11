@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ReCaptchaV3Service } from 'ng-recaptcha';
+import * as $ from "jquery";
 
 @Component({
   templateUrl: './help-desk.component.html',
@@ -25,16 +26,33 @@ export class HelpDeskComponent {
     this.captchaResolved = true
   }
 
-  submit = function () {
+  submit(): void {
     this.helpForm.markAllAsTouched();
     if (!this.helpForm.valid) {
-      return
+      return;
     }
 
-    this.status = "PROCESSING";
+    this.status = 'PROCESSING';
 
-    setTimeout(() => {
-      this.status = "SUBMITTED";
-    }, 2000);
+    const url = 'https://uyq1jkey4k.execute-api.us-west-2.amazonaws.com/stage';
+    $.ajax({
+      type: 'POST',
+      url,
+      contentType: 'application/json',
+      // crossDomain: true, // remove in production environments
+      dataType: 'json',
+      // dataType: 'jsonp', // use JSONP for done() callback to work locally
+      data: JSON.stringify({
+        first_name: $('#first_name').val(),
+        last_name: $('#last_name').val(),
+        email: $('#email').val(),
+        questions: $('#questions').val(),
+        tool: $('input[name=tool]:checked').val()
+      })
+    }).done(result => {
+      this.status = 'SENT';
+    }).fail((jqXHR, textStatus, error) => {
+      this.status = 'ERRORED';
+    });
   }
 }
