@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { environment } from 'src/environments/environment';
 
 @Component({
   templateUrl: './help-desk.component.html',
@@ -31,8 +32,7 @@ export class HelpDeskComponent {
 
     this.status = 'PROCESSING';
 
-    const url = 'https://uyq1jkey4k.execute-api.us-west-2.amazonaws.com/stage';
-    this.http.post(url, {
+    this.http.post(environment.help_desk_uri, {
       first_name: this.helpForm.get('firstName').value,
       last_name: this.helpForm.get('lastName').value,
       email: this.helpForm.get('email').value,
