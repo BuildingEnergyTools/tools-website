@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SharedModule } from '@shared/shared.module';
+import { RecaptchaFormsModule, RecaptchaModule } from 'ng-recaptcha';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
@@ -19,7 +20,6 @@ import { GoalsOutcomesComponent } from './tools-overview/goals-outcomes/goals-ou
 import { HelpDeskComponent } from './tools-overview/help-desk/help-desk.component';
 import { ManagementComplianceComponent } from './tools-overview/management-compliance/management-compliance.component';
 import { ToolsOverviewComponent } from './tools-overview/tools-overview.component';
-import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -44,8 +44,8 @@ import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
-    RecaptchaModule,
     RecaptchaFormsModule,
+    RecaptchaModule,
     SharedModule
   ],
   bootstrap: [AppComponent]
