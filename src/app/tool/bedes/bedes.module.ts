@@ -6,7 +6,6 @@ import { BedesRoutingModule } from './bedes-routing.module';
 import { BedesComponent } from './bedes.component';
 import { RelatedComponent } from './related/related.component';
 import { FaqComponent } from './faq/faq.component';
-import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { ComplianceComponent } from './compliance/compliance.component';
 import { ResourcesComponent } from './resources/resources.component';
@@ -16,7 +15,6 @@ import { ResourcesComponent } from './resources/resources.component';
     BedesComponent,
     RelatedComponent,
     FaqComponent,
-    HelpComponent,
     HomeComponent,
     ComplianceComponent,
     ResourcesComponent

@@ -20,7 +20,7 @@ export class OepComponent {
   }, {
     title: 'Get Help',
     icon: 'fa-comments',
-    route: 'help'
+    route: '/help-desk'
   }];
 
   constructor() {
