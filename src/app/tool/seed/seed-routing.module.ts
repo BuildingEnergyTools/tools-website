@@ -4,7 +4,6 @@ import { AlliesComponent } from './allies/allies.component';
 import { DevComponent } from './dev/dev.component';
 import { FaqComponent } from './faq/faq.component';
 import { NewsComponent} from './news/news.component';
-import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { SeedComponent } from './seed.component';
@@ -30,9 +29,6 @@ const routes: Routes = [{
   }, {
     path: 'news',
     component: NewsComponent
-  }, {
-    path: 'help',
-    component: HelpComponent
   }]
 }];
 

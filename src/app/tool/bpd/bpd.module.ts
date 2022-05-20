@@ -8,7 +8,6 @@ import { DevComponent } from './dev/dev.component';
 import { DataComponent } from './data/data.component';
 import { SecurityComponent } from './security/security.component';
 import { ContributeComponent } from './contribute/contribute.component';
-import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { FaqComponent } from './faq/faq.component';
@@ -20,7 +19,6 @@ import { FaqComponent } from './faq/faq.component';
     SecurityComponent,
     ContributeComponent,
     DevComponent,
-    HelpComponent,
     HomeComponent,
     ResourcesComponent,
     FaqComponent
