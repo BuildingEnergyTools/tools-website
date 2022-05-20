@@ -7,7 +7,6 @@ import { BuildingSyncComponent } from './building-sync.component';
 import { CollaboratorsComponent } from './collaborators/collaborators.component';
 import { DevComponent } from './dev/dev.component';
 import { FaqComponent } from './faq/faq.component';
-import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { ResourcesComponent } from './resources/resources.component';
 
@@ -18,7 +17,6 @@ import { ResourcesComponent } from './resources/resources.component';
     CollaboratorsComponent,
     DevComponent,
     FaqComponent,
-    HelpComponent,
     HomeComponent,
     ResourcesComponent
   ],

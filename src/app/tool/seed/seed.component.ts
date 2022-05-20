@@ -33,7 +33,7 @@ export class SeedComponent {
   }, {
     title: 'Get Help',
     icon: 'fa-comments',
-    route: 'help'
+    route: '/help-desk'
   }];
 
   constructor() {
