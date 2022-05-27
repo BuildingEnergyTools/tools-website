@@ -1,6 +1,6 @@
 <div class="bpt">
   <div class="m-3" *ngIf="status === 'UNSUBMITTED'">
-    <div id=header>
+    <div id="header">
       <h2>Help Desk</h2>
       <p>Submit technical questions about building energy codes, REScheck or COMcheck projects, or BECP website content.
       </p>
@@ -11,7 +11,7 @@
         <p class="bold">Your Information</p>
 
         <div class="name">
-          <mat-form-field appearance="outline">
+          <mat-form-field>
             <mat-label>First Name</mat-label>
             <input type="text" id="first_name" matInput formControlName="firstName">
             <mat-error *ngIf="helpForm.get('firstName').hasError('required')">
@@ -19,7 +19,7 @@
             </mat-error>
           </mat-form-field>
 
-          <mat-form-field appearance="outline">
+          <mat-form-field>
             <mat-label>Last Name</mat-label>
             <input type="text" id="last_name" matInput formControlName="lastName">
             <mat-error *ngIf="helpForm.get('lastName').hasError('required')">
@@ -28,7 +28,7 @@
           </mat-form-field>
         </div>
 
-        <mat-form-field appearance="outline">
+        <mat-form-field>
           <mat-label>Email</mat-label>
           <input type="email" id="email" matInput formControlName="email">
           <mat-error *ngIf="helpForm.get('email').hasError('email')">
@@ -43,14 +43,13 @@
       <div id="Your Question">
         <p class="bold">Your Question</p>
 
-        <mat-form-field appearance="outline">
+        <mat-form-field>
           <mat-label>Select the relevant tool</mat-label>
           <mat-error *ngIf="helpForm.get('tool').touched && helpForm.get('tool').hasError('required')">
             Tool is <strong>required</strong>
           </mat-error>
 
-          <mat-select class="tools" formControlName="tool" id="tool" name="tool">
-            <mat-option>--</mat-option>
+          <mat-select class="tools" formControlName="tool" id="tool">
             <mat-option *ngFor="let tool of tools" [value]="tool">
               {{tool}}
             </mat-option>
@@ -58,7 +57,7 @@
         </mat-form-field>
 
         <div>
-          <mat-form-field class="question" appearance="outline">
+          <mat-form-field class="question">
             <mat-label>Question</mat-label>
             <textarea type="text" id="questions" matInput formControlName="question"></textarea>
             <mat-error *ngIf="helpForm.get('question').hasError('required')">
