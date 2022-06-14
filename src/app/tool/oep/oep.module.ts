@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '@shared/shared.module';
-import { HelpComponent } from './help/help.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { PilotsComponent } from './pilots/pilots.component';
 import { OepRoutingModule } from './oep-routing.module';
@@ -11,7 +10,6 @@ import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    HelpComponent,
     ResourcesComponent,
     OepComponent,
     PilotsComponent,

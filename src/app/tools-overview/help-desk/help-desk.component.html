@@ -1,0 +1,89 @@
+<div class="bpt">
+  <div class="m-3" *ngIf="status === 'UNSUBMITTED'">
+    <div id="header">
+      <h2>Help Desk</h2>
+      <p>Submit technical questions about building energy codes, REScheck or COMcheck projects, or BECP website content.
+      </p>
+    </div>
+
+    <form [formGroup]="helpForm">
+      <div id="Your Info">
+        <p class="bold">Your Information</p>
+
+        <div class="name">
+          <mat-form-field>
+            <mat-label>First Name</mat-label>
+            <input type="text" id="first_name" matInput formControlName="firstName">
+            <mat-error *ngIf="helpForm.get('firstName').hasError('required')">
+              First Name is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Last Name</mat-label>
+            <input type="text" id="last_name" matInput formControlName="lastName">
+            <mat-error *ngIf="helpForm.get('lastName').hasError('required')">
+              Last Name is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <mat-form-field>
+          <mat-label>Email</mat-label>
+          <input type="email" id="email" matInput formControlName="email">
+          <mat-error *ngIf="helpForm.get('email').hasError('email')">
+            Please enter a valid email address
+          </mat-error>
+          <mat-error *ngIf="helpForm.get('email').hasError('required')">
+            Email is <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div id="Your Question">
+        <p class="bold">Your Question</p>
+
+        <mat-form-field>
+          <mat-label>Select the relevant tool</mat-label>
+          <mat-error *ngIf="helpForm.get('tool').touched && helpForm.get('tool').hasError('required')">
+            Tool is <strong>required</strong>
+          </mat-error>
+
+          <mat-select class="tools" formControlName="tool" id="tool">
+            <mat-option *ngFor="let tool of tools" [value]="tool">
+              {{tool}}
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
+
+        <div>
+          <mat-form-field class="question">
+            <mat-label>Question</mat-label>
+            <textarea type="text" id="questions" matInput formControlName="question"></textarea>
+            <mat-error *ngIf="helpForm.get('question').hasError('required')">
+              Question is <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <re-captcha formControlName="recaptcha" siteKey="6Lcub80fAAAAAGtDrxldrdrlanCQ0m5kOMmsAt5f"></re-captcha>
+      <button mat-raised-button color="primary" class="submit" [disabled]="helpForm.invalid" type="submit"
+        (click)="submit()">Submit</button>
+
+    </form>
+    <div id="form-response"></div>
+  </div>
+
+  <div class="m-3" *ngIf="status === 'PROCESSING'">
+    <mat-spinner></mat-spinner>
+  </div>
+
+  <div class="m-3" *ngIf="status === 'SENT'">
+    <h2>Your Question has been submitted.</h2>
+  </div>
+
+  <div class="m-3" *ngIf="status === 'ERRORED'">
+    <h2>There has been an error. Please try again.</h2>
+  </div>
+</div>

@@ -6,7 +6,6 @@ import { AlliesComponent } from './allies/allies.component';
 import { DevComponent } from './dev/dev.component';
 import { FaqComponent } from './faq/faq.component';
 import { NewsComponent } from './news/news.component';
-import { HelpComponent } from './help/help.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { SeedRoutingModule } from './seed-routing.module';
 import { SeedComponent } from './seed.component';
@@ -18,7 +17,6 @@ import { HomeComponent } from './home/home.component';
     DevComponent,
     FaqComponent,
     NewsComponent,
-    HelpComponent,
     ResourcesComponent,
     SeedComponent,
     HomeComponent
