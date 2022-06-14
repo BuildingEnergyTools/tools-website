@@ -19,7 +19,20 @@ export class HelpDeskComponent {
     recaptcha: new FormControl(null, Validators.required)
   });
 
-  tools: string[] = ['ComStock and ResStock', 'BETTER', 'Asset Score', 'Building Performance Database (BPD)', 'General', 'Multiple Tools'];
+  tools: string[] = [
+    'Asset Score',
+    'Audit Template',
+    'BEDES',
+    'BETTER',
+    'Building Performance Database (BPD)',
+    'BuildingSync',
+    'ComStock',
+    'General',
+    'Multiple Tools',
+    'ResStock',
+    'SEED',
+    'UBID',
+  ];
 
   constructor(private http: HttpClient) {
   }
