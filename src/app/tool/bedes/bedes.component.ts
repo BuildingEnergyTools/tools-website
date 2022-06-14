@@ -28,7 +28,7 @@ export class BedesComponent {
   },{
     title: 'Get Help',
     icon: 'fa-comments',
-    route: 'help'
+    route: '/help-desk'
   }];
 
   constructor() {

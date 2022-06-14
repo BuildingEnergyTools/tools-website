@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { DataStandardizationComponent } from './tools-overview/data-standardization/data-standardization.component';
 import { AnalysisEvaluationComponent } from './tools-overview/analysis-evaluation/analysis-evaluation.component';
 import { CollectionReportingComponent } from './tools-overview/collection-reporting/collection-reporting.component';
+import { DataStandardizationComponent } from './tools-overview/data-standardization/data-standardization.component';
 import { DevelopersComponent } from './tools-overview/developers/developers.component';
 import { GoalsOutcomesComponent } from './tools-overview/goals-outcomes/goals-outcomes.component';
+import { HelpDeskComponent } from './tools-overview/help-desk/help-desk.component';
 import { ManagementComplianceComponent } from './tools-overview/management-compliance/management-compliance.component';
 
 const routes: Routes = [{
@@ -14,6 +15,9 @@ const routes: Routes = [{
 }, {
   path: 'data-standardization',
   component: DataStandardizationComponent
+}, {
+  path: 'help-desk',
+  component: HelpDeskComponent
 }, {
   path: 'collection-reporting',
   component: CollectionReportingComponent
@@ -59,7 +63,7 @@ const routes: Routes = [{
 }, {
   path: 'bedes',
   loadChildren: () => import(/* webpackChunkName: "bedes" */ './tool/bedes/bedes.module').then(m => m.BedesModule)
-}, { 
+}, {
   path: 'oep',
   loadChildren: () => import(/* webpackChunkName: "oep" */ './tool/oep/oep.module').then(m => m.OepModule)
 }, {

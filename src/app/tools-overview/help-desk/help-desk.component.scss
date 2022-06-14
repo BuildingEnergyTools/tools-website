@@ -1,0 +1,30 @@
+@import "theme";
+
+:host {
+
+  &::ng-deep [hidden] {
+    display: none;
+  }
+}
+
+.bpt {
+  max-width: $maxWidth;
+  margin: 0 auto;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.question {
+  width: 100%;
+}
+
+.name {
+  display: flex;
+  gap: 10px;
+}
+
+.submit {
+  margin: 2rem 0;
+}

@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BedesComponent } from './bedes.component';
 import { ComplianceComponent } from './compliance/compliance.component';
-import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { RelatedComponent } from './related/related.component';
 import { ResourcesComponent } from './resources/resources.component';
@@ -26,9 +25,6 @@ const routes: Routes = [{
   },{
     path: 'faq',
     component: FaqComponent
-  },{
-    path: 'help',
-    component: HelpComponent
   }]
 }];
 

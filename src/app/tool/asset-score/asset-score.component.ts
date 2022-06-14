@@ -24,7 +24,7 @@ export class AssetScoreComponent {
   }, {
     title: 'Get Help',
     icon: 'fa-comments',
-    route: 'help'
+    route: '/help-desk'
   }];
 
   constructor() {

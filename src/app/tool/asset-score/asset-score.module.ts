@@ -6,7 +6,6 @@ import { AssetScoreRoutingModule } from './asset-score-routing.module';
 import { AssetScoreComponent } from './asset-score.component';
 import { DevComponent } from './dev/dev.component';
 import { GoalsComponent } from './goals/goals.component';
-import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { ResourcesComponent } from './resources/resources.component';
 
@@ -15,7 +14,6 @@ import { ResourcesComponent } from './resources/resources.component';
     AssetScoreComponent,
     DevComponent,
     GoalsComponent,
-    HelpComponent,
     HomeComponent,
     ResourcesComponent
   ],
