@@ -15,7 +15,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
-      - name: Use node.js 12.22.5
+      - name: Set node version
         uses: actions/setup-node@v3
         with:
           node-version: 12.22.5
