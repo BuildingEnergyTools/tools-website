@@ -56,7 +56,7 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Addresses and lot numbers are \"pseudo\" keys. They can refer to more than one building and are prone to data entry errors. Datasets with pseudo keys are very hard to connect and difficult to manage.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "The Unique Building Identifier (UBID) is a natural key for buildings based on geospatial coordinates. Juridictions including Miami-Dade County, the District of Columbia and Portland, Maine have used UBIDs to unlock their data's potential and streamline program implementations.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "The Unique Building Identifier (UBID) is a natural key for buildings based on geospatial coordinates. Juridictions including Miami-Dade County, the District of Columbia, the City of Portland, Maine, and the City of South Portland, Maine, have used UBIDs to unlock their data's potential and streamline program implementations.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "div", 1);
@@ -171,7 +171,7 @@ class ResourcesComponent {
     }
 }
 ResourcesComponent.ɵfac = function ResourcesComponent_Factory(t) { return new (t || ResourcesComponent)(); };
-ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ResourcesComponent, selectors: [["ng-component"]], decls: 156, vars: 0, consts: [[1, "mat-h2", "mb-4"], [1, "mb-1"], [1, "color-2"], ["href", "https://github.com/pnnl/buildingid", "target", "_blank"], [1, "ml-1", "align-center"], [1, "fas", "fa-external-link-alt"], ["href", "http://ubid.pnnl.gov/", "target", "_blank"], ["href", "https://buildingid.github.io/", "target", "_blank"], ["href", "https://betterbuildingsinitiative.energy.gov/accelerators/building-energy-data-analysis", "target", "_blank"], ["href", "https://buildingid.pnnl.gov/pdf/20191112-Energy_Benchmarking_with_UBIDs-Draft.pdf", "target", "_blank"], ["href", "https://buildingid.pnnl.gov/pdf/20190410-Integration_of_UBID_with_Portfolio_Manager.pdf", "target", "_blank"], ["href", "https://betterbuildingssolutioncenter.energy.gov/sites/default/files/attachments/UBID%20Public%20Sector%20Implementation%20Guide.pdf", "target", "_blank"], ["href", "https://betterbuildingssolutioncenter.energy.gov/sites/default/files/attachments/UBID D.C. Case Study BEDA.pdf", "target", "_blank"], ["href", "https://www.sciencedirect.com/science/article/abs/pii/S0378778818311526?via%3Dihub"], ["href", "https://buildingid.pnnl.gov/", "target", "_blank"], ["href", "https://github.com/buildingid/buildingid.github.io", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid#ubid-documentation", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-api-docs", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-csharp", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-js", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-py", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-rb", "target", "_blank"]], template: function ResourcesComponent_Template(rf, ctx) { if (rf & 1) {
+ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ResourcesComponent, selectors: [["ng-component"]], decls: 163, vars: 0, consts: [[1, "mat-h2", "mb-4"], [1, "mb-1"], [1, "color-2"], ["href", "https://github.com/pnnl/buildingid", "target", "_blank"], [1, "ml-1", "align-center"], [1, "fas", "fa-external-link-alt"], ["href", "http://ubid.pnnl.gov/", "target", "_blank"], ["href", "https://buildingid.github.io/", "target", "_blank"], ["href", "https://betterbuildingsinitiative.energy.gov/accelerators/building-energy-data-analysis", "target", "_blank"], ["href", "https://buildingid.pnnl.gov/pdf/20191112-Energy_Benchmarking_with_UBIDs-Draft.pdf", "target", "_blank"], ["href", "https://buildingid.pnnl.gov/pdf/20190410-Integration_of_UBID_with_Portfolio_Manager.pdf", "target", "_blank"], ["href", "https://betterbuildingssolutioncenter.energy.gov/sites/default/files/attachments/UBID%20Public%20Sector%20Implementation%20Guide.pdf", "target", "_blank"], ["href", "https://betterbuildingssolutioncenter.energy.gov/sites/default/files/attachments/UBID D.C. Case Study BEDA.pdf", "target", "_blank"], ["href", "https://www.sciencedirect.com/science/article/abs/pii/S0378778818311526?via%3Dihub"], ["href", "https://buildingid.pnnl.gov/", "target", "_blank"], ["href", "https://github.com/buildingid/buildingid.github.io", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid#ubid-documentation", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-api-docs", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-csharp", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-js", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-plpgsql", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-py", "target", "_blank"], ["href", "https://github.com/pnnl/buildingid-rb", "target", "_blank"]], template: function ResourcesComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Resources");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -390,23 +390,33 @@ ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](142, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](143, "a", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](144, "UBID Python API & CLI ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](144, "UBID PL/pgSQL API ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](145, "span", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](146, "i", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](147, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](148, "An API that provides implementations of UBID encoding, decoding, and validation algorithms, and CLI that performs UBID assignment for tabular data files and that performs UBID cross-reference for tabular data files by constructing quadtree indices.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](148, "An API that provides implementations of UBID encoding, decoding, and validation algorithms for PL/pgSQL programming language for the PostgreSQL and PostGIS database management systems.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](149, "li");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](150, "a", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](151, "UBID Ruby API ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](151, "UBID Python API & CLI ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](152, "span", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](153, "i", 5);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](154, "br");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](155, "An API that provides implementations of UBID encoding, decoding, and validation algorithms for Ruby programming language.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](155, "An API that provides implementations of UBID encoding, decoding, and validation algorithms, and CLI that performs UBID assignment for tabular data files and that performs UBID cross-reference for tabular data files by constructing quadtree indices.");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](156, "li");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](157, "a", 22);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](158, "UBID Ruby API ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](159, "span", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](160, "i", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](161, "br");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](162, "An API that provides implementations of UBID encoding, decoding, and validation algorithms for Ruby programming language.");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
