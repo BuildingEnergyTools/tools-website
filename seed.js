@@ -1,34 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["seed"],{
 
-/***/ "+Ibw":
-/*!**************************************************!*\
-  !*** ./src/app/tool/seed/help/help.component.ts ***!
-  \**************************************************/
-/*! exports provided: HelpComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpComponent", function() { return HelpComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
-class HelpComponent {
-    constructor() {
-    }
-}
-HelpComponent.ɵfac = function HelpComponent_Factory(t) { return new (t || HelpComponent)(); };
-HelpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HelpComponent, selectors: [["ng-component"]], decls: 4, vars: 0, consts: [[1, "mat-h2"]], template: function HelpComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Get Help");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Contact BTODataTools@ee.doe.gov for additional help getting started with or using the SEED Platform.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, encapsulation: 2 });
-
-
-/***/ }),
-
 /***/ "2OTz":
 /*!************************************************!*\
   !*** ./src/app/tool/seed/dev/dev.component.ts ***!
@@ -149,13 +120,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dev/dev.component */ "2OTz");
 /* harmony import */ var _faq_faq_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./faq/faq.component */ "xhpI");
 /* harmony import */ var _news_news_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./news/news.component */ "y3Yt");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./help/help.component */ "+Ibw");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./resources/resources.component */ "RmyA");
-/* harmony import */ var _seed_routing_module__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./seed-routing.module */ "YQi9");
-/* harmony import */ var _seed_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./seed.component */ "IU4s");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./home/home.component */ "Zewa");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./resources/resources.component */ "RmyA");
+/* harmony import */ var _seed_routing_module__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./seed-routing.module */ "YQi9");
+/* harmony import */ var _seed_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./seed.component */ "IU4s");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./home/home.component */ "Zewa");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -169,21 +138,20 @@ __webpack_require__.r(__webpack_exports__);
 
 class SeedModule {
 }
-SeedModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineNgModule"]({ type: SeedModule });
-SeedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjector"]({ factory: function SeedModule_Factory(t) { return new (t || SeedModule)(); }, imports: [[
+SeedModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineNgModule"]({ type: SeedModule });
+SeedModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjector"]({ factory: function SeedModule_Factory(t) { return new (t || SeedModule)(); }, imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
-            _seed_routing_module__WEBPACK_IMPORTED_MODULE_8__["SeedRoutingModule"],
+            _seed_routing_module__WEBPACK_IMPORTED_MODULE_7__["SeedRoutingModule"],
             _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵsetNgModuleScope"](SeedModule, { declarations: [_allies_allies_component__WEBPACK_IMPORTED_MODULE_2__["AlliesComponent"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](SeedModule, { declarations: [_allies_allies_component__WEBPACK_IMPORTED_MODULE_2__["AlliesComponent"],
         _dev_dev_component__WEBPACK_IMPORTED_MODULE_3__["DevComponent"],
         _faq_faq_component__WEBPACK_IMPORTED_MODULE_4__["FaqComponent"],
         _news_news_component__WEBPACK_IMPORTED_MODULE_5__["NewsComponent"],
-        _help_help_component__WEBPACK_IMPORTED_MODULE_6__["HelpComponent"],
-        _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__["ResourcesComponent"],
-        _seed_component__WEBPACK_IMPORTED_MODULE_9__["SeedComponent"],
-        _home_home_component__WEBPACK_IMPORTED_MODULE_10__["HomeComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
-        _seed_routing_module__WEBPACK_IMPORTED_MODULE_8__["SeedRoutingModule"],
+        _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__["ResourcesComponent"],
+        _seed_component__WEBPACK_IMPORTED_MODULE_8__["SeedComponent"],
+        _home_home_component__WEBPACK_IMPORTED_MODULE_9__["HomeComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
+        _seed_routing_module__WEBPACK_IMPORTED_MODULE_7__["SeedRoutingModule"],
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]] }); })();
 
 
@@ -233,7 +201,7 @@ class SeedComponent {
             }, {
                 title: 'Get Help',
                 icon: 'fa-comments',
-                route: 'help'
+                route: '/help-desk'
             }];
     }
 }
@@ -937,12 +905,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dev/dev.component */ "2OTz");
 /* harmony import */ var _faq_faq_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./faq/faq.component */ "xhpI");
 /* harmony import */ var _news_news_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./news/news.component */ "y3Yt");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./help/help.component */ "+Ibw");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "Zewa");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./resources/resources.component */ "RmyA");
-/* harmony import */ var _seed_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./seed.component */ "IU4s");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "Zewa");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./resources/resources.component */ "RmyA");
+/* harmony import */ var _seed_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./seed.component */ "IU4s");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -955,13 +921,13 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [{
         path: '',
-        component: _seed_component__WEBPACK_IMPORTED_MODULE_8__["SeedComponent"],
+        component: _seed_component__WEBPACK_IMPORTED_MODULE_7__["SeedComponent"],
         children: [{
                 path: '',
-                component: _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"]
+                component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]
             }, {
                 path: 'resources',
-                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__["ResourcesComponent"]
+                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__["ResourcesComponent"]
             }, {
                 path: 'allies',
                 component: _allies_allies_component__WEBPACK_IMPORTED_MODULE_1__["AlliesComponent"]
@@ -974,16 +940,13 @@ const routes = [{
             }, {
                 path: 'news',
                 component: _news_news_component__WEBPACK_IMPORTED_MODULE_4__["NewsComponent"]
-            }, {
-                path: 'help',
-                component: _help_help_component__WEBPACK_IMPORTED_MODULE_5__["HelpComponent"]
             }]
     }];
 class SeedRoutingModule {
 }
-SeedRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: SeedRoutingModule });
-SeedRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ factory: function SeedRoutingModule_Factory(t) { return new (t || SeedRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](SeedRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
+SeedRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({ type: SeedRoutingModule });
+SeedRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ factory: function SeedRoutingModule_Factory(t) { return new (t || SeedRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](SeedRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
 
 
 /***/ }),

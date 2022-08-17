@@ -64,7 +64,7 @@ class ComstockResstockComponent {
             }, {
                 title: 'Get Help',
                 icon: 'fa-comments',
-                route: 'help'
+                route: '/help-desk'
             }];
     }
 }
@@ -76,35 +76,6 @@ ComstockResstockComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵ
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("navItems", ctx.navItems);
     } }, directives: [_shared_components_tool_tool_component__WEBPACK_IMPORTED_MODULE_1__["ToolComponent"]], encapsulation: 2 });
-
-
-/***/ }),
-
-/***/ "UmRS":
-/*!***************************************************************!*\
-  !*** ./src/app/tool/comstock-resstock/help/help.component.ts ***!
-  \***************************************************************/
-/*! exports provided: HelpComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpComponent", function() { return HelpComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
-class HelpComponent {
-    constructor() {
-    }
-}
-HelpComponent.ɵfac = function HelpComponent_Factory(t) { return new (t || HelpComponent)(); };
-HelpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HelpComponent, selectors: [["ng-component"]], decls: 4, vars: 0, consts: [[1, "mat-h2", "mb-4"]], template: function HelpComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Get Help");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Contact BTODataTools@ee.doe.gov for help getting started with or using ComStock & ResStock.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, encapsulation: 2 });
 
 
 /***/ }),
@@ -125,11 +96,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _comstock_resstock_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./comstock-resstock.component */ "SuGL");
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dev/dev.component */ "xeqQ");
 /* harmony import */ var _goals_goals_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./goals/goals.component */ "Q2jj");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./help/help.component */ "UmRS");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "p+ID");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./resources/resources.component */ "eJQM");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "p+ID");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./resources/resources.component */ "eJQM");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -141,18 +110,17 @@ __webpack_require__.r(__webpack_exports__);
 
 class ComstockResstockModule {
 }
-ComstockResstockModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: ComstockResstockModule });
-ComstockResstockModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ factory: function ComstockResstockModule_Factory(t) { return new (t || ComstockResstockModule)(); }, imports: [[
+ComstockResstockModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({ type: ComstockResstockModule });
+ComstockResstockModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ factory: function ComstockResstockModule_Factory(t) { return new (t || ComstockResstockModule)(); }, imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
             _comstock_resstock_routing_module__WEBPACK_IMPORTED_MODULE_2__["ComstockResstockRoutingModule"],
             _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](ComstockResstockModule, { declarations: [_comstock_resstock_component__WEBPACK_IMPORTED_MODULE_3__["ComstockResstockComponent"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](ComstockResstockModule, { declarations: [_comstock_resstock_component__WEBPACK_IMPORTED_MODULE_3__["ComstockResstockComponent"],
         _dev_dev_component__WEBPACK_IMPORTED_MODULE_4__["DevComponent"],
         _goals_goals_component__WEBPACK_IMPORTED_MODULE_5__["GoalsComponent"],
-        _help_help_component__WEBPACK_IMPORTED_MODULE_6__["HelpComponent"],
-        _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
-        _resources_resources_component__WEBPACK_IMPORTED_MODULE_8__["ResourcesComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
+        _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
+        _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__["ResourcesComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
         _comstock_resstock_routing_module__WEBPACK_IMPORTED_MODULE_2__["ComstockResstockRoutingModule"],
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]] }); })();
 
@@ -501,11 +469,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _comstock_resstock_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./comstock-resstock.component */ "SuGL");
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dev/dev.component */ "xeqQ");
 /* harmony import */ var _goals_goals_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./goals/goals.component */ "Q2jj");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./help/help.component */ "UmRS");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "p+ID");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./resources/resources.component */ "eJQM");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "p+ID");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./resources/resources.component */ "eJQM");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -519,26 +485,23 @@ const routes = [{
         component: _comstock_resstock_component__WEBPACK_IMPORTED_MODULE_1__["ComstockResstockComponent"],
         children: [{
                 path: '',
-                component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]
+                component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"]
             }, {
                 path: 'goals',
                 component: _goals_goals_component__WEBPACK_IMPORTED_MODULE_3__["GoalsComponent"]
             }, {
                 path: 'resources',
-                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__["ResourcesComponent"]
+                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_5__["ResourcesComponent"]
             }, {
                 path: 'dev',
                 component: _dev_dev_component__WEBPACK_IMPORTED_MODULE_2__["DevComponent"]
-            }, {
-                path: 'help',
-                component: _help_help_component__WEBPACK_IMPORTED_MODULE_4__["HelpComponent"]
             }]
     }];
 class ComstockResstockRoutingModule {
 }
-ComstockResstockRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({ type: ComstockResstockRoutingModule });
-ComstockResstockRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ factory: function ComstockResstockRoutingModule_Factory(t) { return new (t || ComstockResstockRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](ComstockResstockRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
+ComstockResstockRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({ type: ComstockResstockRoutingModule });
+ComstockResstockRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({ factory: function ComstockResstockRoutingModule_Factory(t) { return new (t || ComstockResstockRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](ComstockResstockRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
 
 
 /***/ }),

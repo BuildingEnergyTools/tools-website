@@ -88,12 +88,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _better_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./better.component */ "sapm");
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dev/dev.component */ "t4ET");
 /* harmony import */ var _goals_goals_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./goals/goals.component */ "9nfs");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./help/help.component */ "SNqj");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "ee6C");
-/* harmony import */ var _news_news_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./news/news.component */ "XI1Y");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./resources/resources.component */ "g/14");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "ee6C");
+/* harmony import */ var _news_news_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./news/news.component */ "XI1Y");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./resources/resources.component */ "g/14");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -106,19 +104,18 @@ __webpack_require__.r(__webpack_exports__);
 
 class BetterModule {
 }
-BetterModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineNgModule"]({ type: BetterModule });
-BetterModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjector"]({ factory: function BetterModule_Factory(t) { return new (t || BetterModule)(); }, imports: [[
+BetterModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: BetterModule });
+BetterModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ factory: function BetterModule_Factory(t) { return new (t || BetterModule)(); }, imports: [[
             _better_routing_module__WEBPACK_IMPORTED_MODULE_2__["BetterRoutingModule"],
             _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
             _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](BetterModule, { declarations: [_better_component__WEBPACK_IMPORTED_MODULE_3__["BetterComponent"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](BetterModule, { declarations: [_better_component__WEBPACK_IMPORTED_MODULE_3__["BetterComponent"],
         _dev_dev_component__WEBPACK_IMPORTED_MODULE_4__["DevComponent"],
         _goals_goals_component__WEBPACK_IMPORTED_MODULE_5__["GoalsComponent"],
-        _help_help_component__WEBPACK_IMPORTED_MODULE_6__["HelpComponent"],
-        _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
-        _news_news_component__WEBPACK_IMPORTED_MODULE_8__["NewsComponent"],
-        _resources_resources_component__WEBPACK_IMPORTED_MODULE_9__["ResourcesComponent"]], imports: [_better_routing_module__WEBPACK_IMPORTED_MODULE_2__["BetterRoutingModule"],
+        _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
+        _news_news_component__WEBPACK_IMPORTED_MODULE_7__["NewsComponent"],
+        _resources_resources_component__WEBPACK_IMPORTED_MODULE_8__["ResourcesComponent"]], imports: [_better_routing_module__WEBPACK_IMPORTED_MODULE_2__["BetterRoutingModule"],
         _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]] }); })();
 
@@ -139,12 +136,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _better_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./better.component */ "sapm");
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dev/dev.component */ "t4ET");
 /* harmony import */ var _goals_goals_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./goals/goals.component */ "9nfs");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./help/help.component */ "SNqj");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "ee6C");
-/* harmony import */ var _news_news_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./news/news.component */ "XI1Y");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./resources/resources.component */ "g/14");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "ee6C");
+/* harmony import */ var _news_news_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./news/news.component */ "XI1Y");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./resources/resources.component */ "g/14");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -159,58 +154,26 @@ const routes = [{
         component: _better_component__WEBPACK_IMPORTED_MODULE_1__["BetterComponent"],
         children: [{
                 path: '',
-                component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]
+                component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"]
             }, {
                 path: 'goals',
                 component: _goals_goals_component__WEBPACK_IMPORTED_MODULE_3__["GoalsComponent"]
             }, {
                 path: 'resources',
-                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__["ResourcesComponent"]
+                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__["ResourcesComponent"]
             }, {
                 path: 'news',
-                component: _news_news_component__WEBPACK_IMPORTED_MODULE_6__["NewsComponent"]
+                component: _news_news_component__WEBPACK_IMPORTED_MODULE_5__["NewsComponent"]
             }, {
                 path: 'dev',
                 component: _dev_dev_component__WEBPACK_IMPORTED_MODULE_2__["DevComponent"]
-            }, {
-                path: 'help',
-                component: _help_help_component__WEBPACK_IMPORTED_MODULE_4__["HelpComponent"]
             }]
     }];
 class BetterRoutingModule {
 }
-BetterRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({ type: BetterRoutingModule });
-BetterRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ factory: function BetterRoutingModule_Factory(t) { return new (t || BetterRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](BetterRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
-
-
-/***/ }),
-
-/***/ "SNqj":
-/*!****************************************************!*\
-  !*** ./src/app/tool/better/help/help.component.ts ***!
-  \****************************************************/
-/*! exports provided: HelpComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpComponent", function() { return HelpComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
-class HelpComponent {
-    constructor() {
-    }
-}
-HelpComponent.ɵfac = function HelpComponent_Factory(t) { return new (t || HelpComponent)(); };
-HelpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HelpComponent, selectors: [["ng-component"]], decls: 4, vars: 0, consts: [[1, "mat-h2", "mb-4"]], template: function HelpComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Get Help");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Contact BTODataTools@ee.doe.gov for help getting started with or using BETTER.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, encapsulation: 2 });
+BetterRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({ type: BetterRoutingModule });
+BetterRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ factory: function BetterRoutingModule_Factory(t) { return new (t || BetterRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](BetterRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
 
 
 /***/ }),
@@ -472,7 +435,7 @@ class BetterComponent {
             }, {
                 title: 'Get Help',
                 icon: 'fa-comments',
-                route: 'help'
+                route: '/help-desk'
             }];
     }
 }

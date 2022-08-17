@@ -668,7 +668,7 @@ class AssetScoreComponent {
             }, {
                 title: 'Get Help',
                 icon: 'fa-comments',
-                route: 'help'
+                route: '/help-desk'
             }];
     }
 }
@@ -825,35 +825,6 @@ HomeComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
 
 /***/ }),
 
-/***/ "dkJ0":
-/*!*********************************************************!*\
-  !*** ./src/app/tool/asset-score/help/help.component.ts ***!
-  \*********************************************************/
-/*! exports provided: HelpComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpComponent", function() { return HelpComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
-class HelpComponent {
-    constructor() {
-    }
-}
-HelpComponent.ɵfac = function HelpComponent_Factory(t) { return new (t || HelpComponent)(); };
-HelpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HelpComponent, selectors: [["ng-component"]], decls: 4, vars: 0, consts: [[1, "mat-h2", "mb-4"]], template: function HelpComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Get Help");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Contact BTODataTools@ee.doe.gov for help getting started with or using Asset Score. ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, encapsulation: 2 });
-
-
-/***/ }),
-
 /***/ "p6Ex":
 /*!********************************************************!*\
   !*** ./src/app/tool/asset-score/asset-score.module.ts ***!
@@ -870,11 +841,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _asset_score_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./asset-score.component */ "VBlR");
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./dev/dev.component */ "LrTj");
 /* harmony import */ var _goals_goals_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./goals/goals.component */ "snRL");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./help/help.component */ "dkJ0");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "daIO");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./resources/resources.component */ "Fs+1");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "daIO");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./resources/resources.component */ "Fs+1");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -886,18 +855,17 @@ __webpack_require__.r(__webpack_exports__);
 
 class AssetScoreModule {
 }
-AssetScoreModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: AssetScoreModule });
-AssetScoreModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ factory: function AssetScoreModule_Factory(t) { return new (t || AssetScoreModule)(); }, imports: [[
+AssetScoreModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({ type: AssetScoreModule });
+AssetScoreModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ factory: function AssetScoreModule_Factory(t) { return new (t || AssetScoreModule)(); }, imports: [[
             _asset_score_routing_module__WEBPACK_IMPORTED_MODULE_2__["AssetScoreRoutingModule"],
             _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
             _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](AssetScoreModule, { declarations: [_asset_score_component__WEBPACK_IMPORTED_MODULE_3__["AssetScoreComponent"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](AssetScoreModule, { declarations: [_asset_score_component__WEBPACK_IMPORTED_MODULE_3__["AssetScoreComponent"],
         _dev_dev_component__WEBPACK_IMPORTED_MODULE_4__["DevComponent"],
         _goals_goals_component__WEBPACK_IMPORTED_MODULE_5__["GoalsComponent"],
-        _help_help_component__WEBPACK_IMPORTED_MODULE_6__["HelpComponent"],
-        _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
-        _resources_resources_component__WEBPACK_IMPORTED_MODULE_8__["ResourcesComponent"]], imports: [_asset_score_routing_module__WEBPACK_IMPORTED_MODULE_2__["AssetScoreRoutingModule"],
+        _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"],
+        _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__["ResourcesComponent"]], imports: [_asset_score_routing_module__WEBPACK_IMPORTED_MODULE_2__["AssetScoreRoutingModule"],
         _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]] }); })();
 
@@ -954,11 +922,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _asset_score_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./asset-score.component */ "VBlR");
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dev/dev.component */ "LrTj");
 /* harmony import */ var _goals_goals_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./goals/goals.component */ "snRL");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./help/help.component */ "dkJ0");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "daIO");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./resources/resources.component */ "Fs+1");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./home/home.component */ "daIO");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./resources/resources.component */ "Fs+1");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -972,26 +938,23 @@ const routes = [{
         component: _asset_score_component__WEBPACK_IMPORTED_MODULE_1__["AssetScoreComponent"],
         children: [{
                 path: '',
-                component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]
+                component: _home_home_component__WEBPACK_IMPORTED_MODULE_4__["HomeComponent"]
             }, {
                 path: 'goals',
                 component: _goals_goals_component__WEBPACK_IMPORTED_MODULE_3__["GoalsComponent"]
             }, {
                 path: 'resources',
-                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__["ResourcesComponent"]
+                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_5__["ResourcesComponent"]
             }, {
                 path: 'dev',
                 component: _dev_dev_component__WEBPACK_IMPORTED_MODULE_2__["DevComponent"]
-            }, {
-                path: 'help',
-                component: _help_help_component__WEBPACK_IMPORTED_MODULE_4__["HelpComponent"]
             }]
     }];
 class AssetScoreRoutingModule {
 }
-AssetScoreRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({ type: AssetScoreRoutingModule });
-AssetScoreRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ factory: function AssetScoreRoutingModule_Factory(t) { return new (t || AssetScoreRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](AssetScoreRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
+AssetScoreRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({ type: AssetScoreRoutingModule });
+AssetScoreRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({ factory: function AssetScoreRoutingModule_Factory(t) { return new (t || AssetScoreRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](AssetScoreRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
 
 
 /***/ })

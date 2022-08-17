@@ -101,13 +101,11 @@ PilotsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCo
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OepRoutingModule", function() { return OepRoutingModule; });
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/router */ "tyNb");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./help/help.component */ "Vi6h");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home/home.component */ "xG6d");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resources/resources.component */ "xsSR");
-/* harmony import */ var _pilots_pilots_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pilots/pilots.component */ "BuCI");
-/* harmony import */ var _oep_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./oep.component */ "rISd");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home/home.component */ "xG6d");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resources/resources.component */ "xsSR");
+/* harmony import */ var _pilots_pilots_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pilots/pilots.component */ "BuCI");
+/* harmony import */ var _oep_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./oep.component */ "rISd");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -117,62 +115,23 @@ __webpack_require__.r(__webpack_exports__);
 
 const routes = [{
         path: '',
-        component: _oep_component__WEBPACK_IMPORTED_MODULE_5__["OepComponent"],
+        component: _oep_component__WEBPACK_IMPORTED_MODULE_4__["OepComponent"],
         children: [{
                 path: '',
-                component: _home_home_component__WEBPACK_IMPORTED_MODULE_2__["HomeComponent"]
+                component: _home_home_component__WEBPACK_IMPORTED_MODULE_1__["HomeComponent"]
             }, {
                 path: 'pilots',
-                component: _pilots_pilots_component__WEBPACK_IMPORTED_MODULE_4__["PilotsComponent"]
+                component: _pilots_pilots_component__WEBPACK_IMPORTED_MODULE_3__["PilotsComponent"]
             }, {
                 path: 'resources',
-                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_3__["ResourcesComponent"]
-            }, {
-                path: 'help',
-                component: _help_help_component__WEBPACK_IMPORTED_MODULE_1__["HelpComponent"]
+                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_2__["ResourcesComponent"]
             }]
     }];
 class OepRoutingModule {
 }
-OepRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineNgModule"]({ type: OepRoutingModule });
-OepRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineInjector"]({ factory: function OepRoutingModule_Factory(t) { return new (t || OepRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](OepRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
-
-
-/***/ }),
-
-/***/ "Vi6h":
-/*!*************************************************!*\
-  !*** ./src/app/tool/oep/help/help.component.ts ***!
-  \*************************************************/
-/*! exports provided: HelpComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpComponent", function() { return HelpComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
-class HelpComponent {
-    constructor() {
-    }
-}
-HelpComponent.ɵfac = function HelpComponent_Factory(t) { return new (t || HelpComponent)(); };
-HelpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HelpComponent, selectors: [["ng-component"]], decls: 9, vars: 0, consts: [[1, "mat-h3", "mb-4"], ["href", "https://psdconsultinghelp.freshdesk.com/support/home", "target", "_blank"], [1, "ml-1", "align-center"], [1, "fas", "fa-external-link-alt"]], template: function HelpComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Get Help");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Visit the ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "a", 1);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](5, "OpenEfficiency Platform Help Desk ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "span", 2);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "i", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " for help getting started with or using any of the OEP tools.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, encapsulation: 2 });
+OepRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineNgModule"]({ type: OepRoutingModule });
+OepRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({ factory: function OepRoutingModule_Factory(t) { return new (t || OepRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](OepRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
 
 
 /***/ }),
@@ -189,14 +148,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "OepModule", function() { return OepModule; });
 /* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/common */ "ofXK");
 /* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @shared/shared.module */ "PCNd");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./help/help.component */ "Vi6h");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resources/resources.component */ "xsSR");
-/* harmony import */ var _pilots_pilots_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pilots/pilots.component */ "BuCI");
-/* harmony import */ var _oep_routing_module__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./oep-routing.module */ "VH5I");
-/* harmony import */ var _oep_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./oep.component */ "rISd");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "xG6d");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resources/resources.component */ "xsSR");
+/* harmony import */ var _pilots_pilots_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pilots/pilots.component */ "BuCI");
+/* harmony import */ var _oep_routing_module__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./oep-routing.module */ "VH5I");
+/* harmony import */ var _oep_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./oep.component */ "rISd");
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "xG6d");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -207,18 +164,17 @@ __webpack_require__.r(__webpack_exports__);
 
 class OepModule {
 }
-OepModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({ type: OepModule });
-OepModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ factory: function OepModule_Factory(t) { return new (t || OepModule)(); }, imports: [[
+OepModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({ type: OepModule });
+OepModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ factory: function OepModule_Factory(t) { return new (t || OepModule)(); }, imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
-            _oep_routing_module__WEBPACK_IMPORTED_MODULE_5__["OepRoutingModule"],
+            _oep_routing_module__WEBPACK_IMPORTED_MODULE_4__["OepRoutingModule"],
             _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](OepModule, { declarations: [_help_help_component__WEBPACK_IMPORTED_MODULE_2__["HelpComponent"],
-        _resources_resources_component__WEBPACK_IMPORTED_MODULE_3__["ResourcesComponent"],
-        _oep_component__WEBPACK_IMPORTED_MODULE_6__["OepComponent"],
-        _pilots_pilots_component__WEBPACK_IMPORTED_MODULE_4__["PilotsComponent"],
-        _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
-        _oep_routing_module__WEBPACK_IMPORTED_MODULE_5__["OepRoutingModule"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](OepModule, { declarations: [_resources_resources_component__WEBPACK_IMPORTED_MODULE_2__["ResourcesComponent"],
+        _oep_component__WEBPACK_IMPORTED_MODULE_5__["OepComponent"],
+        _pilots_pilots_component__WEBPACK_IMPORTED_MODULE_3__["PilotsComponent"],
+        _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
+        _oep_routing_module__WEBPACK_IMPORTED_MODULE_4__["OepRoutingModule"],
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]] }); })();
 
 
@@ -255,7 +211,7 @@ class OepComponent {
             }, {
                 title: 'Get Help',
                 icon: 'fa-comments',
-                route: 'help'
+                route: '/help-desk'
             }];
     }
 }

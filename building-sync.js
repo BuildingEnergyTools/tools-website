@@ -1,34 +1,5 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([["building-sync"],{
 
-/***/ "1Hzm":
-/*!***********************************************************!*\
-  !*** ./src/app/tool/building-sync/help/help.component.ts ***!
-  \***********************************************************/
-/*! exports provided: HelpComponent */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HelpComponent", function() { return HelpComponent; });
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
-class HelpComponent {
-    constructor() {
-    }
-}
-HelpComponent.ɵfac = function HelpComponent_Factory(t) { return new (t || HelpComponent)(); };
-HelpComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: HelpComponent, selectors: [["ng-component"]], decls: 4, vars: 0, consts: [[1, "mat-h2", "mb-4"]], template: function HelpComponent_Template(rf, ctx) { if (rf & 1) {
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Get Help");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](3, "Contact BTODataTools@ee.doe.gov for help getting started with or using BuildingSync.");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-    } }, encapsulation: 2 });
-
-
-/***/ }),
-
 /***/ "E2aO":
 /*!*****************************************************************************!*\
   !*** ./src/app/tool/building-sync/collaborators/collaborators.component.ts ***!
@@ -414,11 +385,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _collaborators_collaborators_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./collaborators/collaborators.component */ "E2aO");
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./dev/dev.component */ "j2NP");
 /* harmony import */ var _faq_faq_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./faq/faq.component */ "a7Fb");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./help/help.component */ "1Hzm");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./home/home.component */ "d+y2");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./resources/resources.component */ "jMS1");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./home/home.component */ "d+y2");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./resources/resources.component */ "jMS1");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -431,19 +400,18 @@ __webpack_require__.r(__webpack_exports__);
 
 class BuildingSyncModule {
 }
-BuildingSyncModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineNgModule"]({ type: BuildingSyncModule });
-BuildingSyncModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjector"]({ factory: function BuildingSyncModule_Factory(t) { return new (t || BuildingSyncModule)(); }, imports: [[
+BuildingSyncModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineNgModule"]({ type: BuildingSyncModule });
+BuildingSyncModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵdefineInjector"]({ factory: function BuildingSyncModule_Factory(t) { return new (t || BuildingSyncModule)(); }, imports: [[
             _angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
             _building_sync_routing_module__WEBPACK_IMPORTED_MODULE_2__["BuildingSyncRoutingModule"],
             _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵsetNgModuleScope"](BuildingSyncModule, { declarations: [_building_sync_component__WEBPACK_IMPORTED_MODULE_3__["BuildingSyncComponent"],
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_9__["ɵɵsetNgModuleScope"](BuildingSyncModule, { declarations: [_building_sync_component__WEBPACK_IMPORTED_MODULE_3__["BuildingSyncComponent"],
         _collaborators_collaborators_component__WEBPACK_IMPORTED_MODULE_4__["CollaboratorsComponent"],
         _dev_dev_component__WEBPACK_IMPORTED_MODULE_5__["DevComponent"],
         _faq_faq_component__WEBPACK_IMPORTED_MODULE_6__["FaqComponent"],
-        _help_help_component__WEBPACK_IMPORTED_MODULE_7__["HelpComponent"],
-        _home_home_component__WEBPACK_IMPORTED_MODULE_8__["HomeComponent"],
-        _resources_resources_component__WEBPACK_IMPORTED_MODULE_9__["ResourcesComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
+        _home_home_component__WEBPACK_IMPORTED_MODULE_7__["HomeComponent"],
+        _resources_resources_component__WEBPACK_IMPORTED_MODULE_8__["ResourcesComponent"]], imports: [_angular_common__WEBPACK_IMPORTED_MODULE_0__["CommonModule"],
         _building_sync_routing_module__WEBPACK_IMPORTED_MODULE_2__["BuildingSyncRoutingModule"],
         _shared_shared_module__WEBPACK_IMPORTED_MODULE_1__["SharedModule"]] }); })();
 
@@ -901,7 +869,7 @@ class BuildingSyncComponent {
             }, {
                 title: 'Get Help',
                 icon: 'fa-comments',
-                route: 'help'
+                route: '/help-desk'
             }];
     }
 }
@@ -932,11 +900,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _collaborators_collaborators_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./collaborators/collaborators.component */ "E2aO");
 /* harmony import */ var _dev_dev_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./dev/dev.component */ "j2NP");
 /* harmony import */ var _faq_faq_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./faq/faq.component */ "a7Fb");
-/* harmony import */ var _help_help_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./help/help.component */ "1Hzm");
-/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./home/home.component */ "d+y2");
-/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./resources/resources.component */ "jMS1");
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/core */ "fXoL");
-
+/* harmony import */ var _home_home_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./home/home.component */ "d+y2");
+/* harmony import */ var _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./resources/resources.component */ "jMS1");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/core */ "fXoL");
 
 
 
@@ -951,10 +917,10 @@ const routes = [{
         component: _building_sync_component__WEBPACK_IMPORTED_MODULE_1__["BuildingSyncComponent"],
         children: [{
                 path: '',
-                component: _home_home_component__WEBPACK_IMPORTED_MODULE_6__["HomeComponent"]
+                component: _home_home_component__WEBPACK_IMPORTED_MODULE_5__["HomeComponent"]
             }, {
                 path: 'resources',
-                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_7__["ResourcesComponent"]
+                component: _resources_resources_component__WEBPACK_IMPORTED_MODULE_6__["ResourcesComponent"]
             }, {
                 path: 'collaborators',
                 component: _collaborators_collaborators_component__WEBPACK_IMPORTED_MODULE_2__["CollaboratorsComponent"]
@@ -964,16 +930,13 @@ const routes = [{
             }, {
                 path: 'faq',
                 component: _faq_faq_component__WEBPACK_IMPORTED_MODULE_4__["FaqComponent"]
-            }, {
-                path: 'help',
-                component: _help_help_component__WEBPACK_IMPORTED_MODULE_5__["HelpComponent"]
             }]
     }];
 class BuildingSyncRoutingModule {
 }
-BuildingSyncRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineNgModule"]({ type: BuildingSyncRoutingModule });
-BuildingSyncRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵdefineInjector"]({ factory: function BuildingSyncRoutingModule_Factory(t) { return new (t || BuildingSyncRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_8__["ɵɵsetNgModuleScope"](BuildingSyncRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
+BuildingSyncRoutingModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineNgModule"]({ type: BuildingSyncRoutingModule });
+BuildingSyncRoutingModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵdefineInjector"]({ factory: function BuildingSyncRoutingModule_Factory(t) { return new (t || BuildingSyncRoutingModule)(); }, imports: [[_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"].forChild(routes)], _angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_7__["ɵɵsetNgModuleScope"](BuildingSyncRoutingModule, { imports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]], exports: [_angular_router__WEBPACK_IMPORTED_MODULE_0__["RouterModule"]] }); })();
 
 
 /***/ })
