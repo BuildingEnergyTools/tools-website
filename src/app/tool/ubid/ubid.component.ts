@@ -16,7 +16,7 @@ export class UbidComponent {
   }, {
     title: 'Get Help',
     icon: 'fa-comments',
-    route: 'help'
+    route: '/help-desk'
   }];
 
   constructor() { }

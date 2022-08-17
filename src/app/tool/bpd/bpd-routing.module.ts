@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BpdComponent } from './bpd.component';
 import { DevComponent } from './dev/dev.component';
-import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { FaqComponent } from './faq/faq.component';
@@ -34,9 +33,6 @@ const routes: Routes = [{
   }, {
     path: 'dev',
     component: DevComponent
-  }, {
-    path: 'help',
-    component: HelpComponent
   }]
 }];
 

@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ComstockResstockComponent } from './comstock-resstock.component';
 import { DevComponent } from './dev/dev.component';
 import { GoalsComponent } from './goals/goals.component';
-import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { ResourcesComponent } from './resources/resources.component';
 
@@ -22,9 +21,6 @@ const routes: Routes = [{
   }, {
     path: 'dev',
     component: DevComponent
-  }, {
-    path: 'help',
-    component: HelpComponent
   }]
 }];
 

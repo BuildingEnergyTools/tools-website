@@ -6,7 +6,6 @@ import { BetterRoutingModule } from './better-routing.module';
 import { BetterComponent } from './better.component';
 import { DevComponent } from './dev/dev.component';
 import { GoalsComponent } from './goals/goals.component';
-import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { NewsComponent } from './news/news.component';
 import { ResourcesComponent } from './resources/resources.component';
@@ -16,7 +15,6 @@ import { ResourcesComponent } from './resources/resources.component';
     BetterComponent,
     DevComponent,
     GoalsComponent,
-    HelpComponent,
     HomeComponent,
     NewsComponent,
     ResourcesComponent

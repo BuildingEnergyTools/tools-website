@@ -6,7 +6,6 @@ import { ComstockResstockRoutingModule } from './comstock-resstock-routing.modul
 import { ComstockResstockComponent } from './comstock-resstock.component';
 import { DevComponent } from './dev/dev.component';
 import { GoalsComponent } from './goals/goals.component';
-import { HelpComponent } from './help/help.component';
 import { HomeComponent } from './home/home.component';
 import { ResourcesComponent } from './resources/resources.component';
 
@@ -16,7 +15,6 @@ import { ResourcesComponent } from './resources/resources.component';
     ComstockResstockComponent,
     DevComponent,
     GoalsComponent,
-    HelpComponent,
     HomeComponent,
     ResourcesComponent
   ],
