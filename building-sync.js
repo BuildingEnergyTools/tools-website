@@ -602,7 +602,7 @@ class ResourcesComponent {
     }
 }
 ResourcesComponent.ɵfac = function ResourcesComponent_Factory(t) { return new (t || ResourcesComponent)(); };
-ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ResourcesComponent, selectors: [["ng-component"]], decls: 146, vars: 0, consts: [[1, "mat-h2", "mb-4"], [1, "mat-h3"], ["href", "https://buildingsync.net/schema", "target", "_blank", 1, "color-2", "bold-link"], [1, "ml-1", "align-center"], [1, "fas", "fa-external-link-alt"], [1, "mat-h4"], ["href", "https://buildingsync.net/static/documents/BuildingSync-RFP-RFQ-language.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://github.com/BuildingSync/schema/tree/develop-v2/examples", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/BuildingSync-on-boarding.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://github.com/BuildingSync/schema/releases/download/v2.4.0/geometry_reference.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://www.sciencedirect.com/science/article/pii/S2666165921000132", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Mosiman-BPAC-2020.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://nrel-seed.s3.us-east-1.amazonaws.com/resources/2020-09-11%20-%20BuildingSync%20Update%20Presentation.pdf", 1, "color-2", "bold-link"], ["href", "https://nrel-seed.s3.us-east-1.amazonaws.com/resources/2020-09-11%20-%20BuildingSync%20Update%20Webinar.mp4", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Hooper-ACEEE-BRICR.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/DeGraw-ACEEE-BuildingSync-in-Action.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Kelsey-ACEEE-Std211.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "http://www.kw-engineering.com/buildingsync-energy-audits-benefits/", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Taylor-ACEEE-Ordinances.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://www.ashrae.org/technical-resources/bookstore/standards-180-and-211", "target", "_blank", 1, "color-2", "bold-link"], ["href", "http://nesea.org/sites/default/files/session-docs/1705_data_driven_bergman.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Balbach-IBPSA-QAQC.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "http://cbei.psu.edu/wp-content/uploads/2016/07/Broadening-Use-of-DOE-BTO-Tools-in-the-SMSCB-Market.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Eley-IPBSA-StandardizeOutputs.pdf", "target", "_blank", 1, "color-2", "bold-link"]], template: function ResourcesComponent_Template(rf, ctx) { if (rf & 1) {
+ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: ResourcesComponent, selectors: [["ng-component"]], decls: 146, vars: 0, consts: [[1, "mat-h2", "mb-4"], [1, "mat-h3"], ["href", "https://buildingsync.net/schema", "target", "_blank", 1, "color-2", "bold-link"], [1, "ml-1", "align-center"], [1, "fas", "fa-external-link-alt"], [1, "mat-h4"], ["href", "https://buildingsync.net/static/documents/BuildingSync-RFP-RFQ-language.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://github.com/BuildingSync/schema/tree/develop-v2/examples", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/BuildingSync-on-boarding.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://github.com/BuildingSync/schema/releases/download/v2.4.0/geometry_reference.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://www.sciencedirect.com/science/article/pii/S2666165921000132", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Mosiman-BPAC-2020.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://nrel-seed.s3.us-east-1.amazonaws.com/resources/2020-09-11%20-%20BuildingSync%20Update%20Presentation.pdf", 1, "color-2", "bold-link"], ["href", "https://nrel-seed.s3.us-east-1.amazonaws.com/resources/2020-09-11%20-%20BuildingSync%20Update%20Webinar.mp4", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Hooper-ACEEE-BRICR.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/DeGraw-ACEEE-BuildingSync-in-Action.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Kelsey-ACEEE-Std211.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "http://www.kw-engineering.com/buildingsync-energy-audits-benefits/", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://www.ashrae.org/technical-resources/bookstore/standards-180-and-211", "target", "_blank", 1, "color-2", "bold-link"], ["href", "http://nesea.org/sites/default/files/session-docs/1705_data_driven_bergman.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Balbach-IBPSA-QAQC.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Taylor-ACEEE-Ordinances.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "http://cbei.psu.edu/wp-content/uploads/2016/07/Broadening-Use-of-DOE-BTO-Tools-in-the-SMSCB-Market.pdf", "target", "_blank", 1, "color-2", "bold-link"], ["href", "https://buildingsync.net/static/documents/Eley-IPBSA-StandardizeOutputs.pdf", "target", "_blank", 1, "color-2", "bold-link"]], template: function ResourcesComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "h2", 0);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](1, "Resources");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
@@ -773,37 +773,37 @@ ResourcesComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefin
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](112, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](113, "a", 18);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114, "Taylor, Cody, Marc Costa, Nicholas Long, and Jayson Antonoff. 2016. \u201CA National Framework for Energy Audit Ordinances.\u201D In 2016 ACEEE Summer Study on Energy Efficiency in Buildings, 1\u201312. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](114, "ASHRAE. 2018. \u201CBSR/ASHRAE/ACCA Standard Standard 211-2018.\u201D Atlanta, GA. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](115, "span", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](116, "i", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](118, "a", 19);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](119, "ASHRAE. 2018. \u201CBSR/ASHRAE/ACCA Standard Standard 211-2018.\u201D Atlanta, GA. ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "span", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](121, "i", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](117, "h4", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](118, "2017");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](119, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](120, "a", 19);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](121, "Bergmann, Harry. 2017. \u201CDOE Building Energy Data Tools.\u201D ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](122, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](123, "i", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](122, "h4", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](123, "2017");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](124, "h4", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](125, "2016");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](124, "p");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](125, "a", 20);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](126, "Bergmann, Harry. 2017. \u201CDOE Building Energy Data Tools.\u201D ");
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "span", 3);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](128, "i", 4);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](126, "p");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](127, "a", 20);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](128, "Balbach, Chris, and David Bosworth. 2016. \u201CAutomated Methods for Improving Energy Model Quality Assurance and Quality Control.\u201D In ASHRAE and IBPSA-USA SimBuild 2016 Building Performance Modeling Conference, 385\u201392. Salt Lake City, UT. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "span", 3);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](130, "i", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](129, "h4", 5);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](130, "2016");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](131, "p");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](132, "a", 21);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](133, "Balbach, Chris, and David Bosworth. 2016. \u201CAutomated Methods for Improving Energy Model Quality Assurance and Quality Control.\u201D In ASHRAE and IBPSA-USA SimBuild 2016 Building Performance Modeling Conference, 385\u201392. Salt Lake City, UT. ");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](133, "Taylor, Cody, Marc Costa, Nicholas Long, and Jayson Antonoff. 2016. \u201CA National Framework for Energy Audit Ordinances.\u201D In 2016 ACEEE Summer Study on Energy Efficiency in Buildings, 1\u201312. ");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](134, "span", 3);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](135, "i", 4);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
