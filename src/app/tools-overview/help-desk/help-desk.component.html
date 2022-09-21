@@ -1,9 +1,16 @@
 <div class="bpt">
   <div class="m-3" *ngIf="status === 'UNSUBMITTED'">
-    <div id="header">
+    <div class="header">
       <h2>Help Desk</h2>
-      <p>Submit technical questions about building energy codes, REScheck or COMcheck projects, or BECP website content.
+      <p>Submit technical questions about Building Data Tools (e.g., BuildingSync, ComStock, SEED, Audit Template) here.
+         You may also submit general questions and questions that span across multiple tools.
+         Please visit 
+         <a href="https://www.energycodes.gov/technical-assistance/help-desk">The Building Energy Codes Program</a>
+         to submit questions for COMcheck and REScheck.       
       </p>
+      <p>For questions about Building Performance Standards, please 
+        <a href=" https://www.energycodes.gov/bps/bps-technical-assistance”">Request BPS Technical Assistance</a>.
+       </p>
     </div>
 
     <form [formGroup]="helpForm">
