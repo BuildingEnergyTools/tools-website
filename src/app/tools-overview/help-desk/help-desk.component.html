@@ -1,16 +1,16 @@
-<div class="bpt">
-  <div class="m-3" *ngIf="status === 'UNSUBMITTED'">
+<div class="bpt" [ngSwitch]="status">
+  <div class="m-3" *ngSwitchDefault>
     <div class="header">
       <h2>Help Desk</h2>
       <p>Submit technical questions about Building Data Tools (e.g., BuildingSync, ComStock, SEED, Audit Template) here.
-         You may also submit general questions and questions that span across multiple tools.
-         Please visit 
-         <a href="https://www.energycodes.gov/technical-assistance/help-desk">The Building Energy Codes Program</a>
-         to submit questions for COMcheck and REScheck.       
+        You may also submit general questions and questions that span across multiple tools.
+        Please visit
+        <a href="https://www.energycodes.gov/technical-assistance/help-desk">The Building Energy Codes Program</a>
+        to submit questions for COMcheck and REScheck.
       </p>
-      <p>For questions about Building Performance Standards, please 
+      <p>For questions about Building Performance Standards, please
         <a href=" https://www.energycodes.gov/bps/bps-technical-assistance”">Request BPS Technical Assistance</a>.
-       </p>
+      </p>
     </div>
 
     <form [formGroup]="helpForm">
@@ -75,22 +75,20 @@
       </div>
 
       <re-captcha formControlName="recaptcha" siteKey="6Lcub80fAAAAAGtDrxldrdrlanCQ0m5kOMmsAt5f"></re-captcha>
-      <button mat-raised-button color="primary" class="submit" [disabled]="helpForm.invalid" type="submit"
-        (click)="submit()">Submit</button>
-
+      <button mat-raised-button color="primary" class="submit" [disabled]="helpForm.invalid" type="submit" (click)="submit()">Submit</button>
     </form>
     <div id="form-response"></div>
   </div>
 
-  <div class="m-3" *ngIf="status === 'PROCESSING'">
+  <div class="m-3" *ngSwitchCase="'PROCESSING'">
     <mat-spinner></mat-spinner>
   </div>
 
-  <div class="m-3" *ngIf="status === 'SENT'">
-    <h2>Your Question has been submitted.</h2>
+  <div class="m-3" *ngSwitchCase="'SENT'">
+    <h2>Your question has been submitted.</h2>
   </div>
 
-  <div class="m-3" *ngIf="status === 'ERRORED'">
+  <div class="m-3" *ngSwitchCase="'ERRORED'">
     <h2>There has been an error. Please try again.</h2>
   </div>
 </div>

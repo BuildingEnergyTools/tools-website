@@ -31,7 +31,7 @@ export class HelpDeskComponent {
     'Multiple Tools',
     'ResStock',
     'SEED',
-    'UBID',
+    'UBID'
   ];
 
   constructor(private http: HttpClient) {
