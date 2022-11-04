@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AlliesComponent } from './allies/allies.component';
 import { DevComponent } from './dev/dev.component';
 import { FaqComponent } from './faq/faq.component';
-import { NewsComponent} from './news/news.component';
 import { HomeComponent } from './home/home.component';
+import { NewsComponent } from './news/news.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { SeedComponent } from './seed.component';
 
@@ -36,4 +36,5 @@ const routes: Routes = [{
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SeedRoutingModule { }
+export class SeedRoutingModule {
+}

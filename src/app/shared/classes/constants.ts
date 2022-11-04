@@ -1,25 +1,25 @@
 export const appTitle = 'Building Data Tools';
 
 export class Constants {
-  static readonly titles = {
-    '/collection-reporting': 'Data Collection & Reporting',
-    '/management-compliance': 'Maintenance & Compliance',
+  static readonly titles: { [key: string]: string } = {
     '/analysis-evaluation': 'Analysis & Evaluation',
-    '/goals-outcomes': 'Goals & Outcomes',
-    '/goals': 'Goals & Outcomes',
-    '/developers': 'For Developers',
-    '/audit-template': 'Audit Template',
-    '/seed': 'SEED Platform',
-    '/comstock-resstock': 'ComStock & ResStock',
-    '/better': 'BETTER',
-    '/asset-score': 'Asset Score',
-    '/bpd': 'Building Performance Database',
     '/analyze': 'Goals & Outcomes',
-    '/target': 'Goals & Outcomes',
-    '/compliance': 'Goals & Outcomes',
-    '/customize': 'Goals & Outcomes',
+    '/asset-score': 'Asset Score',
+    '/audit-template': 'Audit Template',
+    '/better': 'BETTER',
+    '/bpd': 'Building Performance Database',
     '/building-sync': 'BuildingSync',
-    '/ubid': 'UBID',
-    '/third-party': 'Third-Party Tools'
+    '/collection-reporting': 'Data Collection & Reporting',
+    '/compliance': 'Goals & Outcomes',
+    '/comstock-resstock': 'ComStock & ResStock',
+    '/customize': 'Goals & Outcomes',
+    '/developers': 'For Developers',
+    '/goals': 'Goals & Outcomes',
+    '/goals-outcomes': 'Goals & Outcomes',
+    '/management-compliance': 'Maintenance & Compliance',
+    '/seed': 'SEED Platform',
+    '/target': 'Goals & Outcomes',
+    '/third-party': 'Third-Party Tools',
+    '/ubid': 'UBID'
   };
 }

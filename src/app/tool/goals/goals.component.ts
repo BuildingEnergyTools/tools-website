@@ -11,27 +11,23 @@ export class GoalsComponent {
     route: '/goals'
   }, {
     title: 'Analyze Building Stock',
-    image: 'assets/images/com-resstock-outcomes-icon.svg',
-    alt: '',
-    route: 'analyze'
+    icon: 'assets/images/com-resstock-outcomes-icon.svg',
+    route: 'analyze',
+    local: true
   }, {
     title: 'Target Efficiency Upgrade Areas',
-    image: 'assets/images/better-outcomes-icon.svg',
-    alt: '',
-    route: 'target'
+    icon: 'assets/images/better-outcomes-icon.svg',
+    route: 'target',
+    local: true
   }, {
     title: 'Achieve Compliance',
-    image: 'assets/images/assetscore-outcomes-icon.svg',
-    alt: '',
-    route: 'compliance'
+    icon: 'assets/images/assetscore-outcomes-icon.svg',
+    route: 'compliance',
+    local: true
   }, {
     title: 'Customize Your Workflow',
-    image: 'assets/images/thirdparty-outcomes-icon.svg',
-    alt: '',
-    route: 'customize'
+    icon: 'assets/images/thirdparty-outcomes-icon.svg',
+    route: 'customize',
+    local: true
   }];
-
-  constructor() {
-  }
-
 }

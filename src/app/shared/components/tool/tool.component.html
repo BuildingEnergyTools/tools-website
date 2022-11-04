@@ -5,9 +5,9 @@
     </div>
     <nav>
       <div *ngFor="let navItem of navItems" [routerLink]="navItem.route" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        <i *ngIf="navItem.icon" [ngClass]="[navItem.icon, navItem.fontAwesome || 'fas']"></i>
-        <div *ngIf="navItem.image">
-          <img [src]="navItem.image" alt="{{navItem.alt}}">
+        <i *ngIf="!navItem.local" [ngClass]="[navItem.icon, navItem.fontAwesome ?? 'fas']"></i>
+        <div *ngIf="navItem.local">
+          <img [src]="navItem.icon" alt="">
         </div>
         {{ navItem.title }}
       </div>

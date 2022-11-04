@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BpdComponent } from './bpd.component';
+import { ContributeComponent } from './contribute/contribute.component';
+import { DataComponent } from './data/data.component';
 import { DevComponent } from './dev/dev.component';
+import { FaqComponent } from './faq/faq.component';
 import { HomeComponent } from './home/home.component';
 import { ResourcesComponent } from './resources/resources.component';
-import { FaqComponent } from './faq/faq.component';
-import { DataComponent } from './data/data.component';
-import { ContributeComponent } from './contribute/contribute.component';
 import { SecurityComponent } from './security/security.component';
 
 const routes: Routes = [{
@@ -18,10 +18,10 @@ const routes: Routes = [{
   }, {
     path: 'data',
     component: DataComponent
-  },{
+  }, {
     path: 'security',
     component: SecurityComponent
-  },{
+  }, {
     path: 'contribute',
     component: ContributeComponent
   }, {

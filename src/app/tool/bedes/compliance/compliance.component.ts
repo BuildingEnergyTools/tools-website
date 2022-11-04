@@ -4,8 +4,4 @@ import { Component } from '@angular/core';
   templateUrl: './compliance.component.html'
 })
 export class ComplianceComponent {
-
-  constructor() {
-  }
-
 }

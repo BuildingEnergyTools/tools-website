@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
 
 import { SharedModule } from '@shared/shared.module';
+import { HomeComponent } from './home/home.component';
 import { ThirdPartyRoutingModule } from './third-party-routing.module';
 import { ThirdPartyComponent } from './third-party.component';
-import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,4 +17,5 @@ import { HomeComponent } from './home/home.component';
     ThirdPartyRoutingModule
   ]
 })
-export class ThirdPartyModule { }
+export class ThirdPartyModule {
+}

@@ -18,7 +18,4 @@ export class UbidComponent {
     icon: 'fa-comments',
     route: '/help-desk'
   }];
-
-  constructor() { }
-
 }
