@@ -31,8 +31,4 @@ export class BetterComponent {
     icon: 'fa-comments',
     route: '/help-desk'
   }];
-
-  constructor() {
-  }
-
 }

@@ -5,8 +5,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./developers.component.scss']
 })
 export class DevelopersComponent {
-
-  constructor() {
-  }
-
 }

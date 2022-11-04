@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { ResourcesComponent } from './resources/resources.component';
-import { PilotsComponent } from './pilots/pilots.component';
 import { OepComponent } from './oep.component';
+import { PilotsComponent } from './pilots/pilots.component';
+import { ResourcesComponent } from './resources/resources.component';
 
 const routes: Routes = [{
   path: '',
@@ -24,4 +24,5 @@ const routes: Routes = [{
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class OepRoutingModule { }
+export class OepRoutingModule {
+}

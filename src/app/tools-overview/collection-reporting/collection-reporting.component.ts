@@ -5,8 +5,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./collection-reporting.component.scss']
 })
 export class CollectionReportingComponent {
-
-  constructor() {
-  }
-
 }

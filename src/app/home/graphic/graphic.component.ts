@@ -1,7 +1,4 @@
-import { DOCUMENT } from '@angular/common';
-import {Router} from '@angular/router';
-import { AfterViewInit, Component, ElementRef, HostListener, Inject, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { SharedService } from '@shared/services/shared.service';
+import { Component } from '@angular/core';
 
 const cards = ['pm', 'at', 'seed', 'csrs', 'better', 'as', '3p'] as const;
 const goals = ['g1', 'g2', 'g3', 'g4'] as const;
@@ -11,22 +8,12 @@ type Goal = typeof goals[number];
 @Component({
   selector: 'app-graphic',
   templateUrl: './graphic.component.html',
-  styleUrls: ['./graphic.component.scss'],
-  
+  styleUrls: ['./graphic.component.scss']
 })
 export class GraphicComponent {
   cardStatus: { [key in Card]?: boolean } = {};
   elements: { [key in Card | 'g1' | 'g2' | 'g3' | 'g4' | 'seed']?: HTMLElement } = {};
   hovers: { [key in Goal]?: boolean } = {};
-  hoverColor: string = '#7ab0cc';
-
-  private _arrows: any[] = [];
-
-  constructor(
-    public sharedService: SharedService,
-    @Inject(DOCUMENT) private document
-  ) {
-  }
 
   toggleCard(card: Card): void {
     if (this.cardStatus[card]) {
@@ -36,14 +23,13 @@ export class GraphicComponent {
         this.cardStatus[currentCard] = card === currentCard;
       });
     }
-
   }
 
-  mouseEnter(div: string){
+  mouseEnter(div: Goal): void {
     this.hovers[div] = true;
   }
 
-  mouseLeave(div : string): void {
+  mouseLeave(div: Goal): void {
     this.hovers[div] = false;
   }
 

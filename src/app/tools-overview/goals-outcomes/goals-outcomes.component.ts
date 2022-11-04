@@ -5,8 +5,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./goals-outcomes.component.scss']
 })
 export class GoalsOutcomesComponent {
-
-  constructor() {
-  }
-
 }

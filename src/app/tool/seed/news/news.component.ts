@@ -4,8 +4,4 @@ import { Component } from '@angular/core';
   templateUrl: './news.component.html'
 })
 export class NewsComponent {
-
-  constructor() {
-  }
-
 }

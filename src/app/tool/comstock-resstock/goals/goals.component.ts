@@ -4,8 +4,4 @@ import { Component } from '@angular/core';
   templateUrl: './goals.component.html'
 })
 export class GoalsComponent {
-
-  constructor() {
-  }
-
 }

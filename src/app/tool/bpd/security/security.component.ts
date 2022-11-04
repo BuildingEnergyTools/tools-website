@@ -4,8 +4,4 @@ import { Component } from '@angular/core';
   templateUrl: './security.component.html'
 })
 export class SecurityComponent {
-
-  constructor() {
-  }
-
 }

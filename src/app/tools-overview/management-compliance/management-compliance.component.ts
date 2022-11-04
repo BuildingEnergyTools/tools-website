@@ -6,8 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./management-compliance.component.scss']
 })
 export class ManagementComplianceComponent {
-
-  constructor() {
-  }
-
 }

@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 interface NavItem {
@@ -18,7 +18,7 @@ interface NavItem {
 })
 export class MenuComponent {
   opened = false;
-  show_small_menu = false;
+  showExpandedMenu = false;
   readonly navItems: NavItem[];
   readonly flexWidth: number;
 
@@ -28,7 +28,7 @@ export class MenuComponent {
       route: '/collection-reporting',
       children: [{
         title: 'ENERGY STAR Portfolio Manager',
-        route: 'https://www.energystar.gov/buildings/facility-owners-and-managers/existing-buildings/use-portfolio-manager',
+        route: 'https://www.energystar.gov/buildings/benchmark',
         external: true
       }, {
         title: 'Building Energy Audit Template',
@@ -100,20 +100,8 @@ export class MenuComponent {
     this.flexWidth = 100 / this.navItems.length;
   }
 
-  @HostListener('mouseenter') onMouseEnter(): void {
-    this.opened = true;
-  }
-
-  @HostListener('mouseleave') onMouseLeave(): void {
-    this.opened = false;
-  }
-
   toggle(): void {
-    this.show_small_menu = !this.show_small_menu;
-  }
-
-  getMenuStatus(): boolean {
-    return this.show_small_menu;
+    this.showExpandedMenu = !this.showExpandedMenu;
   }
 
   isParentActive(navItem: NavItem): boolean {
@@ -130,4 +118,7 @@ export class MenuComponent {
     return false;
   }
 
+  openLink(url: string): void {
+    window.open(url, '_blank');
+  }
 }

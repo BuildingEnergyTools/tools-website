@@ -6,8 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./tools-overview.component.scss']
 })
 export class ToolsOverviewComponent {
-
-  constructor() {
-  }
-
 }

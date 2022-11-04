@@ -22,8 +22,4 @@ export class OepComponent {
     icon: 'fa-comments',
     route: '/help-desk'
   }];
-
-  constructor() {
-  }
-
 }

@@ -4,8 +4,4 @@ import { Component } from '@angular/core';
   templateUrl: './related.component.html'
 })
 export class RelatedComponent {
-
-  constructor() {
-  }
-
 }

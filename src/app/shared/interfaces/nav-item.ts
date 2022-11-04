@@ -1,11 +1,7 @@
 export type NavItem = {
-  route: string;
+  title: string;
   icon: string;
-  fontAwesome?: string;
-  title: string;
-} | {
   route: string;
-  image: string;
-  alt: string;
-  title: string;
+  fontAwesome?: string;
+  local?: boolean;
 };

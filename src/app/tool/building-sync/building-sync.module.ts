@@ -21,9 +21,10 @@ import { ResourcesComponent } from './resources/resources.component';
     ResourcesComponent
   ],
   imports: [
-    CommonModule,
     BuildingSyncRoutingModule,
+    CommonModule,
     SharedModule
   ]
 })
-export class BuildingSyncModule { }
+export class BuildingSyncModule {
+}

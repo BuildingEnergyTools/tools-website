@@ -4,8 +4,4 @@ import { Component } from '@angular/core';
   templateUrl: './customize.component.html'
 })
 export class CustomizeComponent {
-
-  constructor() {
-  }
-
 }

@@ -7,14 +7,14 @@
     var host = "//www.eere.energy.gov";
 
     var fileTypes = {
-        doc:  "/images/icon_word.gif",
-        docx: "/images/icon_word.gif",
-        pdf:  "/images/icon_pdf.gif",
+        doc:  "/images/icon_word.png",
+        docx: "/images/icon_word.png",
+        pdf:  "/images/icon_pdf.png",
         ppt:  "/images/icon_powerpoint.gif",
         pptx: "/images/icon_powerpoint.gif",
-        xls:  "/images/icon_excel.gif",
-        xlsx: "/images/icon_excel.gif",
-        xlsm: "/images/icon_excel.gif"
+        xls:  "/images/icon_excel.png",
+        xlsx: "/images/icon_excel.png",
+        xlsm: "/images/icon_excel.png"
     };
 
     var altText = {

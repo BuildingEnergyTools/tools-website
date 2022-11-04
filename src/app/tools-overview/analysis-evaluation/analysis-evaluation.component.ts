@@ -5,8 +5,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./analysis-evaluation.component.scss']
 })
 export class AnalysisEvaluationComponent {
-
-  constructor() {
-  }
-
 }
