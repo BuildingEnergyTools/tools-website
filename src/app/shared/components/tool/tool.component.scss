@@ -7,6 +7,25 @@
       nav div.active {
         background-color: $color;
       }
+
+      &::ng-deep {
+        // Override yellow text
+        @if $i == 5 {
+          $color: nth($colors, 2);
+        }
+
+        a,
+        a:visited,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .mat-expansion-panel-header-title {
+          color: $color;
+        }
+      }
     }
   }
 }
@@ -59,46 +78,21 @@
     }
 
     a {
-      color: #024880;
       font-weight: bold;
     }
 
-    a.not-bold {
-      font-weight: normal;
-    }
-
-    .color-1 {
-      color: #0174a1;
-    }
-
-    .color-2 {
-      color: #024880;
-    }
-
-    .color-3 {
-      color: #355f46;
-    }
-
-    .color-4 {
-      color: #094f58;
-    }
-
-    .color-5 {
-      color: #f5af13;
-    }
-
     .btn-type-1 {
-      background-color: #0174a1;
+      background: nth($colors, 1);
       color: #fff;
     }
 
     .btn-type-2 {
-      background-color: #024880;
+      background-color: nth($colors, 2);
       color: #fff;
     }
 
     .btn-type-3 {
-      background-color: #355f46;
+      background-color: nth($colors, 3);
       color: #fff;
     }
 
@@ -144,10 +138,6 @@
       .callout {
         width: 90%;
       }
-    }
-
-    .bold-link {
-      font-weight: bold;
     }
 
     .card-img {
@@ -367,11 +357,6 @@
 
     .table-responsive > .table-bordered {
       border: 0;
-    }
-
-    a.bold-link:hover {
-      text-decoration: none;
-      color: inherit;
     }
 
     .collab-image {
@@ -788,19 +773,9 @@
       margin: auto !important;
     }
 
-    .mt-auto,
-    .my-auto {
-      margin-top: auto !important;
-    }
-
     .mr-auto,
     .mx-auto {
       margin-right: auto !important;
-    }
-
-    .mb-auto,
-    .my-auto {
-      margin-bottom: auto !important;
     }
 
     .ml-auto,

@@ -1,7 +1,7 @@
 <h2 class="mat-h2">FAQ</h2>
 <mat-expansion-panel class="mb-1">
   <mat-expansion-panel-header>
-    <mat-panel-title class="color-2">
+    <mat-panel-title>
       Features - Geocoding
     </mat-panel-title>
   </mat-expansion-panel-header>
@@ -29,7 +29,7 @@
 </mat-expansion-panel>
 <mat-expansion-panel class="mb-1">
   <mat-expansion-panel-header>
-    <mat-panel-title class="color-2">
+    <mat-panel-title>
       Features - Inventory Management
     </mat-panel-title>
   </mat-expansion-panel-header>
@@ -37,9 +37,13 @@
 
   <p>Different inventory management and analysis features in SEED are based on the relationships between records of different inventory types (properties and tax lots). Those terms help describe these relationships.</p>
 
-  <div class="mx-auto" style="width:60%;"><a href="assets/md/seed/img/mapping_diagram.png"><img src="assets/md/seed/img/mapping_diagram.png" alt="Mapping and Merging Diagram" width="100%"></a><br>
-    <div class="ml-4 mb-4 center"><em>click to expand</em></div>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <div fxLayout="row" fxLayoutAlign="center">
+      <a fxFlex="60%" href="assets/md/seed/img/mapping_diagram.png"><img src="assets/md/seed/img/mapping_diagram.png" alt="Mapping and Merging Diagram" style="width: 100%;"></a>
+    </div>
+    <em>click to expand</em>
   </div>
+
   <ul>
     <li><strong>Mapping</strong> refers to the process of mapping newly imported data fields to the known database column names in order to create a record.</li>
     <li><strong>Merging</strong> refers to the act of combining multiple properties (or multiple tax lots) into one record. This can be done manually by users or automatically by SEED and helps avoid duplicate records.</li>
@@ -51,13 +55,13 @@
     <li><strong>Linking</strong> refers to the association between properties across cycles (or tax lots across cycles) and is useful for analysis.</li>
   </ul>
 
-  <p>For more details, refer to this <a href="https://github.com/SEED-platform/seed/blob/develop/docs/source/matching.rst" class="color-2">documentation that covers matching, merging, and linking</a>.</p>
+  <p>For more details, refer to this <a href="https://github.com/SEED-platform/seed/blob/develop/docs/source/matching.rst">documentation that covers matching, merging, and linking</a>.</p>
 
   <h4 class="mat-h4 my-4">The linking feature is new - can I get more details on how it works?</h4>
 
   <p>Cross-cycle linking, or simply <strong>linking</strong>, allows organizations to analyze uploads of the same property (or tax lot) over time. This is done by matching records in one cycle with records within other cycles. SEED builds these associations automatically during import using matching criteria as specified by the organization. Additionally, this association can be made during a manual edit to record values (especially if the changed value is a matching criteria field).</p>
 
-  <p>For even more details on matching and linking, refer to this <a href="https://github.com/SEED-platform/seed/blob/develop/docs/source/matching.rst#linking-across-cycles" class="color-2">section of the matching, merging, and linking documentation</a>.</p>
+  <p>For even more details on matching and linking, refer to this <a href="https://github.com/SEED-platform/seed/blob/develop/docs/source/matching.rst#linking-across-cycles">section of the matching, merging, and linking documentation</a>.</p>
 
   <h4 class="mat-h4 my-4">How does linking interact with paired properties and tax lots?</h4>
   <p>At the moment, paired property and tax lot relationships are displayed and managed separately from linked relationships. That is, paired records are viewed and managed in a separate area of SEED as linked records.</p>
@@ -65,24 +69,24 @@
 </mat-expansion-panel>
 <mat-expansion-panel class="mb-1">
   <mat-expansion-panel-header>
-    <mat-panel-title class="color-2">
+    <mat-panel-title>
       Features - Miscellaneous
     </mat-panel-title>
   </mat-expansion-panel-header>
   <h4 class="mat-h4 mb-4">How can I get general information about the capabilities, features, and active development of SEED?</h4>
 
   <ul>
-    <li>For a list of new features and fixed capabilities, visit the <a href="https://github.com/SEED-platform/seed/releases" class="color-2">SEED Platform GitHub Releases</a> page.</li>
+    <li>For a list of new features and fixed capabilities, visit the <a href="https://github.com/SEED-platform/seed/releases">SEED Platform GitHub Releases</a> page.</li>
 
-    <li>Consult the <a href="https://seed-platform.org/references/" class="color-2">Reference Page</a> for publications related to SEED. Additionally, this paper describes the BuildingSync® format which can be used to import data into the SEED Platform:
+    <li>Consult the <a href="https://seed-platform.org/references/">Reference Page</a> for publications related to SEED. Additionally, this paper describes the BuildingSync® format which can be used to import data into the SEED Platform:
 
-      <div class="pl-5">DeGraw, Jason, Kristin Field-Macumber, Nicholas Long, and Supriya Goel. 2018. <a href="https://buildingsync.net/static/documents/DeGraw-ACEEE-BuildingSync-in-Action.pdf" class="color-2">"BuildingSync® in Action: Example Implementations."</a> In 2018 ACEEE Summer Study on Energy Efficiency in Buildings, 1–12. Pacific Grove, CA.</div>
+      <div class="pl-5">DeGraw, Jason, Kristin Field-Macumber, Nicholas Long, and Supriya Goel. 2018. <a href="https://buildingsync.net/static/documents/DeGraw-ACEEE-BuildingSync-in-Action.pdf">"BuildingSync® in Action: Example Implementations."</a> In 2018 ACEEE Summer Study on Energy Efficiency in Buildings, 1–12. Pacific Grove, CA.</div>
     </li>
     <li>Here are some related projects that are using SEED:
       <ul>
-        <li><a href="https://psdconsulting.com/openefficiency-platform/" class="color-2">The OpenEfficiency Platform (OEP) Project</a></li>
-        <li><a href="https://aceee.org/files/proceedings/2018/#/paper/event-data/p110" class="color-2">The BayREN Integrated Commercial Retrofits (BRICR) Project</a> and <a href="https://www.energy.gov/sites/prod/files/2018/05/f52/24293_Hooper_050318-900.pdf" class="color-2">BRICR Presentation</a></li>
-        <li><a href="https://www.energy.gov/eere/buildings/energy-data-vault" class="color-2">The Energy Data Vault (EDV) Project</a></li>
+        <li><a href="https://psdconsulting.com/openefficiency-platform/">The OpenEfficiency Platform (OEP) Project</a></li>
+        <li><a href="https://aceee.org/files/proceedings/2018/#/paper/event-data/p110">The BayREN Integrated Commercial Retrofits (BRICR) Project</a> and <a href="https://www.energy.gov/sites/prod/files/2018/05/f52/24293_Hooper_050318-900.pdf">BRICR Presentation</a></li>
+        <li><a href="https://www.energy.gov/eere/buildings/energy-data-vault">The Energy Data Vault (EDV) Project</a></li>
       </ul>
     </li>
   </ul>
@@ -92,7 +96,7 @@
 </mat-expansion-panel>
 <mat-expansion-panel class="mb-1">
   <mat-expansion-panel-header>
-    <mat-panel-title class="color-2">
+    <mat-panel-title>
       Hosting
     </mat-panel-title>
   </mat-expansion-panel-header>
@@ -108,10 +112,10 @@
     <li>Self-hosting on the cloud (e.g. Amazon, Google Compute)</li>
     <li>Paying a hosting provider. Several companies offer SEED as a hosted solution:
       <ul>
-        <li><a href="https://www.clearlyenergy.com/" target="blank" class="color-2">ClearlyEnergy</a></li>
-        <li><a href="https://www.earthadvantage.org/initiatives/home-energy-score.html" class="color-2">Earth Advantage</a></li>
-        <li><a href="https://opentech.eco/" target="blank" class="color-2">Open</a></li>
-        <li><a href="https://psdconsulting.com/" target="blank" class="color-2">PSD Consulting</a>.</li>
+        <li><a href="https://www.clearlyenergy.com/" target="blank">ClearlyEnergy</a></li>
+        <li><a href="https://www.earthadvantage.org/initiatives/home-energy-score.html">Earth Advantage</a></li>
+        <li><a href="https://opentech.eco/" target="blank">Open</a></li>
+        <li><a href="https://psdconsulting.com/" target="blank">PSD Consulting</a>.</li>
       </ul>
       See the Technical Allies section for more information.
     </li>
@@ -121,7 +125,7 @@
 </mat-expansion-panel>
 <mat-expansion-panel class="mb-1">
   <mat-expansion-panel-header>
-    <mat-panel-title class="color-2">
+    <mat-panel-title>
       Industry Involvement
     </mat-panel-title>
   </mat-expansion-panel-header>
@@ -129,12 +133,12 @@
 
   <p>You can find more information about organizations contributing to SEED Platform development below:</p>
   <ul>
-    <li><a href="https://www.energy.gov/eere/buildings/seed-platform-collaborative" class="color-2">SEED Platform Collaborative</a></li>
-    <li><a href="https://github.com/SEED-platform/seed/blob/develop/AUTHORS.md" class="color-2">SEED Platform Contributing Developers</a></li>
-    <li><a href="#heading6" target="_self" class="color-2">SEED Technical Allies</a></li>
-    <li><a href="https://github.com/OpenEfficiencyPlatform/OEP" class="color-2">Open Efficiency Platform</a></li>
-    <li><a href="https://www.energy.gov/sites/prod/files/2018/05/f52/24293_Hooper_050318-900.pdf" class="color-2">BayREN Integrated Commercial Retrofits (BRICR)</a></li>
-    <li><a href="https://www.energy.gov/eere/buildings/energy-data-vault" class="color-2">Energy Data Vault (EDV)</a></li>
+    <li><a href="https://www.energy.gov/eere/buildings/seed-platform-collaborative">SEED Platform Collaborative</a></li>
+    <li><a href="https://github.com/SEED-platform/seed/blob/develop/AUTHORS.md">SEED Platform Contributing Developers</a></li>
+    <li><a href="#heading6" target="_self">SEED Technical Allies</a></li>
+    <li><a href="https://github.com/OpenEfficiencyPlatform/OEP">Open Efficiency Platform</a></li>
+    <li><a href="https://www.energy.gov/sites/prod/files/2018/05/f52/24293_Hooper_050318-900.pdf">BayREN Integrated Commercial Retrofits (BRICR)</a></li>
+    <li><a href="https://www.energy.gov/eere/buildings/energy-data-vault">Energy Data Vault (EDV)</a></li>
   </ul>
 
   <h4 class="mat-h4 mb-4">Do any applications use SEED to store and analyze building construction permit applications for energy code compliance?</h4>
@@ -143,7 +147,7 @@
 </mat-expansion-panel>
 <mat-expansion-panel class="mb-1">
   <mat-expansion-panel-header>
-    <mat-panel-title class="color-2">
+    <mat-panel-title>
       Security
     </mat-panel-title>
   </mat-expansion-panel-header>

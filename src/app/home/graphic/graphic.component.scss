@@ -28,26 +28,6 @@
   margin-top: 16px;
 }
 
-.color-1 {
-  color: nth($colors, 1);
-}
-
-.color-2 {
-  color: nth($colors, 2);
-}
-
-.color-3 {
-  color: nth($colors, 3);
-}
-
-.color-4 {
-  color: nth($colors, 4);
-}
-
-.color-5 {
-  color: nth($colors, 5);
-}
-
 .white {
   color: #fff;
 }
@@ -807,19 +787,9 @@ $bsyncExpandedWidth: 160px;
   margin: auto !important;
 }
 
-.mt-auto,
-.my-auto {
-  margin-top: auto !important;
-}
-
 .mr-auto,
 .mx-auto {
   margin-right: auto !important;
-}
-
-.mb-auto,
-.my-auto {
-  margin-bottom: auto !important;
 }
 
 .ml-auto,

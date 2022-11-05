@@ -2,5 +2,5 @@
 
 a,
 a:visited {
-  color: #355f46; /* for accessibility */
+  color: nth($colors, 3); /* for accessibility */
 }
