@@ -76,4 +76,4 @@
 
 - [Johnson Controls Announces Technology Initiative to Introduce Open-source Software For Targeting Commercial And Public Building Retrofits](https://www.johnsoncontrols.com/media-center/news/press-releases/2019/01/15/open-source-software-for-targeting-commercial-and-public-building-retrofits) - January 15, 2019
 
-For more news, visit the [BETTER news page](https://better.lbl.gov/news/). 
+For more news, visit the [BETTER news page](https://better.lbl.gov/news/).
