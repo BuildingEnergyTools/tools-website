@@ -35,7 +35,7 @@ jobs:
           folder: dist
 
       - name: Deploy S3 Production
-        uses: shallwefootball/s3-upload-action@master
+        uses: shallwefootball/s3-upload-action@1.3.0
         if: github.ref == 'refs/heads/main'
         with:
           aws_key_id: ${{ secrets.AWS_KEY_ID }}
@@ -45,7 +45,7 @@ jobs:
           destination_dir: ''
 
       - name: Deploy S3 Staging
-        uses: shallwefootball/s3-upload-action@master
+        uses: shallwefootball/s3-upload-action@1.3.0
         if: github.ref == 'refs/heads/develop'
         with:
           aws_key_id: ${{ secrets.AWS_KEY_ID }}
