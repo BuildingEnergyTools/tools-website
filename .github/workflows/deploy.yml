@@ -33,9 +33,9 @@ jobs:
         with:
           branch: gh-pages
           folder: dist
-      
+
       - name: Deploy S3 Production
-        env: 
+        env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           AWS_REGION: us-east-1
@@ -44,14 +44,14 @@ jobs:
           aws s3 sync --delete ./dist s3://${{ secrets.AWS_PROD_BUCKET }}
 
       - name: Deploy S3 Staging
-        env: 
+        env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
           AWS_REGION: us-east-1
         if: github.ref == 'refs/heads/develop'
         run: |
           aws s3 sync --delete ./dist s3://${{ secrets.AWS_STAGING_BUCKET }}
-          
+
       - name: Deploy NREL
         uses: JamesIves/github-pages-deploy-action@4.1.1
         if: github.ref == 'refs/heads/nrel'
