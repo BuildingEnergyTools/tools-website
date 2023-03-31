@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
+        uses: actions/checkout@v3
 
       - name: Set node version
         uses: actions/setup-node@v3
@@ -35,24 +35,22 @@ jobs:
           folder: dist
 
       - name: Deploy S3 Production
-        uses: shallwefootball/s3-upload-action@master
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          AWS_REGION: us-east-1
         if: github.ref == 'refs/heads/main'
-        with:
-          aws_key_id: ${{ secrets.AWS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
-          aws_bucket: ${{ secrets.AWS_PROD_BUCKET }}
-          source_dir: dist
-          destination_dir: ''
+        run: |
+          aws s3 sync --delete ./dist s3://${{ secrets.AWS_PROD_BUCKET }}
 
       - name: Deploy S3 Staging
-        uses: shallwefootball/s3-upload-action@master
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
+          AWS_REGION: us-east-1
         if: github.ref == 'refs/heads/develop'
-        with:
-          aws_key_id: ${{ secrets.AWS_KEY_ID }}
-          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY}}
-          aws_bucket: ${{ secrets.AWS_STAGING_BUCKET }}
-          source_dir: dist
-          destination_dir: ''
+        run: |
+          aws s3 sync --delete ./dist s3://${{ secrets.AWS_STAGING_BUCKET }}
 
       - name: Deploy NREL
         uses: JamesIves/github-pages-deploy-action@4.1.1
