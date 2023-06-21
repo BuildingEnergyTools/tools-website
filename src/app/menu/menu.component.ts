@@ -89,9 +89,6 @@ export class MenuComponent {
         title: 'BEDES',
         route: '/bedes'
       }, {
-        title: 'Open Efficiency Platform',
-        route: '/oep'
-      }, {
         title: '3rd Party Tools',
         route: '/third-party'
       }]
