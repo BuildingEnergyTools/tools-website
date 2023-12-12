@@ -13,11 +13,11 @@ export class BpdComponent {
     title: 'About the Data',
     icon: 'fa-database',
     route: 'data'
-  },{
+  }, {
     title: 'Privacy & Security',
     icon: 'fa-lock',
     route: 'security'
-  },{
+  }, {
     title: 'Contribute Your Data',
     icon: 'fa-share',
     route: 'contribute'
@@ -38,8 +38,4 @@ export class BpdComponent {
     icon: 'fa-comments',
     route: '/help-desk'
   }];
-
-  constructor() {
-  }
-
 }

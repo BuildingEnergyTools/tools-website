@@ -1,10 +1,31 @@
 @import "theme";
 
 :host {
-
   &::ng-deep [hidden] {
     display: none;
   }
+}
+
+.mat-card {
+  cursor: pointer;
+  height: 100%;
+}
+
+$arrowHeight: 34px;
+.good-best {
+  background: linear-gradient(to right, #1473cc, #125d9b, #092357);
+  border-radius: 4px;
+  color: white;
+  clip-path: polygon(
+      0% 0%,
+      calc(100% - $arrowHeight / 2) 0%,
+      100% 50%,
+      calc(100% - $arrowHeight / 2) 100%,
+      0% 100%
+  );
+  font-size: 18px;
+  height: $arrowHeight;
+  margin-bottom: 5px;
 }
 
 .white-text {
@@ -72,45 +93,35 @@
 }
 
 .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .align-center {
-	text-align: center;
+  text-align: center;
 }
 
 .data-card {
-	min-height: 150px;
+  max-width: 100%;
 }
 
 .card-good {
-	background-color:#1473cc;
-	color:white;
+  background-color: #1473cc;
+  color: white;
 }
 
 .card-better {
-	background-color:#125d9b;
-	color:white;
+  background-color: #125d9b;
+  color: white;
 }
 
 .card-best {
-	background-color:#092357;
-	color:white;
+  background-color: #092357;
+  color: white;
 }
 
 .card-white {
-	background-color:white;
-	color:black;
-}
-
-.btn-type-1 {
-  background: #3B88AF;
-  color: #fff;
-}
-
-.btn-type-2 {
-  background-color: #024880;
-  color: #fff;
+  background-color: white;
+  color: black;
 }
 
 .small-fit {

@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { environment } from 'src/environments/environment';
+import { lastValueFrom } from 'rxjs';
+
+import { environment } from '../../../environments/environment';
 
 @Component({
   templateUrl: './help-desk.component.html',
@@ -31,7 +33,7 @@ export class HelpDeskComponent {
     'Multiple Tools',
     'ResStock',
     'SEED',
-    'UBID',
+    'UBID'
   ];
 
   constructor(private http: HttpClient) {
@@ -45,13 +47,13 @@ export class HelpDeskComponent {
 
     this.status = 'PROCESSING';
 
-    this.http.post(environment.help_desk_uri, {
-      first_name: this.helpForm.get('firstName').value,
-      last_name: this.helpForm.get('lastName').value,
-      email: this.helpForm.get('email').value,
-      questions: this.helpForm.get('question').value,
-      tool: this.helpForm.get('tool').value
-    }).toPromise()
+    lastValueFrom(this.http.post(environment.helpDeskURI, {
+      first_name: this.helpForm.get('firstName')?.value,
+      last_name: this.helpForm.get('lastName')?.value,
+      email: this.helpForm.get('email')?.value,
+      questions: this.helpForm.get('question')?.value,
+      tool: this.helpForm.get('tool')?.value
+    }))
       .then(() => this.status = 'SENT')
       .catch(() => this.status = 'ERRORED');
   }

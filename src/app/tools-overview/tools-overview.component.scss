@@ -1,3 +1,4 @@
+@use "sass:math";
 @import "theme";
 
 .bpt {
@@ -5,7 +6,8 @@
   margin: 0 auto;
 }
 
-.summary, .details {
+.summary,
+.details {
   display: flex;
   font-size: 16px;
   line-height: 23px;
@@ -15,7 +17,8 @@
   &::ng-deep > div {
     width: 100%;
 
-    a, a:visited {
+    a,
+    a:visited {
       font-weight: bold;
       white-space: nowrap;
     }
@@ -35,7 +38,7 @@
 
   > div::after {
     border-right: 1px solid #b2b2b2;
-    content: '';
+    content: "";
     height: calc(100% - 2 * #{$pad});
     position: absolute;
     right: 0;
@@ -65,12 +68,12 @@
     flex-direction: column;
     justify-content: center;
     min-width: 100px + $pad;
-    padding: $pad $pad / 2;
+    padding: $pad math.div($pad, 2);
 
     div {
       color: #5b5b5b;
       font-weight: bold;
-      padding-bottom: $pad / 2;
+      padding-bottom: math.div($pad, 2);
 
       & + img {
         $size: 120px;
@@ -98,7 +101,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: $pad / 2 0 $pad / 2 $pad;
+    padding: math.div($pad, 2) 0 math.div($pad, 2) $pad;
 
     p:last-child {
       margin: 0;

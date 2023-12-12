@@ -64,9 +64,6 @@ const routes: Routes = [{
   path: 'bedes',
   loadChildren: () => import(/* webpackChunkName: "bedes" */ './tool/bedes/bedes.module').then(m => m.BedesModule)
 }, {
-  path: 'oep',
-  loadChildren: () => import(/* webpackChunkName: "oep" */ './tool/oep/oep.module').then(m => m.OepModule)
-}, {
   path: 'third-party',
   loadChildren: () => import(/* webpackChunkName: "third-party" */ './tool/third-party/third-party.module').then(m => m.ThirdPartyModule)
 }, {
@@ -75,7 +72,10 @@ const routes: Routes = [{
 }];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {useHash: true})],
+  imports: [RouterModule.forRoot(routes, {
+    scrollPositionRestoration: 'enabled',
+    useHash: true
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule {

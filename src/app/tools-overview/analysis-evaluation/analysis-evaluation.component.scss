@@ -1,5 +1,6 @@
 @import "theme";
 
-a, a:visited {
-  color: #355F46;  /* for accessibility */
+a,
+a:visited {
+  color: nth($colors, 3); /* for accessibility */
 }

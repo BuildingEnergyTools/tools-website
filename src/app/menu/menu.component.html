@@ -1,32 +1,31 @@
-<div class="bpt" fxHide fxShow.xs="true">
+<div class="bpt" fxHide fxShow.xs>
   <div class="small-menu-div" fxFlex="100%">
     <div fxLayout="row" class="small-menu" fxFlex="100%">
       <a mat-raised-button role="button" fxFlex="100%" class="small-menu" (click)="toggle()">Menu</a>
     </div>
   </div>
 </div>
-<div fxHide fxShow.xs="{{show_small_menu?'true':'false'}}">
+
+<div fxHide [fxShow.xs]="showExpandedMenu">
   <div fxFlex="100%" fxLayout="column">
-    <ng-container *ngFor="let navItem of navItems"  >
+    <ng-container *ngFor="let navItem of navItems">
       <div [routerLink]="navItem.route" [fxFlex]="flexWidth" fxLayoutAlign="space-evenly stretch" class="category-item-small">{{ navItem.title }}</div>
     </ng-container>
   </div>
 </div>
 
-<div class="bpt" [ngClass]="{'opened': opened}">
-  <div fxFlex fxShow="true" fxHide.xs>
+<div class="bpt" (mouseenter)="opened = true" (mouseleave)="opened = false" [ngClass]="{'opened': opened}">
+  <div fxFlex fxShow fxHide.xs style="position: relative">
     <div fxLayout="row" fxLayoutGap="32px" class="top-row">
       <ng-container *ngFor="let navItem of navItems">
-        <div [routerLink]="navItem.route" [fxFlex]="flexWidth" class="category" [ngClass]="{'active': isParentActive(navItem)}">{{ navItem.title }}</div>
+        <div [routerLink]="navItem.route" fxFlex="calc({{flexWidth}}% - 32px)" class="category" [ngClass]="{'active': isParentActive(navItem)}">{{ navItem.title }}</div>
       </ng-container>
     </div>
-    <div fxLayout="row" fxLayoutGap="32px" class="child-row">
-      <section *ngFor="let navItem of navItems" [fxFlex]="flexWidth">
+    <div fxLayout="row" fxLayoutGap="32px" class="child-row" style="position: absolute">
+      <section *ngFor="let navItem of navItems" fxFlex="calc({{flexWidth}}% - 32px)">
         <ng-container *ngFor="let child of navItem.children">
           <div *ngIf="!child.external" [routerLink]="child.route" routerLinkActive="active">{{ child.title }}</div>
-          <div *ngIf="child.external">
-            <a [attr.href]="child.route" target="_blank">{{ child.title }} <i class="fas fa-external-link-alt"></i></a>
-          </div>
+          <div *ngIf="child.external" (click)="openLink(child.route)">{{ child.title }} <i class="fas fa-external-link-alt"></i></div>
         </ng-container>
       </section>
     </div>

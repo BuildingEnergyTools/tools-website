@@ -10,8 +10,4 @@ export class ThirdPartyComponent {
     icon: 'fa-info-circle',
     route: '/third-party'
   }];
-
-  constructor() {
-  }
-
 }

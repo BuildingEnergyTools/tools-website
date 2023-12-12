@@ -23,20 +23,19 @@ export class ToolComponent {
       case '/seed':
         this.color = 2;
         break;
-      case '/comstock-resstock':
-      case '/better':
       case '/asset-score':
+      case '/better':
       case '/bpd':
+      case '/comstock-resstock':
         this.color = 3;
         break;
       case '/goals':
         this.color = 4;
         break;
+      case '/bedes':
       case '/building-sync':
-      case '/ubid':
-      case '/bedes':  
-      case '/oep':
       case '/third-party':
+      case '/ubid':
         this.color = 5;
         break;
       default:

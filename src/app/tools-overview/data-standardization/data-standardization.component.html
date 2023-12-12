@@ -1,68 +1,71 @@
 <div class="bpt">
   <div class="mt-3 mx-5">
-  	<h2 class="mat-h2 mb-4">Data Standardization: The Foundation of a Building Performance Policy</h2>
+    <h2 class="mat-h2 mb-4">Data Standardization: The Foundation of a Building Performance Policy</h2>
 
-  	<p>"Standardization" is the process of bringing building energy efficiency data into a common format, making it much easier to collect, store, analyze, and share.  Use the navigator below to learn more about the tiers of data standardization.</p>
+    <p>"Standardization" is the process of bringing building energy efficiency data into a common format, making it much easier to collect, store, analyze, and share. Use the navigator below to learn more about the tiers of data standardization.</p>
 
     <span class="bold">Why standardize your data?</span>
-    <p> Keeping your building data with common terms or in a common format makes it much easier to collect, store, analyze, visualize, and share with partners to reach your programmatic goals. Start with BEDES to standardize your terms or field names, BuildingSync to give some structure to your data, or consider using Audit Template for full end-to-end standardization of your building asset and performance data. Standardizing your data saves time, money, and headache over the lifetime of your program. Use the navigator below to learn more about each tier of data standardization.</p>
+    <p>Keeping your building data with common terms or in a common format makes it much easier to collect, store, analyze, visualize, and share with partners to reach your programmatic goals. Start with BEDES to standardize your terms or field names, BuildingSync to give some structure to your data, or consider using Audit Template for full end-to-end standardization of your building asset and performance data. Standardizing your data saves time, money, and headache over the lifetime of your program. Use the navigator below to learn more about each tier of data standardization.</p>
   </div>
 
-	<img src="assets/images/arrow-good-better.png" alt="arrow left to right from good to best" [ngClass.xs]="'small-fit'" [ngClass.sm]="'small-fit'">
-	<div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between stretch" class="mt-2">
-		<div fxFlex="33%">
-			<mat-card class="card-good mr-2" id="good" (click)="toggleCard('good')">
+  <div class="good-best">
+    <div [fxFlex]="100 / 3" fxLayoutAlign="center center">GOOD</div>
+    <div [fxFlex]="100 / 3" fxLayoutAlign="center center">BETTER</div>
+    <div [fxFlex]="100 / 3" fxLayoutAlign="center center">BEST</div>
+  </div>
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between stretch" fxLayoutGap="5px">
+    <div [fxFlex]="100 / 3">
+      <mat-card class="card-good" id="good" (click)="toggleCard('good')">
         <mat-card-content [hidden]="cardStatus.good">
-          <div fxLayoutAlign="center center"><img class="data-card" src="assets/images/bedes_logo-white.png" alt="BEDES Logo"></div>
+          <div fxLayoutAlign="center center"><img class="data-card" src="assets/images/bedes_logo-white.png" alt="BEDES logo"></div>
           <h3 class="py-5 align-center bold white-text">Use Standard Data Terms</h3>
         </mat-card-content>
         <mat-card-content [hidden]="!cardStatus.good">
-        	<h3 class="align-center bold">Standardize Data Terms</h3>
-          <p class="card-text">If you’re not ready to adopt a standard audit reporting tool or file format, we recommend that jurisdictions and auditors use common data terms in their systems. This is the most basic level of standardization.</p>
+          <h3 class="align-center bold white-text">Standardize Data Terms</h3>
+          <p class="card-text">If you're not ready to adopt a standard audit reporting tool or file format, we recommend that jurisdictions and auditors use common data terms in their systems. This is the most basic level of standardization.</p>
           <p class="card-text">The Building Energy Data Exchange Specification (BEDES) contains over 600 building energy terms developed by DOE and the Lawrence Berkeley National Laboratory (LBNL). Using BEDES terms is a very simple way to improve data quality, enabling you to do more in less time.</p>
           <div fxLayoutAlign="center center">
-            <a routerLink="../bedes" mat-raised-button role="button" class="btn" (click)="$event.stopPropagation()">Learn more about BEDES</a>
+            <a routerLink="/bedes" mat-raised-button role="button" class="btn" (click)="$event.stopPropagation()">Learn more about BEDES</a>
           </div>
         </mat-card-content>
       </mat-card>
-		</div>
-		<div fxFlex="33%">
-			<mat-card class="card-better mr-2" id="better" (click)="toggleCard('better')">
+    </div>
+    <div [fxFlex]="100 / 3">
+      <mat-card class="card-better" id="better" (click)="toggleCard('better')">
         <mat-card-content [hidden]="cardStatus.better">
-          <div fxLayoutAlign="center center"><img class="data-card" src="assets/images/bldgsync-logo-white.png" alt="BuildingSync Logo"></div>
+          <div fxLayoutAlign="center center"><img class="data-card" src="assets/images/bldgsync-logo-white.png" alt="BuildingSync logo"></div>
           <h3 class="py-5 align-center bold white-text">Use a Standard File Format</h3>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus.better">
-          <h3 class="align-center bold">Standardize File Formats</h3>
-          <p class="card-text">If you’re not ready to adopt a single reporting tool like Audit Template, we recommend that jurisdictions and auditors use tools that can export data in a standard format like BuildingSync.
-				</p>
-          <p class="card-text">BuildingSync is a language built on top of the BEDES dictionary used to describe buildings in a way that computers can understand. It provides a way to share building and audit information so that it’s easier to give to other people and ensures that information will be just as usable ten years from now as it is today.</p>
+          <h3 class="align-center bold white-text">Standardize File Formats</h3>
+          <p class="card-text">If you're not ready to adopt a single reporting tool like Audit Template, we recommend that jurisdictions and auditors use tools that can export data in a standard format like BuildingSync.</p>
+          <p class="card-text">BuildingSync is a language built on top of the BEDES dictionary used to describe buildings in a way that computers can understand. It provides a way to share building and audit information so that it's easier to give to other people and ensures that information will be just as usable ten years from now as it is today.</p>
           <p class="card-text">BuildingSync is what enables Audit Template, Asset Score, SEED, and many other applications to work with BPS-related data so well.</p>
           <div fxLayoutAlign="center center">
-            <a routerLink="../building-sync" mat-raised-button role="button" class="btn" (click)="$event.stopPropagation()">Learn more about BuildingSync</a>
+            <a routerLink="/building-sync" mat-raised-button role="button" class="btn" (click)="$event.stopPropagation()">Learn more about BuildingSync</a>
           </div>
         </mat-card-content>
       </mat-card>
-		</div>
-		<div fxFlex="33%">
-			<mat-card class="card-best" id="best" (click)="toggleCard('best')">
+    </div>
+    <div [fxFlex]="100 / 3">
+      <mat-card class="card-best" id="best" (click)="toggleCard('best')">
         <mat-card-content [hidden]="cardStatus.best">
-          <div fxLayoutAlign="center center"><img class="data-card" src="assets/images/audit-template-logo-white.png" alt="Audit Template Logo"></div>
+          <div fxLayoutAlign="center center"><img class="data-card" src="assets/images/audit-template-logo-white.png" alt="Audit Template logo"></div>
           <h3 class="py-5 align-center bold white-text">Use a Standard Tool</h3>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus.best">
-          <h3 class="bold align-center">Standardize Data Collection</h3>
+          <h3 class="bold align-center white-text">Standardize Data Collection</h3>
           <p class="card-text">Using a single tool like Audit Template to collect data is the easiest and most effective way to standardize data. This approach maximizes the value, persistence, usability and portability of audit data.</p>
-          <p class="card-text">Auditors can use a mobile app to submit data using one of several ASHRAE-standard or custom reporting templates. Program administrators access a City Dashboard to monitor submissions, verify data, and download reports. </p>
-          <p class="card-text">Because Audit Template uses the BuildingSync file format, audit data is future-proof and easily shared with those who need it. You can even generate an Asset Score report with cost-effective upgrade recommendations and a 1-10 overall efficiency rating. </p>
-          <p class="card-text">We recommend this path for organizations committed to the most ambitious goals, or those in the early stages of launching a building performance standard who don’t have pre-existing commitments to other audit tools.</p>
+          <p class="card-text">Auditors can use a mobile app to submit data using one of several ASHRAE-standard or custom reporting templates. Program administrators access a City Dashboard to monitor submissions, verify data, and download reports.</p>
+          <p class="card-text">Because Audit Template uses the BuildingSync file format, audit data is future-proof and easily shared with those who need it. You can even generate an Asset Score report with cost-effective upgrade recommendations and a 1-10 overall efficiency rating.</p>
+          <p class="card-text">We recommend this path for organizations committed to the most ambitious goals, or those in the early stages of launching a building performance standard who don't have pre-existing commitments to other audit tools.</p>
           <div fxLayoutAlign="center center">
-            <a routerLink="../audit-template" mat-raised-button role="button" class="btn" (click)="$event.stopPropagation()">Learn more about Audit Template</a>
+            <a routerLink="/audit-template" mat-raised-button role="button" class="btn" (click)="$event.stopPropagation()">Learn more about Audit Template</a>
           </div>
         </mat-card-content>
       </mat-card>
-		</div>
-	</div>
+    </div>
+  </div>
 </div>

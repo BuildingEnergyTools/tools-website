@@ -30,7 +30,4 @@ export class BuildingSyncComponent {
     icon: 'fa-comments',
     route: '/help-desk'
   }];
-
-  constructor() { }
-
 }

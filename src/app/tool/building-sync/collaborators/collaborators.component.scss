@@ -1,0 +1,14 @@
+.grid-container {
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+
+  a {
+    width: 100%;
+
+    img {
+      max-height: 150px;
+      max-width: 80%;
+    }
+  }
+}

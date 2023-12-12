@@ -35,8 +35,4 @@ export class SeedComponent {
     icon: 'fa-comments',
     route: '/help-desk'
   }];
-
-  constructor() {
-  }
-
 }

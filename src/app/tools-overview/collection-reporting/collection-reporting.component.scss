@@ -1,5 +1,6 @@
 @import "theme";
 
-a, a:visited {
+a,
+a:visited {
   color: nth($colors, 1);
 }

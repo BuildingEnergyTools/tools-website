@@ -9,8 +9,7 @@ $colPad: 40;
 
 .developer-banner {
   background-color: $orange;
-  /*font-family: $robotoCondensed;*/
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 16px;
   font-weight: bold;
   height: 22px;
@@ -49,7 +48,6 @@ a {
       line-height: 22px;
     }
   }
-
 }
 
 .dev-link {
@@ -58,9 +56,8 @@ a {
 
 .home-intro-text {
   margin: 1rem 0 0.5rem 0;
-  background: url("../../assets/images/text-background.jpg");
+  background: url("/assets/images/text-background.jpg");
   background-size: cover;
-
 }
 
 .home-intro-text2 {
@@ -68,130 +65,70 @@ a {
 }
 
 .interactive-map {
-  margin-bottom: 0px;
+  margin-bottom: 0;
   /*font-size: 18px;*/
 }
 
 .interactive-map-div {
-  /*border-radius: 10px 10px 0px 0px;*/
-  background-color: #4D4D4D;
-  padding: 8px 10px 0px 10px;
+  background-color: #4d4d4d;
+  padding: 8px 10px 0 10px;
   color: white;
-  margin-bottom:10px;
+  margin-bottom: 10px;
   display: flex;
   width: 100%;
-  margin-left: 0%;
+  margin-left: 0;
 
   h2 {
     font-weight: 400;
-    /*font-family: $robotoCondensed;*/
     margin-top: 5px;
     color: white;
   }
 
   p {
-    /*font-size: 1rem;*/
     font-weight: normal;
-    padding-bottom: 0px;
-    margin: 0px;
+    margin: 0;
+    padding-bottom: 0;
   }
 }
 
 .bottom-boxes {
-  width:100%; 
-  padding-left: 0%;
-  padding-right: 0%;
-  margin: 10px 0px 0px;
-  min-height: 200px;
+  margin: 10px 0 20px;
+}
+
+.standardize,
+.help,
+.explore-tools,
+.dev {
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  height: 200px;
+  padding: 1rem 1rem;
+
+  h3 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding-left: 4rem;
+    padding-top: 10px;
+  }
 }
 
 .standardize {
-  background: url("../../assets/images/get-started-box.jpg");
-  background-color:black;
-  padding: 1rem 1rem;
-  background-size: 100% 100%;
-  cursor:pointer;
-  height: 200px;
-
-  h3 {
-    color: white;
-    font-size: 1.8rem;
-    padding-top: 10px;
-    padding-left: 4rem;
-    font-family: 'Roboto', sans-serif;
-    line-height: 3rem;
-
-    a {
-      color: white;
-    }
-  }
+  background-image: url("/assets/images/get-started-box.jpg");
 }
 
 .help {
-  background: rgb(71, 134, 98);
-  padding: 1rem 1rem;
-  margin-left: 10px;
-  background-size: 100% 100%;
-  cursor:pointer;
-  height: 200px;
-
-  h3 {
-    color: white;
-    font-size: 1.8rem;
-    padding-top: 10px;
-    padding-left: 4rem;
-    font-family: 'Roboto', sans-serif;
-    line-height: 3rem;
-
-    a {
-      color: white;
-    }
-  }
+  background: nth($colors, 3);
 }
 
 .explore-tools {
-  background: url("../../assets/images/analysis-box.jpg");
-  background-color: black;
-  padding: 1rem 1rem;
-  margin-left: 10px;
-  background-size: auto;
-  cursor:pointer;
-  height: 200px;
-
-  h3 {
-    color: white;
-    font-size: 1.8rem;
-    padding-top: 10px;
-    padding-left: 4rem;
-    font-family: 'Roboto', sans-serif;
-    line-height: 3rem;
-
-    a {
-      color: white;
-    }
-  }
+  background-image: url("/assets/images/analysis-box.jpg");
 }
 
 .dev {
   background: #054980;
-  padding: 1rem 1rem;
-  margin-left: 10px;
-  background-size: auto;
-  cursor:pointer;
-  height: 200px;
-
-  h3 {
-    color: white;
-    font-size: 1.8rem;
-    padding-top: 10px;
-    padding-left: 2rem;
-    font-family: 'Roboto', sans-serif;
-    line-height: 3rem;
-
-    a {
-      color: white;
-    }
-  }
 }
 
 .box-arrow {
@@ -200,8 +137,8 @@ a {
 }
 
 .explore {
-  background-color: #EEEEEE;
-  padding: 10px 0px 5px 0px;
+  background-color: #eee;
+  padding: 10px 0 5px 0;
   text-align: center;
 }
 
@@ -215,42 +152,14 @@ a {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 599px) {
-  .explore-tools {
-    margin: 10px 0;
-  }
-  .dev {
-    margin-left: 0px;
-    h3 {
-      font-size: 1.8rem;
-    }
-  }
-  .explore-tools {
-    background-size: cover;
-    h3 {
-      font-size: 1.8rem;
-    }
-  }
-}
-
-@media screen and (min-width:600px) and (max-width: 800px) {
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .dev,
+  .explore-tools,
+  .help,
   .standardize {
-    h3 {
-      font-size: 1.5rem;
-      line-height: 2.1rem;
-    }
-  }
-  .dev {
-    h3 {
-      font-size: 1.1rem;
-      line-height: 1.5rem;
-    }
-  }
-  .explore-tools {
     h3 {
       font-size: 1rem;
       line-height: 1.5rem;
     }
   }
 }
-

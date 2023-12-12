@@ -1,10 +1,7 @@
 @import "theme";
 
-:host {
-
-  &::ng-deep [hidden] {
-    display: none;
-  }
+:host::ng-deep [hidden] {
+  display: none;
 }
 
 .bpt {
@@ -27,4 +24,12 @@
 
 .submit {
   margin: 2rem 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.header {
+  margin-bottom: 4rem;
 }
