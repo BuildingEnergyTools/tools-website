@@ -10,7 +10,7 @@ import { appTitle, Constants } from '@shared/classes/constants';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-
+  currentUrl: any = ''
   constructor(
     public router: Router,
     private titleService: TitleService
@@ -23,6 +23,11 @@ export class AppComponent {
           titleService.setTitle(`${appTitle} | ${title}`);
         } else {
           titleService.setTitle(appTitle);
+        }
+        if (event.url != '') {
+          this.currentUrl = event.url;
+        } else {
+          this.currentUrl ='';
         }
       }
     });

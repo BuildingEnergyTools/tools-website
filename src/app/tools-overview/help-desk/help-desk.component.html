@@ -1,7 +1,7 @@
 <div class="bpt" [ngSwitch]="status">
   <div class="m-3" *ngSwitchDefault>
     <div class="header">
-      <h2>Help Desk</h2>
+      <h1>Help Desk</h1>
       <p>Submit technical questions about Building Data Tools (e.g., BuildingSync, ComStock, SEED, Audit Template) here.
         You may also submit general questions and questions that span across multiple tools.
         Please visit
@@ -75,6 +75,7 @@
       </div>
 
       <re-captcha formControlName="recaptcha" siteKey="6Lcub80fAAAAAGtDrxldrdrlanCQ0m5kOMmsAt5f"></re-captcha>
+
       <button mat-raised-button color="primary" class="submit" [disabled]="helpForm.invalid" type="submit" (click)="submit()">Submit</button>
     </form>
     <div id="form-response"></div>

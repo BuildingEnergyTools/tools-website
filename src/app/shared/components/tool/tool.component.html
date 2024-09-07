@@ -4,12 +4,14 @@
       <ng-content select="[slot=logo]"></ng-content>
     </div>
     <nav>
-      <div *ngFor="let navItem of navItems" [routerLink]="navItem.route" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
-        <i *ngIf="!navItem.local" [ngClass]="[navItem.icon, navItem.fontAwesome ?? 'fas']"></i>
-        <div *ngIf="navItem.local">
-          <img [src]="navItem.icon" alt="">
-        </div>
-        {{ navItem.title }}
+      <div *ngFor="let navItem of navItems" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
+        <a [routerLink]="navItem.route">
+          <i *ngIf="!navItem.local" [ngClass]="[navItem.icon, navItem.fontAwesome ?? 'fas']"></i>
+          <div *ngIf="navItem.local" style="float:left;margin-top:-5px;">
+            <img [src]="navItem.icon" alt="">
+          </div>
+          {{ navItem.title }}
+        </a>
       </div>
     </nav>
   </div>
