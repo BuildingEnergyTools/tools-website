@@ -1,6 +1,6 @@
 <div class="bpt">
   <div class="mt-3 mx-5">
-    <h2 class="mat-h2 mb-4">Data Standardization: The Foundation of a Building Performance Policy</h2>
+    <h1 class="mat-h2 mb-4">Data Standardization: The Foundation of a Building Performance Policy</h1>
 
     <p>"Standardization" is the process of bringing building energy efficiency data into a common format, making it much easier to collect, store, analyze, and share. Use the navigator below to learn more about the tiers of data standardization.</p>
 
@@ -18,10 +18,10 @@
       <mat-card class="card-good" id="good" (click)="toggleCard('good')">
         <mat-card-content [hidden]="cardStatus.good">
           <div fxLayoutAlign="center center"><img class="data-card" src="assets/images/bedes_logo-white.png" alt="BEDES logo"></div>
-          <h3 class="py-5 align-center bold white-text">Use Standard Data Terms</h3>
+          <h2 class="py-5 align-center bold white-text">Use Standard Data Terms</h2>
         </mat-card-content>
         <mat-card-content [hidden]="!cardStatus.good">
-          <h3 class="align-center bold white-text">Standardize Data Terms</h3>
+          <h2 class="align-center bold white-text">Standardize Data Terms</h2>
           <p class="card-text">If you're not ready to adopt a standard audit reporting tool or file format, we recommend that jurisdictions and auditors use common data terms in their systems. This is the most basic level of standardization.</p>
           <p class="card-text">The Building Energy Data Exchange Specification (BEDES) contains over 600 building energy terms developed by DOE and the Lawrence Berkeley National Laboratory (LBNL). Using BEDES terms is a very simple way to improve data quality, enabling you to do more in less time.</p>
           <div fxLayoutAlign="center center">
@@ -34,11 +34,11 @@
       <mat-card class="card-better" id="better" (click)="toggleCard('better')">
         <mat-card-content [hidden]="cardStatus.better">
           <div fxLayoutAlign="center center"><img class="data-card" src="assets/images/bldgsync-logo-white.png" alt="BuildingSync logo"></div>
-          <h3 class="py-5 align-center bold white-text">Use a Standard File Format</h3>
+          <h2 class="py-5 align-center bold white-text">Use a Standard File Format</h2>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus.better">
-          <h3 class="align-center bold white-text">Standardize File Formats</h3>
+          <h2 class="align-center bold white-text">Standardize File Formats</h2>
           <p class="card-text">If you're not ready to adopt a single reporting tool like Audit Template, we recommend that jurisdictions and auditors use tools that can export data in a standard format like BuildingSync.</p>
           <p class="card-text">BuildingSync is a language built on top of the BEDES dictionary used to describe buildings in a way that computers can understand. It provides a way to share building and audit information so that it's easier to give to other people and ensures that information will be just as usable ten years from now as it is today.</p>
           <p class="card-text">BuildingSync is what enables Audit Template, Asset Score, SEED, and many other applications to work with BPS-related data so well.</p>
@@ -52,11 +52,11 @@
       <mat-card class="card-best" id="best" (click)="toggleCard('best')">
         <mat-card-content [hidden]="cardStatus.best">
           <div fxLayoutAlign="center center"><img class="data-card" src="assets/images/audit-template-logo-white.png" alt="Audit Template logo"></div>
-          <h3 class="py-5 align-center bold white-text">Use a Standard Tool</h3>
+          <h2 class="py-5 align-center bold white-text">Use a Standard Tool</h2>
         </mat-card-content>
 
         <mat-card-content [hidden]="!cardStatus.best">
-          <h3 class="bold align-center white-text">Standardize Data Collection</h3>
+          <h2 class="bold align-center white-text">Standardize Data Collection</h2>
           <p class="card-text">Using a single tool like Audit Template to collect data is the easiest and most effective way to standardize data. This approach maximizes the value, persistence, usability and portability of audit data.</p>
           <p class="card-text">Auditors can use a mobile app to submit data using one of several ASHRAE-standard or custom reporting templates. Program administrators access a City Dashboard to monitor submissions, verify data, and download reports.</p>
           <p class="card-text">Because Audit Template uses the BuildingSync file format, audit data is future-proof and easily shared with those who need it. You can even generate an Asset Score report with cost-effective upgrade recommendations and a 1-10 overall efficiency rating.</p>

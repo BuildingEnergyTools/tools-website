@@ -78,7 +78,7 @@ a {
   width: 100%;
   margin-left: 0;
 
-  h2 {
+  h1 {
     font-weight: 400;
     margin-top: 5px;
     color: white;
@@ -101,22 +101,34 @@ a {
 .dev {
   background-position: center;
   background-size: cover;
-  cursor: pointer;
-  height: 200px;
-  padding: 1rem 1rem;
+  height: 120px;
+  padding: 1.5rem 1rem;
 
-  h3 {
+  h2 {
     color: white;
     font-family: "Roboto", sans-serif;
     font-size: 1.8rem;
     line-height: 3rem;
     padding-left: 4rem;
     padding-top: 10px;
+
+    .box-arrow {
+      margin-left: 20px;
+      width: 5rem;
+    }
+  }
+
+  a {
+  color: #fff;
+    i {
+      padding-right: 5px; 
+    }
   }
 }
 
 .standardize {
-  background-image: url("/assets/images/get-started-box.jpg");
+  /* background-image: url("/assets/images/get-started-box.jpg"); */
+  background: #0A4F58;
 }
 
 .help {
@@ -124,7 +136,8 @@ a {
 }
 
 .explore-tools {
-  background-image: url("/assets/images/analysis-box.jpg");
+  background: #0174A1;
+  /* background-image: url("/assets/images/analysis-box.jpg"); */
 }
 
 .dev {
@@ -157,7 +170,7 @@ a {
   .explore-tools,
   .help,
   .standardize {
-    h3 {
+    h2 {
       font-size: 1rem;
       line-height: 1.5rem;
     }
