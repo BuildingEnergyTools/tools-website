@@ -17,6 +17,8 @@ The most basic workflow to edit content is to leverage GitHub's website to creat
 - `lbnl` - branch to stage LBNL updates
 - `nrel` - branch to stage NREL updates
 
+** TODO: This needs to be updated, the deployment to these staging branches isn't working as expected. For now deploy to develop and the normal staging branch for testing **
+
 The staging branches should be the jumping off point for each user in the respective labs; however, ensure that the staging branch is up-to-date with develop before starting. This is easily done by creating a new pull request in GitHub and having the base branch be the national lab. Click on the links below to be directed to this for you:
 
 - [Update PNNL with Develop](https://github.com/BuildingEnergyTools/tools-website/compare/pnnl...develop)
