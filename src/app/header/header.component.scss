@@ -1,5 +1,11 @@
 @import "theme";
 
+.focus {
+  &:focus {
+    outline: 2px solid #005FCC;
+  }
+}
+
 .top-header {
   background-color: #094f58;
   background-image: url("/assets/images/datatools_header.jpg");

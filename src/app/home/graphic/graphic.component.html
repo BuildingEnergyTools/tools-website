@@ -2,43 +2,45 @@
   <div class="col-type-4" fxLayout="column">
     <div class="col-bkgnd-4">
       <div class="header4">
-        <h3 class="header">GOALS & OUTCOMES</h3>
+        <h2 class="header">GOALS & OUTCOMES</h2>
       </div>
     </div>
 
     <div class="goals-cards" fxLayout="row wrap" fxLayout.xs="column">
       <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign.xs="space-evenly stretch">
-        <mat-card class="goals-card-pad" id="g1" routerLink="/goals/analyze" (mouseenter)="mouseEnter('g1')" (mouseleave)="mouseLeave('g1')" [ngClass]="{'opaque': hovers.g2 || hovers.g3 || hovers.g4}">
+        <mat-card class="goals-card-pad" id="g1" (mouseenter)="mouseEnter('g1')" (mouseleave)="mouseLeave('g1')" [ngClass]="{'opaque': hovers.g2 || hovers.g3 || hovers.g4}">
           <mat-card-content fxFlexFill fxLayout="row" fxLayoutAlign="center center">
             <div fxFlex="35%" fxHide.lt-md class="card-icon"><img src="assets/images/com-resstock-outcomes-icon.svg" alt="ComStock & ResStock outcomes icon"></div>
-            <p class="card-text">Assess Impacts and Identify New Opportunities</p>
+            <p class="card-text">
+              <a routerLink="/goals/analyze">Assess Impacts and Identify New Opportunities</a></p>
           </mat-card-content>
         </mat-card>
       </div>
 
       <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign.xs="space-evenly stretch">
-        <mat-card class="goals-card-pad" id="g2" routerLink="/goals/target" (mouseenter)="mouseEnter('g2')" (mouseleave)="mouseLeave('g2')" [ngClass]="{'opaque': hovers.g1 || hovers.g3 || hovers.g4}">
+        <mat-card class="goals-card-pad" id="g2" (mouseenter)="mouseEnter('g2')" (mouseleave)="mouseLeave('g2')" [ngClass]="{'opaque': hovers.g1 || hovers.g3 || hovers.g4}">
           <mat-card-content fxFlexFill fxLayout="row" fxLayoutAlign="center center">
             <div fxFlex="35%" fxHide.lt-md class="card-icon"><img src="assets/images/better-outcomes-icon.svg" alt="BETTER outcomes icon"></div>
-            <p class="card-text">Identify Measures and Suggest Areas for Deeper Evaluations</p>
+            <p class="card-text">
+              <a routerLink="/goals/target">Identify Measures and Suggest Areas for Deeper Evaluations</a></p>
           </mat-card-content>
         </mat-card>
       </div>
 
       <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign.xs="space-evenly stretch">
-        <mat-card class="goals-card-pad" id="g3" routerLink="/goals/compliance" (mouseenter)="mouseEnter('g3')" (mouseleave)="mouseLeave('g3')" [ngClass]="{'opaque': hovers.g1 || hovers.g2 || hovers.g4}">
+        <mat-card class="goals-card-pad" id="g3" (mouseenter)="mouseEnter('g3')" (mouseleave)="mouseLeave('g3')" [ngClass]="{'opaque': hovers.g1 || hovers.g2 || hovers.g4}">
           <mat-card-content fxFlexFill fxLayout="row" fxLayoutAlign="center center">
             <div fxFlex="35%" fxHide.lt-md class="card-icon"><img src="assets/images/assetscore-outcomes-icon.svg" alt="Asset Score Outcomes icon"></div>
-            <p class="card-text">Bring Buildings into Compliance with EUI and GHGe Requirements</p>
+            <p class="card-text"><a routerLink="/goals/compliance">Bring Buildings into Compliance with EUI and GHGe Requirements</a></p>
           </mat-card-content>
         </mat-card>
       </div>
 
       <div fxFlex="25%" fxFlex.xs="100%" fxLayoutAlign.xs="space-evenly stretch">
-        <mat-card class="goals-card-pad" id="g4" routerLink="/goals/customize" (mouseenter)="mouseEnter('g4')" (mouseleave)="mouseLeave('g4')" [ngClass]="{'opaque': hovers.g1 || hovers.g2 || hovers.g3}">
+        <mat-card class="goals-card-pad" id="g4" (mouseenter)="mouseEnter('g4')" (mouseleave)="mouseLeave('g4')" [ngClass]="{'opaque': hovers.g1 || hovers.g2 || hovers.g3}">
           <mat-card-content fxFlexFill fxLayout="row" fxLayoutAlign="center center">
             <div fxFlex="35%" fxHide.lt-md class="card-icon"><img src="assets/images/thirdparty-outcomes-icon.svg" alt="third-party outcomes icon"></div>
-            <p class="card-text">Customize Your Workflow with CRM, Data Visualizations, and More</p>
+            <p class="card-text"><a routerLink="/goals/customize">Customize Your Workflow with CRM, Data Visualizations, and More</a></p>
           </mat-card-content>
         </mat-card>
       </div>
@@ -49,7 +51,7 @@
     <div fxFlex="calc(33.33% - 5px)" fxFlex.xs="100%" fxLayout="column" class="col-type-1">
       <div class="col-bkgnd-1">
         <div class="header1">
-          <h3 class="header">DATA COLLECTION & REPORTING</h3>
+          <h2 class="header">DATA COLLECTION & REPORTING</h2>
         </div>
       </div>
 
@@ -87,7 +89,7 @@
     <div fxFlex="calc(33.33% - 5px)" fxFlex.xs="100%" fxLayout="column" class="col-type-2">
       <div class="col-bkgnd-2">
         <div class="header2">
-          <h3 class="header">MANAGEMENT & COMPLIANCE</h3>
+          <h2 class="header">MANAGEMENT & COMPLIANCE</h2>
         </div>
       </div>
 
@@ -121,7 +123,7 @@
     <div fxFlex="calc(33.33% - 5px)" fxFlex.xs="100%" fxLayout="column" class="col-type-3">
       <div class="col-bkgnd-3">
         <div class="header3">
-          <h3 class="header">ANALYSIS & EVALUATION</h3>
+          <h2 class="header">ANALYSIS & EVALUATION</h2>
         </div>
       </div>
 
