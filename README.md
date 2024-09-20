@@ -59,3 +59,7 @@ To manually sync the website with the S3 bucket, configure permissions for using
 ng build
 aws s3 sync dist s3://nrel-btodatatools-web-prod-bucket
 ```
+
+## Subdomain management
+
+There are three subdomains on GitHub that are used to view the website before pushing to develop and main.
