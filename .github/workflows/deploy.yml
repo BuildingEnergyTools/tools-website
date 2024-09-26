@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set node version
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: 16.18.0
 
@@ -28,7 +28,7 @@ jobs:
           npx ng build
 
       - name: Deploy Main Site
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4.6.4
         if: github.ref == 'refs/heads/main'
         with:
           branch: gh-pages
@@ -53,7 +53,7 @@ jobs:
           aws s3 sync --delete ./dist s3://${{ secrets.AWS_STAGING_BUCKET }}
 
       - name: Deploy NREL
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4.6.4
         if: github.ref == 'refs/heads/nrel'
         with:
           repository-name: BuildingEnergyTools/tools-website-nrel
@@ -62,7 +62,7 @@ jobs:
           token: ${{ secrets.DEPLOY_STAGING_KEY }}
 
       - name: Deploy LBNL
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4.6.4
         if: github.ref == 'refs/heads/lbnl'
         with:
           repository-name: BuildingEnergyTools/tools-website-lbnl
@@ -71,7 +71,7 @@ jobs:
           token: ${{ secrets.DEPLOY_STAGING_KEY }}
 
       - name: Deploy PNNL
-        uses: JamesIves/github-pages-deploy-action@4.1.1
+        uses: JamesIves/github-pages-deploy-action@v4.6.4
         if: github.ref == 'refs/heads/pnnl'
         with:
           repository-name: BuildingEnergyTools/tools-website-pnnl

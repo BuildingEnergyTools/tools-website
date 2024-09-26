@@ -6,6 +6,10 @@
     &[data-color="#{$i}"] {
       nav div.active {
         background-color: $color;
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
       }
 
       &::ng-deep {
