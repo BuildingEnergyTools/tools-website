@@ -536,7 +536,7 @@ h6 .small,
 
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 30px;
   letter-spacing: -.5px;
   color: #2B2B2B;
   font-weight: 400;
@@ -544,15 +544,16 @@ h1,
 
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 400;
   color: #007934;
   letter-spacing: -.5px;
+  text-transform: uppercase;
 }
 
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 400;
   color: #4c4c4c;
   text-transform: uppercase;
