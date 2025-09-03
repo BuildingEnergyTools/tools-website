@@ -3,8 +3,7 @@
 [![CI](https://github.com/BuildingEnergyTools/tools-website/actions/workflows/ci.yml/badge.svg)](https://github.com/BuildingEnergyTools/tools-website/actions/workflows/ci.yml)
 [![Deploy](https://github.com/BuildingEnergyTools/tools-website/actions/workflows/deploy.yml/badge.svg)](https://github.com/BuildingEnergyTools/tools-website/actions/workflows/deploy.yml)
 
-This project was generated with the Angular CLI. For more information on developing with Angular see the README
-in the [doc folder](doc). The purpose of this README is to document the basic workflows of getting started.
+This project was generated with the Angular CLI.
 
 ## Basic Workflow
 
@@ -13,24 +12,6 @@ The most basic workflow to edit content is to leverage GitHub's website to creat
 - `main` - this is the branch that will be automatically deployed to the `gh-pages` and subsequently to https://buildingdata.energy.gov.
 - `develop` - the most recent changes and from where all updates should branch. Will be deployed to https://buildingdata-stage.energy.gov.
 - `gh-pages` - built and deployed website
-- `pnnl` - branch to stage PNNL updates
-- `lbnl` - branch to stage LBNL updates
-- `nrel` - branch to stage NREL updates
-
-** TODO: This needs to be updated, the deployment to these staging branches isn't working as expected. For now deploy to develop and the normal staging branch for testing **
-
-The staging branches should be the jumping off point for each user in the respective labs; however, ensure that the staging branch is up-to-date with develop before starting. This is easily done by creating a new pull request in GitHub and having the base branch be the national lab. Click on the links below to be directed to this for you:
-
-- [Update PNNL with Develop](https://github.com/BuildingEnergyTools/tools-website/compare/pnnl...develop)
-- [Update LBNL with Develop](https://github.com/BuildingEnergyTools/tools-website/compare/lbnl...develop)
-- [Update NREL with Develop](https://github.com/BuildingEnergyTools/tools-website/compare/nrel...develop)
-
-There are 3 staging sites (one for each laboratory). The respective lab branches will automatically be built and deployed upon pushing
-to this lab's branch to this repository (pnnl, lbnl, nrel). The sites are located here:
-
-- [PNNL Staging Site](https://staging-pnnl.buildingenergytools.org)
-- [LBNL Staging Site](https://staging-lbnl.buildingenergytools.org)
-- [NREL Staging Site](https://staging-nrel.buildingenergytools.org)
 
 ## Advanced Workflow
 
@@ -61,7 +42,3 @@ To manually sync the website with the S3 bucket, configure permissions for using
 ng build
 aws s3 sync dist s3://nrel-btodatatools-web-prod-bucket
 ```
-
-## Subdomain management
-
-There are three subdomains on GitHub that are used to view the website before pushing to develop and main.
