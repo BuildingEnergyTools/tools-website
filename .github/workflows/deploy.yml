@@ -25,7 +25,8 @@ jobs:
         run: |
           npm ci
           npm install @angular/cli > /dev/null
-          npx ng build
+          # Ensure consistent output hashing for runtime files
+          npx ng build --output-hashing=bundles
 
       - name: Deploy Main Site
         uses: JamesIves/github-pages-deploy-action@v4.7.3
@@ -41,7 +42,14 @@ jobs:
           AWS_REGION: us-east-1
         if: github.ref == 'refs/heads/main'
         run: |
-          aws s3 sync --delete ./dist s3://${{ secrets.AWS_PROD_BUCKET }}
+          # Deploy HTML files with no-cache to prevent stale references
+          aws s3 sync --delete ./dist s3://${{ secrets.AWS_PROD_BUCKET }} \
+            --exclude "*" --include "*.html" \
+            --cache-control "no-cache, no-store, must-revalidate"
+
+          # Deploy all other files normally
+          aws s3 sync ./dist s3://${{ secrets.AWS_PROD_BUCKET }} \
+            --exclude "*.html"
 
       - name: Deploy S3 Staging
         env:
@@ -50,4 +58,11 @@ jobs:
           AWS_REGION: us-east-1
         if: github.ref == 'refs/heads/develop'
         run: |
-          aws s3 sync --delete ./dist s3://${{ secrets.AWS_STAGING_BUCKET }}
+          # Deploy HTML files with no-cache to prevent stale references
+          aws s3 sync --delete ./dist s3://${{ secrets.AWS_STAGING_BUCKET }} \
+            --exclude "*" --include "*.html" \
+            --cache-control "no-cache, no-store, must-revalidate"
+
+          # Deploy all other files normally
+          aws s3 sync ./dist s3://${{ secrets.AWS_STAGING_BUCKET }} \
+            --exclude "*.html"
