@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set node version
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 16.18.0
 
@@ -28,7 +28,7 @@ jobs:
           npx ng build
 
       - name: Deploy Main Site
-        uses: JamesIves/github-pages-deploy-action@v4.6.4
+        uses: JamesIves/github-pages-deploy-action@v4.7.3
         if: github.ref == 'refs/heads/main'
         with:
           branch: gh-pages
