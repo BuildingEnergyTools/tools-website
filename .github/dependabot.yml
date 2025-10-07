@@ -1,0 +1,25 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/angular-app"
+    schedule:
+      interval: "weekly"
+    groups:
+      npm-dev-deps:
+        dependency-type: "development"
+      npm-prod-deps:
+        dependency-type: "production"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "deps"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      actions-deps:
+        patterns:
+          - "*"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "ci"
