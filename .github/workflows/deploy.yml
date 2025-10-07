@@ -25,7 +25,7 @@ jobs:
         run: |
           npm ci
           npm install @angular/cli > /dev/null
-          npx ng build --output-hashing=bundles
+          npx ng build
 
       - name: Deploy Main Site
         uses: JamesIves/github-pages-deploy-action@v4.7.3
