@@ -23,7 +23,7 @@ jobs:
 
       - name: Install and Build
         run: |
-          npm install
+          npm ci
           npm install @angular/cli > /dev/null
           npx ng build
 
