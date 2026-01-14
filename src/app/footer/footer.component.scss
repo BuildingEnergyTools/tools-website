@@ -4,9 +4,40 @@ footer2 {
   background-color: $gray;
 }
 
+.container {
+  max-width: $maxWidth;
+}
+
+.menu-heading {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-transform: none;
+}
+
+p {
+  font-size: 16px;
+  line-height:  1.65;
+  padding-bottom: 20px;
+}
+
 strong {
   font-weight: 500;
   padding: 14px $pad;
+}
+
+.program-bar2 {
+  text-align: left;
+}
+
+.footer-logo {
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  padding-left: 0px;
+}
+
+.doe-cmei-logo {
+  width: 410px;
 }
 
 .descriptions > div {
@@ -35,6 +66,12 @@ section {
       position: absolute;
       top: 0;
       width: 100%;
+    }
+
+    .square {
+      height: 100%;
+      width: 50%;
+      margin-left: 50px;
     }
   }
 
@@ -67,14 +104,22 @@ section {
 footer {
   padding-top: 30px;
   background-color: white;
-  font-family: "Karla", sans-serif;
+  font-family: "Figtree", sans-serif;
+}
+.tools-footer-top {
+  background-color: #002959 !important;
+  background-image: unset;
+  border-bottom: 1px solid white;
 }
 
+.tools-footer-bottom {
+  background-color: #002959;
+}
 .footer-top .container {
   width: 100%;
 
   .row {
-    font-family: "Karla", sans-serif;
+    font-family: "Figtree", sans-serif;
     font-size: 16px;
     line-height: 1.65;
   }
@@ -85,12 +130,16 @@ footer {
 }
 
 ul {
-  padding-left: 2rem;
+  padding-left: 3rem;
+}
+
+.nav > li {
+  padding-right: 30px;
 }
 
 ul.menu li a {
-  font-family: "Karla", sans-serif;
-  font-size: 12px;
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
   padding-left: 5px;
   padding-right: 5px;
 }
