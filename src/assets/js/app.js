@@ -1,6 +1,6 @@
 /*!
  * DEVELOPMENT VERSION
- * EERE Template v0.0.1 (https://github.com/NREL/eere-app-template)
+ * EERE Template v0.0.1 (https://github.com/NatLabRockies/eere-app-template)
  */
 (function ($) {
   $(document).ready(function() {
