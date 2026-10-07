@@ -29,7 +29,7 @@ jobs:
           npx ng build --output-hashing=bundles
 
       - name: Deploy Main Site
-        uses: JamesIves/github-pages-deploy-action@v4.7.4
+        uses: JamesIves/github-pages-deploy-action@v4.8.0
         if: github.ref == 'refs/heads/main'
         with:
           branch: gh-pages
